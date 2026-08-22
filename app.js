@@ -18,8 +18,17 @@
     frame: document.getElementById("videoFrame"),
     shuffle: document.getElementById("shuffleBtn"),
     ytLink: document.getElementById("ytLink"),
-    count: document.getElementById("songCount")
+    count: document.getElementById("songCount"),
+    trackInfo: document.querySelector(".track-info")
   };
+
+  // מפעיל מחדש את אנימציית ה-CSS "pop" בכל בחירת שיר (הסרה+הוספה כדי לאלץ reflow).
+  function replayPopAnimation() {
+    if (!els.trackInfo) return;
+    els.trackInfo.classList.remove("pop");
+    void els.trackInfo.offsetWidth;
+    els.trackInfo.classList.add("pop");
+  }
 
   function searchQuery(song) {
     return song.artist + " " + song.title;
@@ -36,6 +45,7 @@
 
   function render(song) {
     current = song;
+    replayPopAnimation();
 
     if (!song) {
       els.title.textContent = "אין שירים תקינים במאגר";
