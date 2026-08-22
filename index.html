@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>זיהוי שירים אקראי</title>
+  <meta name="description" content="כלי משחק קבוצתי: שיר רנדומלי, אומן ושנה, מנוגן ישירות מהעמוד." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%B5%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <noscript>הדף הזה זקוק ל-JavaScript כדי לבחור ולנגן שירים. אנא הפעילו JavaScript בדפדפן.</noscript>
+  <header class="masthead">
+    <span class="kicker">משחק זיהוי שירים · מסך משותף</span>
+    <h1>מי מזהה את השיר?</h1>
+  </header>
+
+  <main class="sleeve">
+    <div class="platter-row">
+      <div class="platter" aria-hidden="true"></div>
+      <div class="track-info" aria-live="polite">
+        <div class="title" id="songTitle" dir="auto">—</div>
+        <div class="artist" id="songArtist" dir="auto">—</div>
+        <div class="year" id="songYear">—</div>
+      </div>
+    </div>
+
+    <div class="video-frame" id="videoFrame"></div>
+    <p class="hint">אם הניגון לא מתחיל לבד — לחצו על כפתור ההפעלה בתוך הנגן.</p>
+
+    <div class="controls">
+      <button class="shuffle-btn" id="shuffleBtn" type="button">🔀 שיר הבא</button>
+      <a class="yt-link" id="ytLink" href="#" target="_blank" rel="noopener">פתח ביוטיוב ↗</a>
+    </div>
+  </main>
+
+  <footer class="meta" id="songCount">—</footer>
+
+  <script src="songs.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
