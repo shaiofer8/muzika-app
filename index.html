@@ -16,6 +16,39 @@
 
   <div class="bg-glow" aria-hidden="true"></div>
 
+  <button class="score-fab" id="scoreOpenBtn" type="button" aria-haspopup="dialog" aria-controls="scoreModal">
+    <span aria-hidden="true">🏆</span> ניקוד
+  </button>
+
+  <div class="modal-overlay" id="scoreOverlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="scoreModalTitle" id="scoreModal">
+      <div class="modal-header">
+        <h2 id="scoreModalTitle">ניקוד קבוצות</h2>
+        <button class="modal-close" id="scoreCloseBtn" type="button" aria-label="סגירת פופאפ">×</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="score-setup" id="scoreSetup">
+          <p class="modal-label">כמה קבוצות משחקות?</p>
+          <div class="stepper">
+            <button type="button" class="stepper-btn" id="teamCountMinus" aria-label="פחות קבוצות">−</button>
+            <span class="stepper-value" id="teamCountValue">2</span>
+            <button type="button" class="stepper-btn" id="teamCountPlus" aria-label="עוד קבוצות">+</button>
+          </div>
+          <button type="button" class="primary-btn" id="startScoringBtn">התחלת ניקוד</button>
+        </div>
+
+        <div class="scoreboard" id="scoreboard" hidden>
+          <div class="score-rows" id="scoreRows"></div>
+          <div class="scoreboard-actions">
+            <button type="button" class="link-btn" id="reconfigureBtn">שינוי מספר קבוצות</button>
+            <button type="button" class="danger-btn" id="resetScoresBtn">איפוס ניקוד</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header class="masthead">
     <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span>משחק זיהוי שירים · מסך משותף</span>
     <h1>מי מזהה את השיר?</h1>
@@ -51,5 +84,6 @@
 
   <script src="songs.js"></script>
   <script src="app.js"></script>
+  <script src="score.js"></script>
 </body>
 </html>
