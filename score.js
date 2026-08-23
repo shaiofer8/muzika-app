@@ -6,7 +6,20 @@
   var MIN_TEAMS = 1;
   var MAX_TEAMS = 12;
 
-  var state = loadState() || { teamCount: 2, scores: [0, 0], configured: false };
+  var state = loadState() || { teamCount: 2, scores: [0, 0], names: [defaultName(0), defaultName(1)], configured: false };
+
+  function defaultName(idx) {
+    return "קבוצה " + (idx + 1);
+  }
+
+  // מוודא שמערך השמות מכסה בדיוק את מספר הקבוצות הנוכחי, בלי לדרוס שמות שכבר הוקלדו.
+  function normalizeNames() {
+    if (!Array.isArray(state.names)) state.names = [];
+    for (var i = 0; i < state.teamCount; i++) {
+      if (typeof state.names[i] !== "string") state.names[i] = defaultName(i);
+    }
+    state.names.length = state.teamCount;
+  }
 
   var els = {
     fab: document.getElementById("scoreOpenBtn"),
@@ -58,6 +71,7 @@
   }
 
   function renderScoreboard() {
+    normalizeNames();
     els.rows.innerHTML = "";
     for (var i = 0; i < state.teamCount; i++) {
       els.rows.appendChild(buildScoreRow(i));
@@ -68,9 +82,24 @@
     var row = document.createElement("div");
     row.className = "score-row";
 
-    var name = document.createElement("span");
-    name.className = "team-name";
-    name.textContent = "קבוצה " + (idx + 1);
+    var name = document.createElement("input");
+    name.type = "text";
+    name.className = "team-name-input";
+    name.value = state.names[idx];
+    name.setAttribute("aria-label", "שם קבוצה " + (idx + 1));
+    name.setAttribute("maxlength", "40");
+    name.addEventListener("input", function () {
+      state.names[idx] = name.value;
+      saveState();
+    });
+    name.addEventListener("blur", function () {
+      // אם השם נשאר ריק, חוזרים לברירת המחדל במקום להציג תווית ריקה.
+      if (!name.value.trim()) {
+        name.value = defaultName(idx);
+        state.names[idx] = name.value;
+        saveState();
+      }
+    });
 
     var controls = document.createElement("div");
     controls.className = "score-controls";
