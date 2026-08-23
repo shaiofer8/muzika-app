@@ -68,7 +68,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 26px;
-  padding: 40px 16px 56px;
+  padding: 76px 16px 56px;
   position: relative;
   overflow-x: hidden;
 }
@@ -397,6 +397,41 @@ noscript {
 }
 
 .score-fab:focus-visible {
+  outline: 2px solid var(--accent-c);
+  outline-offset: 3px;
+}
+
+.wa-fab {
+  position: fixed;
+  top: 16px;
+  inset-inline-end: 16px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13.5px;
+  color: #fff;
+  text-decoration: none;
+  background: #25d366;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  padding: 10px 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -14px rgba(37, 211, 102, 0.7);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.wa-fab:hover {
+  transform: translateY(-1px);
+}
+
+.wa-fab:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.wa-fab:focus-visible {
   outline: 2px solid var(--accent-c);
   outline-offset: 3px;
 }
