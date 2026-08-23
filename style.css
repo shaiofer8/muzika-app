@@ -349,6 +349,51 @@ noscript {
   outline-offset: 3px;
 }
 
+.secondary-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--accent-c);
+  background: color-mix(in srgb, var(--accent-c) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent-c) 30%, transparent);
+  border-radius: 999px;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease, opacity 0.12s ease;
+}
+
+.share-btn:hover {
+  background: color-mix(in srgb, var(--accent-c) 20%, transparent);
+  transform: translateY(-1px);
+}
+
+.share-btn:active {
+  transform: scale(0.97);
+}
+
+.share-btn:disabled {
+  opacity: 0.85;
+  cursor: default;
+  transform: none;
+}
+
+.share-btn:focus-visible,
+.yt-link:focus-visible {
+  outline: 2px solid var(--accent-c);
+  outline-offset: 2px;
+}
+
 .yt-link {
   font-size: 14px;
   font-weight: 500;
