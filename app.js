@@ -18,7 +18,6 @@
     frame: document.getElementById("videoFrame"),
     shuffle: document.getElementById("shuffleBtn"),
     ytLink: document.getElementById("ytLink"),
-    count: document.getElementById("songCount"),
     trackInfo: document.querySelector(".track-info")
   };
 
@@ -99,6 +98,5 @@
     window.setTimeout(function () { pending = false; }, 500);
   });
 
-  els.count.textContent = songs.length + " שירים במאגר";
   pickRandom();
 })();
