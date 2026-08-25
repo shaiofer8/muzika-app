@@ -1,0 +1,52 @@
+{
+  "packageId": "com.muzikaparty.app",
+  "host": "muzika.sofrimyamim.com",
+  "name": "מי מזהה את השיר?",
+  "launcherName": "מזהי שירים",
+  "display": "standalone",
+  "themeColor": "#7c3aed",
+  "themeColorDark": "#0a0a12",
+  "navigationColor": "#f3f4fb",
+  "navigationColorDark": "#0a0a12",
+  "navigationDividerColor": "#00000000",
+  "navigationDividerColorDark": "#00000000",
+  "backgroundColor": "#f3f4fb",
+  "enableNotifications": false,
+  "startUrl": "/?source=pwa",
+  "iconUrl": "https://muzika.sofrimyamim.com/icons/icon-512.png",
+  "maskableIconUrl": "https://muzika.sofrimyamim.com/icons/icon-maskable-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "c:\\Users\\shaio\\muzika-app\\android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://muzika.sofrimyamim.com/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://muzika.sofrimyamim.com/",
+  "minSdkVersion": 23,
+  "orientation": "portrait",
+  "fingerprints": [
+    {
+      "name": "Android release key (android.keystore, local-only)",
+      "value": "8F:0A:3C:E9:7A:9D:3D:36:CB:19:FF:E2:2B:30:7A:24:95:D9:B4:CA:59:F5:56:64:91:42:A2:D1:07:75:5F:01"
+    }
+  ],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "displayOverride": [],
+  "appVersion": "1"
+}

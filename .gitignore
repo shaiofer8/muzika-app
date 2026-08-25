@@ -1,2 +1,21 @@
 node_modules/
 .DS_Store
+
+# Android/TWA build artifacts + secrets -- never commit the signing key or
+# its passwords to a public repo (deliberately different from sofrim-yamim's
+# committed keystore; this is the safer default).
+*.keystore
+*.jks
+.keystore-secrets.txt
+local.properties
+.gradle/
+build/
+app/build/
+.idea/
+*.iml
+.cxx/
+captures/
+*.aab
+*.apk
+*.apks
+*.idsig
