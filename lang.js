@@ -58,8 +58,10 @@
     var info = langInfo(code);
     var flagEl = document.getElementById("langFlag");
     var nameEl = document.getElementById("langName");
+    var openBtn = document.getElementById("langOpenBtn");
     if (flagEl) flagEl.textContent = info.flag;
     if (nameEl) nameEl.textContent = info.name;
+    if (openBtn) openBtn.setAttribute("aria-label", info.name);
     var grid = document.getElementById("langGrid");
     if (grid) {
       var btns = grid.querySelectorAll(".lang-option");
