@@ -14,45 +14,57 @@
   <meta name="apple-mobile-web-app-title" content="מי מזהה את השיר?" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600;700&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <noscript>הדף הזה זקוק ל-JavaScript כדי לבחור ולנגן שירים. אנא הפעילו JavaScript בדפדפן.</noscript>
+  <noscript data-i18n="noscript">הדף הזה זקוק ל-JavaScript כדי לבחור ולנגן שירים. אנא הפעילו JavaScript בדפדפן.</noscript>
 
   <div class="bg-glow" aria-hidden="true"></div>
 
   <button class="score-fab" id="scoreOpenBtn" type="button" aria-haspopup="dialog" aria-controls="scoreModal">
-    <span aria-hidden="true">🏆</span> ניקוד
+    <span aria-hidden="true">🏆</span> <span data-i18n="scoreBtn">ניקוד</span>
   </button>
 
   <a class="wa-fab" href="https://wa.me/972504812348?text=%D7%94%D7%99%D7%99%21%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%94%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94%20%D7%A9%D7%9C%D7%9A" target="_blank" rel="noopener">
-    <span aria-hidden="true">💬</span> צור קשר
+    <span aria-hidden="true">💬</span> <span data-i18n="contactBtn">צור קשר</span>
   </a>
+
+  <div class="modal-overlay" id="langOverlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="langModalTitle" id="langModal">
+      <div class="modal-header">
+        <h2 id="langModalTitle" data-i18n="langModalTitle">בחירת שפה</h2>
+        <button class="modal-close" id="langCloseBtn" type="button" data-i18n-aria="scoreModalClose" aria-label="סגירת פופאפ">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="lang-grid" id="langGrid"></div>
+      </div>
+    </div>
+  </div>
 
   <div class="modal-overlay" id="scoreOverlay" hidden>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="scoreModalTitle" id="scoreModal">
       <div class="modal-header">
-        <h2 id="scoreModalTitle">ניקוד קבוצות</h2>
-        <button class="modal-close" id="scoreCloseBtn" type="button" aria-label="סגירת פופאפ">×</button>
+        <h2 id="scoreModalTitle" data-i18n="scoreModalTitle">ניקוד קבוצות</h2>
+        <button class="modal-close" id="scoreCloseBtn" type="button" data-i18n-aria="scoreModalClose" aria-label="סגירת פופאפ">×</button>
       </div>
 
       <div class="modal-body">
         <div class="score-setup" id="scoreSetup">
-          <p class="modal-label">כמה קבוצות משחקות?</p>
+          <p class="modal-label" data-i18n="teamsQuestion">כמה קבוצות משחקות?</p>
           <div class="stepper">
-            <button type="button" class="stepper-btn" id="teamCountMinus" aria-label="פחות קבוצות">−</button>
+            <button type="button" class="stepper-btn" id="teamCountMinus" data-i18n-aria="teamsMinusAria" aria-label="פחות קבוצות">−</button>
             <span class="stepper-value" id="teamCountValue">2</span>
-            <button type="button" class="stepper-btn" id="teamCountPlus" aria-label="עוד קבוצות">+</button>
+            <button type="button" class="stepper-btn" id="teamCountPlus" data-i18n-aria="teamsPlusAria" aria-label="עוד קבוצות">+</button>
           </div>
-          <button type="button" class="primary-btn" id="startScoringBtn">התחלת ניקוד</button>
+          <button type="button" class="primary-btn" id="startScoringBtn" data-i18n="startScoring">התחלת ניקוד</button>
         </div>
 
         <div class="scoreboard" id="scoreboard" hidden>
           <div class="score-rows" id="scoreRows"></div>
           <div class="scoreboard-actions">
-            <button type="button" class="link-btn" id="reconfigureBtn">שינוי מספר קבוצות</button>
-            <button type="button" class="danger-btn" id="resetScoresBtn">איפוס ניקוד</button>
+            <button type="button" class="link-btn" id="reconfigureBtn" data-i18n="reconfigure">שינוי מספר קבוצות</button>
+            <button type="button" class="danger-btn" id="resetScoresBtn" data-i18n="resetScores">איפוס ניקוד</button>
           </div>
         </div>
       </div>
@@ -60,8 +72,13 @@
   </div>
 
   <header class="masthead">
-    <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span>משחק זיהוי שירים · מסך משותף</span>
-    <h1>מי מזהה את השיר?</h1>
+    <button class="lang-btn" id="langOpenBtn" type="button" aria-haspopup="dialog" aria-controls="langModal">
+      <span id="langFlag" aria-hidden="true">🇮🇱</span>
+      <span id="langName">עברית</span>
+      <span aria-hidden="true">▾</span>
+    </button>
+    <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="kicker">משחק זיהוי שירים · מסך משותף</span></span>
+    <h1 data-i18n="title">מי מזהה את השיר?</h1>
   </header>
 
   <main class="sleeve">
@@ -80,25 +97,26 @@
     </div>
 
     <div class="video-frame" id="videoFrame"></div>
-    <p class="hint">אם הניגון לא מתחיל לבד — לחצו על כפתור ההפעלה בתוך הנגן.</p>
+    <p class="hint" data-i18n="hint">אם הניגון לא מתחיל לבד — לחצו על כפתור ההפעלה בתוך הנגן.</p>
 
     <div class="controls">
       <button class="shuffle-btn" id="shuffleBtn" type="button">
-        <span aria-hidden="true">🔀</span> שיר הבא
+        <span aria-hidden="true">🔀</span> <span data-i18n="shuffleBtn">שיר הבא</span>
       </button>
       <div class="secondary-actions">
         <button class="share-btn" id="shareBtn" type="button">
-          <span aria-hidden="true">📤</span> שתף עם חברים
+          <span aria-hidden="true">📤</span> <span data-i18n="shareBtn">שתף עם חברים</span>
         </button>
-        <a class="yt-link" id="ytLink" href="#" target="_blank" rel="noopener">פתח ביוטיוב ↗</a>
+        <a class="yt-link" id="ytLink" href="#" target="_blank" rel="noopener" data-i18n="ytLink">פתח ביוטיוב ↗</a>
       </div>
     </div>
   </main>
 
-  <script src="songs.js"></script>
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
   <script src="score.js"></script>
   <script src="share.js"></script>
+  <script src="lang.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {

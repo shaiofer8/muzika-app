@@ -6,19 +6,27 @@
   var MIN_TEAMS = 1;
   var MAX_TEAMS = 12;
 
-  var state = loadState() || { teamCount: 2, scores: [0, 0], names: [defaultName(0), defaultName(1)], configured: false };
+  var state = loadState() || { teamCount: 2, scores: [0, 0], names: [defaultName(0), defaultName(1)], customNames: [false, false], configured: false };
+  if (!Array.isArray(state.customNames)) state.customNames = state.names.map(function () { return false; });
 
-  function defaultName(idx) {
-    return "קבוצה " + (idx + 1);
+  function t(key) {
+    return (window.MuzikaLang && window.MuzikaLang.t(key)) || key;
   }
 
-  // מוודא שמערך השמות מכסה בדיוק את מספר הקבוצות הנוכחי, בלי לדרוס שמות שכבר הוקלדו.
+  function defaultName(idx) {
+    return t("teamNamePrefix") + " " + (idx + 1);
+  }
+
+  // מוודא שמערך השמות מכסה בדיוק את מספר הקבוצות הנוכחית, בלי לדרוס שמות שכבר הוקלדו.
   function normalizeNames() {
     if (!Array.isArray(state.names)) state.names = [];
+    if (!Array.isArray(state.customNames)) state.customNames = [];
     for (var i = 0; i < state.teamCount; i++) {
       if (typeof state.names[i] !== "string") state.names[i] = defaultName(i);
+      if (typeof state.customNames[i] !== "boolean") state.customNames[i] = false;
     }
     state.names.length = state.teamCount;
+    state.customNames.length = state.teamCount;
   }
 
   var els = {
@@ -86,10 +94,11 @@
     name.type = "text";
     name.className = "team-name-input";
     name.value = state.names[idx];
-    name.setAttribute("aria-label", "שם קבוצה " + (idx + 1));
+    name.setAttribute("aria-label", t("teamNameAriaPrefix") + " " + (idx + 1));
     name.setAttribute("maxlength", "40");
     name.addEventListener("input", function () {
       state.names[idx] = name.value;
+      state.customNames[idx] = true;
       saveState();
     });
     name.addEventListener("blur", function () {
@@ -97,6 +106,7 @@
       if (!name.value.trim()) {
         name.value = defaultName(idx);
         state.names[idx] = name.value;
+        state.customNames[idx] = false;
         saveState();
       }
     });
@@ -108,7 +118,7 @@
     minus.type = "button";
     minus.className = "score-btn minus";
     minus.textContent = "−";
-    minus.setAttribute("aria-label", "הורדת נקודה מקבוצה " + (idx + 1));
+    minus.setAttribute("aria-label", t("teamMinusAriaPrefix") + " " + (idx + 1));
     minus.addEventListener("click", function () { changeScore(idx, -1); });
 
     var value = document.createElement("span");
@@ -119,7 +129,7 @@
     plus.type = "button";
     plus.className = "score-btn plus";
     plus.textContent = "+";
-    plus.setAttribute("aria-label", "הוספת נקודה לקבוצה " + (idx + 1));
+    plus.setAttribute("aria-label", t("teamPlusAriaPrefix") + " " + (idx + 1));
     plus.addEventListener("click", function () { changeScore(idx, 1); });
 
     controls.appendChild(minus);
@@ -207,4 +217,20 @@
   });
 
   renderStepper();
+
+  // ---------------------------------------------------------------------
+  // API ל-lang.js: מרענן תוויות (שמות ברירת-מחדל/aria) בהחלפת שפה, בלי
+  // לגעת בשמות שהוקלדו ידנית או באיפוס הניקוד.
+  // ---------------------------------------------------------------------
+  window.MuzikaScore = {
+    refresh: function () {
+      for (var i = 0; i < state.names.length; i++) {
+        if (!state.customNames[i]) state.names[i] = defaultName(i);
+      }
+      saveState();
+      if (!els.overlay.hidden) {
+        if (state.configured) renderScoreboard(); else renderStepper();
+      }
+    }
+  };
 })();

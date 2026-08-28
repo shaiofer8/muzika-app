@@ -1,15 +1,12 @@
 // app.js — לוגיקת המשחק: בחירה רנדומלית, תצוגה, ניגון YouTube.
+// מופעל ע"י lang.js (MuzikaApp.init עם רשימת השירים של השפה הנוכחית),
+// לא רץ אוטומטית עם טעינת הסקריפט — כדי לחכות לבחירת שפה/מאגר שירים.
 (function () {
   "use strict";
 
-  var rawSongs = Array.isArray(window.SONGS) ? window.SONGS : [];
-  // מתעלם משורות פגומות (חסר שם שיר/אומן) כדי שרשומה שגויה ברשימה המודבקת לא תפיל את כל האתר.
-  var songs = rawSongs.filter(function (s) {
-    return s && typeof s.title === "string" && s.title.trim() &&
-      typeof s.artist === "string" && s.artist.trim();
-  });
   var current = null;
   var pending = false;
+  var songs = [];
 
   var els = {
     title: document.getElementById("songTitle"),
@@ -20,6 +17,10 @@
     ytLink: document.getElementById("ytLink"),
     trackInfo: document.querySelector(".track-info")
   };
+
+  function t(key) {
+    return (window.MuzikaLang && window.MuzikaLang.t(key)) || key;
+  }
 
   // מפעיל מחדש את אנימציית ה-CSS "pop" בכל בחירת שיר (הסרה+הוספה כדי לאלץ reflow).
   function replayPopAnimation() {
@@ -47,8 +48,8 @@
     replayPopAnimation();
 
     if (!song) {
-      els.title.textContent = "אין שירים תקינים במאגר";
-      els.artist.textContent = "בדקו את songs.js";
+      els.title.textContent = t("noSongs");
+      els.artist.textContent = t("tryRefresh");
       els.year.textContent = "—";
       els.frame.innerHTML = "";
       els.ytLink.hidden = true;
@@ -57,7 +58,7 @@
 
     els.title.textContent = song.title;
     els.artist.textContent = song.artist;
-    els.year.textContent = song.year || "שנה לא ידועה";
+    els.year.textContent = song.year || t("unknownYear");
 
     // האייפריים נבנה מחדש בכל בחירה (לא רק src מוחלף) — מבטיח autoplay אמין בכל הדפדפנים.
     els.frame.innerHTML = "";
@@ -98,5 +99,22 @@
     window.setTimeout(function () { pending = false; }, 500);
   });
 
-  pickRandom();
+  // ---------------------------------------------------------------------
+  // API ל-lang.js: קריאה עם מאגר שירים חדש (טעינה ראשונה או החלפת שפה).
+  // ---------------------------------------------------------------------
+  function setSongs(newSongs, opts) {
+    songs = Array.isArray(newSongs) ? newSongs.filter(function (s) {
+      return s && typeof s.title === "string" && s.title.trim() &&
+        typeof s.artist === "string" && s.artist.trim();
+    }) : [];
+    current = null;
+    if (opts && opts.silent) return; // lang.js יזום render בעצמו (למשל showError)
+    pickRandom();
+  }
+
+  window.MuzikaApp = {
+    init: function (newSongs) { setSongs(newSongs); },
+    reload: function (newSongs) { setSongs(newSongs); },
+    showError: function () { render(null); }
+  };
 })();

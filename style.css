@@ -59,8 +59,10 @@ body {
 }
 
 body {
-  direction: rtl;
-  font-family: "Rubik", "Segoe UI", "Arial Hebrew", Arial, sans-serif;
+  direction: inherit;
+  font-family: "Rubik", "Noto Sans", "Noto Sans Arabic", "Noto Sans SC",
+    "Noto Sans Devanagari", "Noto Sans JP", "Noto Sans KR",
+    "Segoe UI", "Arial Hebrew", Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -126,6 +128,75 @@ noscript {
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
   box-shadow: 0 0 10px 1px var(--glow-1);
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: transform 0.15s ease;
+}
+
+.lang-btn:hover {
+  transform: translateY(-1px);
+}
+
+.lang-btn:focus-visible {
+  outline: 2px solid var(--accent-c);
+  outline-offset: 3px;
+}
+
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface-solid);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: start;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.lang-option:hover {
+  transform: translateY(-1px);
+}
+
+.lang-option.active {
+  border-color: var(--accent-a);
+  background: linear-gradient(135deg, var(--glow-1), var(--glow-2));
+}
+
+.lang-flag {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lang-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .masthead h1 {

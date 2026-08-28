@@ -1,4 +1,4 @@
-// songs.js — מאגר השירים של האתר (שירים ייחודיים, ללא כפילויות).
+// songs/he.js — מאגר השירים בעברית (שירים ייחודיים, ללא כפילויות).
 //
 // סכימה לכל שיר:
 //   title      — שם השיר (חובה)
@@ -11,7 +11,8 @@
 // שנים כי נשאר פופולרי לאורך זמן. הן סוננו, נשאר מופע ראשון של כל צירוף
 // שיר+אומן (השנה שנשמרה היא זו של המופע המוקדם ביותר ברשימה המקורית).
 
-window.SONGS = [
+window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
+window.SONGS_BY_LANG.he = [
   { title: "איך שהיא רוקדת", artist: "עדן חסון, אופק אדנק, אגם בוחבוט", year: 2026, youtubeId: "eaqW5eQXTdM" },
   { title: "כולם גנבים", artist: "אושר כהן", year: 2026, youtubeId: "INKpPFwOQLY" },
   { title: "אבי הטחול", artist: "רואי אדם", year: 2026, youtubeId: "yrlyruDX5vI" },

@@ -10,8 +10,8 @@
   var defaultHTML = btn.innerHTML;
   var resetTimer = null;
 
-  function shareText() {
-    return "🎵 בואו לשחק איתי ב\"מי מזהה את השיר?\" — משחק זיהוי שירים לקבוצות!";
+  function t(key) {
+    return (window.MuzikaLang && window.MuzikaLang.t(key)) || key;
   }
 
   function setTempLabel(html) {
@@ -30,10 +30,10 @@
 
   btn.addEventListener("click", function () {
     var url = window.location.href;
-    var text = shareText();
+    var text = t("shareText");
 
     if (navigator.share) {
-      navigator.share({ title: "מי מזהה את השיר?", text: text, url: url })
+      navigator.share({ title: t("title"), text: text, url: url })
         .catch(function () { /* המשתמש ביטל את השיתוף — לא עושים כלום */ });
       return;
     }
@@ -42,11 +42,21 @@
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(fullText).then(
-        function () { setTempLabel("<span aria-hidden=\"true\">✅</span> הקישור הועתק!"); },
+        function () { setTempLabel("<span aria-hidden=\"true\">✅</span> " + t("shareCopied")); },
         function () { openWhatsappFallback(fullText); }
       );
     } else {
       openWhatsappFallback(fullText);
     }
   });
+
+  // ---------------------------------------------------------------------
+  // API ל-lang.js: אחרי שה-DOM של הכפתור עודכן לשפה החדשה, מרעננים את
+  // ה-HTML המוגן (ל"חזרה אחרי הודעת הצלחה") כדי שלא יישאר תקוע בשפה הישנה.
+  // ---------------------------------------------------------------------
+  window.MuzikaShare = {
+    refresh: function () {
+      if (!btn.disabled) defaultHTML = btn.innerHTML;
+    }
+  };
 })();
