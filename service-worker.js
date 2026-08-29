@@ -2,7 +2,7 @@
 // Static site, no backend (same principle as sofrim-yamim): cache the app
 // shell on install, serve from cache first, fall back to network for
 // anything not pre-cached (e.g. future asset additions).
-const CACHE_NAME = "muzika-app-v3";
+const CACHE_NAME = "muzika-app-v4";
 const APP_SHELL = [
   "/",
   "/index.html",
@@ -10,6 +10,9 @@ const APP_SHELL = [
   "/i18n.js",
   "/lang.js",
   "/app.js",
+  "/musicProvider.js",
+  "/shuffleEngine.js",
+  "/analytics.js",
   "/score.js",
   "/share.js",
   "/songs/he.js",

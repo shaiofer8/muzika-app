@@ -95,9 +95,12 @@
         <span class="bar"></span>
       </div>
       <div class="track-info" aria-live="polite">
-        <div class="title" id="songTitle" dir="auto">—</div>
-        <div class="artist" id="songArtist" dir="auto">—</div>
-        <div class="year" id="songYear">—</div>
+        <p class="listening-hint" id="listeningHint" data-i18n="listeningHint">🤔 נחשו: שם השיר, האמן והשנה</p>
+        <div class="reveal-state" id="revealState" hidden>
+          <div class="title" id="songTitle" dir="auto">—</div>
+          <div class="artist" id="songArtist" dir="auto">—</div>
+          <div class="year" id="songYear">—</div>
+        </div>
       </div>
     </div>
 
@@ -105,19 +108,25 @@
     <p class="hint" data-i18n="hint">אם הניגון לא מתחיל לבד — לחצו על כפתור ההפעלה בתוך הנגן.</p>
 
     <div class="controls">
-      <button class="shuffle-btn" id="shuffleBtn" type="button">
-        <span aria-hidden="true">🔀</span> <span data-i18n="shuffleBtn">שיר הבא</span>
+      <button class="shuffle-btn" id="primaryBtn" type="button">
+        <span class="primary-icon" id="primaryIcon" aria-hidden="true">🎭</span> <span id="primaryLabel" data-i18n="revealBtn">חשיפה</span>
       </button>
       <div class="secondary-actions">
+        <button class="skip-btn" id="skipBtn" type="button">
+          <span aria-hidden="true">🔀</span> <span data-i18n="skipBtn">שיר אחר</span>
+        </button>
         <button class="share-btn" id="shareBtn" type="button">
           <span aria-hidden="true">📤</span> <span data-i18n="shareBtn">שתף עם חברים</span>
         </button>
-        <a class="yt-link" id="ytLink" href="#" target="_blank" rel="noopener" data-i18n="ytLink">פתח ביוטיוב ↗</a>
+        <a class="yt-link" id="ytLink" href="#" target="_blank" rel="noopener" hidden data-i18n="ytLink">פתח ביוטיוב ↗</a>
       </div>
     </div>
   </main>
 
   <script src="i18n.js"></script>
+  <script src="analytics.js"></script>
+  <script src="musicProvider.js"></script>
+  <script src="shuffleEngine.js"></script>
   <script src="app.js"></script>
   <script src="score.js"></script>
   <script src="share.js"></script>
