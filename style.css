@@ -730,6 +730,11 @@ body.modal-open {
   color: var(--text-muted);
 }
 
+.score-setup[hidden],
+.scoreboard[hidden] {
+  display: none;
+}
+
 .score-setup {
   display: flex;
   flex-direction: column;
