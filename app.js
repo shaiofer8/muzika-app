@@ -7,7 +7,7 @@
   var current = null;
   var pending = false;
   var songs = []; // מאגר מלא של השפה הנוכחית (לא מסונן) — מגיע מ-lang.js
-  var kidsMode = false; // מצב "ילדים" (CAP-1..CAP-4 של SPEC-kids-mode) — לא נשמר בין ביקורים, ולא מתאפס במעבר שפה
+  var newMode = false; // מצב "חדשים" (CAP-1..CAP-4 של SPEC-new-mode) — לא נשמר בין ביקורים, ולא מתאפס במעבר שפה
 
   var els = {
     title: document.getElementById("songTitle"),
@@ -17,7 +17,7 @@
     shuffle: document.getElementById("shuffleBtn"),
     ytLink: document.getElementById("ytLink"),
     trackInfo: document.querySelector(".track-info"),
-    kidsBtn: document.getElementById("kidsBtn")
+    newBtn: document.getElementById("newBtn")
   };
 
   function t(key) {
@@ -50,9 +50,9 @@
     replayPopAnimation();
 
     if (!song) {
-      var kidsEmpty = opts && opts.kidsEmpty;
-      els.title.textContent = t(kidsEmpty ? "kidsNoSongs" : "noSongs");
-      els.artist.textContent = t(kidsEmpty ? "kidsNoSongsHint" : "tryRefresh");
+      var newEmpty = opts && opts.newEmpty;
+      els.title.textContent = t(newEmpty ? "newNoSongs" : "noSongs");
+      els.artist.textContent = t(newEmpty ? "newNoSongsHint" : "tryRefresh");
       els.year.textContent = "—";
       els.frame.innerHTML = "";
       els.ytLink.hidden = true;
@@ -78,33 +78,33 @@
       encodeURIComponent(searchQuery(song));
   }
 
-  // "15 שנה אחרונות" (CAP-2 של SPEC-kids-mode) — מחושב דינמית מהשנה הנוכחית
+  // "15 שנה אחרונות" (CAP-2 של SPEC-new-mode) — מחושב דינמית מהשנה הנוכחית
   // בכל קריאה, לא קבוע בקוד, כדי שההגדרה תישאר נכונה גם בעתיד.
-  function kidsMinYear() {
+  function newMinYear() {
     return new Date().getFullYear() - 15;
   }
 
-  function filterKids(list) {
-    var minYear = kidsMinYear();
+  function filterNew(list) {
+    var minYear = newMinYear();
     return list.filter(function (s) {
       return typeof s.year === "number" && s.year >= minYear;
     });
   }
 
-  // מאגר הבחירה הפעיל: כל השירים, או רק שירי "ילדים" (15 השנים האחרונות)
+  // מאגר הבחירה הפעיל: כל השירים, או רק שירים "חדשים" (15 השנים האחרונות)
   // מתוך מאגר השפה הנוכחית, לפי מצב הכפתור.
   function activePool() {
-    return kidsMode ? filterKids(songs) : songs;
+    return newMode ? filterNew(songs) : songs;
   }
 
   function pickRandom() {
     var pool = activePool();
 
-    // פחות מ-2 שירים בטווח בזמן שמצב "ילדים" דלוק שובר את מנגנון "לא לחזור
+    // פחות מ-2 שירים בטווח בזמן שמצב "חדשים" דלוק שובר את מנגנון "לא לחזור
     // מיידית על השיר הקודם" (0 = אין מה לבחור, 1 = תמיד אותו שיר) — מוצגת
     // הודעה ברורה במקום מסך ריק/תקיעה (CAP-4).
-    if (kidsMode && pool.length < 2) {
-      render(null, { kidsEmpty: true });
+    if (newMode && pool.length < 2) {
+      render(null, { newEmpty: true });
       return;
     }
     if (pool.length === 0) {
@@ -122,10 +122,10 @@
     render(next);
   }
 
-  function updateKidsButton() {
-    if (!els.kidsBtn) return;
-    els.kidsBtn.classList.toggle("active", kidsMode);
-    els.kidsBtn.setAttribute("aria-pressed", kidsMode ? "true" : "false");
+  function updateNewButton() {
+    if (!els.newBtn) return;
+    els.newBtn.classList.toggle("active", newMode);
+    els.newBtn.setAttribute("aria-pressed", newMode ? "true" : "false");
   }
 
   els.shuffle.addEventListener("click", function () {
@@ -136,10 +136,10 @@
     window.setTimeout(function () { pending = false; }, 500);
   });
 
-  if (els.kidsBtn) {
-    els.kidsBtn.addEventListener("click", function () {
-      kidsMode = !kidsMode;
-      updateKidsButton();
+  if (els.newBtn) {
+    els.newBtn.addEventListener("click", function () {
+      newMode = !newMode;
+      updateNewButton();
       pickRandom();
     });
   }

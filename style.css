@@ -163,7 +163,7 @@ noscript {
   transition: transform 0.15s ease;
 }
 
-.kids-btn {
+.new-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -181,16 +181,16 @@ noscript {
   transition: transform 0.15s ease, border-color 0.12s ease, background 0.12s ease;
 }
 
-.kids-btn:hover {
+.new-btn:hover {
   transform: translateY(-1px);
 }
 
-.kids-btn:focus-visible {
+.new-btn:focus-visible {
   outline: 2px solid var(--accent-c);
   outline-offset: 3px;
 }
 
-.kids-btn.active {
+.new-btn.active {
   border-color: var(--accent-a);
   background: linear-gradient(135deg, var(--glow-1), var(--glow-2));
   box-shadow: 0 0 0 2px var(--glow-1) inset;
