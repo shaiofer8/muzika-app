@@ -4,6 +4,11 @@
 // שנה ברצף, רצף עשור אחד, ורצף רמת-קושי אחת — עם נפילה חינה (graceful
 // degradation, CAP-6) כשמאגר הבחירה קטן מדי בשביל לקיים את כל האילוצים.
 //
+// CAP-5 (ללא חזרה בתוך Session): בניגוד לגרסה קודמת שרק הורידה עדיפות
+// לשירים ששמעו, כאן זה חסימה קשה — שיר לעולם לא חוזר כל עוד יש שיר אחר
+// במאגר שלא נוגן ב-Session הנוכחי. רק כששמעו את כל המאגר (מחזור מלא)
+// המחזור מתחיל מחדש — ראה pick() למטה.
+//
 // עצמאי לגמרי מ-app.js/musicProvider.js — מקבל pool (מערך שירים) בכל
 // pick() ומחזיר שיר אחד; app.js אחראי על commit() בפועל אחרי שהבחירה
 // אושרה (כדי לתמוך ב"הצצה" לשיר הבא לצורך preload בלי לקבוע אותו).
@@ -36,6 +41,9 @@
   }
 
   // בודק אם song מפר אחד מהחוקים הפעילים ב-rules ביחס להיסטוריה האחרונה.
+  // (CAP-1 — "לא לחזור על השיר הרגעי" — לא נבדק כאן: הוא מובטח כבר ע"י
+  // pick() דרך רשימת "השירים שלא נוגנו עדיין", כי השיר הרגעי תמיד כבר
+  // committed ולכן כבר "נוגן".)
   function violatesRules(song, history, rules) {
     if (rules.artist) {
       var recentArtists = history.slice(-RECENT_ARTIST_LOOKBACK);
@@ -82,53 +90,36 @@
   ];
 
   function create() {
-    var history = []; // שירים שאושרו בפועל (commit), מהישן לחדש
-    var counts = [];  // [{ song, count }] — playCount בזיכרון בלבד, לפי Session (CAP-5)
-
-    function countOf(song) {
-      for (var i = 0; i < counts.length; i++) {
-        if (counts[i].song === song) return counts[i].count;
-      }
-      return 0;
-    }
-
-    function bumpCount(song) {
-      for (var i = 0; i < counts.length; i++) {
-        if (counts[i].song === song) { counts[i].count += 1; return; }
-      }
-      counts.push({ song: song, count: 1 });
-    }
-
-    // בין כמה מועמדים שווי-זכאות, מעדיף את אלו עם הכי מעט השמעות בסשן
-    // הנוכחי (CAP-5) — לא חוסם שיר שכבר נוגן, רק מוריד לו עדיפות.
-    function pickLeastPlayed(candidates) {
-      var minCount = Infinity;
-      for (var i = 0; i < candidates.length; i++) {
-        var c = countOf(candidates[i]);
-        if (c < minCount) minCount = c;
-      }
-      var pool = candidates.filter(function (s) { return countOf(s) === minCount; });
-      return pool[Math.floor(Math.random() * pool.length)];
-    }
+    var history = []; // כל השירים שאושרו בפועל (commit) מתחילת ה-Session, מהישן לחדש — לצורך אילוצי הגיוון הרך בלבד
+    var played = new Set(); // אילו שירים מהמחזור הנוכחי כבר נוגנו — זו החסימה הקשה של CAP-5
 
     function pick(pool) {
       if (!pool || !pool.length) return null;
-      if (pool.length === 1) return pool[0];
 
-      var last = history.length ? history[history.length - 1] : null;
+      var unplayed = pool.filter(function (song) { return !played.has(song); });
+
+      // כל שירי המאגר הנוכחי כבר נוגנו במחזור הזה — מחזור מלא הסתיים.
+      // מתחילים מחזור חדש (איפוס played), אבל עדיין לא מרשים לחזור מיידית
+      // על השיר שרץ הרגע (CAP-1 נשאר בתוקף גם בגבול בין מחזורים).
+      if (!unplayed.length) {
+        played = new Set();
+        var last = history.length ? history[history.length - 1] : null;
+        unplayed = pool.filter(function (song) { return song !== last; });
+        if (!unplayed.length) unplayed = pool.slice(); // מאגר של שיר בודד — אין חלופה
+      }
+
+      if (unplayed.length === 1) return unplayed[0];
 
       for (var r = 0; r < RULE_SETS.length; r++) {
-        var candidates = pool.filter(function (song) {
-          if (song === last) return false; // CAP-1: לעולם לא חוזר על השיר הרגעי
+        var candidates = unplayed.filter(function (song) {
           return !violatesRules(song, history, RULE_SETS[r]);
         });
-        if (candidates.length) return pickLeastPlayed(candidates);
+        if (candidates.length) return candidates[Math.floor(Math.random() * candidates.length)];
       }
 
       // גיבוי אחרון (לא אמור להגיע לכאן כי RULE_SETS[last] = {} תמיד מספק
-      // תוצאה כשיש יותר משיר אחד בפול) — פשוט נמנע מהשיר הרגעי אם אפשר.
-      var fallback = pool.filter(function (s) { return s !== last; });
-      return (fallback.length ? fallback : pool)[Math.floor(Math.random() * (fallback.length || pool.length))];
+      // תוצאה) — בחירה רנדומלית מתוך מה שלא נוגן.
+      return unplayed[Math.floor(Math.random() * unplayed.length)];
     }
 
     return {
@@ -139,11 +130,11 @@
       commit: function (song) {
         if (!song) return;
         history.push(song);
-        bumpCount(song);
+        played.add(song);
       },
       reset: function () {
         history = [];
-        counts = [];
+        played = new Set();
       }
     };
   }
