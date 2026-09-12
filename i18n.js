@@ -39,7 +39,7 @@
       teamNamePrefix: "קבוצה", teamNameAriaPrefix: "שם קבוצה",
       teamMinusAriaPrefix: "הורדת נקודה מקבוצה", teamPlusAriaPrefix: "הוספת נקודה לקבוצה",
       shareText: "🎵 בואו לשחק איתי ב\"מי מזהה את השיר?\" — משחק זיהוי שירים לקבוצות!",
-      shareCopied: "הקישור הועתק!", langModalTitle: "בחירת שפה", newBtnAria: "מצב חדשים",
+      shareCopied: "הקישור הועתק!", langModalTitle: "בחירת שפה", newBtnAria: "מצב ילדים", newBtnLabel: "ילדים",
       noscript: "הדף הזה זקוק ל-JavaScript כדי לבחור ולנגן שירים. אנא הפעילו JavaScript בדפדפן.",
     },
     en: {
@@ -58,7 +58,7 @@
       teamNamePrefix: "Team", teamNameAriaPrefix: "Team name",
       teamMinusAriaPrefix: "Remove a point from team", teamPlusAriaPrefix: "Add a point to team",
       shareText: "🎵 Come play \"Who Knows That Song?\" with me — a song-guessing game for groups!",
-      shareCopied: "Link copied!", langModalTitle: "Choose language", newBtnAria: "New mode",
+      shareCopied: "Link copied!", langModalTitle: "Choose language", newBtnAria: "Kids mode", newBtnLabel: "Kids",
       noscript: "This page needs JavaScript to pick and play songs. Please enable JavaScript in your browser.",
     },
     es: {
@@ -77,7 +77,7 @@
       teamNamePrefix: "Equipo", teamNameAriaPrefix: "Nombre del equipo",
       teamMinusAriaPrefix: "Quitar un punto al equipo", teamPlusAriaPrefix: "Añadir un punto al equipo",
       shareText: "🎵 ¡Ven a jugar \"¿Quién Adivina la Canción?\" conmigo — un juego de adivinar canciones en grupo!",
-      shareCopied: "¡Enlace copiado!", langModalTitle: "Elegir idioma", newBtnAria: "Modo nuevo",
+      shareCopied: "¡Enlace copiado!", langModalTitle: "Elegir idioma", newBtnAria: "Modo niños", newBtnLabel: "Niños",
       noscript: "Esta página necesita JavaScript para elegir y reproducir canciones. Por favor, activa JavaScript en tu navegador.",
     },
     ar: {
@@ -96,7 +96,7 @@
       teamNamePrefix: "فريق", teamNameAriaPrefix: "اسم الفريق",
       teamMinusAriaPrefix: "إنقاص نقطة من الفريق", teamPlusAriaPrefix: "إضافة نقطة للفريق",
       shareText: "🎵 تعالوا العبوا معي \"من يعرف الأغنية؟\" — لعبة تخمين الأغاني للمجموعات!",
-      shareCopied: "تم نسخ الرابط!", langModalTitle: "اختيار اللغة", newBtnAria: "الوضع الجديد",
+      shareCopied: "تم نسخ الرابط!", langModalTitle: "اختيار اللغة", newBtnAria: "وضع الأطفال", newBtnLabel: "أطفال",
       noscript: "تحتاج هذه الصفحة إلى JavaScript لاختيار الأغاني وتشغيلها. يرجى تفعيل JavaScript في متصفحك.",
     },
     ru: {
@@ -115,7 +115,7 @@
       teamNamePrefix: "Команда", teamNameAriaPrefix: "Название команды",
       teamMinusAriaPrefix: "Убрать очко у команды", teamPlusAriaPrefix: "Добавить очко команде",
       shareText: "🎵 Присоединяйтесь к игре «Кто угадает песню?» — игра на угадывание песен для компании!",
-      shareCopied: "Ссылка скопирована!", langModalTitle: "Выбор языка", newBtnAria: "Режим новинок",
+      shareCopied: "Ссылка скопирована!", langModalTitle: "Выбор языка", newBtnAria: "Детский режим", newBtnLabel: "Дети",
       noscript: "Для выбора и воспроизведения песен этой странице нужен JavaScript. Пожалуйста, включите JavaScript в браузере.",
     },
     fr: {
@@ -134,7 +134,7 @@
       teamNamePrefix: "Équipe", teamNameAriaPrefix: "Nom de l'équipe",
       teamMinusAriaPrefix: "Retirer un point à l'équipe", teamPlusAriaPrefix: "Ajouter un point à l'équipe",
       shareText: "🎵 Venez jouer avec moi à « Qui reconnaît la chanson ? » — un jeu de reconnaissance musicale entre amis !",
-      shareCopied: "Lien copié !", langModalTitle: "Choisir la langue", newBtnAria: "Mode nouveautés",
+      shareCopied: "Lien copié !", langModalTitle: "Choisir la langue", newBtnAria: "Mode enfants", newBtnLabel: "Enfants",
       noscript: "Cette page a besoin de JavaScript pour choisir et lire les chansons. Veuillez activer JavaScript dans votre navigateur.",
     },
     pt: {
@@ -153,7 +153,7 @@
       teamNamePrefix: "Equipe", teamNameAriaPrefix: "Nome da equipe",
       teamMinusAriaPrefix: "Remover um ponto da equipe", teamPlusAriaPrefix: "Adicionar um ponto à equipe",
       shareText: "🎵 Venha jogar \"Quem Reconhece a Música?\" comigo — um jogo de adivinhar músicas em grupo!",
-      shareCopied: "Link copiado!", langModalTitle: "Escolher idioma", newBtnAria: "Modo novidades",
+      shareCopied: "Link copiado!", langModalTitle: "Escolher idioma", newBtnAria: "Modo crianças", newBtnLabel: "Crianças",
       noscript: "Esta página precisa de JavaScript para escolher e tocar músicas. Ative o JavaScript no seu navegador.",
     },
     de: {
@@ -172,7 +172,7 @@
       teamNamePrefix: "Team", teamNameAriaPrefix: "Teamname",
       teamMinusAriaPrefix: "Einen Punkt abziehen bei Team", teamPlusAriaPrefix: "Einen Punkt hinzufügen bei Team",
       shareText: "🎵 Spiel mit mir \"Wer kennt den Song?\" — ein Song-Ratespiel für Gruppen!",
-      shareCopied: "Link kopiert!", langModalTitle: "Sprache wählen", newBtnAria: "Neuheiten-Modus",
+      shareCopied: "Link kopiert!", langModalTitle: "Sprache wählen", newBtnAria: "Kinder-Modus", newBtnLabel: "Kinder",
       noscript: "Diese Seite benötigt JavaScript, um Songs auszuwählen und abzuspielen. Bitte aktiviere JavaScript in deinem Browser.",
     },
     it: {
@@ -191,7 +191,7 @@
       teamNamePrefix: "Squadra", teamNameAriaPrefix: "Nome squadra",
       teamMinusAriaPrefix: "Togli un punto alla squadra", teamPlusAriaPrefix: "Aggiungi un punto alla squadra",
       shareText: "🎵 Vieni a giocare con me a \"Chi Riconosce la Canzone?\" — un gioco per indovinare canzoni in gruppo!",
-      shareCopied: "Link copiato!", langModalTitle: "Scegli lingua", newBtnAria: "Modalità novità",
+      shareCopied: "Link copiato!", langModalTitle: "Scegli lingua", newBtnAria: "Modalità bambini", newBtnLabel: "Bambini",
       noscript: "Questa pagina richiede JavaScript per scegliere e riprodurre le canzoni. Attiva JavaScript nel tuo browser.",
     },
     tr: {
@@ -210,7 +210,7 @@
       teamNamePrefix: "Takım", teamNameAriaPrefix: "Takım adı",
       teamMinusAriaPrefix: "Takımdan bir puan çıkar", teamPlusAriaPrefix: "Takıma bir puan ekle",
       shareText: "🎵 Benimle \"Şarkıyı Kim Bilecek?\" oynamaya gel — gruplar için şarkı tahmin oyunu!",
-      shareCopied: "Bağlantı kopyalandı!", langModalTitle: "Dil seçin", newBtnAria: "Yeni modu",
+      shareCopied: "Bağlantı kopyalandı!", langModalTitle: "Dil seçin", newBtnAria: "Çocuk modu", newBtnLabel: "Çocuklar",
       noscript: "Bu sayfanın şarkı seçip çalabilmesi için JavaScript gerekir. Lütfen tarayıcınızda JavaScript'i etkinleştirin.",
     },
     zh: {
@@ -229,7 +229,7 @@
       teamNamePrefix: "小组", teamNameAriaPrefix: "小组名称",
       teamMinusAriaPrefix: "减少一分给小组", teamPlusAriaPrefix: "增加一分给小组",
       shareText: "🎵 一起来玩「谁知道这首歌？」——一个适合多人的猜歌游戏！",
-      shareCopied: "链接已复制！", langModalTitle: "选择语言", newBtnAria: "最新模式",
+      shareCopied: "链接已复制！", langModalTitle: "选择语言", newBtnAria: "儿童模式", newBtnLabel: "儿童",
       noscript: "此页面需要JavaScript才能选择和播放歌曲。请在浏览器中启用JavaScript。",
     },
     hi: {
@@ -248,7 +248,7 @@
       teamNamePrefix: "टीम", teamNameAriaPrefix: "टीम का नाम",
       teamMinusAriaPrefix: "टीम से एक अंक घटाएं", teamPlusAriaPrefix: "टीम में एक अंक जोड़ें",
       shareText: "🎵 मेरे साथ \"गाना कौन पहचानेगा?\" खेलने आइए — दोस्तों के लिए गाना पहचानने का खेल!",
-      shareCopied: "लिंक कॉपी हो गया!", langModalTitle: "भाषा चुनें", newBtnAria: "नया मोड",
+      shareCopied: "लिंक कॉपी हो गया!", langModalTitle: "भाषा चुनें", newBtnAria: "बच्चों का मोड", newBtnLabel: "बच्चे",
       noscript: "गाने चुनने और चलाने के लिए इस पेज को JavaScript चाहिए। कृपया अपने ब्राउज़र में JavaScript सक्षम करें।",
     },
     ja: {
@@ -267,7 +267,7 @@
       teamNamePrefix: "チーム", teamNameAriaPrefix: "チーム名",
       teamMinusAriaPrefix: "チームから1点減らす", teamPlusAriaPrefix: "チームに1点追加",
       shareText: "🎵 「この曲、誰がわかる？」を一緒に遊ぼう — みんなで楽しむ曲当てゲーム！",
-      shareCopied: "リンクをコピーしました！", langModalTitle: "言語を選択", newBtnAria: "新着モード",
+      shareCopied: "リンクをコピーしました！", langModalTitle: "言語を選択", newBtnAria: "子どもモード", newBtnLabel: "子ども",
       noscript: "このページで曲を選んで再生するにはJavaScriptが必要です。ブラウザでJavaScriptを有効にしてください。",
     },
     ko: {
@@ -286,7 +286,7 @@
       teamNamePrefix: "팀", teamNameAriaPrefix: "팀 이름",
       teamMinusAriaPrefix: "팀 점수 1점 감소", teamPlusAriaPrefix: "팀 점수 1점 추가",
       shareText: "🎵 저와 함께 \"이 노래 누가 맞출까?\" 해요 — 다같이 즐기는 노래 맞히기 게임!",
-      shareCopied: "링크가 복사되었습니다!", langModalTitle: "언어 선택", newBtnAria: "최신 모드",
+      shareCopied: "링크가 복사되었습니다!", langModalTitle: "언어 선택", newBtnAria: "어린이 모드", newBtnLabel: "어린이",
       noscript: "이 페이지에서 노래를 선택하고 재생하려면 JavaScript가 필요합니다. 브라우저에서 JavaScript를 활성화해주세요.",
     },
     vi: {
@@ -305,7 +305,7 @@
       teamNamePrefix: "Đội", teamNameAriaPrefix: "Tên đội",
       teamMinusAriaPrefix: "Trừ một điểm của đội", teamPlusAriaPrefix: "Cộng một điểm cho đội",
       shareText: "🎵 Cùng chơi \"Ai Đoán Được Bài Hát?\" với mình — trò chơi đoán bài hát dành cho nhóm!",
-      shareCopied: "Đã sao chép liên kết!", langModalTitle: "Chọn ngôn ngữ", newBtnAria: "Chế độ mới",
+      shareCopied: "Đã sao chép liên kết!", langModalTitle: "Chọn ngôn ngữ", newBtnAria: "Chế độ trẻ em", newBtnLabel: "Trẻ em",
       noscript: "Trang này cần JavaScript để chọn và phát bài hát. Vui lòng bật JavaScript trong trình duyệt của bạn.",
     },
   };

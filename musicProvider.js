@@ -58,6 +58,27 @@
     var container = null;
     var frameEl = null;
     var mounted = false; // true בין play() ל-stop(), גם אם ה-iframe עצמו עוד בטעינה
+    var errorListenerAdded = false;
+
+    // מאזין פעם אחת לאירועי onError מ-YouTube IFrame API (enablejsapi=1).
+    // קודי שגיאה רלוונטיים: 100 = סרטון לא קיים/הוסר, 101/150 = הטמעה חסומה
+    // ע"י בעל הסרטון. כאשר מגיעה שגיאה כזו, מרים אירוע "muzika:videoUnavailable"
+    // ו-app.js יעבור אוטומטית לשיר הבא.
+    function ensureErrorListener() {
+      if (errorListenerAdded) return;
+      errorListenerAdded = true;
+      window.addEventListener("message", function (evt) {
+        if (!frameEl || typeof evt.data !== "string") return;
+        // וידוא שהמסר מגיע מה-iframe שלנו ולא ממקור אחר בדף
+        if (evt.source !== frameEl.contentWindow) return;
+        var data;
+        try { data = JSON.parse(evt.data); } catch (e) { return; }
+        if (data && data.event === "onError" &&
+            (data.info === 100 || data.info === 101 || data.info === 150)) {
+          window.dispatchEvent(new CustomEvent("muzika:videoUnavailable"));
+        }
+      }, false);
+    }
 
     return {
       name: "youtube",
@@ -72,6 +93,7 @@
       // (spec-reveal-flow CAP-1) — updateTitle() מחליף אותו אחרי חשיפה.
       play: function (song, opts) {
         if (!container) return;
+        ensureErrorListener();
         container.innerHTML = "";
         var iframe = document.createElement("iframe");
         iframe.src = embedSrc(song);

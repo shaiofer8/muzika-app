@@ -220,10 +220,18 @@
     els.newBtn.addEventListener("click", function () {
       newMode = !newMode;
       updateNewButton();
-      track("young_mode_used", { enabled: newMode });
+      track("kids_mode_used", { enabled: newMode });
       pickAndPlay();
     });
   }
+
+  // זיהוי שגיאת YouTube "סרטון לא זמין להטמעה" (קוד 150/101/100) — קפיצה
+  // אוטומטית לשיר הבא בלי שהמשתמש יצטרך ללחוץ כלום.
+  window.addEventListener("muzika:videoUnavailable", function () {
+    if (!current) return;
+    track("video_unavailable", { youtubeId: current.youtubeId || "" });
+    pickAndPlay();
+  });
 
   // ---------------------------------------------------------------------
   // API ל-lang.js: קריאה עם מאגר שירים חדש (טעינה ראשונה או החלפת שפה).
