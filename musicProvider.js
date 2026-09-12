@@ -23,8 +23,8 @@
   function embedSrc(song) {
     var id = trackId(song);
     if (id) {
-      // enablejsapi=1 מאפשר שליטת postMessage בסיסית (pause/resume) בלי
-      // לטעון את סקריפט ה-IFrame API המלא — מספיק לצרכי הממשק כאן.
+      // enablejsapi=1 מאפשר תקשורת postMessage עם YouTube IFrame API —
+      // בלי לטעון את סקריפט ה-API המלא. נדרש כדי לקבל onError / onStateChange.
       return "https://www.youtube.com/embed/" + encodeURIComponent(id) +
         "?autoplay=1&rel=0&enablejsapi=1";
     }
@@ -39,6 +39,14 @@
         JSON.stringify({ event: "command", func: func, args: [] }), "*"
       );
     } catch (e) { /* לא קריטי — הנגן פשוט ימשיך במצבו הנוכחי */ }
+  }
+
+  // שולח ל-YouTube הודעת "listening" כך שיתחיל לשדר events (onError, onStateChange).
+  // חייב להיקרא רק לאחר שה-iframe עלה (onload) — לפני כן contentWindow עדיין לא קיים.
+  function sendListening(iframe) {
+    try {
+      iframe.contentWindow.postMessage(JSON.stringify({ event: "listening" }), "*");
+    } catch (e) {}
   }
 
   var preconnected = false;
@@ -57,25 +65,63 @@
   function createYouTubeProvider() {
     var container = null;
     var frameEl = null;
-    var mounted = false; // true בין play() ל-stop(), גם אם ה-iframe עצמו עוד בטעינה
-    var errorListenerAdded = false;
+    var mounted = false;   // true בין play() ל-stop()
+    var isPlaying = false; // true כשקיבלנו onStateChange:1 (ניגון התחיל)
+    var fallbackTimer = null;
+    var currentSong = null;
 
-    // מאזין פעם אחת לאירועי onError מ-YouTube IFrame API (enablejsapi=1).
-    // קודי שגיאה רלוונטיים: 100 = סרטון לא קיים/הוסר, 101/150 = הטמעה חסומה
-    // ע"י בעל הסרטון. כאשר מגיעה שגיאה כזו, מרים אירוע "muzika:videoUnavailable"
-    // ו-app.js יעבור אוטומטית לשיר הבא.
-    function ensureErrorListener() {
-      if (errorListenerAdded) return;
-      errorListenerAdded = true;
+    // FALLBACK_MS: אם ה-iframe נטען אך הניגון לא התחיל תוך זמן זה,
+    // עוברים ל-search mode לאותו שיר (במקום הסרטון הספציפי).
+    // 10 שניות מספיק גם לרשת איטית, אך לא גורם לעיכוב מורגש.
+    var FALLBACK_MS = 10000;
+
+    function clearFallbackTimer() {
+      if (fallbackTimer) { clearTimeout(fallbackTimer); fallbackTimer = null; }
+    }
+
+    // fallback: מנסה לטעון את אותו שיר דרך חיפוש (ולא ID ישיר).
+    // רלוונטי רק כשנטענו עם ID ישיר וה-timeout פג בלי שהניגון התחיל.
+    function trySearchFallback(song) {
+      if (!container || !mounted) return;
+      var songWithoutId = { title: song.title, artist: song.artist, year: song.year };
+      container.innerHTML = "";
+      var iframe = document.createElement("iframe");
+      iframe.src = embedSrc(songWithoutId); // ← בלי youtubeId = נפנה לחיפוש
+      iframe.title = "שיר מתנגן";
+      iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+      iframe.setAttribute("allowfullscreen", "");
+      iframe.setAttribute("loading", "lazy");
+      container.appendChild(iframe);
+      frameEl = iframe;
+      // לא מוסיפים טיימר נוסף על ה-fallback עצמו — search mode פחות סביר לכשל
+    }
+
+    // מאזין גלובלי יחיד לאירועי YouTube IFrame API.
+    // בודקים evt.origin (ולא evt.source!) — השוואת source לא אמינה ב-cross-origin.
+    var listenerAdded = false;
+    function ensureListener() {
+      if (listenerAdded) return;
+      listenerAdded = true;
       window.addEventListener("message", function (evt) {
+        // פילטר: רק הודעות מיוטיוב
+        if (!evt.origin || evt.origin.indexOf("youtube.com") < 0) return;
         if (!frameEl || typeof evt.data !== "string") return;
-        // וידוא שהמסר מגיע מה-iframe שלנו ולא ממקור אחר בדף
-        if (evt.source !== frameEl.contentWindow) return;
         var data;
         try { data = JSON.parse(evt.data); } catch (e) { return; }
-        if (data && data.event === "onError" &&
-            (data.info === 100 || data.info === 101 || data.info === 150)) {
-          window.dispatchEvent(new CustomEvent("muzika:videoUnavailable"));
+        if (!data) return;
+
+        if (data.event === "onStateChange") {
+          if (data.info === 1) {
+            // ניגון התחיל — מבטלים fallback timer
+            isPlaying = true;
+            clearFallbackTimer();
+          }
+        } else if (data.event === "onError") {
+          // 100 = סרטון לא קיים/הוסר, 101/150 = הטמעה חסומה ע"י הבעלים
+          if (data.info === 100 || data.info === 101 || data.info === 150) {
+            clearFallbackTimer();
+            window.dispatchEvent(new CustomEvent("muzika:videoUnavailable"));
+          }
         }
       }, false);
     }
@@ -93,7 +139,10 @@
       // (spec-reveal-flow CAP-1) — updateTitle() מחליף אותו אחרי חשיפה.
       play: function (song, opts) {
         if (!container) return;
-        ensureErrorListener();
+        ensureListener();
+        clearFallbackTimer();
+        isPlaying = false;
+        currentSong = song;
         container.innerHTML = "";
         var iframe = document.createElement("iframe");
         iframe.src = embedSrc(song);
@@ -101,6 +150,23 @@
         iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
         iframe.setAttribute("allowfullscreen", "");
         iframe.setAttribute("loading", "lazy");
+
+        // לאחר שה-iframe עלה: (1) שלח "listening" ליוטיוב כדי לקבל events,
+        // (2) הפעל טיימר — אם הניגון לא התחיל תוך FALLBACK_MS, עבור ל-search mode.
+        var capturedSong = song;
+        iframe.addEventListener("load", function () {
+          sendListening(iframe);
+          if (trackId(capturedSong)) { // רק אם נטענו עם ID ישיר (לא search)
+            clearFallbackTimer();
+            fallbackTimer = setTimeout(function () {
+              fallbackTimer = null;
+              if (!isPlaying && mounted && frameEl === iframe) {
+                trySearchFallback(capturedSong);
+              }
+            }, FALLBACK_MS);
+          }
+        });
+
         container.appendChild(iframe);
         frameEl = iframe;
         mounted = true;
@@ -114,9 +180,12 @@
       resume: function () { postCommand(frameEl, "playVideo"); },
 
       stop: function () {
+        clearFallbackTimer();
         if (container) container.innerHTML = "";
         frameEl = null;
         mounted = false;
+        isPlaying = false;
+        currentSong = null;
       },
 
       // preload: אין דרך אמיתית "לטעון מראש" iframe של YouTube בלי להריץ
@@ -131,10 +200,8 @@
         img.src = "https://i.ytimg.com/vi/" + encodeURIComponent(id) + "/hqdefault.jpg";
       },
 
-      // best-effort בלבד — אין ערוץ postMessage נכנס (onStateChange) מוטמע
-      // כאן, רק מה שאנחנו יודעים מקומית (יש/אין iframe מורכב כרגע).
       getPlaybackState: function () {
-        return mounted ? "playing" : "stopped";
+        return (mounted && isPlaying) ? "playing" : mounted ? "loading" : "stopped";
       }
     };
   }
