@@ -93,7 +93,13 @@
       iframe.setAttribute("loading", "lazy");
       container.appendChild(iframe);
       frameEl = iframe;
-      // לא מוסיפים טיימר נוסף על ה-fallback עצמו — search mode פחות סביר לכשל
+      iframe.addEventListener("load", function () { sendListening(iframe); });
+      fallbackTimer = setTimeout(function () {
+        fallbackTimer = null;
+        if (!isPlaying && mounted && frameEl === iframe) {
+          window.dispatchEvent(new CustomEvent("muzika:videoUnavailable"));
+        }
+      }, FALLBACK_MS);
     }
 
     // מאזין גלובלי יחיד לאירועי YouTube IFrame API.
