@@ -71,9 +71,14 @@
     }
   }
 
+  function onlyVerifiedForHebrew(code, list) {
+    if (!list || code !== "he") return list;
+    return list.filter(function (s) { return !!s.youtubeId; });
+  }
+
   function loadSongs(code, cb) {
     if (window.SONGS_BY_LANG && window.SONGS_BY_LANG[code]) {
-      cb(window.SONGS_BY_LANG[code]);
+      cb(onlyVerifiedForHebrew(code, window.SONGS_BY_LANG[code]));
       return;
     }
     if (loading[code]) {
@@ -89,7 +94,7 @@
       for (var i = 0; i < callbacks.length; i++) callbacks[i](result);
     }
     script.onload = function () {
-      done((window.SONGS_BY_LANG && window.SONGS_BY_LANG[code]) || null);
+      done(onlyVerifiedForHebrew(code, (window.SONGS_BY_LANG && window.SONGS_BY_LANG[code]) || null));
     };
     script.onerror = function () {
       done(null);
