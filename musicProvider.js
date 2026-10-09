@@ -70,36 +70,11 @@
     var fallbackTimer = null;
     var currentSong = null;
 
-    // FALLBACK_MS: אם ה-iframe נטען אך הניגון לא התחיל תוך זמן זה,
-    // עוברים ל-search mode לאותו שיר (במקום הסרטון הספציפי).
-    // 10 שניות מספיק גם לרשת איטית, אך לא גורם לעיכוב מורגש.
-    var FALLBACK_MS = 10000;
+    // אם הניגון לא התחיל תוך זמן זה, מדלגים אוטומטית לשיר הבא.
+    var FALLBACK_MS = 3000;
 
     function clearFallbackTimer() {
       if (fallbackTimer) { clearTimeout(fallbackTimer); fallbackTimer = null; }
-    }
-
-    // fallback: מנסה לטעון את אותו שיר דרך חיפוש (ולא ID ישיר).
-    // רלוונטי רק כשנטענו עם ID ישיר וה-timeout פג בלי שהניגון התחיל.
-    function trySearchFallback(song) {
-      if (!container || !mounted) return;
-      var songWithoutId = { title: song.title, artist: song.artist, year: song.year };
-      container.innerHTML = "";
-      var iframe = document.createElement("iframe");
-      iframe.src = embedSrc(songWithoutId); // ← בלי youtubeId = נפנה לחיפוש
-      iframe.title = "שיר מתנגן";
-      iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
-      iframe.setAttribute("allowfullscreen", "");
-      iframe.setAttribute("loading", "lazy");
-      container.appendChild(iframe);
-      frameEl = iframe;
-      iframe.addEventListener("load", function () { sendListening(iframe); });
-      fallbackTimer = setTimeout(function () {
-        fallbackTimer = null;
-        if (!isPlaying && mounted && frameEl === iframe) {
-          window.dispatchEvent(new CustomEvent("muzika:videoUnavailable"));
-        }
-      }, FALLBACK_MS);
     }
 
     // מאזין גלובלי יחיד לאירועי YouTube IFrame API.
@@ -157,20 +132,17 @@
         iframe.setAttribute("allowfullscreen", "");
         iframe.setAttribute("loading", "lazy");
 
-        // לאחר שה-iframe עלה: (1) שלח "listening" ליוטיוב כדי לקבל events,
-        // (2) הפעל טיימר — אם הניגון לא התחיל תוך FALLBACK_MS, עבור ל-search mode.
-        var capturedSong = song;
+        // לאחר שה-iframe עלה: שלח "listening" ליוטיוב כדי לקבל events, והפעל טיימר
+        // שמדלג לשיר הבא אם הניגון לא התחיל תוך FALLBACK_MS.
         iframe.addEventListener("load", function () {
           sendListening(iframe);
-          if (trackId(capturedSong)) { // רק אם נטענו עם ID ישיר (לא search)
-            clearFallbackTimer();
-            fallbackTimer = setTimeout(function () {
-              fallbackTimer = null;
-              if (!isPlaying && mounted && frameEl === iframe) {
-                trySearchFallback(capturedSong);
-              }
-            }, FALLBACK_MS);
-          }
+          clearFallbackTimer();
+          fallbackTimer = setTimeout(function () {
+            fallbackTimer = null;
+            if (!isPlaying && mounted && frameEl === iframe) {
+              window.dispatchEvent(new CustomEvent("muzika:videoUnavailable"));
+            }
+          }, FALLBACK_MS);
         });
 
         container.appendChild(iframe);
