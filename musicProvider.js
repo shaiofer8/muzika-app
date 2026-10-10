@@ -70,9 +70,6 @@
     var fallbackTimer = null;
     var currentSong = null;
 
-    // אם הניגון לא התחיל תוך זמן זה, מדלגים אוטומטית לשיר הבא.
-    var FALLBACK_MS = 4000;
-
     function clearFallbackTimer() {
       if (fallbackTimer) { clearTimeout(fallbackTimer); fallbackTimer = null; }
     }
@@ -136,13 +133,6 @@
         // שמדלג לשיר הבא אם הניגון לא התחיל תוך FALLBACK_MS.
         iframe.addEventListener("load", function () {
           sendListening(iframe);
-          clearFallbackTimer();
-          fallbackTimer = setTimeout(function () {
-            fallbackTimer = null;
-            if (!isPlaying && mounted && frameEl === iframe) {
-              window.dispatchEvent(new CustomEvent("muzika:videoUnavailable"));
-            }
-          }, FALLBACK_MS);
         });
 
         container.appendChild(iframe);
