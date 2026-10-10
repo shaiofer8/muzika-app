@@ -73,7 +73,7 @@
 
   function onlyVerifiedForHebrew(code, list) {
     if (!list || code !== "he") return list;
-    return list.filter(function (s) { return !!s.youtubeId; });
+    return list.filter(function (s) { return !!s.youtubeId && s.status !== "disabled"; });
   }
 
   function loadSongs(code, cb) {

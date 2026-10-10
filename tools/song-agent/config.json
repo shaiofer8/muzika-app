@@ -1,0 +1,10 @@
+{
+  "languages": {
+    "he": { "file": "songs/he.js", "region": "IL" },
+    "en": { "file": "songs/en.js", "region": "US" }
+  },
+  "searchPerDay": 90,
+  "eraWeights": { "recent": 0.4, "mid": 0.3, "early": 0.2, "old": 0.1 },
+  "trendsPerWeek": 5,
+  "trendDay": 1
+}

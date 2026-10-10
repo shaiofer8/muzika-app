@@ -18,7 +18,7 @@ window.SONGS_BY_LANG.en = [
   { title: "Hound Dog", artist: "Elvis Presley", year: 1956 },
   { title: "I Will Always Love You", artist: "Whitney Houston", year: 1992 },
   { title: "I Wanna Dance with Somebody", artist: "Whitney Houston", year: 1987 },
-  { title: "Rolling in the Deep", artist: "Adele", year: 2010 },
+  { title: "Rolling in the Deep", artist: "Adele", year: 2010, youtubeId: "rYEDA3JcQqw" },
   { title: "Someone Like You", artist: "Adele", year: 2011 },
   { title: "Hello", artist: "Adele", year: 2015 },
   { title: "Shape of You", artist: "Ed Sheeran", year: 2017 },
