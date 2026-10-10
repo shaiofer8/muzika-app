@@ -130,7 +130,6 @@
         iframe.setAttribute("loading", "lazy");
 
         // לאחר שה-iframe עלה: שלח "listening" ליוטיוב כדי לקבל events, והפעל טיימר
-        // שמדלג לשיר הבא אם הניגון לא התחיל תוך FALLBACK_MS.
         iframe.addEventListener("load", function () {
           sendListening(iframe);
         });
