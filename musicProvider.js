@@ -71,7 +71,7 @@
     var currentSong = null;
 
     // אם הניגון לא התחיל תוך זמן זה, מדלגים אוטומטית לשיר הבא.
-    var FALLBACK_MS = 12000;
+    var FALLBACK_MS = 4000;
 
     function clearFallbackTimer() {
       if (fallbackTimer) { clearTimeout(fallbackTimer); fallbackTimer = null; }
