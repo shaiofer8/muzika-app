@@ -129,7 +129,7 @@
         iframe.setAttribute("allowfullscreen", "");
         iframe.setAttribute("loading", "lazy");
 
-        // לאחר שה-iframe עלה: שלח "listening" ליוטיוב כדי לקבל events, והפעל טיימר
+        // לאחר שה-iframe עלה: שלח "listening" ליוטיוב כדי לקבל events
         iframe.addEventListener("load", function () {
           sendListening(iframe);
         });
