@@ -79,6 +79,10 @@
   // ---------------------------------------------------------------------
   // ניגון בפועל דרך ה-Provider + preload לשיר הבא הצפוי.
   // ---------------------------------------------------------------------
+  window.addEventListener("muzika:playing", function () {
+    track("song_started", { language: window.MuzikaLang && window.MuzikaLang.get() });
+  });
+
   function playSong(song) {
     current = song;
     if (provider) provider.play(song);
@@ -86,7 +90,6 @@
       encodeURIComponent(song.artist + " " + song.title);
     showRevealed(song);
     updatePrimaryButton();
-    track("song_started", { language: window.MuzikaLang && window.MuzikaLang.get() });
     preloadNext();
   }
 
@@ -202,7 +205,7 @@
     pendingNext = null;
     if (!gameStarted) {
       gameStarted = true;
-      track("game_started");
+      track("game_session_started");
     }
     if (opts && opts.silent) return; // lang.js יזום showError בעצמו
     pickAndPlay();

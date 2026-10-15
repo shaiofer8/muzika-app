@@ -90,9 +90,9 @@
 
         if (data.event === "onStateChange") {
           if (data.info === 1) {
-            // ניגון התחיל — מבטלים fallback timer
             isPlaying = true;
             clearFallbackTimer();
+            window.dispatchEvent(new CustomEvent("muzika:playing"));
           }
         } else if (data.event === "onError") {
           // 100 = סרטון לא קיים/הוסר, 101/150 = הטמעה חסומה ע"י הבעלים

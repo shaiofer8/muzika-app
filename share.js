@@ -10,6 +10,10 @@
   var defaultHTML = btn.innerHTML;
   var resetTimer = null;
 
+  function track(name, params) {
+    if (window.MuzikaAnalytics) window.MuzikaAnalytics.track(name, params);
+  }
+
   function t(key) {
     return (window.MuzikaLang && window.MuzikaLang.t(key)) || key;
   }
@@ -32,8 +36,11 @@
     var url = window.location.href;
     var text = t("shareText");
 
+    track("share_clicked");
+
     if (navigator.share) {
       navigator.share({ title: t("title"), text: text, url: url })
+        .then(function () { track("share_completed", { method: "native" }); })
         .catch(function () { /* המשתמש ביטל את השיתוף — לא עושים כלום */ });
       return;
     }
