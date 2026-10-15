@@ -12,7 +12,6 @@
 
   var current = null;     // השיר שמנוגן כרגע (null גם במסך שגיאה/ריק)
   var pendingNext = null; // "הצצה" לשיר הבא, מחושבת מראש לצורך preload — לא committed עדיין
-  var revealed = false;   // false = שלב האזנה/ניחוש (spec-reveal-flow CAP-1), true = אחרי חשיפה
   var pending = false;    // מגן מפני לחיצות-בזק על הכפתור הראשי/שיר-אחר
   var songs = [];         // מאגר מלא של השפה הנוכחית (לא מסונן) — מגיע מ-lang.js
   var newMode = false;    // מצב "חדשים" — לא נשמר בין ביקורים, ולא מתאפס במעבר שפה
@@ -23,13 +22,11 @@
     artist: document.getElementById("songArtist"),
     year: document.getElementById("songYear"),
     frame: document.getElementById("videoFrame"),
-    listeningHint: document.getElementById("listeningHint"),
     revealState: document.getElementById("revealState"),
     trackInfo: document.querySelector(".track-info"),
     primaryBtn: document.getElementById("primaryBtn"),
     primaryIcon: document.getElementById("primaryIcon"),
     primaryLabel: document.getElementById("primaryLabel"),
-    skipBtn: document.getElementById("skipBtn"),
     ytLink: document.getElementById("ytLink"),
     newBtn: document.getElementById("newBtn")
   };
@@ -56,18 +53,10 @@
   // ---------------------------------------------------------------------
   // שלושת מצבי התצוגה: האזנה (לפני חשיפה) / חשיפה / הודעת שגיאה-ריק.
   // ---------------------------------------------------------------------
-  function showListening() {
-    els.listeningHint.hidden = false;
-    els.revealState.hidden = true;
-    els.ytLink.hidden = true; // אין לינק ליוטיוב לפני חשיפה — הכתובת עצמה מסגירה שם שיר+אמן
-    replayPop();
-  }
-
   function showRevealed(song) {
     els.title.textContent = song.title;
     els.artist.textContent = song.artist;
     els.year.textContent = song.year || t("unknownYear");
-    els.listeningHint.hidden = true;
     els.revealState.hidden = false;
     els.ytLink.hidden = false;
     replayPop();
@@ -77,24 +66,14 @@
     els.title.textContent = t(titleKey);
     els.artist.textContent = t(hintKey);
     els.year.textContent = "—";
-    els.listeningHint.hidden = true;
     els.revealState.hidden = false;
     els.ytLink.hidden = true;
   }
 
   function updatePrimaryButton() {
-    if (revealed) {
-      els.primaryIcon.textContent = "▶️";
-      els.primaryLabel.setAttribute("data-i18n", "nextBtn");
-      els.primaryLabel.textContent = t("nextBtn");
-    } else {
-      els.primaryIcon.textContent = "🎭";
-      els.primaryLabel.setAttribute("data-i18n", "revealBtn");
-      els.primaryLabel.textContent = t("revealBtn");
-    }
-    // "שיר אחר" (דילוג בלי חשיפה) רלוונטי רק בשלב ההאזנה — אחרי חשיפה
-    // הכפתור הראשי עצמו כבר הופך ל"הבא" (Non-goals של spec-reveal-flow).
-    if (els.skipBtn) els.skipBtn.hidden = revealed;
+    els.primaryIcon.textContent = "▶️";
+    els.primaryLabel.setAttribute("data-i18n", "nextBtn");
+    els.primaryLabel.textContent = t("nextBtn");
   }
 
   // ---------------------------------------------------------------------
@@ -102,11 +81,10 @@
   // ---------------------------------------------------------------------
   function playSong(song) {
     current = song;
-    revealed = false;
-    if (provider) provider.play(song, { hideMetadata: true });
+    if (provider) provider.play(song);
     els.ytLink.href = "https://www.youtube.com/results?search_query=" +
       encodeURIComponent(song.artist + " " + song.title);
-    showListening();
+    showRevealed(song);
     updatePrimaryButton();
     track("song_started", { language: window.MuzikaLang && window.MuzikaLang.get() });
     preloadNext();
@@ -123,7 +101,6 @@
   function clearDisplay(opts) {
     current = null;
     pendingNext = null;
-    revealed = true; // מאפשר לכפתור הראשי לשמש כ"נסה שוב" גם במצב שגיאה/ריק
     if (provider) provider.stop();
     var newEmpty = opts && opts.newEmpty;
     showMessage(newEmpty ? "newNoSongs" : "noSongs", newEmpty ? "newNoSongsHint" : "tryRefresh");
@@ -180,29 +157,9 @@
 
     if (!current) { pickAndPlay(); return; } // מסך שגיאה — "הבא" מנסה שוב
 
-    if (!revealed) {
-      revealed = true;
-      if (provider) provider.updateTitle(current);
-      showRevealed(current);
-      updatePrimaryButton();
-      track("song_revealed", { language: window.MuzikaLang && window.MuzikaLang.get() });
-      return;
-    }
-
     pending = true;
     if (window.MuzikaAnalytics) window.MuzikaAnalytics.songAdvanced();
     track("next_song");
-    pickAndPlay();
-    window.setTimeout(function () { pending = false; }, 500);
-  }
-
-  // "שיר אחר" — דילוג על השיר הנוכחי בלי לחשוף אותו כלל (נשאר אפשרי, לא
-  // חלק מהלולאה הרגילה — Non-goals של spec-reveal-flow).
-  function onSkipClick() {
-    if (pending || revealed) return;
-    pending = true;
-    if (window.MuzikaAnalytics) window.MuzikaAnalytics.songAdvanced();
-    track("song_skipped");
     pickAndPlay();
     window.setTimeout(function () { pending = false; }, 500);
   }
@@ -214,7 +171,6 @@
   }
 
   if (els.primaryBtn) els.primaryBtn.addEventListener("click", onPrimaryClick);
-  if (els.skipBtn) els.skipBtn.addEventListener("click", onSkipClick);
 
   if (els.newBtn) {
     els.newBtn.addEventListener("click", function () {
