@@ -511,7 +511,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Leão", artist: "Marília Mendonça", year: 2023 },
   { title: "Se Acaso Você Chegasse", artist: "Elza Soares", year: 1959 },
   { title: "Telemóveis", artist: "Conan Osiris", year: 2019 },
-  { title: "Noite Inteira", artist: "Iolanda", year: 2024 },
+  { title: "Noite Inteira", artist: "Iolanda", year: 2024, youtubeId: "3aJBOohTfsw" },
 
   // --- Axé, MPB, rock e pop (adições) ---
   { title: "Magalenha", artist: "Carlinhos Brown", year: 1996 },

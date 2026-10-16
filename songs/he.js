@@ -704,7 +704,7 @@ window.SONGS_BY_LANG.he = [
   { title: "אני שייך לעם", artist: "ישי ריבו", year: 2023, youtubeId: "" },
   { title: "פורחים לשובם", artist: "ישי ריבו", year: 2024, youtubeId: "X8CcSn4EcOo" },
   { title: "אין לי מלבדך", artist: "ישי ריבו", year: 2024, youtubeId: "bGTWi1ea_9o" },
-  { title: "ארץ ישראל", artist: "ישי ריבו", year: 2024, youtubeId: "" },
+  { title: "ארץ ישראל", artist: "ישי ריבו", year: 2024, youtubeId: "OkZ30zLdHTY" },
   { title: "עוד ישמע", artist: "ישי ריבו", year: 2025, youtubeId: "" },
   { title: "אמן על הילדים", artist: "חנן בן ארי", year: 2020, youtubeId: "" },
   { title: "חולם כמו יוסף", artist: "חנן בן ארי", year: 2021, youtubeId: "" },

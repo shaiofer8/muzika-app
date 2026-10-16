@@ -16,7 +16,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "L'Été indien", artist: "Joe Dassin", year: 1975 },
   { title: "Salut les amoureux", artist: "Joe Dassin", year: 1973 },
   { title: "Je m'appelle Hélène", artist: "Hélène Rollès", year: 1993 },
-  { title: "Formidable", artist: "Stromae", year: 2013 },
+  { title: "Formidable", artist: "Stromae", year: 2013, youtubeId: "S_xH7noaqTA" },
   { title: "Alors on danse", artist: "Stromae", year: 2009 },
   { title: "Papaoutai", artist: "Stromae", year: 2013 },
   { title: "Tous les mêmes", artist: "Stromae", year: 2013 },

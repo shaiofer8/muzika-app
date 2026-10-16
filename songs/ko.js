@@ -41,7 +41,7 @@ window.SONGS_BY_LANG.ko = [
   { title: "그 남자 그 여자", artist: "SG워너비", year: 2006 },
   { title: "closer", artist: "이승철", year: 1990 },
   { title: "제발", artist: "이승철", year: 1990 },
-  { title: "그런 사람 또 없습니다", artist: "이승철", year: 2014 },
+  { title: "그런 사람 또 없습니다", artist: "이승철", year: 2014, youtubeId: "qmCCaUxzVPs" },
   { title: "다시 사랑한다면", artist: "부활 & 이승철", year: 1997 },
   { title: "그대 내 품에", artist: "유재하", year: 1987 },
   { title: "사랑하기 때문에", artist: "유재하", year: 1987 },

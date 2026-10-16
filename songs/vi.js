@@ -27,7 +27,7 @@ window.SONGS_BY_LANG.vi = [
   { title: "Ai Cho Tôi Tình Yêu", artist: "Như Quỳnh", year: 1996 },
   { title: "Chuyến Đò Vĩ Tuyến", artist: "Như Quỳnh", year: 1997 },
   { title: "Tình Cây Và Đất", artist: "Như Quỳnh & Trường Vũ", year: 1998 },
-  { title: "Nối Lại Tình Xưa", artist: "Đan Nguyên & Lê Sang", year: 2010 },
+  { title: "Nối Lại Tình Xưa", artist: "Đan Nguyên & Lê Sang", year: 2010, youtubeId: "HgXt3a6vNK8" },
   { title: "Sương Trắng Miền Quê Ngoại", artist: "Đan Nguyên", year: 2008 },
   { title: "Chiếc Áo Bà Ba", artist: "Bạch Yến", year: 1970 },
   { title: "Về Đâu Mái Tóc Người Thương", artist: "Chế Linh", year: 1969 },

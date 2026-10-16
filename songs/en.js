@@ -106,7 +106,7 @@ window.SONGS_BY_LANG.en = [
   { title: "Thank U, Next", artist: "Ariana Grande", year: 2018, youtubeId: "gl1aHhXnN1k" },
   { title: "7 Rings", artist: "Ariana Grande", year: 2019, youtubeId: "QYh6mYIJG2Y" },
   { title: "Bad Guy", artist: "Billie Eilish", year: 2019, youtubeId: "KRntP-q_R9s" },
-  { title: "Happier Than Ever", artist: "Billie Eilish", year: 2021 },
+  { title: "Happier Than Ever", artist: "Billie Eilish", year: 2021, youtubeId: "5GJWxDKyk3A" },
   { title: "Drivers License", artist: "Olivia Rodrigo", year: 2021 },
   { title: "As It Was", artist: "Harry Styles", year: 2022 },
   { title: "Stitches", artist: "Shawn Mendes", year: 2015 },

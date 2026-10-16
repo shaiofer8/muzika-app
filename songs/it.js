@@ -55,7 +55,7 @@ window.SONGS_BY_LANG.it = [
   { title: "Zingara", artist: "Bobby Solo", year: 1969 },
   { title: "Una Lacrima Sul Viso", artist: "Bobby Solo", year: 1964 },
   { title: "29 Settembre", artist: "Il Volo (Batisti orig.)", year: 1975 },
-  { title: "Grande Amore", artist: "Il Volo", year: 2015 },
+  { title: "Grande Amore", artist: "Il Volo", year: 2015, youtubeId: "w1f6o1HQBvg" },
   { title: "Il Mondo", artist: "Jimmy Fontana", year: 1965 },
   { title: "Sapore di Sale", artist: "Gino Paoli", year: 1963 },
   { title: "Il Cielo in Una Stanza", artist: "Gino Paoli", year: 1960 },

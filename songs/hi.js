@@ -21,7 +21,7 @@ window.SONGS_BY_LANG.hi = [
   { title: "Kya Hua Tera Wada", artist: "Mohammed Rafi", year: 1977 },
   { title: "Mere Mehboob Qayamat Hogi", artist: "Kishore Kumar", year: 1980 },
   { title: "Tujhe Dekha To", artist: "Lata Mangeshkar & Kumar Sanu", year: 1995 },
-  { title: "Tum Hi Ho", artist: "Arijit Singh", year: 2013 },
+  { title: "Tum Hi Ho", artist: "Arijit Singh", year: 2013, youtubeId: "BjL7AuPsmEk" },
   { title: "Channa Mereya", artist: "Arijit Singh", year: 2016 },
   { title: "Kesariya", artist: "Arijit Singh", year: 2022 },
   { title: "Ae Dil Hai Mushkil", artist: "Arijit Singh", year: 2016 },

@@ -19,8 +19,9 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends Activity {
@@ -33,26 +34,22 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Create container with AdView at the bottom
-        FrameLayout container = new FrameLayout(this);
+        // Vertical stack: WebView takes the remaining height, AdView sits below it.
+        // Overlaying the ad on the WebView hid the bottom buttons from touch input.
+        LinearLayout container = new LinearLayout(this);
+        container.setOrientation(LinearLayout.VERTICAL);
         container.setLayoutParams(new ViewGroup.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
-        // WebView takes most of the space
         webView = new WebView(this);
-        FrameLayout.LayoutParams webViewParams = new FrameLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        webView.setLayoutParams(webViewParams);
-        container.addView(webView);
+        container.addView(webView, new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f));
 
-        // AdView at the bottom
         mAdView = new AdView(this);
         mAdView.setAdUnitId("ca-app-pub-4066391446449273/6123655216");
-        FrameLayout.LayoutParams adParams = new FrameLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, 50);
-        adParams.gravity = android.view.Gravity.BOTTOM;
-        mAdView.setLayoutParams(adParams);
-        container.addView(mAdView);
+        mAdView.setAdSize(AdSize.BANNER);
+        container.addView(mAdView, new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         setContentView(container);
 

@@ -1,7 +1,7 @@
 // songs/es.js — מאגר שירים בספרדית (ללא youtubeId — ניגון בחיפוש אוטומטי).
 window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
 window.SONGS_BY_LANG.es = [
-  { title: "Despacito", artist: "Luis Fonsi ft. Daddy Yankee", year: 2017 },
+  { title: "Despacito", artist: "Luis Fonsi ft. Daddy Yankee", year: 2017, status: "no_match", reason: "no_artist_title_match" },
   { title: "Bailando", artist: "Enrique Iglesias", year: 2014 },
   { title: "Bailamos", artist: "Enrique Iglesias", year: 1999 },
   { title: "Hero", artist: "Enrique Iglesias", year: 2001 },
