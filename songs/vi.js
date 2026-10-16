@@ -2,7 +2,7 @@
 // tìm kiếm tự động theo "ca sĩ tên bài hát").
 window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
 window.SONGS_BY_LANG.vi = [
-  { title: "Diễm Xưa", artist: "Trịnh Công Sơn", year: 1960 },
+  { title: "Diễm Xưa", artist: "Trịnh Công Sơn", year: 1960, youtubeId: "nRpHzK6jtuw" },
   { title: "Hạ Trắng", artist: "Trịnh Công Sơn", year: 1961 },
   { title: "Nối Vòng Tay Lớn", artist: "Trịnh Công Sơn", year: 1968 },
   { title: "Biển Nhớ", artist: "Trịnh Công Sơn", year: 1962 },
@@ -28,7 +28,7 @@ window.SONGS_BY_LANG.vi = [
   { title: "Chuyến Đò Vĩ Tuyến", artist: "Như Quỳnh", year: 1997 },
   { title: "Tình Cây Và Đất", artist: "Như Quỳnh & Trường Vũ", year: 1998 },
   { title: "Nối Lại Tình Xưa", artist: "Đan Nguyên & Lê Sang", year: 2010, youtubeId: "HgXt3a6vNK8" },
-  { title: "Sương Trắng Miền Quê Ngoại", artist: "Đan Nguyên", year: 2008 },
+  { title: "Sương Trắng Miền Quê Ngoại", artist: "Đan Nguyên", year: 2008, status: "no_match", reason: "no_artist_title_match" },
   { title: "Chiếc Áo Bà Ba", artist: "Bạch Yến", year: 1970 },
   { title: "Về Đâu Mái Tóc Người Thương", artist: "Chế Linh", year: 1969 },
   { title: "Đêm Buồn Tỉnh Lẻ", artist: "Chế Linh", year: 1970 },
@@ -39,10 +39,10 @@ window.SONGS_BY_LANG.vi = [
   { title: "Tình Ca", artist: "Thái Thanh", year: 1953 },
   { title: "Nghìn Trùng Xa Cách", artist: "Thái Thanh", year: 1968 },
   { title: "Ru Ta Ngậm Ngùi", artist: "Khánh Ly", year: 1970 },
-  { title: "Bống Bống Bang Bang", artist: "365daband", year: 2016 },
-  { title: "Nơi Này Có Anh", artist: "Sơn Tùng M-TP", year: 2016 },
-  { title: "Chạy Ngay Đi", artist: "Sơn Tùng M-TP", year: 2018 },
-  { title: "Lạc Trôi", artist: "Sơn Tùng M-TP", year: 2017 },
+  { title: "Bống Bống Bang Bang", artist: "365daband", year: 2016, youtubeId: "BwN3NiZt-PU" },
+  { title: "Nơi Này Có Anh", artist: "Sơn Tùng M-TP", year: 2016, youtubeId: "FN7ALfpGxiI" },
+  { title: "Chạy Ngay Đi", artist: "Sơn Tùng M-TP", year: 2018, youtubeId: "32sYGCOYJUM" },
+  { title: "Lạc Trôi", artist: "Sơn Tùng M-TP", year: 2017, youtubeId: "Llw9Q6akRo4" },
   { title: "Em Của Ngày Hôm Qua", artist: "Sơn Tùng M-TP", year: 2014 },
   { title: "Muộn Rồi Mà Sao Còn", artist: "Sơn Tùng M-TP", year: 2020 },
   { title: "Có Chàng Trai Viết Lên Cây", artist: "Phan Mạnh Quỳnh", year: 2015 },
