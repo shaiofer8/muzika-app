@@ -149,6 +149,20 @@
     if (valueEls[idx]) valueEls[idx].textContent = next;
   }
 
+  function shareScore() {
+    var lines = state.names.map(function (name, i) { return name + ": " + state.scores[i]; });
+    var message = t("shareText") + "\n" + lines.join("\n") + "\n" + window.location.href;
+    var track = function (name, params) { if (window.MuzikaAnalytics) window.MuzikaAnalytics.track(name, params); };
+    track("share_clicked", { source: "score" });
+    if (navigator.share) {
+      navigator.share({ text: message }).then(function () { track("share_completed", { method: "native", source: "score" }); }, function () {});
+      return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(message).then(function () { track("share_completed", { method: "copy", source: "score" }); }, function () {});
+    }
+  }
+
   function showSetupStep() {
     els.setup.hidden = false;
     els.scoreboard.hidden = true;
@@ -205,6 +219,8 @@
     saveState();
     showScoreboardStep();
   });
+
+  document.getElementById("shareScoreBtn").addEventListener("click", shareScore);
 
   els.reconfigureBtn.addEventListener("click", function () {
     showSetupStep();
