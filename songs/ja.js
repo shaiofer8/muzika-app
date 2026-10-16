@@ -1,7 +1,7 @@
 // songs/ja.js — 日本語の曲リスト（youtubeId なし — 「アーティスト 曲名」で自動検索して再生）。
 window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
 window.SONGS_BY_LANG.ja = [
-  { title: "上を向いて歩こう", artist: "坂本九", year: 1961 },
+  { title: "上を向いて歩こう", artist: "坂本九", year: 1961, youtubeId: "ip2U3w6b9rU" },
   { title: "津軽海峡・冬景色", artist: "石川さゆり", year: 1977 },
   { title: "川の流れのように", artist: "美空ひばり", year: 1989 },
   { title: "お祭りマンボ", artist: "美空ひばり", year: 1952 },
@@ -30,7 +30,7 @@ window.SONGS_BY_LANG.ja = [
   { title: "見上げてごらん夜の星を", artist: "坂本九", year: 1963 },
   { title: "First Love", artist: "宇多田ヒカル", year: 1999 },
   { title: "Automatic", artist: "宇多田ヒカル", year: 1998 },
-  { title: "traveling", artist: "宇多田ヒカル", year: 2001 },
+  { title: "traveling", artist: "宇多田ヒカル", year: 2001, youtubeId: "tuyZ9f6mHZk" },
   { title: "Flavor Of Life", artist: "宇多田ヒカル", year: 2007 },
   { title: "涙そうそう", artist: "夏川りみ", year: 2001 },
   { title: "島唄", artist: "THE BOOM", year: 1992 },
@@ -52,10 +52,10 @@ window.SONGS_BY_LANG.ja = [
   { title: "Diamonds", artist: "プリンセス プリンセス", year: 1989 },
   { title: "世界が終るまでは...", artist: "WANDS", year: 1994 },
   { title: "会いたかった", artist: "AKB48", year: 2006 },
-  { title: "恋するフォーチュンクッキー", artist: "AKB48", year: 2013 },
-  { title: "ヘビーローテーション", artist: "AKB48", year: 2010 },
-  { title: "Everyday、カチューシャ", artist: "AKB48", year: 2011 },
-  { title: "紅蓮華", artist: "LiSA", year: 2019 },
+  { title: "恋するフォーチュンクッキー", artist: "AKB48", year: 2013, youtubeId: "0BL6faNyH8E" },
+  { title: "ヘビーローテーション", artist: "AKB48", year: 2010, youtubeId: "lkHlnWFnA0c" },
+  { title: "Everyday、カチューシャ", artist: "AKB48", year: 2011, youtubeId: "vEVq_Bx7_KY" },
+  { title: "紅蓮華", artist: "LiSA", year: 2019, youtubeId: "x1FV6IrjZCY" },
   { title: "炎", artist: "LiSA", year: 2020 },
   { title: "again", artist: "YUI", year: 2005 },
   { title: "Rolling star", artist: "YUI", year: 2006 },
