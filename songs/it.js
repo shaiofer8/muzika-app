@@ -1,9 +1,9 @@
 // songs/it.js — מאגר שירים באיטלקית (ללא youtubeId — ניגון בחיפוש אוטומטי).
 window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
 window.SONGS_BY_LANG.it = [
-  { title: "Volare (Nel Blu Dipinto Di Blu)", artist: "Domenico Modugno", year: 1958 },
-  { title: "Azzurro", artist: "Adriano Celentano", year: 1968 },
-  { title: "Il Ragazzo della Via Gluck", artist: "Adriano Celentano", year: 1966 },
+  { title: "Volare (Nel Blu Dipinto Di Blu)", artist: "Domenico Modugno", year: 1958, youtubeId: "6jWsIpAbo-8" },
+  { title: "Azzurro", artist: "Adriano Celentano", year: 1968, youtubeId: "HCyzGuipTd4" },
+  { title: "Il Ragazzo della Via Gluck", artist: "Adriano Celentano", year: 1966, youtubeId: "_UpBM7jisJs" },
   { title: "Susanna", artist: "Adriano Celentano", year: 1979 },
   { title: "Prisencolinensinainciusol", artist: "Adriano Celentano", year: 1972 },
   { title: "L'Italiano", artist: "Toto Cutugno", year: 1983 },
@@ -81,11 +81,11 @@ window.SONGS_BY_LANG.it = [
   { title: "Se Piangi, Se Ridi", artist: "Ricchi e Poveri", year: 1978 },
   { title: "Un Uomo Come Me", artist: "Zucchero", year: 1985 },
   { title: "Diamante", artist: "Zucchero", year: 1989 },
-  { title: "Il Volo", artist: "Zucchero", year: 2013 },
+  { title: "Il Volo", artist: "Zucchero", year: 2013, youtubeId: "Kop3cUVd2qQ" },
   { title: "Baila Morena", artist: "Zucchero", year: 1995 },
-  { title: "Rispetto", artist: "Zucchero", year: 2001 },
+  { title: "Rispetto", artist: "Zucchero", year: 2001, youtubeId: "gvQfYJawepE" },
   { title: "Vorrei Incontrarti Tra Cent'Anni", artist: "Zucchero & Andrea Bocelli", year: 1996 },
-  { title: "Salirò", artist: "Daniele Silvestri", year: 2002 },
+  { title: "Salirò", artist: "Daniele Silvestri", year: 2002, youtubeId: "SH_xyi_EdMc" },
   { title: "L'Uomo Nero", artist: "Daniele Silvestri", year: 1999 },
   { title: "Il Mio Canto Libero", artist: "Lucio Battisti", year: 1972 },
   { title: "Emozioni", artist: "Lucio Battisti", year: 1970 },
