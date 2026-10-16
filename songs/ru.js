@@ -1,7 +1,7 @@
 // songs/ru.js — מאגר שירים ברוסית (ללא youtubeId — ניגון בחיפוש אוטומטי).
 window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
 window.SONGS_BY_LANG.ru = [
-  { title: "Группа крови", artist: "Кино", year: 1988 },
+  { title: "Группа крови", artist: "Кино", year: 1988, youtubeId: "xtxjm7ciwmc" },
   { title: "Звезда по имени Солнце", artist: "Кино", year: 1989 },
   { title: "Пачка сигарет", artist: "Кино", year: 1990 },
   { title: "Перемен", artist: "Кино", year: 1986 },
@@ -21,9 +21,9 @@ window.SONGS_BY_LANG.ru = [
   { title: "Костёр", artist: "ДДТ", year: 1985 },
   { title: "Что Такое Осень", artist: "ДДТ", year: 1991 },
   { title: "Это Всё", artist: "ДДТ", year: 1994 },
-  { title: "Группа Крови (Ленинград)", artist: "Ленинград", year: 2002 },
-  { title: "В Питере — Пить", artist: "Ленинград", year: 2016 },
-  { title: "Экспонат", artist: "Ленинград", year: 2016 },
+  { title: "Группа Крови (Ленинград)", artist: "Ленинград", year: 2002, status: "no_match", reason: "no_artist_title_match" },
+  { title: "В Питере — Пить", artist: "Ленинград", year: 2016, youtubeId: "1ugivNRYfjc" },
+  { title: "Экспонат", artist: "Ленинград", year: 2016, youtubeId: "et281UHNoOU" },
   { title: "WWW", artist: "Ленинград", year: 2002 },
   { title: "Звезда", artist: "Земфира", year: 1999 },
   { title: "Хочешь?", artist: "Земфира", year: 1999 },
@@ -49,8 +49,8 @@ window.SONGS_BY_LANG.ru = [
   { title: "Мальчик Хочет в Тамбов", artist: "Комбинация", year: 1990 },
   { title: "Русский Вопрос", artist: "Дмитрий Маликов", year: 1990 },
   { title: "Ты Мне Не Снишься", artist: "Дмитрий Маликов", year: 1989 },
-  { title: "Между Нами Тает Лёд", artist: "Григорий Лепс", year: 2010 },
-  { title: "Самый Лучший День", artist: "Григорий Лепс", year: 2010 },
+  { title: "Между Нами Тает Лёд", artist: "Григорий Лепс", year: 2010, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Самый Лучший День", artist: "Григорий Лепс", year: 2010, youtubeId: "kG2jG0eVMhs" },
   { title: "Рюмка Водки На Столе", artist: "Григорий Лепс", year: 2004 },
   { title: "Дорога к Храму", artist: "Хор Турецкого", year: 1998 },
   { title: "Косички", artist: "Валерий Сюткин", year: 1998 },
