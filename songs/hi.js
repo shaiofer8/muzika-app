@@ -1,7 +1,7 @@
 // songs/hi.js — हिन्दी गीत सूची (कोई youtubeId नहीं — "कलाकार गीत" से खोजकर बजाया जाता है)।
 window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
 window.SONGS_BY_LANG.hi = [
-  { title: "Tere Bina Zindagi Se", artist: "Lata Mangeshkar & Kishore Kumar", year: 1975 },
+  { title: "Tere Bina Zindagi Se", artist: "Lata Mangeshkar & Kishore Kumar", year: 1975, youtubeId: "hLuXy8yhHYQ" },
   { title: "Lag Jaa Gale", artist: "Lata Mangeshkar", year: 1964 },
   { title: "Ajeeb Dastan Hai Yeh", artist: "Lata Mangeshkar", year: 1960 },
   { title: "Pyar Kiya To Darna Kya", artist: "Lata Mangeshkar", year: 1960 },
@@ -22,13 +22,13 @@ window.SONGS_BY_LANG.hi = [
   { title: "Mere Mehboob Qayamat Hogi", artist: "Kishore Kumar", year: 1980 },
   { title: "Tujhe Dekha To", artist: "Lata Mangeshkar & Kumar Sanu", year: 1995 },
   { title: "Tum Hi Ho", artist: "Arijit Singh", year: 2013, youtubeId: "BjL7AuPsmEk" },
-  { title: "Channa Mereya", artist: "Arijit Singh", year: 2016 },
-  { title: "Kesariya", artist: "Arijit Singh", year: 2022 },
-  { title: "Ae Dil Hai Mushkil", artist: "Arijit Singh", year: 2016 },
-  { title: "Raabta", artist: "Arijit Singh", year: 2012 },
+  { title: "Channa Mereya", artist: "Arijit Singh", year: 2016, youtubeId: "KzmBTZXW0fk" },
+  { title: "Kesariya", artist: "Arijit Singh", year: 2022, youtubeId: "BddP6PYo2gs" },
+  { title: "Ae Dil Hai Mushkil", artist: "Arijit Singh", year: 2016, youtubeId: "6FURuLYrR_Q" },
+  { title: "Raabta", artist: "Arijit Singh", year: 2012, youtubeId: "vEe-UgJvUHE" },
   { title: "Tera Yaar Hoon Main", artist: "Arijit Singh", year: 2018 },
   { title: "Agar Tum Saath Ho", artist: "Alka Yagnik & Arijit Singh", year: 2015 },
-  { title: "Kal Ho Naa Ho", artist: "Sonu Nigam", year: 2003 },
+  { title: "Kal Ho Naa Ho", artist: "Sonu Nigam", year: 2003, youtubeId: "g0eO74UmRBs" },
   { title: "Abhi Mujh Mein Kahin", artist: "Sonu Nigam", year: 2010 },
   { title: "Sandese Aate Hain", artist: "Sonu Nigam & Roop Kumar Rathod", year: 1999 },
   { title: "Suraj Hua Maddham", artist: "Sonu Nigam & Alka Yagnik", year: 2001 },
