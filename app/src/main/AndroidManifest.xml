@@ -32,6 +32,10 @@
         android:theme="@android:style/Theme.Translucent.NoTitleBar">
 
         <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4066391446449273~9283336873" />
+
+        <meta-data
             android:name="asset_statements"
             android:resource="@string/assetStatements" />
 
