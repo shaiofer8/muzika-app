@@ -89,6 +89,10 @@
     {}
   ];
 
+  function rand() {
+    return typeof window.MuzikaRandom === "function" ? window.MuzikaRandom() : Math.random();
+  }
+
   function create() {
     var history = []; // כל השירים שאושרו בפועל (commit) מתחילת ה-Session, מהישן לחדש — לצורך אילוצי הגיוון הרך בלבד
     var played = new Set(); // אילו שירים מהמחזור הנוכחי כבר נוגנו — זו החסימה הקשה של CAP-5
@@ -114,12 +118,12 @@
         var candidates = unplayed.filter(function (song) {
           return !violatesRules(song, history, RULE_SETS[r]);
         });
-        if (candidates.length) return candidates[Math.floor(Math.random() * candidates.length)];
+        if (candidates.length) return candidates[Math.floor(rand() * candidates.length)];
       }
 
       // גיבוי אחרון (לא אמור להגיע לכאן כי RULE_SETS[last] = {} תמיד מספק
       // תוצאה) — בחירה רנדומלית מתוך מה שלא נוגן.
-      return unplayed[Math.floor(Math.random() * unplayed.length)];
+      return unplayed[Math.floor(rand() * unplayed.length)];
     }
 
     return {

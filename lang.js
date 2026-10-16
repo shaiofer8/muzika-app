@@ -102,9 +102,11 @@
     document.head.appendChild(script);
   }
 
+  var langRequest = 0;
   function setLang(code, opts) {
     opts = opts || {};
     if (!langInfo(code)) return;
+    var requestId = ++langRequest;
     current = code;
     saveLang(code);
     applyDirLang(code);
@@ -112,6 +114,7 @@
     updateLangButton(code);
 
     loadSongs(code, function (songs) {
+      if (requestId !== langRequest) return;
       if (!songs || !songs.length) {
         if (window.MuzikaApp) window.MuzikaApp.showError();
       } else if (opts.initial && window.MuzikaApp) {

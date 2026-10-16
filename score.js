@@ -151,7 +151,8 @@
 
   function shareScore() {
     var lines = state.names.map(function (name, i) { return name + ": " + state.scores[i]; });
-    var message = t("shareText") + "\n" + lines.join("\n") + "\n" + window.location.href;
+    var link = window.MuzikaChallenge ? window.MuzikaChallenge.makeLink() : window.location.href;
+    var message = t("shareText") + "\n" + lines.join("\n") + "\n" + link;
     var track = function (name, params) { if (window.MuzikaAnalytics) window.MuzikaAnalytics.track(name, params); };
     track("share_clicked", { source: "score" });
     if (navigator.share) {
@@ -227,6 +228,7 @@
   });
 
   els.resetBtn.addEventListener("click", function () {
+    if (!window.confirm(t("resetConfirm"))) return;
     for (var i = 0; i < state.scores.length; i++) state.scores[i] = 0;
     saveState();
     renderScoreboard();

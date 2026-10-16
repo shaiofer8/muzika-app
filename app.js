@@ -147,7 +147,7 @@
 
     var next = (pendingNext && pool.indexOf(pendingNext) !== -1) ?
       pendingNext :
-      (engine ? engine.pick(pool) : pool[Math.floor(Math.random() * pool.length)]);
+      (engine ? engine.pick(pool) : pool[Math.floor((window.MuzikaRandom ? window.MuzikaRandom() : Math.random()) * pool.length)]);
     if (engine) engine.commit(next);
     playSong(next);
   }
