@@ -1,7 +1,7 @@
 // songs/fr.js — מאגר שירים בצרפתית (ללא youtubeId — ניגון בחיפוש אוטומטי).
 window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
 window.SONGS_BY_LANG.fr = [
-  { title: "Non, je ne regrette rien", artist: "Édith Piaf", year: 1960 },
+  { title: "Non, je ne regrette rien", artist: "Édith Piaf", year: 1960, status: "no_match", reason: "no_artist_title_match" },
   { title: "La Vie en Rose", artist: "Édith Piaf", year: 1946 },
   { title: "Milord", artist: "Édith Piaf", year: 1959 },
   { title: "L'Hymne à l'Amour", artist: "Édith Piaf", year: 1949 },
@@ -17,11 +17,11 @@ window.SONGS_BY_LANG.fr = [
   { title: "Salut les amoureux", artist: "Joe Dassin", year: 1973 },
   { title: "Je m'appelle Hélène", artist: "Hélène Rollès", year: 1993 },
   { title: "Formidable", artist: "Stromae", year: 2013, youtubeId: "S_xH7noaqTA" },
-  { title: "Alors on danse", artist: "Stromae", year: 2009 },
-  { title: "Papaoutai", artist: "Stromae", year: 2013 },
-  { title: "Tous les mêmes", artist: "Stromae", year: 2013 },
-  { title: "Je veux", artist: "Zaz", year: 2010 },
-  { title: "On ira", artist: "Zaz", year: 2010 },
+  { title: "Alors on danse", artist: "Stromae", year: 2009, youtubeId: "VHoT4N43jK8" },
+  { title: "Papaoutai", artist: "Stromae", year: 2013, youtubeId: "oiKj0Z_Xnjc" },
+  { title: "Tous les mêmes", artist: "Stromae", year: 2013, youtubeId: "CAMWdvo71ls" },
+  { title: "Je veux", artist: "Zaz", year: 2010, youtubeId: "0TFNGRYMz1U" },
+  { title: "On ira", artist: "Zaz", year: 2010, youtubeId: "8IjWHBGzsu4" },
   { title: "Dernière Danse", artist: "Indila", year: 2014 },
   { title: "Tourner dans le vide", artist: "Indila", year: 2015 },
   { title: "Djadja", artist: "Aya Nakamura", year: 2018 },
