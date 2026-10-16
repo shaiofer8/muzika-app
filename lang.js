@@ -115,6 +115,12 @@
 
     loadSongs(code, function (songs) {
       if (requestId !== langRequest) return;
+      var notice = document.getElementById("langNotice");
+      if (notice) {
+        var verified = (songs || []).filter(function (s) { return !!s.youtubeId; }).length;
+        notice.textContent = t("songsInPrep");
+        notice.hidden = verified >= 20;
+      }
       if (!songs || !songs.length) {
         if (window.MuzikaApp) window.MuzikaApp.showError();
       } else if (opts.initial && window.MuzikaApp) {
