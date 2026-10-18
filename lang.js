@@ -6,7 +6,7 @@
   "use strict";
 
   var STORAGE_KEY = "muzika-lang-v2";
-  var DEFAULT_LANG = "en";
+  var DEFAULT_LANG = "he";
   var current = DEFAULT_LANG;
   var loading = {};
 
