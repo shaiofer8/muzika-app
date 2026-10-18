@@ -220,8 +220,11 @@ a:active {
 }
 
 .score-fab {
-  grid-column: 1;
-  justify-self: start;
+  border: 0;
+  background: var(--gradient);
+  color: var(--on-accent);
+  font-weight: 800;
+  box-shadow: 0 8px 24px var(--glow-a);
 }
 
 .wa-fab {
