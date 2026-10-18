@@ -13,6 +13,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.KeyEvent;
+import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
@@ -23,6 +24,7 @@ import android.widget.LinearLayout;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import android.webkit.JavascriptInterface;
 
 public class MainActivity extends Activity {
 
@@ -45,17 +47,15 @@ public class MainActivity extends Activity {
         container.addView(webView, new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f));
 
+        // The banner stays hidden until the score popup asks for it (see AdBridge).
         mAdView = new AdView(this);
         mAdView.setAdUnitId("ca-app-pub-4066391446449273/6123655216");
         mAdView.setAdSize(AdSize.BANNER);
+        mAdView.setVisibility(View.GONE);
         container.addView(mAdView, new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         setContentView(container);
-
-        // Load an ad
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
@@ -65,6 +65,8 @@ public class MainActivity extends Activity {
         settings.setAllowFileAccess(false);
         settings.setAllowContentAccess(false);
         settings.setMediaPlaybackRequiresUserGesture(false);
+
+        webView.addJavascriptInterface(new AdBridge(), "MuzikaAds");
 
         final String ownHost = getString(R.string.hostName);
 
@@ -138,5 +140,30 @@ public class MainActivity extends Activity {
     protected void onDestroy() {
         webView.destroy();
         super.onDestroy();
+    }
+
+    // Called from score.js: the banner is shown only while the score popup is open.
+    private class AdBridge {
+        @JavascriptInterface
+        public void show() {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if (mAdView.getVisibility() == View.VISIBLE) return;
+                    mAdView.setVisibility(View.VISIBLE);
+                    mAdView.loadAd(new AdRequest.Builder().build());
+                }
+            });
+        }
+
+        @JavascriptInterface
+        public void hide() {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    mAdView.setVisibility(View.GONE);
+                }
+            });
+        }
     }
 }
