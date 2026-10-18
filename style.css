@@ -250,6 +250,22 @@ a:active {
   gap: 10px;
 }
 
+.masthead-settings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block-start: 6px;
+  opacity: 0.8;
+}
+
+.masthead-settings .lang-btn,
+.masthead-settings .new-btn {
+  min-block-size: 36px;
+  font-size: 0.8125rem;
+  padding: 6px 12px;
+}
+
 .lang-btn,
 .new-btn {
   display: inline-flex;
