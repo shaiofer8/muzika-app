@@ -1,6 +1,6 @@
 {
-  "name": "מי מזהה את השיר?",
-  "short_name": "מזהי שירים",
+  "name": "Muzika Party",
+  "short_name": "Muzika",
   "description": "משחק מסיבה - נחשו את השיר, אתגרו את החברים",
   "start_url": "/?source=pwa",
   "scope": "/",

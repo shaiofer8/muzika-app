@@ -1,8 +1,8 @@
 {
   "packageId": "com.muzikaparty.app",
   "host": "muzika.sofrimyamim.com",
-  "name": "מי מזהה את השיר?",
-  "launcherName": "מזהי שירים",
+  "name": "Muzika Party",
+  "launcherName": "Muzika Party",
   "display": "standalone",
   "themeColor": "#7c3aed",
   "themeColorDark": "#0a0a12",

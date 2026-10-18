@@ -179,6 +179,7 @@
   function openModal() {
     els.overlay.hidden = false;
     document.body.classList.add("modal-open");
+    if (window.MuzikaAds) window.MuzikaAds.show();
     if (state.configured) {
       showScoreboardStep();
     } else {
@@ -189,6 +190,7 @@
   function closeModal() {
     els.overlay.hidden = true;
     document.body.classList.remove("modal-open");
+    if (window.MuzikaAds) window.MuzikaAds.hide();
   }
 
   els.fab.addEventListener("click", openModal);
