@@ -24,12 +24,8 @@
 
   <div class="challenge-banner" id="challengeBanner" role="status" hidden></div>
 
-  <button class="score-fab" id="scoreOpenBtn" type="button" aria-haspopup="dialog" aria-controls="scoreModal">
-    <span aria-hidden="true">🏆</span> <span data-i18n="scoreBtn">ניקוד</span>
-  </button>
-
   <a class="wa-fab" href="https://wa.me/972504812348?text=%D7%94%D7%99%D7%99%21%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%94%D7%9E%D7%95%D7%96%D7%99%D7%A7%D7%94%20%D7%A9%D7%9C%D7%9A" target="_blank" rel="noopener">
-    <span aria-hidden="true">💬</span> <span data-i18n="contactBtn">צור קשר</span>
+    <span data-i18n="contactBtn">צור קשר</span>
   </a>
 
   <div class="modal-overlay" id="langOverlay" hidden>
@@ -76,6 +72,13 @@
 
   <header class="masthead">
     <div class="masthead-actions">
+      <button class="score-fab" id="scoreOpenBtn" type="button" aria-haspopup="dialog" aria-controls="scoreModal">
+        <span aria-hidden="true">🏆</span> <span data-i18n="scoreBtn">ניקוד</span>
+      </button>
+    </div>
+    <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="kicker">משחק זיהוי שירים · מסך משותף</span></span>
+    <h1 data-i18n="title">מי מזהה את השיר?</h1>
+    <div class="masthead-settings">
       <button class="lang-btn" id="langOpenBtn" type="button" aria-haspopup="dialog" aria-controls="langModal" aria-label="עברית">
         <span id="langFlag" class="lang-flag-main" aria-hidden="true">🇮🇱</span>
         <span id="langName" class="sr-only">עברית</span>
@@ -85,8 +88,6 @@
         <span aria-hidden="true">👧</span><span class="new-btn-label" data-i18n="newBtnLabel">ילדים</span>
       </button>
     </div>
-    <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="kicker">משחק זיהוי שירים · מסך משותף</span></span>
-    <h1 data-i18n="title">מי מזהה את השיר?</h1>
   </header>
 
   <main class="sleeve">
