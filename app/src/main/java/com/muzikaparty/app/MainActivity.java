@@ -24,12 +24,16 @@ import android.widget.LinearLayout;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.ump.ConsentInformation;
+import com.google.android.ump.ConsentRequestParameters;
+import com.google.android.ump.UserMessagingPlatform;
 import android.webkit.JavascriptInterface;
 
 public class MainActivity extends Activity {
 
     private WebView webView;
     private AdView mAdView;
+    private ConsentInformation consentInfo;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -56,6 +60,8 @@ public class MainActivity extends Activity {
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         setContentView(container);
+
+        requestConsent();
 
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
@@ -142,6 +148,17 @@ public class MainActivity extends Activity {
         super.onDestroy();
     }
 
+    // EEA/UK consent (Google UMP). Ads are requested only when canRequestAds() is true.
+    private void requestConsent() {
+        ConsentRequestParameters params = new ConsentRequestParameters.Builder()
+                .setTagForUnderAgeOfConsent(false)
+                .build();
+        consentInfo = UserMessagingPlatform.getConsentInformation(this);
+        consentInfo.requestConsentInfoUpdate(this, params,
+                () -> UserMessagingPlatform.loadAndShowConsentFormIfRequired(this, formError -> { }),
+                requestError -> { });
+    }
+
     // Called from score.js: the banner is shown only while the score popup is open.
     private class AdBridge {
         @JavascriptInterface
@@ -149,6 +166,7 @@ public class MainActivity extends Activity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
+                    if (consentInfo == null || !consentInfo.canRequestAds()) return;
                     if (mAdView.getVisibility() == View.VISIBLE) return;
                     mAdView.setVisibility(View.VISIBLE);
                     mAdView.loadAd(new AdRequest.Builder().build());

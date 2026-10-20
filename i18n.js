@@ -42,7 +42,7 @@
       shareResult: "שתף תוצאה",
       challengeBanner: "אתגר מחברים — תצליחו לעקוף אותנו?",
       resetConfirm: "לאפס את כל הניקוד?",
-      shareCopied: "הקישור הועתק!", langModalTitle: "בחירת שפה", newBtnAria: "מצב ילדים", newBtnLabel: "ילדים",
+      shareCopied: "הקישור הועתק!", langModalTitle: "בחירת שפה", newBtnAria: "שירים חדשים", newBtnLabel: "חדשים",
       noscript: "הדף הזה זקוק ל-JavaScript כדי לבחור ולנגן שירים. אנא הפעילו JavaScript בדפדפן.",
     },
     en: {
@@ -64,7 +64,7 @@
       shareResult: "Share result",
       challengeBanner: "A challenge from a friend — can you beat us?",
       resetConfirm: "Reset all scores?",
-      shareCopied: "Link copied!", langModalTitle: "Choose language", newBtnAria: "Kids mode", newBtnLabel: "Kids",
+      shareCopied: "Link copied!", langModalTitle: "Choose language", newBtnAria: "Recent songs mode", newBtnLabel: "Recent",
       noscript: "This page needs JavaScript to pick and play songs. Please enable JavaScript in your browser.",
     },
     es: {
@@ -84,7 +84,7 @@
       teamMinusAriaPrefix: "Quitar un punto al equipo", teamPlusAriaPrefix: "Añadir un punto al equipo",
       shareText: "🎵 ¡Ven a jugar \"¿Quién Adivina la Canción?\" conmigo — un juego de adivinar canciones en grupo!",
       shareResult: "Compartir resultado",
-      shareCopied: "¡Enlace copiado!", langModalTitle: "Elegir idioma", newBtnAria: "Modo niños", newBtnLabel: "Niños",
+      shareCopied: "¡Enlace copiado!", langModalTitle: "Elegir idioma", newBtnAria: "Modo canciones recientes", newBtnLabel: "Recientes",
       noscript: "Esta página necesita JavaScript para elegir y reproducir canciones. Por favor, activa JavaScript en tu navegador.",
     },
     ar: {
@@ -104,7 +104,7 @@
       teamMinusAriaPrefix: "إنقاص نقطة من الفريق", teamPlusAriaPrefix: "إضافة نقطة للفريق",
       shareText: "🎵 تعالوا العبوا معي \"من يعرف الأغنية؟\" — لعبة تخمين الأغاني للمجموعات!",
       shareResult: "مشاركة النتيجة",
-      shareCopied: "تم نسخ الرابط!", langModalTitle: "اختيار اللغة", newBtnAria: "وضع الأطفال", newBtnLabel: "أطفال",
+      shareCopied: "تم نسخ الرابط!", langModalTitle: "اختيار اللغة", newBtnAria: "وضع الأغاني الحديثة", newBtnLabel: "حديثة",
       noscript: "تحتاج هذه الصفحة إلى JavaScript لاختيار الأغاني وتشغيلها. يرجى تفعيل JavaScript في متصفحك.",
     },
     ru: {
@@ -124,7 +124,7 @@
       teamMinusAriaPrefix: "Убрать очко у команды", teamPlusAriaPrefix: "Добавить очко команде",
       shareText: "🎵 Присоединяйтесь к игре «Кто угадает песню?» — игра на угадывание песен для компании!",
       shareResult: "Поделиться результатом",
-      shareCopied: "Ссылка скопирована!", langModalTitle: "Выбор языка", newBtnAria: "Детский режим", newBtnLabel: "Дети",
+      shareCopied: "Ссылка скопирована!", langModalTitle: "Выбор языка", newBtnAria: "Режим новых песен", newBtnLabel: "Новые",
       noscript: "Для выбора и воспроизведения песен этой странице нужен JavaScript. Пожалуйста, включите JavaScript в браузере.",
     },
     fr: {
@@ -144,7 +144,7 @@
       teamMinusAriaPrefix: "Retirer un point à l'équipe", teamPlusAriaPrefix: "Ajouter un point à l'équipe",
       shareText: "🎵 Venez jouer avec moi à « Qui reconnaît la chanson ? » — un jeu de reconnaissance musicale entre amis !",
       shareResult: "Partager le résultat",
-      shareCopied: "Lien copié !", langModalTitle: "Choisir la langue", newBtnAria: "Mode enfants", newBtnLabel: "Enfants",
+      shareCopied: "Lien copié !", langModalTitle: "Choisir la langue", newBtnAria: "Mode chansons récentes", newBtnLabel: "Récents",
       noscript: "Cette page a besoin de JavaScript pour choisir et lire les chansons. Veuillez activer JavaScript dans votre navigateur.",
     },
     pt: {
@@ -164,7 +164,7 @@
       teamMinusAriaPrefix: "Remover um ponto da equipe", teamPlusAriaPrefix: "Adicionar um ponto à equipe",
       shareText: "🎵 Venha jogar \"Quem Reconhece a Música?\" comigo — um jogo de adivinhar músicas em grupo!",
       shareResult: "Partilhar resultado",
-      shareCopied: "Link copiado!", langModalTitle: "Escolher idioma", newBtnAria: "Modo crianças", newBtnLabel: "Crianças",
+      shareCopied: "Link copiado!", langModalTitle: "Escolher idioma", newBtnAria: "Modo músicas recentes", newBtnLabel: "Recentes",
       noscript: "Esta página precisa de JavaScript para escolher e tocar músicas. Ative o JavaScript no seu navegador.",
     },
     de: {
@@ -184,7 +184,7 @@
       teamMinusAriaPrefix: "Einen Punkt abziehen bei Team", teamPlusAriaPrefix: "Einen Punkt hinzufügen bei Team",
       shareText: "🎵 Spiel mit mir \"Wer kennt den Song?\" — ein Song-Ratespiel für Gruppen!",
       shareResult: "Ergebnis teilen",
-      shareCopied: "Link kopiert!", langModalTitle: "Sprache wählen", newBtnAria: "Kinder-Modus", newBtnLabel: "Kinder",
+      shareCopied: "Link kopiert!", langModalTitle: "Sprache wählen", newBtnAria: "Modus neue Songs", newBtnLabel: "Neu",
       noscript: "Diese Seite benötigt JavaScript, um Songs auszuwählen und abzuspielen. Bitte aktiviere JavaScript in deinem Browser.",
     },
     it: {
@@ -204,7 +204,7 @@
       teamMinusAriaPrefix: "Togli un punto alla squadra", teamPlusAriaPrefix: "Aggiungi un punto alla squadra",
       shareText: "🎵 Vieni a giocare con me a \"Chi Riconosce la Canzone?\" — un gioco per indovinare canzoni in gruppo!",
       shareResult: "Condividi risultato",
-      shareCopied: "Link copiato!", langModalTitle: "Scegli lingua", newBtnAria: "Modalità bambini", newBtnLabel: "Bambini",
+      shareCopied: "Link copiato!", langModalTitle: "Scegli lingua", newBtnAria: "Modalità brani recenti", newBtnLabel: "Recenti",
       noscript: "Questa pagina richiede JavaScript per scegliere e riprodurre le canzoni. Attiva JavaScript nel tuo browser.",
     },
     tr: {
@@ -224,7 +224,7 @@
       teamMinusAriaPrefix: "Takımdan bir puan çıkar", teamPlusAriaPrefix: "Takıma bir puan ekle",
       shareText: "🎵 Benimle \"Şarkıyı Kim Bilecek?\" oynamaya gel — gruplar için şarkı tahmin oyunu!",
       shareResult: "Sonucu paylaş",
-      shareCopied: "Bağlantı kopyalandı!", langModalTitle: "Dil seçin", newBtnAria: "Çocuk modu", newBtnLabel: "Çocuklar",
+      shareCopied: "Bağlantı kopyalandı!", langModalTitle: "Dil seçin", newBtnAria: "Yeni şarkılar modu", newBtnLabel: "Yeni",
       noscript: "Bu sayfanın şarkı seçip çalabilmesi için JavaScript gerekir. Lütfen tarayıcınızda JavaScript'i etkinleştirin.",
     },
     zh: {
@@ -244,7 +244,7 @@
       teamMinusAriaPrefix: "减少一分给小组", teamPlusAriaPrefix: "增加一分给小组",
       shareText: "🎵 一起来玩「谁知道这首歌？」——一个适合多人的猜歌游戏！",
       shareResult: "分享结果",
-      shareCopied: "链接已复制！", langModalTitle: "选择语言", newBtnAria: "儿童模式", newBtnLabel: "儿童",
+      shareCopied: "链接已复制！", langModalTitle: "选择语言", newBtnAria: "最新歌曲模式", newBtnLabel: "最新",
       noscript: "此页面需要JavaScript才能选择和播放歌曲。请在浏览器中启用JavaScript。",
     },
     hi: {
@@ -264,7 +264,7 @@
       teamMinusAriaPrefix: "टीम से एक अंक घटाएं", teamPlusAriaPrefix: "टीम में एक अंक जोड़ें",
       shareText: "🎵 मेरे साथ \"गाना कौन पहचानेगा?\" खेलने आइए — दोस्तों के लिए गाना पहचानने का खेल!",
       shareResult: "परिणाम साझा करें",
-      shareCopied: "लिंक कॉपी हो गया!", langModalTitle: "भाषा चुनें", newBtnAria: "बच्चों का मोड", newBtnLabel: "बच्चे",
+      shareCopied: "लिंक कॉपी हो गया!", langModalTitle: "भाषा चुनें", newBtnAria: "नए गानों का मोड", newBtnLabel: "नए",
       noscript: "गाने चुनने और चलाने के लिए इस पेज को JavaScript चाहिए। कृपया अपने ब्राउज़र में JavaScript सक्षम करें।",
     },
     ja: {
@@ -284,7 +284,7 @@
       teamMinusAriaPrefix: "チームから1点減らす", teamPlusAriaPrefix: "チームに1点追加",
       shareText: "🎵 「この曲、誰がわかる？」を一緒に遊ぼう — みんなで楽しむ曲当てゲーム！",
       shareResult: "結果を共有",
-      shareCopied: "リンクをコピーしました！", langModalTitle: "言語を選択", newBtnAria: "子どもモード", newBtnLabel: "子ども",
+      shareCopied: "リンクをコピーしました！", langModalTitle: "言語を選択", newBtnAria: "新曲モード", newBtnLabel: "新曲",
       noscript: "このページで曲を選んで再生するにはJavaScriptが必要です。ブラウザでJavaScriptを有効にしてください。",
     },
     ko: {
@@ -304,7 +304,7 @@
       teamMinusAriaPrefix: "팀 점수 1점 감소", teamPlusAriaPrefix: "팀 점수 1점 추가",
       shareText: "🎵 저와 함께 \"이 노래 누가 맞출까?\" 해요 — 다같이 즐기는 노래 맞히기 게임!",
       shareResult: "결과 공유",
-      shareCopied: "링크가 복사되었습니다!", langModalTitle: "언어 선택", newBtnAria: "어린이 모드", newBtnLabel: "어린이",
+      shareCopied: "링크가 복사되었습니다!", langModalTitle: "언어 선택", newBtnAria: "최신곡 모드", newBtnLabel: "최신",
       noscript: "이 페이지에서 노래를 선택하고 재생하려면 JavaScript가 필요합니다. 브라우저에서 JavaScript를 활성화해주세요.",
     },
     vi: {
@@ -324,7 +324,7 @@
       teamMinusAriaPrefix: "Trừ một điểm của đội", teamPlusAriaPrefix: "Cộng một điểm cho đội",
       shareText: "🎵 Cùng chơi \"Ai Đoán Được Bài Hát?\" với mình — trò chơi đoán bài hát dành cho nhóm!",
       shareResult: "Chia sẻ kết quả",
-      shareCopied: "Đã sao chép liên kết!", langModalTitle: "Chọn ngôn ngữ", newBtnAria: "Chế độ trẻ em", newBtnLabel: "Trẻ em",
+      shareCopied: "Đã sao chép liên kết!", langModalTitle: "Chọn ngôn ngữ", newBtnAria: "Chế độ bài hát mới", newBtnLabel: "Mới",
       noscript: "Trang này cần JavaScript để chọn và phát bài hát. Vui lòng bật JavaScript trong trình duyệt của bạn.",
     },
   };
