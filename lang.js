@@ -71,14 +71,16 @@
     }
   }
 
-  function onlyVerifiedForHebrew(code, list) {
-    if (!list || code !== "he") return list;
+  // Only songs with a verified YouTube id are played. Songs without one fall back to
+  // a search embed, which YouTube no longer serves ("This video is unavailable").
+  function onlyVerified(code, list) {
+    if (!list) return list;
     return list.filter(function (s) { return !!s.youtubeId && s.status !== "disabled"; });
   }
 
   function loadSongs(code, cb) {
     if (window.SONGS_BY_LANG && window.SONGS_BY_LANG[code]) {
-      cb(onlyVerifiedForHebrew(code, window.SONGS_BY_LANG[code]));
+      cb(onlyVerified(code, window.SONGS_BY_LANG[code]));
       return;
     }
     if (loading[code]) {
@@ -94,7 +96,7 @@
       for (var i = 0; i < callbacks.length; i++) callbacks[i](result);
     }
     script.onload = function () {
-      done(onlyVerifiedForHebrew(code, (window.SONGS_BY_LANG && window.SONGS_BY_LANG[code]) || null));
+      done(onlyVerified(code, (window.SONGS_BY_LANG && window.SONGS_BY_LANG[code]) || null));
     };
     script.onerror = function () {
       done(null);
