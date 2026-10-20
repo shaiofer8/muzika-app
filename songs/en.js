@@ -12,7 +12,7 @@ window.SONGS_BY_LANG.en = [
   { title: "Smooth Criminal", artist: "Michael Jackson", year: 1987, youtubeId: "h_D3VFfhvs4" },
   { title: "Like a Prayer", artist: "Madonna", year: 1989, youtubeId: "79fzeNUqQbQ" },
   { title: "Material Girl", artist: "Madonna", year: 1984, youtubeId: "6p-lDYPR2P8" },
-  { title: "Vogue", artist: "Madonna", year: 1990 },
+  { title: "Vogue", artist: "Madonna", year: 1990, youtubeId: "GuJQSAiODqI" },
   { title: "Jailhouse Rock", artist: "Elvis Presley", year: 1957 },
   { title: "Can't Help Falling in Love", artist: "Elvis Presley", year: 1961 },
   { title: "Hound Dog", artist: "Elvis Presley", year: 1956 },
@@ -85,7 +85,7 @@ window.SONGS_BY_LANG.en = [
   { title: "Bye Bye Bye", artist: "NSYNC", year: 2000, youtubeId: "Eo-KmOd3i7s" },
   { title: "...Baby One More Time", artist: "Britney Spears", year: 1998 },
   { title: "Toxic", artist: "Britney Spears", year: 2003, youtubeId: "LOZuxwVk7TU" },
-  { title: "Cry Me a River", artist: "Justin Timberlake", year: 2002 },
+  { title: "Cry Me a River", artist: "Justin Timberlake", year: 2002, youtubeId: "DksSPZTZES0" },
   { title: "Can't Stop the Feeling!", artist: "Justin Timberlake", year: 2016, status: "no_match", reason: "no_artist_title_match" },
   { title: "Baby", artist: "Justin Bieber", year: 2010, youtubeId: "kffacxfA7G4" },
   { title: "Sorry", artist: "Justin Bieber", year: 2015, youtubeId: "fRh_vgS2dFE" },
@@ -212,8 +212,8 @@ window.SONGS_BY_LANG.en = [
   { title: "Circles", artist: "Post Malone", year: 2019, youtubeId: "wXhTHyIgQ_U" },
   { title: "Sicko Mode", artist: "Travis Scott", year: 2018, youtubeId: "6ONRf7h3Mdk" },
   { title: "Bodak Yellow", artist: "Cardi B", year: 2017, youtubeId: "PEGccV-NOm8" },
-  { title: "Super Bass", artist: "Nicki Minaj", year: 2010 },
-  { title: "Say So", artist: "Doja Cat", year: 2019 },
+  { title: "Super Bass", artist: "Nicki Minaj", year: 2010, youtubeId: "4JipHEz53sU" },
+  { title: "Say So", artist: "Doja Cat", year: 2019, youtubeId: "pok8H_KF1FA" },
 
   // --- Motown / Soul ---
   { title: "You Can't Hurry Love", artist: "The Supremes", year: 1966 },
@@ -338,8 +338,8 @@ window.SONGS_BY_LANG.en = [
   { title: "It's My Life", artist: "No Doubt", year: 2003 },
 
   // --- 2010s / 2020s Pop & Indie ---
-  { title: "Royals", artist: "Lorde", year: 2013 },
-  { title: "Team", artist: "Lorde", year: 2013 },
+  { title: "Royals", artist: "Lorde", year: 2013, youtubeId: "nlcIKh6sBtc" },
+  { title: "Team", artist: "Lorde", year: 2013, youtubeId: "f2JuxM-snGc" },
   { title: "Without Me", artist: "Halsey", year: 2018 },
   { title: "Bad at Love", artist: "Halsey", year: 2017 },
   { title: "Havana", artist: "Camila Cabello", year: 2017 },
