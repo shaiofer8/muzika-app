@@ -44,3 +44,10 @@ Single coordination file. Update before starting, on handoff, on stop, and at co
 
 ## Next step
 - Owner confirms Play Console declarations; then re-check release status.
+
+## Codex pause (2026-10-20)
+- Task: final step for Muzika Party (com.muzikaparty.app): verify declarations, then send version 9 for review. Shai authorized this step.
+- Codex session 01a15af6-8134-7100-b3c8-edb14c7033d3 stopped with a usage limit. It did not report a send-for-review click.
+- Retry: Codex reports the limit lifts at 2026-10-21 03:43 (Asia/Jerusalem). Do not buy credits or switch billing.
+- Resume: verify the Publishing overview first, then resume the session. Do not send twice.
+- Done before the pause: Data safety saved (deletion URL https://muzika.sofrimyamim.com/privacy-policy.html#deletion), Ads = Yes, Advertising ID = No, target audience 18+.
