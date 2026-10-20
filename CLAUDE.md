@@ -15,3 +15,6 @@ On 2026-08-28, a multi-language feature (15-language picker, per-language ~500-s
 ## When picking up existing drift
 
 If you find shipped code with no matching spec (check `_bmad-output/specs/` and `.memlog.md` against `git log`), flag it to the user and offer to write a retroactive companion spec before continuing new work on that area.
+
+## Team workflow
+See [TEAM_WORKFLOW.md](TEAM_WORKFLOW.md) and [STATUS.md](STATUS.md) for the coordination rules and current state.
