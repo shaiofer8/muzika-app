@@ -1,23 +1,77 @@
 {
   "languages": {
-    "he": { "file": "songs/he.js", "region": "IL" },
-    "en": { "file": "songs/en.js", "region": "US" },
-    "ar": { "file": "songs/ar.js", "region": "EG" },
-    "de": { "file": "songs/de.js", "region": "DE" },
-    "es": { "file": "songs/es.js", "region": "ES" },
-    "fr": { "file": "songs/fr.js", "region": "FR" },
-    "hi": { "file": "songs/hi.js", "region": "IN" },
-    "it": { "file": "songs/it.js", "region": "IT" },
-    "ja": { "file": "songs/ja.js", "region": "JP" },
-    "ko": { "file": "songs/ko.js", "region": "KR" },
-    "pt": { "file": "songs/pt.js", "region": "BR" },
-    "ru": { "file": "songs/ru.js", "region": "RU" },
-    "tr": { "file": "songs/tr.js", "region": "TR" },
-    "vi": { "file": "songs/vi.js", "region": "VN" },
-    "zh": { "file": "songs/zh.js", "region": "TW" }
+    "he": {
+      "file": "songs/he.js",
+      "region": "IL"
+    },
+    "en": {
+      "file": "songs/en.js",
+      "region": "US"
+    },
+    "ar": {
+      "file": "songs/ar.js",
+      "region": "EG"
+    },
+    "de": {
+      "file": "songs/de.js",
+      "region": "DE"
+    },
+    "es": {
+      "file": "songs/es.js",
+      "region": "ES"
+    },
+    "fr": {
+      "file": "songs/fr.js",
+      "region": "FR"
+    },
+    "hi": {
+      "file": "songs/hi.js",
+      "region": "IN"
+    },
+    "it": {
+      "file": "songs/it.js",
+      "region": "IT"
+    },
+    "ja": {
+      "file": "songs/ja.js",
+      "region": "JP"
+    },
+    "ko": {
+      "file": "songs/ko.js",
+      "region": "KR"
+    },
+    "pt": {
+      "file": "songs/pt.js",
+      "region": "BR"
+    },
+    "ru": {
+      "file": "songs/ru.js",
+      "region": "RU"
+    },
+    "tr": {
+      "file": "songs/tr.js",
+      "region": "TR"
+    },
+    "vi": {
+      "file": "songs/vi.js",
+      "region": "VN"
+    },
+    "zh": {
+      "file": "songs/zh.js",
+      "region": "TW"
+    }
   },
   "searchPerDay": 90,
-  "eraWeights": { "recent": 0.4, "mid": 0.3, "early": 0.2, "old": 0.1 },
+  "eraWeights": {
+    "recent": 0.4,
+    "mid": 0.3,
+    "early": 0.2,
+    "old": 0.1
+  },
   "trendsPerWeek": 5,
-  "trendDay": 1
+  "trendDay": 1,
+  "searchWeights": {
+    "en": 30,
+    "he": 8
+  }
 }

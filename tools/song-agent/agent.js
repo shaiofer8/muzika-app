@@ -12,7 +12,16 @@ const PUSH = process.env.MUZIKA_NO_PUSH !== "1";
 const TODAY = new Date().toISOString().slice(0, 10);
 const IS_TREND_DAY = new Date().getDay() === CONFIG.trendDay;
 const SEARCH_PER_DAY = Number(process.env.MUZIKA_SEARCH_PER_DAY || CONFIG.searchPerDay);
-const SEARCH_PER_LANG = Math.floor(SEARCH_PER_DAY / Object.keys(CONFIG.languages).length);
+// Daily search budget per language. Languages listed in config.searchWeights get
+// their fixed share; the rest split what is left. English needs most, since its
+// catalog has the most songs still without a verified YouTube id.
+const WEIGHTS = CONFIG.searchWeights || {};
+const WEIGHTED_TOTAL = Object.values(WEIGHTS).reduce((a, b) => a + b, 0);
+const OTHER_LANGS = Object.keys(CONFIG.languages).filter((l) => !(l in WEIGHTS)).length;
+function searchBudgetFor(lang) {
+  if (lang in WEIGHTS) return WEIGHTS[lang];
+  return Math.max(1, Math.floor((SEARCH_PER_DAY - WEIGHTED_TOTAL) / Math.max(1, OTHER_LANGS)));
+}
 
 const ENTRY = /\{ title: "((?:[^"\\]|\\.)*)", artist: "((?:[^"\\]|\\.)*)", year: (\d+)(?:, youtubeId: "([A-Za-z0-9_-]*)")?(?:, status: "([a-z_]+)", reason: "([^"]*)")? \}/g;
 const ARRAY_END = /\n\];?\s*$/;
@@ -115,9 +124,9 @@ async function search(e) {
   return { code: r.status, items: r.status === 200 ? (JSON.parse(r.body).items || []) : [] };
 }
 
-async function discover(entries, log) {
+async function discover(entries, log, budget) {
   const pending = entries.filter((e) => !e.youtubeId && !e.status);
-  const batch = pickByEra(pending, SEARCH_PER_LANG);
+  const batch = pickByEra(pending, budget);
   for (const e of batch) {
     const r = await search(e);
     if (r.code === 429 || r.code === 403) { log.stoppedBy = "quota"; break; }
@@ -188,7 +197,7 @@ function commit(file, message) {
     const log = { parsed: entries.length, validated: 0, disabled: [], reenabled: [], discovered: [], noMatch: 0, trendsAdded: [], stoppedBy: null };
 
     await validate(entries, log);
-    await discover(entries, log);
+    await discover(entries, log, searchBudgetFor(lang));
 
     let text = rebuild(original, entries);
     if (IS_TREND_DAY) {
