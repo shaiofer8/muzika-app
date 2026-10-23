@@ -9,6 +9,20 @@
 (function () {
   "use strict";
 
+  // Google Analytics 4 measurement ID (G-XXXXXXXXXX). Leave empty to keep analytics off.
+  // When set, the gtag.js script loads and events go to GA4 through window.gtag below.
+  var MEASUREMENT_ID = "";
+  if (MEASUREMENT_ID) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", MEASUREMENT_ID, { anonymize_ip: true });
+    var gtagScript = document.createElement("script");
+    gtagScript.async = true;
+    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(MEASUREMENT_ID);
+    document.head.appendChild(gtagScript);
+  }
+
   var sessionId = Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
   var sessionStart = Date.now();
   var songsThisSession = 0;
