@@ -149,6 +149,43 @@
     if (valueEls[idx]) valueEls[idx].textContent = next;
   }
 
+  // Draws a 1080x1350 result card: teams, scores, and the challenge link. Returns a PNG Blob.
+  function buildScoreCard(link) {
+    return new Promise(function (resolve) {
+      var canvas = document.createElement("canvas");
+      canvas.width = 1080;
+      canvas.height = 1350;
+      var ctx = canvas.getContext("2d");
+      var grad = ctx.createLinearGradient(0, 0, 1080, 1350);
+      grad.addColorStop(0, "#2a1763");
+      grad.addColorStop(1, "#090d19");
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, 1080, 1350);
+      ctx.textAlign = "center";
+      ctx.fillStyle = "#f5f7ff";
+      ctx.font = "bold 96px sans-serif";
+      ctx.fillText("Muzika Party", 540, 200);
+      var rowTop = 340;
+      state.names.forEach(function (name, i) {
+        ctx.fillStyle = "rgba(255,255,255,0.08)";
+        ctx.fillRect(120, rowTop + i * 150, 840, 120);
+        ctx.fillStyle = "#f5f7ff";
+        ctx.font = "600 56px sans-serif";
+        ctx.textAlign = "right";
+        ctx.fillText(name, 900, rowTop + i * 150 + 76);
+        ctx.textAlign = "left";
+        ctx.fillStyle = "#c3b1ff";
+        ctx.font = "bold 72px sans-serif";
+        ctx.fillText(String(state.scores[i]), 180, rowTop + i * 150 + 80);
+      });
+      ctx.textAlign = "center";
+      ctx.fillStyle = "#bdc8df";
+      ctx.font = "44px sans-serif";
+      ctx.fillText(link.replace(/^https?:\/\//, "").slice(0, 60), 540, 1250);
+      canvas.toBlob(function (blob) { resolve(blob); }, "image/png");
+    });
+  }
+
   function shareScore() {
     var lines = state.names.map(function (name, i) { return name + ": " + state.scores[i]; });
     var link = window.MuzikaChallenge ? window.MuzikaChallenge.makeLink() : window.location.href;
@@ -156,7 +193,12 @@
     var track = function (name, params) { if (window.MuzikaAnalytics) window.MuzikaAnalytics.track(name, params); };
     track("share_clicked", { source: "score" });
     if (navigator.share) {
-      navigator.share({ text: message }).then(function () { track("share_completed", { method: "native", source: "score" }); }, function () {});
+      buildScoreCard(link).then(function (blob) {
+        var file = blob && typeof File === "function" ? new File([blob], "muzika-score.png", { type: "image/png" }) : null;
+        var payload = { text: message };
+        if (file && navigator.canShare && navigator.canShare({ files: [file] })) payload.files = [file];
+        return navigator.share(payload);
+      }).then(function () { track("share_completed", { method: "native", source: "score" }); }, function () {});
       return;
     }
     if (navigator.clipboard && navigator.clipboard.writeText) {
