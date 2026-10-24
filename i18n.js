@@ -24,6 +24,7 @@
 
   window.I18N = {
     he: {
+      howtoTitle: "איך משחקים", howto1: "מנגנים שיר. מי שמזהה ראשון, מכריז.", howto2: "לוחצים על \"חשיפה\" כדי לראות את השיר, האמן והשנה.", howto3: "מזינים ניקוד לקבוצות בכפתור \"ניקוד\", ולוחצים \"הבא\".", howtoOk: "הבנתי",
       title: "מי מזהה את השיר?", docTitle: "זיהוי שירים אקראי",
       kicker: "משחק זיהוי שירים · מסך משותף",
       scoreBtn: "ניקוד", contactBtn: "צור קשר",
@@ -46,6 +47,7 @@
       noscript: "הדף הזה זקוק ל-JavaScript כדי לבחור ולנגן שירים. אנא הפעילו JavaScript בדפדפן.",
     },
     en: {
+      howtoTitle: "How to play", howto1: "A song plays. The first to name it calls it out.", howto2: "Tap \"Reveal\" to see the song, artist and year.", howto3: "Add points for each team in \"Score\", then tap \"Next\".", howtoOk: "Got it",
       title: "Who Knows That Song?", docTitle: "Random Song Guesser",
       kicker: "Song-guessing game · shared screen",
       scoreBtn: "Score", contactBtn: "Contact us",

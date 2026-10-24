@@ -85,6 +85,7 @@
 
   function playSong(song) {
     current = song;
+    rememberPlayed(song);
     if (provider) provider.play(song);
     els.ytLink.href = "https://www.youtube.com/results?search_query=" +
       encodeURIComponent(song.artist + " " + song.title);
@@ -126,9 +127,28 @@
   // מאגר הבחירה הפעיל: כל השירים, או רק שירים "חדשים" מתוך מאגר השפה
   // הנוכחית, לפי מצב הכפתור. שדה s.enabled === false (spec-smart-shuffle-engine
   // §9) מוציא שיר מהבחירה בלי למחוק אותו מהקובץ.
+  // Last 30 songs played, kept across visits (per device). Used to avoid repeats.
+  var RECENT_KEY = "muzika-recent-v1";
+  var RECENT_MAX = 30;
+  var RECENT_MIN_POOL = 5; // if avoiding recent songs leaves fewer than this, ignore the list
+  function songKey(s) { return s.artist + "|" + s.title; }
+  function loadRecent() {
+    try { var raw = localStorage.getItem(RECENT_KEY); var arr = raw ? JSON.parse(raw) : []; return Array.isArray(arr) ? arr : []; } catch (e) { return []; }
+  }
+  function rememberPlayed(s) {
+    try {
+      var arr = loadRecent().filter(function (k) { return k !== songKey(s); });
+      arr.push(songKey(s));
+      localStorage.setItem(RECENT_KEY, JSON.stringify(arr.slice(-RECENT_MAX)));
+    } catch (e) { /* storage unavailable: just skip the memory */ }
+  }
+
   function activePool() {
     var base = songs.filter(function (s) { return s.enabled !== false; });
-    return newMode ? filterNew(base) : base;
+    var pool = newMode ? filterNew(base) : base;
+    var recent = loadRecent();
+    var fresh = pool.filter(function (s) { return recent.indexOf(songKey(s)) === -1; });
+    return fresh.length >= RECENT_MIN_POOL ? fresh : pool;
   }
 
   function pickAndPlay() {
@@ -174,6 +194,22 @@
   }
 
   if (els.primaryBtn) els.primaryBtn.addEventListener("click", onPrimaryClick);
+
+  // "איך משחקים": מוצג פעם אחת בכל מכשיר (try/catch, כי localStorage עלול להיות חסום).
+  (function () {
+    var howto = document.getElementById("howto");
+    var ok = document.getElementById("howtoOk");
+    if (!howto || !ok) return;
+    var KEY = "muzika-howto-v1";
+    var seen = false;
+    try { seen = !!localStorage.getItem(KEY); } catch (e) {}
+    if (seen) return;
+    howto.hidden = false;
+    ok.addEventListener("click", function () {
+      howto.hidden = true;
+      try { localStorage.setItem(KEY, "1"); } catch (e) {}
+    });
+  })();
 
   if (els.newBtn) {
     els.newBtn.addEventListener("click", function () {
