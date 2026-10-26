@@ -44,7 +44,7 @@ window.SONGS_BY_LANG.es = [
   { title: "Obsesión", artist: "Aventura", year: 2002, youtubeId: "8_QY5gFQUTg" },
   { title: "Propuesta Indecente", artist: "Romeo Santos", year: 2013, youtubeId: "QFs3PIZb3js" },
   { title: "Odio", artist: "Romeo Santos ft. Drake", year: 2019, youtubeId: "oNRPB2wKjAI" },
-  { title: "Loba", artist: "Shakira", year: 2009 },
+  { title: "Loba", artist: "Shakira", year: 2009, youtubeId: "C7ssrLSheg4" },
   { title: "Chantaje", artist: "Shakira ft. Maluma", year: 2016, status: "no_match", reason: "no_artist_title_match" },
   { title: "Felices los 4", artist: "Maluma", year: 2017, youtubeId: "t_jHrUE5IOk" },
   { title: "Hawái", artist: "Maluma", year: 2020, youtubeId: "pK060iUFWXg" },
@@ -125,7 +125,7 @@ window.SONGS_BY_LANG.es = [
   // --- Rock latino / Argentina ---
   { title: "Un Ángel para tu Soledad", artist: "Fito Páez", year: 1994 },
   { title: "11 y 6", artist: "Fito Páez", year: 1985 },
-  { title: "Ya Nada Volverá a Ser Igual", artist: "Fito Páez", year: 2011 },
+  { title: "Ya Nada Volverá a Ser Igual", artist: "Fito Páez", year: 2011, status: "no_match", reason: "no_artist_title_match" },
   { title: "Rezo por Vos", artist: "Charly García & Luis Alberto Spinetta", year: 1985 },
   { title: "Los Dinosaurios", artist: "Charly García", year: 1983 },
   { title: "Demoliendo Hoteles", artist: "Charly García", year: 1984 },
@@ -163,12 +163,12 @@ window.SONGS_BY_LANG.es = [
   { title: "Tren al Sur", artist: "Los Prisioneros", year: 1990 },
   { title: "El Baile de los Que Sobran", artist: "Los Prisioneros", year: 1986 },
   { title: "Muevete", artist: "Los Prisioneros", year: 1986 },
-  { title: "Latinoamérica", artist: "Calle 13", year: 2010 },
+  { title: "Latinoamérica", artist: "Calle 13", year: 2010, youtubeId: "DkFJE8ZdeG8" },
   { title: "Atrévete-te-te", artist: "Calle 13", year: 2005 },
   { title: "Pa'l Norte", artist: "Calle 13 ft. Orishas", year: 2007 },
 
   // --- Colombia ---
-  { title: "Te Mando Flores", artist: "Fonseca ft. Andrés Cepeda", year: 2013 },
+  { title: "Te Mando Flores", artist: "Fonseca ft. Andrés Cepeda", year: 2013, status: "no_match", reason: "no_artist_title_match" },
   { title: "Eres Mi Sueño", artist: "Fonseca", year: 2005 },
   { title: "Sentir", artist: "Fonseca", year: 2007 },
   { title: "Voy a Extrañarte", artist: "Andrés Cepeda", year: 2005 },
@@ -533,4 +533,9 @@ window.SONGS_BY_LANG.es = [
   { title: "La Falda", artist: "Judeline", year: 2026, youtubeId: "7L6oiqd91qE" },
   { title: "PARADIXE", artist: "Feid, El Americano 4KT, Pirlo", year: 2026, youtubeId: "La4g9CSXvus" },
   { title: "Jukiar", artist: "Clarent & Quevedo", year: 2026, youtubeId: "D6VOtKyA6og" },
+  { title: "DOGGY", artist: "La Pantera, Quevedo", year: 2026, youtubeId: "Mj5UX4xb0sU" },
+  { title: "Hades66, Westcol, Ovy On The Drums", artist: "W Sound 10 “HAPPY MONDAY”", year: 2026, youtubeId: "LYn4w3m3Pjo" },
+  { title: "Vulnerable", artist: "Ozuna x Jory Boy x Ñengo Flow", year: 2026, youtubeId: "OWbhwq9fecg" },
+  { title: "TE IMAGINO", artist: "Myke Towers", year: 2026, youtubeId: "5j8fIDh1V0A" },
+  { title: "Relicario - Relicario", artist: "El Barrio", year: 2026, youtubeId: "o0pX-KObmvs" },
 ];
