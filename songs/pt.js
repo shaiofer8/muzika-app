@@ -159,7 +159,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Ainda Bem", artist: "Marisa Monte", year: 2006, youtubeId: "Pmt01TGsGGA" },
   { title: "Bem Que Se Quis", artist: "Marisa Monte", year: 1994 },
   { title: "Diminuta", artist: "Marisa Monte", year: 2011, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Amor I Love You", artist: "Marisa Monte", year: 2006 },
+  { title: "Amor I Love You", artist: "Marisa Monte", year: 2006, youtubeId: "2CPHbEIC6EM" },
 
   // --- Samba / Pagode / Axé ---
   { title: "Ela Só Pensa Em Beijar", artist: "Exaltasamba", year: 1999 },
@@ -357,9 +357,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "A Culpa É Dele", artist: "Maiara e Maraisa", year: 2019, youtubeId: "0fHKqwhdNJ8" },
   { title: "Largado às Traças", artist: "Zé Neto e Cristiano", year: 2018, youtubeId: "WcTRQXtXJPs" },
   { title: "Braba", artist: "Luísa Sonza", year: 2019, youtubeId: "ogxUGtlAq18" },
-  { title: "Combatchy", artist: "Luísa Sonza, Anitta e Papatinho", year: 2019 },
-  { title: "Modo Turbo", artist: "Luísa Sonza, Pabllo Vittar e Anitta", year: 2020 },
-  { title: "Flores", artist: "Luísa Sonza e Vitão", year: 2021 },
+  { title: "Combatchy", artist: "Luísa Sonza, Anitta e Papatinho", year: 2019, youtubeId: "acX7HHhhYGI" },
+  { title: "Modo Turbo", artist: "Luísa Sonza, Pabllo Vittar e Anitta", year: 2020, youtubeId: "QcS9ZndErHc" },
+  { title: "Flores", artist: "Luísa Sonza e Vitão", year: 2021, status: "no_match", reason: "no_artist_title_match" },
   { title: "Café da Manhã", artist: "Ludmilla e Luísa Sonza", year: 2022 },
   { title: "Ai Que Calor", artist: "Pabllo Vittar e Duda Beat", year: 2019 },
   { title: "Procurando Tu", artist: "Trio Nordestino", year: 1970 },
