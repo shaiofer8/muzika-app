@@ -947,3 +947,38 @@ footer.meta {
     margin-inline: auto;
   }
 }
+
+.howto-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.howto-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-soft);
+}
+
+.howto-dots span.on {
+  background: var(--accent-a);
+}
+
+.howto-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.decade-filter select {
+  min-block-size: 36px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  color: var(--text);
+  font-size: 0.8125rem;
+}

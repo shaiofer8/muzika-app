@@ -77,12 +77,16 @@
   <div class="howto" id="howto" hidden>
     <div class="howto-card" role="dialog" aria-modal="true" aria-labelledby="howtoTitle">
       <h2 id="howtoTitle" data-i18n="howtoTitle">איך משחקים</h2>
-      <ol class="howto-steps">
-        <li data-i18n="howto1">מנגנים שיר. מי שמזהה ראשון, מכריז.</li>
-        <li data-i18n="howto2">לוחצים על "חשיפה" כדי לראות את השיר, האמן והשנה.</li>
-        <li data-i18n="howto3">מזינים ניקוד לקבוצות בכפתור "ניקוד", ולוחצים "הבא".</li>
-      </ol>
-      <button type="button" class="primary-btn" id="howtoOk" data-i18n="howtoOk">הבנתי</button>
+      <div class="howto-slides">
+        <section class="howto-slide" data-slide="0"><p data-i18n="howto1">מנגנים שיר. מי שמזהה ראשון, מכריז.</p></section>
+        <section class="howto-slide" data-slide="1" hidden><p data-i18n="howto2">לוחצים על "חשיפה" כדי לראות את השיר, האמן והשנה.</p></section>
+        <section class="howto-slide" data-slide="2" hidden><p data-i18n="howto3">מזינים ניקוד לקבוצות בכפתור "ניקוד", ולוחצים "הבא".</p></section>
+      </div>
+      <div class="howto-dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+      <div class="howto-actions">
+        <button type="button" class="link-btn" id="howtoSkip" data-i18n="howtoSkip">דלג</button>
+        <button type="button" class="primary-btn" id="howtoNext" data-i18n="howtoNext">הבא</button>
+      </div>
     </div>
   </div>
   <header class="masthead">
@@ -94,6 +98,7 @@
     <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="kicker">משחק זיהוי שירים · מסך משותף</span></span>
     <h1 data-i18n="title">מי מזהה את השיר?</h1>
     <div class="masthead-settings">
+      <label class="decade-filter"><span class="sr-only" data-i18n="decadeLabel">עשור</span><select id="decadeSelect" aria-label="עשור"><option value="all" data-i18n="decadeAll">הכול</option><option value="1980">80s</option><option value="1990">90s</option><option value="2000">00s</option><option value="2010">10s</option><option value="2020">20s</option></select></label>
       <button class="lang-btn" id="langOpenBtn" type="button" aria-haspopup="dialog" aria-controls="langModal" aria-label="עברית">
         <span id="langFlag" class="lang-flag-main" aria-hidden="true">🇮🇱</span>
         <span id="langName" class="sr-only">עברית</span>
