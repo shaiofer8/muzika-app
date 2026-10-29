@@ -51,3 +51,11 @@ Single coordination file. Update before starting, on handoff, on stop, and at co
 - Retry: Codex reports the limit lifts at 2026-10-21 03:43 (Asia/Jerusalem). Do not buy credits or switch billing.
 - Resume: verify the Publishing overview first, then resume the session. Do not send twice.
 - Done before the pause: Data safety saved (deletion URL https://muzika.sofrimyamim.com/privacy-policy.html#deletion), Ads = Yes, Advertising ID = No, target audience 18+.
+
+## Update 2026-10-29
+- Live on main: score share card, link preview tags, recent-songs memory, one-time 3-slide onboarding, decade filter, GA4 loader (off until a measurement ID is set), cache v14.
+- Play: version 9 is production. Review status must be checked in Publishing overview. Listing text (EN and HE) and feature graphic were updated and sent with the release.
+- Song agent: daily 10:30, English gets 30 of 90 searches. Last run 2026-10-29 succeeded.
+- Sofrim Yamim: UX fixes merged (labeled header buttons, hidden empty ad banner). AdSense: account still in review, sites option not available. Business domain sofrimyamim.com was added and verified in account settings.
+- Open, needs owner: GA4 measurement ID; AdSense review reason; Play review result; keystore and YouTube key rotation (declined for now); routine repo connection; trademark check by a lawyer.
+- Open, needs decisions: game modes (rounds, timer, guess year), genre tags, multiplayer, purchases.
