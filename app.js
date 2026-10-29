@@ -28,6 +28,7 @@
     primaryIcon: document.getElementById("primaryIcon"),
     primaryLabel: document.getElementById("primaryLabel"),
     ytLink: document.getElementById("ytLink"),
+    hideSongBtn: document.getElementById("hideSongBtn"),
     newBtn: document.getElementById("newBtn")
   };
 
@@ -59,6 +60,7 @@
     els.year.textContent = song.year || t("unknownYear");
     els.revealState.hidden = false;
     els.ytLink.hidden = false;
+    if (els.hideSongBtn) els.hideSongBtn.hidden = false;
     replayPop();
   }
 
@@ -68,6 +70,7 @@
     els.year.textContent = "—";
     els.revealState.hidden = false;
     els.ytLink.hidden = true;
+    if (els.hideSongBtn) els.hideSongBtn.hidden = true;
   }
 
   function updatePrimaryButton() {
@@ -155,8 +158,26 @@
     } catch (e) { /* storage unavailable: just skip the memory */ }
   }
 
+  // Songs the user chose "never show again" (per device).
+  var HIDDEN_KEY = "muzika-hidden-v1";
+  function loadHidden() {
+    try { var raw = localStorage.getItem(HIDDEN_KEY); var arr = raw ? JSON.parse(raw) : []; return Array.isArray(arr) ? arr : []; } catch (e) { return []; }
+  }
+  function hideCurrent() {
+    if (!current) return;
+    try {
+      var arr = loadHidden();
+      if (arr.indexOf(songKey(current)) === -1) arr.push(songKey(current));
+      localStorage.setItem(HIDDEN_KEY, JSON.stringify(arr));
+    } catch (e) { /* storage unavailable: the song simply comes back */ }
+    pendingNext = null;
+    pickAndPlay();
+  }
+  if (els.hideSongBtn) els.hideSongBtn.addEventListener("click", hideCurrent);
+
   function activePool() {
-    var base = songs.filter(function (s) { return s.enabled !== false; });
+    var hiddenList = loadHidden();
+    var base = songs.filter(function (s) { return s.enabled !== false && hiddenList.indexOf(songKey(s)) === -1; });
     if (decadeStart !== null) {
       base = base.filter(function (s) { return typeof s.year === "number" && s.year >= decadeStart && s.year < decadeStart + 10; });
     }
