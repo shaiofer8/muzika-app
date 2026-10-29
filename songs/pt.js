@@ -163,7 +163,7 @@ window.SONGS_BY_LANG.pt = [
 
   // --- Samba / Pagode / Axé ---
   { title: "Ela Só Pensa Em Beijar", artist: "Exaltasamba", year: 1999 },
-  { title: "Espelho D'Água", artist: "Exaltasamba", year: 2000 },
+  { title: "Espelho D'Água", artist: "Exaltasamba", year: 2000, status: "no_match", reason: "no_artist_title_match" },
   { title: "Errei Aceitar", artist: "Turma do Pagode", year: 2015, status: "no_match", reason: "no_artist_title_match" },
   { title: "Não Sei Se Choro ou Se Bebo", artist: "Turma do Pagode", year: 2014, status: "no_match", reason: "no_artist_title_match" },
   { title: "Deixa Acontecer", artist: "Thiaguinho", year: 2011, youtubeId: "CxF1wrcGE4I" },
@@ -360,13 +360,13 @@ window.SONGS_BY_LANG.pt = [
   { title: "Combatchy", artist: "Luísa Sonza, Anitta e Papatinho", year: 2019, youtubeId: "acX7HHhhYGI" },
   { title: "Modo Turbo", artist: "Luísa Sonza, Pabllo Vittar e Anitta", year: 2020, youtubeId: "QcS9ZndErHc" },
   { title: "Flores", artist: "Luísa Sonza e Vitão", year: 2021, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Café da Manhã", artist: "Ludmilla e Luísa Sonza", year: 2022 },
-  { title: "Ai Que Calor", artist: "Pabllo Vittar e Duda Beat", year: 2019 },
+  { title: "Café da Manhã", artist: "Ludmilla e Luísa Sonza", year: 2022, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Ai Que Calor", artist: "Pabllo Vittar e Duda Beat", year: 2019, status: "no_match", reason: "no_artist_title_match" },
   { title: "Procurando Tu", artist: "Trio Nordestino", year: 1970 },
   { title: "Eu Só Quero Um Xodó", artist: "Dominguinhos", year: 1973 },
 
   // --- Anitta ---
-  { title: "Meiga e Abusada", artist: "Anitta", year: 2012 },
+  { title: "Meiga e Abusada", artist: "Anitta", year: 2012, status: "no_match", reason: "no_artist_title_match" },
   { title: "Blá Blá Blá", artist: "Anitta", year: 2014 },
   { title: "Na Batida", artist: "Anitta", year: 2014 },
   { title: "Downtown", artist: "Anitta e J Balvin", year: 2017 },
