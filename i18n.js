@@ -72,6 +72,8 @@
       noscript: "This page needs JavaScript to pick and play songs. Please enable JavaScript in your browser.",
     },
     es: {
+      hideSong: "No volver a mostrar", howtoNext: "Siguiente", howtoSkip: "Saltar", decadeLabel: "Década", decadeAll: "Todas", howtoTitle: "Cómo jugar", howto1: "Suena una canción. Quien la reconozca primero dice el título en voz alta.", howto2: "Toca «Revelar» para ver la canción, el artista y el año.", howto3: "Suma puntos a cada equipo en «Puntuación» y toca «Siguiente».", howtoOk: "Entendido",
+      challengeBanner: "Un reto de un amigo: ¿puedes ganarnos?", resetConfirm: "¿Reiniciar todas las puntuaciones?",
       title: "¿Quién Adivina la Canción?", docTitle: "Adivina la Canción",
       kicker: "Juego de adivinar canciones · pantalla compartida",
       scoreBtn: "Puntuación", contactBtn: "Contáctanos",
@@ -92,6 +94,8 @@
       noscript: "Esta página necesita JavaScript para elegir y reproducir canciones. Por favor, activa JavaScript en tu navegador.",
     },
     ar: {
+      hideSong: "لا تعرضها مجددًا", howtoNext: "التالي", howtoSkip: "تخطي", decadeLabel: "العقد", decadeAll: "الكل", howtoTitle: "طريقة اللعب", howto1: "تبدأ أغنية. أول من يعرف اسمها يقوله بصوت عالٍ.", howto2: "اضغط «كشف» لعرض اسم الأغنية والفنان والسنة.", howto3: "أضف نقاط كل فريق في «النتيجة»، ثم اضغط «التالي».", howtoOk: "فهمت",
+      challengeBanner: "تحدٍّ من صديق — هل يمكنك التغلب علينا؟", resetConfirm: "هل تريد تصفير جميع النقاط؟",
       title: "من يعرف الأغنية؟", docTitle: "تخمين الأغنية العشوائية",
       kicker: "لعبة تخمين الأغاني · شاشة مشتركة",
       scoreBtn: "النقاط", contactBtn: "تواصل معنا",
@@ -112,6 +116,8 @@
       noscript: "تحتاج هذه الصفحة إلى JavaScript لاختيار الأغاني وتشغيلها. يرجى تفعيل JavaScript في متصفحك.",
     },
     ru: {
+      hideSong: "Больше не показывать", howtoNext: "Далее", howtoSkip: "Пропустить", decadeLabel: "Десятилетие", decadeAll: "Все", howtoTitle: "Как играть", howto1: "Звучит песня. Кто первым её узнает, громко называет её.", howto2: "Нажмите «Ответ», чтобы увидеть название песни, исполнителя и год.", howto3: "Добавьте очки каждой команде в разделе «Счёт», затем нажмите «Далее».", howtoOk: "Понятно",
+      challengeBanner: "Вызов от друга — сможешь нас обыграть?", resetConfirm: "Сбросить все очки?",
       title: "Кто угадает песню?", docTitle: "Угадай песню",
       kicker: "Игра «угадай песню» · общий экран",
       scoreBtn: "Счёт", contactBtn: "Связаться с нами",
@@ -132,6 +138,8 @@
       noscript: "Для выбора и воспроизведения песен этой странице нужен JavaScript. Пожалуйста, включите JavaScript в браузере.",
     },
     fr: {
+      hideSong: "Ne plus afficher", howtoNext: "Suivant", howtoSkip: "Passer", decadeLabel: "Décennie", decadeAll: "Toutes", howtoTitle: "Comment jouer", howto1: "Une chanson démarre. La première personne à la reconnaître annonce le titre.", howto2: "Appuyez sur « Révéler » pour voir la chanson, l’artiste et l’année.", howto3: "Ajoutez les points de chaque équipe dans « Score », puis appuyez sur « Suivant ».", howtoOk: "Compris",
+      challengeBanner: "Un défi lancé par un ami — peux-tu nous battre ?", resetConfirm: "Réinitialiser tous les scores ?",
       title: "Qui reconnaît la chanson ?", docTitle: "Deviner la chanson",
       kicker: "Jeu de reconnaissance musicale · écran partagé",
       scoreBtn: "Score", contactBtn: "Nous contacter",
@@ -152,6 +160,8 @@
       noscript: "Cette page a besoin de JavaScript pour choisir et lire les chansons. Veuillez activer JavaScript dans votre navigateur.",
     },
     pt: {
+      hideSong: "Não mostrar novamente", howtoNext: "Próximo", howtoSkip: "Pular", decadeLabel: "Década", decadeAll: "Todas", howtoTitle: "Como jogar", howto1: "Uma música começa a tocar. Quem reconhecer primeiro diz o nome em voz alta.", howto2: "Toque em 'Revelar' para ver a música, o artista e o ano.", howto3: "Adicione os pontos de cada equipe em 'Placar' e toque em 'Próximo'.", howtoOk: "Entendi",
+      challengeBanner: "Um desafio de um amigo — consegue nos vencer?", resetConfirm: "Zerar todas as pontuações?",
       title: "Quem Reconhece a Música?", docTitle: "Adivinhar a Música",
       kicker: "Jogo de adivinhar músicas · tela compartilhada",
       scoreBtn: "Pontuação", contactBtn: "Fale conosco",
@@ -172,6 +182,8 @@
       noscript: "Esta página precisa de JavaScript para escolher e tocar músicas. Ative o JavaScript no seu navegador.",
     },
     de: {
+      hideSong: "Nicht mehr anzeigen", howtoNext: "Weiter", howtoSkip: "Überspringen", decadeLabel: "Jahrzehnt", decadeAll: "Alle", howtoTitle: "So wird gespielt", howto1: "Ein Song läuft. Wer ihn zuerst erkennt, ruft den Titel.", howto2: "Tippe auf „Auflösen“, um Song, Interpret und Jahr zu sehen.", howto3: "Vergib unter „Punkte“ Punkte für jedes Team und tippe auf „Weiter“.", howtoOk: "Verstanden",
+      challengeBanner: "Eine Herausforderung von einem Freund — kannst du uns schlagen?", resetConfirm: "Alle Punktestände zurücksetzen?",
       title: "Wer kennt den Song?", docTitle: "Song erraten",
       kicker: "Song-Ratespiel · geteilter Bildschirm",
       scoreBtn: "Punkte", contactBtn: "Kontakt",
@@ -192,6 +204,8 @@
       noscript: "Diese Seite benötigt JavaScript, um Songs auszuwählen und abzuspielen. Bitte aktiviere JavaScript in deinem Browser.",
     },
     it: {
+      hideSong: "Non mostrare più", howtoNext: "Avanti", howtoSkip: "Salta", decadeLabel: "Decennio", decadeAll: "Tutti", howtoTitle: "Come si gioca", howto1: "Parte una canzone. Chi la riconosce per primo dice il titolo ad alta voce.", howto2: "Tocca «Svela» per vedere canzone, artista e anno.", howto3: "Aggiungi i punti di ogni squadra in «Punteggio», poi tocca «Avanti».", howtoOk: "Capito",
+      challengeBanner: "Una sfida da un amico — riesci a batterci?", resetConfirm: "Azzerare tutti i punteggi?",
       title: "Chi Riconosce la Canzone?", docTitle: "Indovina la Canzone",
       kicker: "Gioco per indovinare canzoni · schermo condiviso",
       scoreBtn: "Punteggio", contactBtn: "Contattaci",
@@ -212,6 +226,8 @@
       noscript: "Questa pagina richiede JavaScript per scegliere e riprodurre le canzoni. Attiva JavaScript nel tuo browser.",
     },
     tr: {
+      hideSong: "Bir daha gösterme", howtoNext: "Sonraki", howtoSkip: "Atla", decadeLabel: "On yıl", decadeAll: "Tümü", howtoTitle: "Nasıl oynanır?", howto1: "Bir şarkı çalar. İlk tanıyan, adını yüksek sesle söyler.", howto2: "Şarkıyı, sanatçıyı ve yılı görmek için 'Cevabı göster'e dokun.", howto3: "'Skor'da her takıma puan ekle, sonra 'Sonraki'ne dokun.", howtoOk: "Anladım",
+      challengeBanner: "Bir arkadaşından meydan okuma — bizi yenebilir misin?", resetConfirm: "Tüm puanlar sıfırlansın mı?",
       title: "Şarkıyı Kim Bilecek?", docTitle: "Rastgele Şarkı Tahmini",
       kicker: "Şarkı tahmin oyunu · paylaşılan ekran",
       scoreBtn: "Skor", contactBtn: "Bize ulaşın",
@@ -232,6 +248,8 @@
       noscript: "Bu sayfanın şarkı seçip çalabilmesi için JavaScript gerekir. Lütfen tarayıcınızda JavaScript'i etkinleştirin.",
     },
     zh: {
+      hideSong: "不再顯示", howtoNext: "下一首", howtoSkip: "跳過", decadeLabel: "年代", decadeAll: "全部", howtoTitle: "遊戲玩法", howto1: "歌曲開始播放，最先認出的人大聲喊出歌名。", howto2: "點「揭曉」查看歌名、歌手和發行年份。", howto3: "在「計分」中為各隊加分，再點「下一首」。", howtoOk: "知道了",
+      challengeBanner: "来自朋友的挑战——你能赢过我们吗？", resetConfirm: "重置所有得分？",
       title: "谁知道这首歌？", docTitle: "随机猜歌",
       kicker: "猜歌游戏 · 共享屏幕",
       scoreBtn: "计分", contactBtn: "联系我们",
@@ -252,6 +270,8 @@
       noscript: "此页面需要JavaScript才能选择和播放歌曲。请在浏览器中启用JavaScript。",
     },
     hi: {
+      hideSong: "दोबारा न दिखाएँ", howtoNext: "अगला", howtoSkip: "छोड़ें", decadeLabel: "दशक", decadeAll: "सभी", howtoTitle: "कैसे खेलें", howto1: "एक गाना बजेगा। जो पहले पहचाने, उसका नाम ज़ोर से बोले।", howto2: "गाने का नाम, कलाकार और साल देखने के लिए 'जवाब दिखाएँ' पर टैप करें।", howto3: "'स्कोर' में हर टीम के अंक जोड़ें, फिर 'अगला' पर टैप करें।", howtoOk: "समझ गए",
+      challengeBanner: "एक दोस्त की चुनौती — क्या तुम हमें हरा सकते हो?", resetConfirm: "सभी स्कोर रीसेट करें?",
       title: "गाना कौन पहचानेगा?", docTitle: "गाना पहचानो",
       kicker: "गाना पहचानने का खेल · साझा स्क्रीन",
       scoreBtn: "स्कोर", contactBtn: "संपर्क करें",
@@ -272,6 +292,8 @@
       noscript: "गाने चुनने और चलाने के लिए इस पेज को JavaScript चाहिए। कृपया अपने ब्राउज़र में JavaScript सक्षम करें।",
     },
     ja: {
+      hideSong: "今後表示しない", howtoNext: "次へ", howtoSkip: "スキップ", decadeLabel: "年代", decadeAll: "すべて", howtoTitle: "遊び方", howto1: "曲が流れます。最初にわかった人が曲名を声に出して答えます。", howto2: "「答えを見る」をタップすると、曲名・アーティスト・リリース年が表示されます。", howto3: "「スコア」で各チームに得点を追加し、「次へ」をタップします。", howtoOk: "わかった",
+      challengeBanner: "友達からの挑戦状！私たちに勝てるかな？", resetConfirm: "すべてのスコアをリセットしますか？",
       title: "この曲、誰がわかる？", docTitle: "ランダム曲当てクイズ",
       kicker: "曲当てゲーム · 共有画面",
       scoreBtn: "スコア", contactBtn: "お問い合わせ",
@@ -292,6 +314,8 @@
       noscript: "このページで曲を選んで再生するにはJavaScriptが必要です。ブラウザでJavaScriptを有効にしてください。",
     },
     ko: {
+      hideSong: "다시 보지 않기", howtoNext: "다음", howtoSkip: "건너뛰기", decadeLabel: "연대", decadeAll: "전체", howtoTitle: "게임 방법", howto1: "노래가 나오면 가장 먼저 알아챈 사람이 제목을 외쳐요.", howto2: "'정답 보기'를 누르면 곡명, 아티스트, 발매 연도가 나와요.", howto3: "'점수'에서 각 팀의 점수를 더하고 '다음'을 누르세요.", howtoOk: "알겠어요",
+      challengeBanner: "친구가 보낸 도전장 — 우리를 이길 수 있겠어?", resetConfirm: "모든 점수를 초기화할까요?",
       title: "이 노래 누가 맞출까?", docTitle: "랜덤 노래 맞히기",
       kicker: "노래 맞히기 게임 · 공유 화면",
       scoreBtn: "점수", contactBtn: "문의하기",
@@ -312,6 +336,8 @@
       noscript: "이 페이지에서 노래를 선택하고 재생하려면 JavaScript가 필요합니다. 브라우저에서 JavaScript를 활성화해주세요.",
     },
     vi: {
+      hideSong: "Không hiện lại", howtoNext: "Tiếp", howtoSkip: "Bỏ qua", decadeLabel: "Thập niên", decadeAll: "Tất cả", howtoTitle: "Cách chơi", howto1: "Một bài hát vang lên. Ai nhận ra trước thì hô to tên bài hát.", howto2: "Nhấn 'Đáp án' để xem tên bài hát, nghệ sĩ và năm phát hành.", howto3: "Cộng điểm cho từng đội trong 'Điểm', rồi nhấn 'Tiếp'.", howtoOk: "Đã hiểu",
+      challengeBanner: "Thử thách từ một người bạn — bạn có thể thắng chúng tôi không?", resetConfirm: "Đặt lại tất cả điểm số?",
       title: "Ai Đoán Được Bài Hát?", docTitle: "Đoán Bài Hát Ngẫu Nhiên",
       kicker: "Trò chơi đoán bài hát · màn hình chung",
       scoreBtn: "Điểm số", contactBtn: "Liên hệ",
