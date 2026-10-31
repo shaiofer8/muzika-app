@@ -168,7 +168,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Não Sei Se Choro ou Se Bebo", artist: "Turma do Pagode", year: 2014, status: "no_match", reason: "no_artist_title_match" },
   { title: "Deixa Acontecer", artist: "Thiaguinho", year: 2011, youtubeId: "CxF1wrcGE4I" },
   { title: "Muleque Vacilão", artist: "Thiaguinho", year: 2011, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Ousadia e Alegria", artist: "Ivete Sangalo", year: 2000 },
+  { title: "Ousadia e Alegria", artist: "Ivete Sangalo", year: 2000, status: "no_match", reason: "no_artist_title_match" },
   { title: "Sorte Grande", artist: "Ivete Sangalo", year: 1999 },
   { title: "Careless Whisper (Coração de Estudante remix)", artist: "Ivete Sangalo", year: 2007 },
   { title: "Se Eu Não Te Amasse Tanto Assim", artist: "Ivete Sangalo", year: 2000 },
@@ -367,9 +367,9 @@ window.SONGS_BY_LANG.pt = [
 
   // --- Anitta ---
   { title: "Meiga e Abusada", artist: "Anitta", year: 2012, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Blá Blá Blá", artist: "Anitta", year: 2014 },
-  { title: "Na Batida", artist: "Anitta", year: 2014 },
-  { title: "Downtown", artist: "Anitta e J Balvin", year: 2017 },
+  { title: "Blá Blá Blá", artist: "Anitta", year: 2014, youtubeId: "SGEG-CWOEMY" },
+  { title: "Na Batida", artist: "Anitta", year: 2014, youtubeId: "w1vNtmh1SqU" },
+  { title: "Downtown", artist: "Anitta e J Balvin", year: 2017, status: "no_match", reason: "no_artist_title_match" },
   { title: "Girl From Rio", artist: "Anitta", year: 2021 },
   { title: "Essa Mina É Louca", artist: "Anitta", year: 2013 },
   { title: "Deixa Ele Sofrer", artist: "Anitta", year: 2015 },
