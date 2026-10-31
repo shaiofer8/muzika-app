@@ -19,3 +19,6 @@ captures/
 *.apk
 *.apks
 *.idsig
+
+.vscode/
+tools/song-agent/logs/
