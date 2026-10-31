@@ -33,8 +33,8 @@ android {
         applicationId "com.muzikaparty.app"
         minSdkVersion 24
         targetSdkVersion 36
-        versionCode 8
-        versionName "8"
+        versionCode 10
+        versionName "10"
 
         // The name for the application
         resValue "string", "appName", webAppManifest.name
@@ -73,4 +73,6 @@ dependencies {
     // Google Mobile Ads SDK
     implementation 'com.google.android.gms:play-services-ads:22.6.0'
     implementation 'com.google.android.ump:user-messaging-platform:2.2.0'
+    // Play services pulls androidx.fragment 1.0.0 (flagged by Play); pin a current version.
+    implementation 'androidx.fragment:fragment:1.6.2'
 }

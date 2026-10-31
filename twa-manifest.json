@@ -1,8 +1,8 @@
 {
   "packageId": "com.muzikaparty.app",
   "host": "muzika.sofrimyamim.com",
-  "name": "Muzika Party",
-  "launcherName": "Muzika Party",
+  "name": "Guess the Song Party",
+  "launcherName": "Guess the Song Party",
   "display": "standalone",
   "themeColor": "#7c3aed",
   "themeColorDark": "#0a0a12",
