@@ -38,7 +38,7 @@ window.SONGS_BY_LANG.vi = [
   { title: "Người Ngoài Phố", artist: "Thái Thanh", year: 1968, youtubeId: "9WKTXEoVKew" },
   { title: "Tình Ca", artist: "Thái Thanh", year: 1953, youtubeId: "x8Avw52sLXU" },
   { title: "Nghìn Trùng Xa Cách", artist: "Thái Thanh", year: 1968, youtubeId: "sP8KQ-66iJQ" },
-  { title: "Ru Ta Ngậm Ngùi", artist: "Khánh Ly", year: 1970 },
+  { title: "Ru Ta Ngậm Ngùi", artist: "Khánh Ly", year: 1970, youtubeId: "hcQ6mzz-Kn4" },
   { title: "Bống Bống Bang Bang", artist: "365daband", year: 2016, youtubeId: "BwN3NiZt-PU" },
   { title: "Nơi Này Có Anh", artist: "Sơn Tùng M-TP", year: 2016, youtubeId: "FN7ALfpGxiI" },
   { title: "Chạy Ngay Đi", artist: "Sơn Tùng M-TP", year: 2018, youtubeId: "32sYGCOYJUM" },
