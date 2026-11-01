@@ -86,9 +86,20 @@
     track("song_started", { language: window.MuzikaLang && window.MuzikaLang.get() });
   });
 
+  // In-app review: ask once per device, after the 5th song (a good moment, not at install).
+  var REVIEW_KEY = "muzika-review-asked-v1";
+  var songsPlayed = 0;
+  function maybeAskForReview() {
+    songsPlayed += 1;
+    if (songsPlayed !== 5 || !window.MuzikaReview) return;
+    try { if (localStorage.getItem(REVIEW_KEY)) return; localStorage.setItem(REVIEW_KEY, "1"); } catch (e) { return; }
+    window.MuzikaReview.request();
+  }
+
   function playSong(song) {
     current = song;
     rememberPlayed(song);
+    maybeAskForReview();
     if (provider) provider.play(song);
     els.ytLink.href = "https://www.youtube.com/results?search_query=" +
       encodeURIComponent(song.artist + " " + song.title);

@@ -24,6 +24,9 @@ import android.widget.LinearLayout;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.play.core.review.ReviewInfo;
+import com.google.android.play.core.review.ReviewManager;
+import com.google.android.play.core.review.ReviewManagerFactory;
 import com.google.android.ump.ConsentInformation;
 import com.google.android.ump.ConsentRequestParameters;
 import com.google.android.ump.UserMessagingPlatform;
@@ -73,6 +76,7 @@ public class MainActivity extends Activity {
         settings.setMediaPlaybackRequiresUserGesture(false);
 
         webView.addJavascriptInterface(new AdBridge(), "MuzikaAds");
+        webView.addJavascriptInterface(new ReviewBridge(), "MuzikaReview");
 
         final String ownHost = getString(R.string.hostName);
 
@@ -180,6 +184,25 @@ public class MainActivity extends Activity {
                 @Override
                 public void run() {
                     mAdView.setVisibility(View.GONE);
+                }
+            });
+        }
+    }
+
+    // Called from app.js after a good moment. Google decides whether the dialog actually appears.
+    private class ReviewBridge {
+        @JavascriptInterface
+        public void request() {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    final ReviewManager manager = ReviewManagerFactory.create(MainActivity.this);
+                    manager.requestReviewFlow().addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            ReviewInfo info = task.getResult();
+                            manager.launchReviewFlow(MainActivity.this, info);
+                        }
+                    });
                 }
             });
         }
