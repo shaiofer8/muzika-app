@@ -170,7 +170,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Muleque Vacilão", artist: "Thiaguinho", year: 2011, status: "no_match", reason: "no_artist_title_match" },
   { title: "Ousadia e Alegria", artist: "Ivete Sangalo", year: 2000, status: "no_match", reason: "no_artist_title_match" },
   { title: "Sorte Grande", artist: "Ivete Sangalo", year: 1999 },
-  { title: "Careless Whisper (Coração de Estudante remix)", artist: "Ivete Sangalo", year: 2007 },
+  { title: "Careless Whisper (Coração de Estudante remix)", artist: "Ivete Sangalo", year: 2007, status: "no_match", reason: "no_artist_title_match" },
   { title: "Se Eu Não Te Amasse Tanto Assim", artist: "Ivete Sangalo", year: 2000 },
   { title: "Swing e Simpatia", artist: "Chiclete com Banana", year: 1994 },
   { title: "Meu Erro", artist: "Chiclete com Banana", year: 1996 },
@@ -370,9 +370,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "Blá Blá Blá", artist: "Anitta", year: 2014, youtubeId: "SGEG-CWOEMY" },
   { title: "Na Batida", artist: "Anitta", year: 2014, youtubeId: "w1vNtmh1SqU" },
   { title: "Downtown", artist: "Anitta e J Balvin", year: 2017, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Girl From Rio", artist: "Anitta", year: 2021 },
-  { title: "Essa Mina É Louca", artist: "Anitta", year: 2013 },
-  { title: "Deixa Ele Sofrer", artist: "Anitta", year: 2015 },
+  { title: "Girl From Rio", artist: "Anitta", year: 2021, youtubeId: "CuyTC8FLICY" },
+  { title: "Essa Mina É Louca", artist: "Anitta", year: 2013, youtubeId: "ghQOd88PM80" },
+  { title: "Deixa Ele Sofrer", artist: "Anitta", year: 2015, youtubeId: "geFj_kMvasQ" },
 
   // --- Rock brasileiro — Legião Urbana, Titãs, Barão Vermelho, Biquini Cavadão ---
   { title: "Será", artist: "Legião Urbana", year: 1985 },
