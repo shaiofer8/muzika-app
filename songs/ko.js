@@ -33,7 +33,7 @@ window.SONGS_BY_LANG.ko = [
   { title: "고백", artist: "핑클", year: 1998, youtubeId: "8j40OWyMmnY" },
   { title: "내 남자친구에게", artist: "핑클", year: 1998, youtubeId: "u39uT8HSk9g" },
   { title: "I", artist: "S.E.S.", year: 1997, youtubeId: "ja1xxELZeTU" },
-  { title: "Dreams Come True", artist: "S.E.S.", year: 1998 },
+  { title: "Dreams Come True", artist: "S.E.S.", year: 1998, youtubeId: "8uiR4SrDGZk" },
   { title: "나 있잖아 애인 있었으면 좋겠어", artist: "SG워너비", year: 2004, status: "no_match", reason: "no_artist_title_match" },
   { title: "죄와 벌", artist: "SG워너비", year: 2005, youtubeId: "iUqAQIOaWjs" },
   { title: "timeless", artist: "SG워너비", year: 2004, youtubeId: "G4BuSPt9iNQ" },
@@ -87,4 +87,5 @@ window.SONGS_BY_LANG.ko = [
   { title: "‘GO HARD’ M/V", artist: "MEOVV", year: 2026, youtubeId: "8aKR2Ho--5k" },
   { title: "'Drip' Official MV", artist: "ATEEZ", year: 2026, youtubeId: "iqQWCYMlMw0" },
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
+  { title: "FIRESTARTER ft. MIYEON and SOYEON of i-dle, Sophie Powers, Mimi Webb", artist: "K/DA", year: 2026, youtubeId: "Mmw-PpWhKFg" },
 ];
