@@ -549,4 +549,9 @@ window.SONGS_BY_LANG.de = [
   { title: "Für Ghettoschlampen", artist: "KIARABABA x JUJU", year: 2026, youtubeId: "pQL1bWTuAB4" },
   { title: "Live in Mexico City - Deutschland", artist: "Rammstein", year: 2026, youtubeId: "Iy5nOfzOejI" },
   { title: "Stell dir vor", artist: "Kool Savas", year: 2026, youtubeId: "eIurkYG78Nc" },
+  { title: "PROPAGANDA", artist: "Sido x Fler", year: 2026, youtubeId: "1abzMQhso9s" },
+  { title: "Für immer", artist: "AYLIVA", year: 2026, youtubeId: "tsAOrr254pM" },
+  { title: "ARL", artist: "LACAZETTE", year: 2026, youtubeId: "MhlTu7MpkBw" },
+  { title: "Ehre wem Ehre gebührt", artist: "NGEE", year: 2026, youtubeId: "dOfbyxRW0Xs" },
+  { title: "Doctore  2026", artist: "Florin Cercel", year: 2026, youtubeId: "efMH1vkJ9xM" },
 ];
