@@ -190,7 +190,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Comme Ci Comme Ça", artist: "Franglish ft. Dadju", year: 2017, status: "no_match", reason: "no_artist_title_match" },
   { title: "Reine", artist: "Dadju", year: 2018, youtubeId: "tVKaN_H35xs" },
   { title: "Jaloux", artist: "Dadju", year: 2018, youtubeId: "254EHfv9RvM" },
-  { title: "Mafuzzy Style", artist: "Dadju", year: 2016 },
+  { title: "Mafuzzy Style", artist: "Dadju", year: 2016, youtubeId: "t3HFob5pC3g" },
   { title: "Petrouchka", artist: "Dadju ft. MHD", year: 2018 },
   { title: "AFRO TRAP Part.3", artist: "MHD", year: 2016 },
   { title: "Bon Anniversaire", artist: "MHD", year: 2018 },
@@ -200,7 +200,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Jefe", artist: "Ninho ft. Niska", year: 2018 },
 
   // --- Pop / électro français contemporain ---
-  { title: "One More Time", artist: "Daft Punk", year: 2000 },
+  { title: "One More Time", artist: "Daft Punk", year: 2000, youtubeId: "FGBhQbmPwH8" },
   { title: "Get Lucky", artist: "Daft Punk ft. Pharrell Williams", year: 2013 },
   { title: "Harder, Better, Faster, Stronger", artist: "Daft Punk", year: 2001 },
   { title: "Around the World", artist: "Daft Punk", year: 1997 },
@@ -507,4 +507,9 @@ window.SONGS_BY_LANG.fr = [
   { title: "Outfit", artist: "La Rvfleuze", year: 2026, youtubeId: "6W2I_zadtUA" },
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
   { title: "TU N'ES PLUS LÀ", artist: "Doz", year: 2026, youtubeId: "LKWovvWic98" },
+  { title: "XXX", artist: "OrelSan", year: 2026, youtubeId: "fHr277ieIbg" },
+  { title: "MMA  Ft. @Konieur-officiel", artist: "La Mano 1.9", year: 2026, youtubeId: "Bfz77prE-yo" },
+  { title: "Wetin day", artist: "Zed", year: 2026, youtubeId: "ZuKRahmO-08" },
+  { title: "Combien pour la nuit", artist: "Mylène Farmer feat. DJ Snake", year: 2026, youtubeId: "qLurx8Iihsw" },
+  { title: "ADDICTED", artist: "JISOO", year: 2026, youtubeId: "Pksr9T8m_aA" },
 ];
