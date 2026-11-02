@@ -90,4 +90,9 @@ window.SONGS_BY_LANG.ja = [
   { title: "ありふれた世界の果てに", artist: "YAO", year: 2026, youtubeId: "k8SP7SrLTvc" },
   { title: "なんもねえ / THE FIRST TAKE", artist: "忘れらんねえよ", year: 2026, youtubeId: "Q5Om3k90dMs" },
   { title: "Live at BMSG FES'26 -", artist: "HANA / ALL IN", year: 2026, youtubeId: "AKgC03Z7XJE" },
+  { title: "ザッツ！超常", artist: "M!LK", year: 2026, youtubeId: "F8YyP5wtvVw" },
+  { title: "ブルーアンバー / from『“Grateful Yesterdays Tour 2026” at 日産スタジアム』", artist: "back number", year: 2026, youtubeId: "_SKF2hJAxdo" },
+  { title: "'Drip' Official MV", artist: "ATEEZ", year: 2026, youtubeId: "iqQWCYMlMw0" },
+  { title: "'DESERVE' M/V", artist: "BABYMONSTER", year: 2026, youtubeId: "oC6brLXQe4I" },
+  { title: "再会愛 Lie 期待して Cry", artist: "Hey! Say! JUMP", year: 2026, youtubeId: "IFjudT_uhyM" },
 ];
