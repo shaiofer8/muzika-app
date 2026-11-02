@@ -88,4 +88,9 @@ window.SONGS_BY_LANG.hi = [
   { title: "with HD Video", artist: "🔱Chalrey Chalrey waal", year: 2026, youtubeId: "jQqYtL6G60U" },
   { title: "Lyrical", artist: "Bhaja Govindam", year: 2026, youtubeId: "41QvzxRhQrc" },
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
+  { title: "Video Song", artist: "Aura 10/10", year: 2026, youtubeId: "5bKFXFgotOI" },
+  { title: "जिला के बाहुबली", artist: "#Video", year: 2026, youtubeId: "bMLs6nUsZ6A" },
+  { title: "Lyrical", artist: "Zaalima", year: 2026, youtubeId: "nqKvhOHGmRE" },
+  { title: "POKITO", artist: "Daddy Yankee and Diljit Dosanjh", year: 2026, youtubeId: "XO1h5G6xytU" },
+  { title: "Lyric Video", artist: "Sundara Ravanan", year: 2026, youtubeId: "QFkL82O38Xk" },
 ];
