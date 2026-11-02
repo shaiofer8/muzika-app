@@ -102,4 +102,9 @@ window.SONGS_BY_LANG.it = [
   { title: "KICHTA LOVA‼️🎬", artist: "NABI, LILCR", year: 2026, youtubeId: "J9pOGse2V6k" },
   { title: "COLPA MIA", artist: "ENVY", year: 2026, youtubeId: "1ZKHVgONE18" },
   { title: "LA TESTA GIRA", artist: "Fred De Palma, Anitta, Emis Killa", year: 2026, youtubeId: "pbfRpP4BtsE" },
+  { title: "Eri solo da incontrare", artist: "Alfa", year: 2026, youtubeId: "da88-tCYSqg" },
+  { title: "Sentire La Musica", artist: "Kid Yugi", year: 2026, youtubeId: "S8oUoa0pwpo" },
+  { title: "Stratos", artist: "Kid Yugi", year: 2026, youtubeId: "R7xed1qLKTo" },
+  { title: "DISOBBEDIRE!", artist: "Kid Yugi, 18K", year: 2026, youtubeId: "GVIikFbYw1E" },
+  { title: "One of One", artist: "Jozi", year: 2026, youtubeId: "XFmoMUIjrvA" },
 ];
