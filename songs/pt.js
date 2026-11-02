@@ -565,4 +565,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "MÚSICA OFICIAL - LULA PRESIDENTE 2026! 🇧🇷", artist: "OLÊ, OLÊ, OLÊ OLÁ", year: 2026, youtubeId: "r4L7BYH1JHA" },
   { title: "Mundo Fashion ft. Matuê", artist: "Tz da Coronel", year: 2026, youtubeId: "QSU6uy7cx98" },
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
+  { title: "EMILLY VICK E VOID", artist: "MILKSHAKE", year: 2026, youtubeId: "XMPVhbO2YaE" },
+  { title: "Música Infantil e Aprendizado", artist: "Meus Dedinhos", year: 2026, youtubeId: "-kXmc3SG5Zc" },
+  { title: "MC Jvila, Menor MC e G.A", artist: "Geme Baixo", year: 2026, youtubeId: "Y4nJWY4FXd0" },
+  { title: "Quem Será / Para Tudo/ 1 Metro e 65", artist: "Grupo Benzadeus, @cantorfarias", year: 2026, youtubeId: "MZXtFVDkWEo" },
+  { title: "ROANA BRÍGIDA -", artist: "BONDADE DE DEUS", year: 2026, youtubeId: "yK41dOFSDic" },
 ];
