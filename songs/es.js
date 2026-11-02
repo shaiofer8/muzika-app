@@ -202,7 +202,7 @@ window.SONGS_BY_LANG.es = [
   { title: "El Amante", artist: "Anuel AA", year: 2018, status: "no_match", reason: "no_artist_title_match" },
   { title: "Ella Quiere Beber", artist: "Anuel AA", year: 2016, youtubeId: "HHpLbVocOHQ" },
   { title: "Secreto", artist: "Anuel AA & Karol G", year: 2019, youtubeId: "gFZfwWZV074" },
-  { title: "Bichota", artist: "Karol G", year: 2020 },
+  { title: "Bichota", artist: "Karol G", year: 2020, youtubeId: "QaXhVryxVBk" },
   { title: "Mi Cama", artist: "Karol G", year: 2017 },
   { title: "Ahora Me Llama", artist: "Karol G & Bad Bunny", year: 2017 },
   { title: "199 Millas", artist: "Karol G", year: 2021 },
@@ -538,4 +538,9 @@ window.SONGS_BY_LANG.es = [
   { title: "Vulnerable", artist: "Ozuna x Jory Boy x Ñengo Flow", year: 2026, youtubeId: "OWbhwq9fecg" },
   { title: "TE IMAGINO", artist: "Myke Towers", year: 2026, youtubeId: "5j8fIDh1V0A" },
   { title: "Relicario - Relicario", artist: "El Barrio", year: 2026, youtubeId: "o0pX-KObmvs" },
+  { title: "POKITO", artist: "Daddy Yankee and Diljit Dosanjh", year: 2026, youtubeId: "XO1h5G6xytU" },
+  { title: "Lejos de Mi", artist: "Josue Rarujo", year: 2026, youtubeId: "tA1QNxP5f_w" },
+  { title: "Cartier Remix", artist: "El Americano 4KT, Lil Naay", year: 2026, youtubeId: "gMWW4zJhfA8" },
+  { title: "BODYPAINTING", artist: "Emilia", year: 2026, youtubeId: "Whne2kfTjCk" },
+  { title: "Mi Rompecabezas", artist: "Galvan Real", year: 2026, youtubeId: "mZm0CZlc9so" },
 ];
