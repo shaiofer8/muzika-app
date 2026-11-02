@@ -100,4 +100,9 @@ window.SONGS_BY_LANG.tr = [
   { title: "masum kedi", artist: "AURA", year: 2026, youtubeId: "EHeeSiDBTgk" },
   { title: "Isırgan", artist: "Eypio", year: 2026, youtubeId: "CFSPd-9fGmQ" },
   { title: "Yok Başka Hayalim", artist: "Tan Taşçı x Baha", year: 2026, youtubeId: "uWJTmA9wvPk" },
+  { title: "ALO", artist: "Wegh", year: 2026, youtubeId: "qXPlq9svqn0" },
+  { title: "Ağlama Ben Ağlarım", artist: "Dedublüman & Canozan", year: 2026, youtubeId: "KpxBy4BOt_A" },
+  { title: "Gelseydim", artist: "Gökhan Namlı", year: 2026, youtubeId: "6ppni-yAjP4" },
+  { title: "ADDICTED", artist: "JISOO", year: 2026, youtubeId: "Pksr9T8m_aA" },
+  { title: "Sen Kimseydin", artist: "Ayaz Erdoğan", year: 2026, youtubeId: "KUAsbkL8SHQ" },
 ];
