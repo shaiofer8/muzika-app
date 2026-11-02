@@ -70,7 +70,7 @@ window.SONGS_BY_LANG.ru = [
   { title: "Кольщик", artist: "Михаил Круг", year: 1995, youtubeId: "JINmBpfvS0c" },
   { title: "Магадан", artist: "Михаил Круг", year: 1997, youtubeId: "02f0Rm7XcQQ" },
   { title: "Погода в Доме", artist: "Игорь Николаев & Наташа Королёва", year: 1993, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Желтые Тюльпаны", artist: "Наташа Королёва", year: 1991 },
+  { title: "Желтые Тюльпаны", artist: "Наташа Королёва", year: 1991, youtubeId: "uNvUQvDDGRA" },
   { title: "Маленькая Страна", artist: "Наташа Королёва", year: 1995 },
   { title: "Синеглазый Мальчик", artist: "Наташа Королёва", year: 1992 },
   { title: "Незабудка", artist: "Юрий Шатунов", year: 1990 },
@@ -105,4 +105,9 @@ window.SONGS_BY_LANG.ru = [
   { title: "SERY SRTUM / ՍԵՐԸ ՍՐՏՈՒՄ", artist: "Arshavir Martirosyan", year: 2026, youtubeId: "vYZhRxfZqCI" },
   { title: "Dark Paradise", artist: "NovaFeel", year: 2026, youtubeId: "ecLUO_UEX2o" },
   { title: "Live in Mexico City - Deutschland", artist: "Rammstein", year: 2026, youtubeId: "Iy5nOfzOejI" },
+  { title: "Yurakda Sevgi", artist: "Mirjalol Nematov & Dilnoz", year: 2026, youtubeId: "WdJF9NY5YpA" },
+  { title: "СКИНЬ НОЖКИ", artist: "SQWOZ BAB, Satyr", year: 2026, youtubeId: "viKmyJPNDRM" },
+  { title: "Million", artist: "Sevinch Ismoilova & Alisher Bayniyazov", year: 2026, youtubeId: "UTWnTT8xrhE" },
+  { title: "FIRESTARTER ft. MIYEON and SOYEON of i-dle, Sophie Powers, Mimi Webb", artist: "K/DA", year: 2026, youtubeId: "Mmw-PpWhKFg" },
+  { title: "Под Кайфом", artist: "Блатной Удар", year: 2026, youtubeId: "oy80uik5gqM" },
 ];
