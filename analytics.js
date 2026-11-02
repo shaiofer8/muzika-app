@@ -11,7 +11,7 @@
 
   // Google Analytics 4 measurement ID (G-XXXXXXXXXX). Leave empty to keep analytics off.
   // When set, the gtag.js script loads and events go to GA4 through window.gtag below.
-  var MEASUREMENT_ID = "";
+  var MEASUREMENT_ID = "G-R3G1WBC4CL";
   if (MEASUREMENT_ID) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
