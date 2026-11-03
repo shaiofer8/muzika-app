@@ -982,3 +982,24 @@ footer.meta {
   color: var(--text);
   font-size: 0.8125rem;
 }
+
+/* Short phones (and many Xiaomi screens): tighten spacing so the game fits without scrolling. */
+@media (max-height: 820px) {
+  .sleeve {
+    gap: 12px;
+    padding: 16px 14px;
+  }
+
+  .masthead h1 {
+    font-size: 1.8rem;
+  }
+
+  .kicker {
+    display: none;
+  }
+
+  .sleeve .video-frame,
+  .sleeve iframe {
+    max-block-size: 38vh;
+  }
+}
