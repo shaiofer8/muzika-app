@@ -1003,3 +1003,16 @@ footer.meta {
     max-block-size: 38vh;
   }
 }
+
+/* Auto-fit: the game area scales down (never up) so it fits the screen height without scrolling. */
+.app-shell {
+  grid-column: 1 / -1;
+  min-inline-size: 0;
+  transform-origin: top center;
+}
+
+@media (min-width: 700px) {
+  .app-shell {
+    inline-size: 100%;
+  }
+}
