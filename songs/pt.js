@@ -171,7 +171,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Ousadia e Alegria", artist: "Ivete Sangalo", year: 2000, status: "no_match", reason: "no_artist_title_match" },
   { title: "Sorte Grande", artist: "Ivete Sangalo", year: 1999 },
   { title: "Careless Whisper (Coração de Estudante remix)", artist: "Ivete Sangalo", year: 2007, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Se Eu Não Te Amasse Tanto Assim", artist: "Ivete Sangalo", year: 2000 },
+  { title: "Se Eu Não Te Amasse Tanto Assim", artist: "Ivete Sangalo", year: 2000, youtubeId: "_c3HAz1JPdk" },
   { title: "Swing e Simpatia", artist: "Chiclete com Banana", year: 1994 },
   { title: "Meu Erro", artist: "Chiclete com Banana", year: 1996 },
   { title: "Swing", artist: "Daniela Mercury", year: 1995 },
@@ -402,9 +402,9 @@ window.SONGS_BY_LANG.pt = [
 
   // --- Sertanejo universitário, gospel e pagode romântico ---
   { title: "Meteoro da Paixão", artist: "Luan Santana", year: 2009 },
-  { title: "Te Esperando", artist: "Luan Santana", year: 2013 },
-  { title: "Sinais", artist: "Luan Santana", year: 2014 },
-  { title: "Amar Não É Pecado", artist: "Luan Santana", year: 2012 },
+  { title: "Te Esperando", artist: "Luan Santana", year: 2013, youtubeId: "Z5pWz_OR5Sg" },
+  { title: "Sinais", artist: "Luan Santana", year: 2014, youtubeId: "MxwZ66L9RQI" },
+  { title: "Amar Não É Pecado", artist: "Luan Santana", year: 2012, youtubeId: "iyKRz-6U4Xw" },
   { title: "Balada", artist: "Gusttavo Lima", year: 2011 },
   { title: "Bloqueado", artist: "Gusttavo Lima", year: 2016 },
   { title: "Homem de Família", artist: "Gusttavo Lima", year: 2018 },
