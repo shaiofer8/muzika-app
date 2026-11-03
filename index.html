@@ -3,6 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    (function () {
+      var h = window.innerHeight;
+      document.documentElement.className += h <= 800 ? " screen-short" : h <= 900 ? " screen-regular" : " screen-tall";
+    })();
+  </script>
   <title>זיהוי שירים אקראי</title>
   <meta name="description" content="כלי משחק קבוצתי: שיר רנדומלי, אומן ושנה, מנוגן ישירות מהעמוד." />
   <meta property="og:type" content="website" />

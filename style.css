@@ -1003,6 +1003,75 @@ footer.meta {
   }
 }
 
+/* Screen category (set by the inline script in index.html from the viewport height, before first paint).
+   Tightens spacing so the whole game fits without vertical scrolling. */
+.screen-short .sleeve,
+.screen-regular .sleeve {
+  gap: 10px;
+  padding: 12px 14px;
+}
+
+.screen-short,
+.screen-regular,
+.screen-tall {
+  --screen-pad-block: 12px;
+}
+
+body {
+  padding-block-start: max(var(--screen-pad-block, 20px), env(safe-area-inset-top));
+  padding-block-end: max(var(--screen-pad-block, 40px), env(safe-area-inset-bottom));
+}
+
+footer.meta {
+  padding: 8px 12px;
+  font-size: 0.8rem;
+}
+
+.screen-short .masthead,
+.screen-regular .masthead {
+  gap: 8px;
+}
+
+.screen-short .kicker,
+.screen-regular .kicker {
+  display: none;
+}
+
+.screen-short .masthead h1,
+.screen-regular .masthead h1 {
+  font-size: 1.8rem;
+}
+
+.screen-short .masthead-settings,
+.screen-regular .masthead-settings {
+  margin-block-start: 0;
+}
+
+.screen-short .now-row,
+.screen-regular .now-row {
+  gap: 10px;
+}
+
+.screen-short .controls,
+.screen-regular .controls {
+  gap: 8px;
+}
+
+.screen-tall .sleeve {
+  gap: 14px;
+}
+
+.screen-tall .controls {
+  gap: 10px;
+}
+
+.screen-short .sleeve .video-frame,
+.screen-short .sleeve iframe,
+.screen-regular .sleeve .video-frame,
+.screen-regular .sleeve iframe {
+  max-block-size: 34vh;
+}
+
 /* Auto-fit: the game area scales down (never up) so it fits the screen height without scrolling. */
 .app-shell {
   grid-column: 1 / -1;
