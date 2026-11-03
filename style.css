@@ -1039,3 +1039,33 @@ footer.meta {
   color: var(--on-accent);
   box-shadow: 0 0 0 4px var(--accent-wash), 0 10px 30px var(--glow-a);
 }
+
+/* Score popup: fit the whole screen without scrolling on short phones. */
+@media (max-height: 820px) {
+  .modal {
+    padding: 12px;
+  }
+
+  .modal-header {
+    margin-block-end: 6px;
+  }
+
+  .score-rows,
+  .scoreboard {
+    gap: 8px;
+  }
+
+  .score-row {
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  .scoreboard-actions {
+    gap: 6px;
+  }
+
+  .scoreboard-actions .link-btn,
+  .scoreboard-actions .danger-btn {
+    min-block-size: 36px;
+  }
+}
