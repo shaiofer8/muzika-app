@@ -1016,3 +1016,27 @@ footer.meta {
     inline-size: 100%;
   }
 }
+
+/* Onboarding: larger, clearer steps */
+.howto-slide p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--text);
+}
+
+.howto-slide strong {
+  color: var(--accent-b);
+}
+
+/* Score button: make it the most visible control at the top */
+.score-fab {
+  min-block-size: 52px;
+  padding: 12px 22px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border: 2px solid var(--accent-b);
+  background: var(--gradient);
+  color: var(--on-accent);
+  box-shadow: 0 0 0 4px var(--accent-wash), 0 10px 30px var(--glow-a);
+}

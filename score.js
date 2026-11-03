@@ -285,6 +285,7 @@
   // לגעת בשמות שהוקלדו ידנית או באיפוס הניקוד.
   // ---------------------------------------------------------------------
   window.MuzikaScore = {
+    open: function () { openModal(); },
     refresh: function () {
       for (var i = 0; i < state.names.length; i++) {
         if (!state.customNames[i]) state.names[i] = defaultName(i);

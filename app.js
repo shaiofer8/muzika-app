@@ -272,6 +272,8 @@
     function close() {
       howto.hidden = true;
       try { localStorage.setItem(KEY, "1"); } catch (e) {}
+      // Start on team setup: open the score popup right away, so the first thing is choosing teams.
+      if (window.MuzikaScore) window.MuzikaScore.open();
     }
     howto.hidden = false;
     show(0);
