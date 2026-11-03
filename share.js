@@ -38,12 +38,12 @@
 
     track("share_clicked");
 
-    if (navigator.share) {
-      navigator.share({ title: t("title"), text: text, url: url })
-        .then(function () { track("share_completed", { method: "native" }); })
-        .catch(function () { /* המשתמש ביטל את השיתוף — לא עושים כלום */ });
-      return;
-    }
+    // Open WhatsApp directly, with a message that includes the store download link.
+    var downloadUrl = "https://play.google.com/store/apps/details?id=com.muzikaparty.app";
+    var msg = "מכיר את המשחק הזה במסיבות? מנגנים שיר ומנחשים את השם והאמן. חינם, בלי הרשמה: " + downloadUrl;
+    track("share_completed", { method: "whatsapp" });
+    window.open("https://wa.me/?text=" + encodeURIComponent(msg), "_blank", "noopener");
+    return;
 
     // No native share sheet: open WhatsApp with the text and link ready to send.
     var fullText = text + " " + url;
