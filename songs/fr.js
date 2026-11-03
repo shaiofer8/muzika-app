@@ -190,9 +190,9 @@ window.SONGS_BY_LANG.fr = [
   { title: "Comme Ci Comme Ça", artist: "Franglish ft. Dadju", year: 2017, status: "no_match", reason: "no_artist_title_match" },
   { title: "Reine", artist: "Dadju", year: 2018, youtubeId: "tVKaN_H35xs" },
   { title: "Jaloux", artist: "Dadju", year: 2018, youtubeId: "254EHfv9RvM" },
-  { title: "Mafuzzy Style", artist: "Dadju", year: 2016 },
-  { title: "Petrouchka", artist: "Dadju ft. MHD", year: 2018 },
-  { title: "AFRO TRAP Part.3", artist: "MHD", year: 2016 },
+  { title: "Mafuzzy Style", artist: "Dadju", year: 2016, youtubeId: "t3HFob5pC3g" },
+  { title: "Petrouchka", artist: "Dadju ft. MHD", year: 2018, status: "no_match", reason: "no_artist_title_match" },
+  { title: "AFRO TRAP Part.3", artist: "MHD", year: 2016, youtubeId: "zi1D0MKWHU0" },
   { title: "Bon Anniversaire", artist: "MHD", year: 2018 },
   { title: "Fais le Mouv'", artist: "MHD", year: 2016 },
   { title: "Petit Frère", artist: "Ninho", year: 2019 },
@@ -200,7 +200,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Jefe", artist: "Ninho ft. Niska", year: 2018 },
 
   // --- Pop / électro français contemporain ---
-  { title: "One More Time", artist: "Daft Punk", year: 2000 },
+  { title: "One More Time", artist: "Daft Punk", year: 2000, youtubeId: "FGBhQbmPwH8" },
   { title: "Get Lucky", artist: "Daft Punk ft. Pharrell Williams", year: 2013 },
   { title: "Harder, Better, Faster, Stronger", artist: "Daft Punk", year: 2001 },
   { title: "Around the World", artist: "Daft Punk", year: 1997 },
