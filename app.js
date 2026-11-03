@@ -233,13 +233,9 @@
 
   // Auto-fit: shrink the game area (never enlarge) so it fits the visible height on any phone.
   var appShell = document.getElementById("appShell");
+  // Zoom-based fitting shifted the layout in some Android WebViews, so the game is sized with CSS only.
   function fitToScreen() {
-    if (!appShell) return;
-    appShell.style.zoom = "1";
-    var need = appShell.scrollHeight;
-    var have = window.innerHeight - 64;
-    var scale = need > have ? Math.max(0.72, have / need) : 1;
-    appShell.style.zoom = String(scale);
+    if (appShell) appShell.style.zoom = "";
   }
   window.addEventListener("resize", fitToScreen);
   window.addEventListener("orientationchange", fitToScreen);
