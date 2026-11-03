@@ -201,9 +201,9 @@
       }).then(function () { track("share_completed", { method: "native", source: "score" }); }, function () {});
       return;
     }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(message).then(function () { track("share_completed", { method: "copy", source: "score" }); }, function () {});
-    }
+    // No native share sheet: open WhatsApp with the result and challenge link ready to send.
+    window.open("https://wa.me/?text=" + encodeURIComponent(message), "_blank", "noopener");
+    track("share_completed", { method: "whatsapp", source: "score" });
   }
 
   function showSetupStep() {

@@ -45,16 +45,9 @@
       return;
     }
 
+    // No native share sheet: open WhatsApp with the text and link ready to send.
     var fullText = text + " " + url;
-
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(fullText).then(
-        function () { setTempLabel("<span aria-hidden=\"true\">✅</span> " + t("shareCopied")); },
-        function () { openWhatsappFallback(fullText); }
-      );
-    } else {
-      openWhatsappFallback(fullText);
-    }
+    openWhatsappFallback(fullText);
   });
 
   // ---------------------------------------------------------------------
