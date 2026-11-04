@@ -80,7 +80,7 @@ window.SONGS_BY_LANG.de = [
   { title: "Über den Wolken", artist: "Reinhard Mey", year: 1974 },
   { title: "Gute Nacht, Freunde", artist: "Reinhard Mey", year: 1967 },
   { title: "Alles nur geklaut", artist: "Prinzen", year: 1993 },
-  { title: "Deutschland", artist: "Prinzen", year: 2001 },
+  { title: "Deutschland", artist: "Prinzen", year: 2001, youtubeId: "gF2kl7K-sP0" },
   { title: "Küssen verboten", artist: "Prinzen", year: 1992 },
   { title: "Cordula Grün", artist: "Josh.", year: 2019, youtubeId: "uSbxCX2LVps" },
   { title: "Wolke 4", artist: "Casper", year: 2011, status: "no_match", reason: "no_artist_title_match" },
@@ -214,9 +214,9 @@ window.SONGS_BY_LANG.de = [
 
   // --- Erweiterung: weitere verifizierte deutschsprachige Hits (Schlager, NDW, Austropop, Ostrock, Mundart, Rap, Charts) ---
   { title: "Roller", artist: "Apache 207", year: 2019, youtubeId: "Fo3DAhiNKQo" },
-  { title: "Ohne mein Team", artist: "Bonez MC & RAF Camora feat. Maxwell", year: 2016 },
-  { title: "Was du Liebe nennst", artist: "Bausa", year: 2017 },
-  { title: "Señorita", artist: "Kay One feat. Pietro Lombardi", year: 2017 },
+  { title: "Ohne mein Team", artist: "Bonez MC & RAF Camora feat. Maxwell", year: 2016, youtubeId: "82NBsCOQoi4" },
+  { title: "Was du Liebe nennst", artist: "Bausa", year: 2017, youtubeId: "TSkVVVBS9k8" },
+  { title: "Señorita", artist: "Kay One feat. Pietro Lombardi", year: 2017, youtubeId: "lc-cnCRhE7c" },
   { title: "Wildberry Lillet", artist: "Nina Chuba", year: 2022 },
   { title: "Heute mit mir", artist: "Nimo", year: 2017 },
   { title: "Lila Wolken", artist: "Marteria feat. Yasha & Miss Platnum", year: 2012 },
