@@ -204,7 +204,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Get Lucky", artist: "Daft Punk ft. Pharrell Williams", year: 2013, status: "no_match", reason: "no_artist_title_match" },
   { title: "Harder, Better, Faster, Stronger", artist: "Daft Punk", year: 2001, youtubeId: "gAjR4_CbPpQ" },
   { title: "Around the World", artist: "Daft Punk", year: 1997 },
-  { title: "Instant Crush", artist: "Daft Punk ft. Julian Casablancas", year: 2013 },
+  { title: "Instant Crush", artist: "Daft Punk ft. Julian Casablancas", year: 2013, status: "no_match", reason: "no_artist_title_match" },
   { title: "Music Sounds Better with You", artist: "Stardust", year: 1998 },
   { title: "Sexy Boy", artist: "Air", year: 1998 },
   { title: "La Femme d'Argent", artist: "Air", year: 1998 },
@@ -212,8 +212,8 @@ window.SONGS_BY_LANG.fr = [
   { title: "L'Aventurier", artist: "Indochine", year: 1982 },
   { title: "3ème Sexe", artist: "Indochine", year: 1985 },
   { title: "J'ai Demandé à la Lune", artist: "Indochine", year: 2002, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Le Grand Secret", artist: "Indochine", year: 2005 },
-  { title: "Un Jour Dans Notre Vie", artist: "Indochine", year: 2013 },
+  { title: "Le Grand Secret", artist: "Indochine", year: 2005, youtubeId: "stIuNObz56I" },
+  { title: "Un Jour Dans Notre Vie", artist: "Indochine", year: 2013, youtubeId: "oiBuYVa6b6k" },
   { title: "Vertige de l'Amour", artist: "Alain Bashung", year: 1980 },
   { title: "Gaby Oh Gaby", artist: "Alain Bashung", year: 1980 },
   { title: "Osez Joséphine", artist: "Alain Bashung", year: 1991 },
@@ -221,7 +221,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Ma Petite Entreprise", artist: "Alain Bashung", year: 1998 },
   { title: "Sur la Route", artist: "Marc Lavoine", year: 2002 },
   { title: "Elle a les Yeux Revolver", artist: "Marc Lavoine", year: 1985 },
-  { title: "Le Parking des Anges", artist: "Marc Lavoine", year: 2011 },
+  { title: "Le Parking des Anges", artist: "Marc Lavoine", year: 2011, youtubeId: "C33Tjf5hfKk" },
   { title: "Paris", artist: "Marc Lavoine ft. Zaho", year: 2010 },
 
   // --- Pop / Nouvelle Génération ---
