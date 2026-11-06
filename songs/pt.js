@@ -328,7 +328,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Firmamento", artist: "Cidade Negra", year: 1996 },
   { title: "Girassol", artist: "Cidade Negra", year: 1998 },
   { title: "Liberdade pra Dentro da Cabeça", artist: "Natiruts", year: 1998 },
-  { title: "Tá Escrito", artist: "Grupo Revelação", year: 2002 },
+  { title: "Tá Escrito", artist: "Grupo Revelação", year: 2002, youtubeId: "09_s_Kh8sls" },
 
   // --- Axé anos 90 (adições) ---
   { title: "Segura o Tchan", artist: "É o Tchan", year: 1995 },
@@ -423,9 +423,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "Milla", artist: "Netinho", year: 1996 },
   { title: "Beleza Rara", artist: "Banda Eva", year: 1997 },
   { title: "Pequena Eva", artist: "Banda Eva", year: 1998 },
-  { title: "Coração", artist: "Diogo Piçarra", year: 2019 },
-  { title: "Anjos", artist: "Diogo Piçarra e Carolina Deslandes", year: 2019 },
-  { title: "Vilarejo", artist: "Marisa Monte", year: 2011 },
+  { title: "Coração", artist: "Diogo Piçarra", year: 2019, youtubeId: "aezeOPwkESA" },
+  { title: "Anjos", artist: "Diogo Piçarra e Carolina Deslandes", year: 2019, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Vilarejo", artist: "Marisa Monte", year: 2011, youtubeId: "WibtVWwW-EA" },
   { title: "Arrastão", artist: "Elis Regina", year: 1965 },
   { title: "Razões e Emoções", artist: "NX Zero", year: 2005 },
   { title: "Cedo ou Tarde", artist: "NX Zero", year: 2007 },
