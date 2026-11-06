@@ -87,7 +87,7 @@ window.SONGS_BY_LANG.tr = [
   { title: "Delikanlım", artist: "Yıldız Tilbe", year: 1997, youtubeId: "6pYgGItOqtE" },
   { title: "Isyankar", artist: "Yıldız Tilbe", year: 2004, status: "no_match", reason: "no_artist_title_match" },
   { title: "Aşk Ölmedi Ki", artist: "Yıldız Tilbe", year: 2011, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Nikahsız", artist: "Muazzez Ersoy", year: 1980 },
+  { title: "Nikahsız", artist: "Muazzez Ersoy", year: 1980, status: "no_match", reason: "no_artist_title_match" },
   { title: "Vazgeçemem", artist: "Ferhat Göçer", year: 2003, youtubeId: "OBYKIWiRnec" },
   { title: "Aşk Bir Elmadır", artist: "Ferhat Göçer", year: 2005, status: "no_match", reason: "no_artist_title_match" },
   { title: "TRALALA", artist: "manifest", year: 2026, youtubeId: "0rW7Fbm4S7g" },
