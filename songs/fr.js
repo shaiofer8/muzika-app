@@ -219,14 +219,14 @@ window.SONGS_BY_LANG.fr = [
   { title: "Osez Joséphine", artist: "Alain Bashung", year: 1991 },
   { title: "La Nuit Je Mens", artist: "Alain Bashung", year: 1998 },
   { title: "Ma Petite Entreprise", artist: "Alain Bashung", year: 1998 },
-  { title: "Sur la Route", artist: "Marc Lavoine", year: 2002 },
+  { title: "Sur la Route", artist: "Marc Lavoine", year: 2002, status: "no_match", reason: "no_artist_title_match" },
   { title: "Elle a les Yeux Revolver", artist: "Marc Lavoine", year: 1985 },
   { title: "Le Parking des Anges", artist: "Marc Lavoine", year: 2011, youtubeId: "C33Tjf5hfKk" },
-  { title: "Paris", artist: "Marc Lavoine ft. Zaho", year: 2010 },
+  { title: "Paris", artist: "Marc Lavoine ft. Zaho", year: 2010, status: "no_match", reason: "no_artist_title_match" },
 
   // --- Pop / Nouvelle Génération ---
-  { title: "Fever", artist: "Angèle & Dua Lipa", year: 2019 },
-  { title: "Flou", artist: "Angèle", year: 2019 },
+  { title: "Fever", artist: "Angèle & Dua Lipa", year: 2019, youtubeId: "vs61OHs2g-w" },
+  { title: "Flou", artist: "Angèle", year: 2019, youtubeId: "D6Wi3SmmnAE" },
   { title: "Solo", artist: "Clara Luciani", year: 2017 },
   { title: "Ne Rien Dire", artist: "Clara Luciani", year: 2018 },
   { title: "Bon Anniversaire (Clara)", artist: "Clara Luciani", year: 2021 },
