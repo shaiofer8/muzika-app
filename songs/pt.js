@@ -339,7 +339,7 @@ window.SONGS_BY_LANG.pt = [
   // --- Funk carioca ---
   { title: "Rap da Felicidade", artist: "Cidinho e Doca", year: 1994 },
   { title: "Só Love", artist: "Claudinho e Buchecha", year: 1998 },
-  { title: "Cerol na Mão", artist: "Bonde do Tigrão", year: 2001 },
+  { title: "Cerol na Mão", artist: "Bonde do Tigrão", year: 2001, youtubeId: "rdfrVyCYiGM" },
   { title: "Glamurosa", artist: "MC Marcinho", year: 2003 },
   { title: "Eguinha Pocotó", artist: "MC Serginho", year: 2003 },
 
@@ -437,10 +437,10 @@ window.SONGS_BY_LANG.pt = [
   { title: "Xote dos Milagres", artist: "Falamansa", year: 2000 },
   { title: "Um Dia Perfeito", artist: "Falamansa", year: 2000 },
   { title: "Rindo à Toa", artist: "Falamansa", year: 2000 },
-  { title: "Destrava", artist: "Claudia Leitte", year: 2011 },
+  { title: "Destrava", artist: "Claudia Leitte", year: 2011, youtubeId: "4ZT0GywoNHQ" },
   { title: "Festa", artist: "Ivete Sangalo", year: 2007 },
-  { title: "Aquele 1%", artist: "Wesley Safadão e Marcos & Belutti", year: 2015 },
-  { title: "À Vontade", artist: "Wesley Safadão", year: 2017 },
+  { title: "Aquele 1%", artist: "Wesley Safadão e Marcos & Belutti", year: 2015, status: "no_match", reason: "no_artist_title_match" },
+  { title: "À Vontade", artist: "Wesley Safadão", year: 2017, youtubeId: "0tafa3b6OFI" },
   { title: "Amor Falso", artist: "Wesley Safadão", year: 2018 },
   { title: "Loka", artist: "Simone & Simaria e Anitta", year: 2017 },
   { title: "Paga de Solteiro Feliz", artist: "Simone & Simaria e Alok", year: 2018 },
