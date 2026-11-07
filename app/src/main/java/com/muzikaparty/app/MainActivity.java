@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
 
         // The banner stays hidden until the score popup asks for it (see AdBridge).
         mAdView = new AdView(this);
-        mAdView.setAdUnitId("ca-app-pub-4066391446449273/6123655216");
+        mAdView.setAdUnitId("ca-app-pub-4066391446449273/6201064269");
         mAdView.setAdSize(AdSize.BANNER);
         mAdView.setVisibility(View.GONE);
         container.addView(mAdView, new LinearLayout.LayoutParams(
