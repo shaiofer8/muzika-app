@@ -89,7 +89,7 @@ window.SONGS_BY_LANG.de = [
   { title: "Du hast", artist: "Rammstein", year: 1997 },
   { title: "Sonne", artist: "Rammstein", year: 2001, youtubeId: "StZcUAPRRac" },
   { title: "Engel", artist: "Rammstein", year: 1997 },
-  { title: "Amerika", artist: "Rammstein", year: 2004 },
+  { title: "Amerika", artist: "Rammstein", year: 2004, youtubeId: "Rr8ljRgcJNM" },
   { title: "Männer sind Schweine", artist: "Die Ärzte", year: 1998 },
 
   // --- Schlager / Volksmusik ---
@@ -223,9 +223,9 @@ window.SONGS_BY_LANG.de = [
   { title: "Traum", artist: "Cro", year: 2014, youtubeId: "8WQMBv2deYQ" },
   { title: "Au revoir", artist: "Mark Forster feat. Sido", year: 2014, youtubeId: "661DMBDByF8" },
   { title: "So wie du bist", artist: "MoTrip feat. Lary", year: 2015, youtubeId: "SKyCrKk1dPg" },
-  { title: "Palmen aus Plastik", artist: "Bonez MC & RAF Camora", year: 2016 },
-  { title: "500 PS", artist: "Bonez MC & RAF Camora", year: 2018 },
-  { title: "Vermissen", artist: "Juju feat. Henning May", year: 2019 },
+  { title: "Palmen aus Plastik", artist: "Bonez MC & RAF Camora", year: 2016, youtubeId: "7_tWN9Iei7Y" },
+  { title: "500 PS", artist: "Bonez MC & RAF Camora", year: 2018, youtubeId: "hLWGlq_2qbk" },
+  { title: "Vermissen", artist: "Juju feat. Henning May", year: 2019, youtubeId: "YHbYAUs9JCo" },
   { title: "Monsta", artist: "Culcha Candela", year: 2009 },
   { title: "Bad Chick", artist: "Cro", year: 2014 },
   { title: "Von Party zu Party", artist: "SXTN", year: 2017 },
