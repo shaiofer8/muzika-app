@@ -340,7 +340,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Rap da Felicidade", artist: "Cidinho e Doca", year: 1994 },
   { title: "Só Love", artist: "Claudinho e Buchecha", year: 1998 },
   { title: "Cerol na Mão", artist: "Bonde do Tigrão", year: 2001, youtubeId: "rdfrVyCYiGM" },
-  { title: "Glamurosa", artist: "MC Marcinho", year: 2003 },
+  { title: "Glamurosa", artist: "MC Marcinho", year: 2003, youtubeId: "am3U2a_wpV4" },
   { title: "Eguinha Pocotó", artist: "MC Serginho", year: 2003 },
 
   // --- Sertanejo — raiz a universitário (adições) ---
@@ -441,9 +441,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "Festa", artist: "Ivete Sangalo", year: 2007 },
   { title: "Aquele 1%", artist: "Wesley Safadão e Marcos & Belutti", year: 2015, status: "no_match", reason: "no_artist_title_match" },
   { title: "À Vontade", artist: "Wesley Safadão", year: 2017, youtubeId: "0tafa3b6OFI" },
-  { title: "Amor Falso", artist: "Wesley Safadão", year: 2018 },
-  { title: "Loka", artist: "Simone & Simaria e Anitta", year: 2017 },
-  { title: "Paga de Solteiro Feliz", artist: "Simone & Simaria e Alok", year: 2018 },
+  { title: "Amor Falso", artist: "Wesley Safadão", year: 2018, youtubeId: "fOrPSLkuI54" },
+  { title: "Loka", artist: "Simone & Simaria e Anitta", year: 2017, youtubeId: "G9ZQ97ZXfDM" },
+  { title: "Paga de Solteiro Feliz", artist: "Simone & Simaria e Alok", year: 2018, youtubeId: "oephH5-3Q_k" },
   { title: "O Sol", artist: "Vitor Kley", year: 2016 },
   { title: "Morena", artist: "Vitor Kley", year: 2019 },
   { title: "Garoto Errado", artist: "Manu Gavassi", year: 2013 },
