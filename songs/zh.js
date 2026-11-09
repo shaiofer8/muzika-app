@@ -89,4 +89,9 @@ window.SONGS_BY_LANG.zh = [
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
   { title: "捂熱『你從來沒堅定的選擇過我，從不示弱 享受我被你捂熱。』【高音質HD", artist: "馬師傅", year: 2026, youtubeId: "zQQap9pZVvY" },
   { title: "'Masterpiece' Official Music Video", artist: "LNGSHOT", year: 2026, youtubeId: "Cu6JU-kNmOU" },
+  { title: "咱到遮就為止 We Go as Far as Here｜Official Music Video", artist: "黃奇斌 Ng KiPin", year: 2026, youtubeId: "z_OHuXPrTBs" },
+  { title: "ADDICTED", artist: "JISOO", year: 2026, youtubeId: "Pksr9T8m_aA" },
+  { title: "Lemon     Music Video 10億回記念 🍋  Celebrating 1 Billion Views", artist: "Kenshi Yonezu", year: 2026, youtubeId: "Hn0IiJlBV8Y" },
+  { title: "FIRESTARTER ft. MIYEON and SOYEON of i-dle, Sophie Powers, Mimi Webb", artist: "K/DA", year: 2026, youtubeId: "Mmw-PpWhKFg" },
+  { title: "周興哲｜R&B × Emo改編｜當最愛的藍色變成灰色的雨天，我卻還笑著給你祝福，深夜耳機循環情緒現場", artist: "怎麼了", year: 2026, youtubeId: "KBsLwkKsfGY" },
 ];
