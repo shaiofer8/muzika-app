@@ -90,4 +90,9 @@ window.SONGS_BY_LANG.ja = [
   { title: "ありふれた世界の果てに", artist: "YAO", year: 2026, youtubeId: "k8SP7SrLTvc" },
   { title: "なんもねえ / THE FIRST TAKE", artist: "忘れらんねえよ", year: 2026, youtubeId: "Q5Om3k90dMs" },
   { title: "Live at BMSG FES'26 -", artist: "HANA / ALL IN", year: 2026, youtubeId: "AKgC03Z7XJE" },
+  { title: "ザッツ！超常", artist: "M!LK", year: 2026, youtubeId: "F8YyP5wtvVw" },
+  { title: "しおざきわんだーらんど（from ROCK IN JAPAN FES.2026）", artist: "M!LK", year: 2026, youtubeId: "OBgqMAF09mg" },
+  { title: "DEPENDS", artist: "XG", year: 2026, youtubeId: "ftDNJhhJ22k" },
+  { title: "Lemon     Music Video 10億回記念 🍋  Celebrating 1 Billion Views", artist: "Kenshi Yonezu", year: 2026, youtubeId: "Hn0IiJlBV8Y" },
+  { title: "Wanna Live and Die with You! / Tatsuya Kitani", artist: "君と生きて君と死にたい！ / キタニタツヤ", year: 2026, youtubeId: "8aoYUxGMz3E" },
 ];
