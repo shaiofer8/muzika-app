@@ -341,7 +341,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Só Love", artist: "Claudinho e Buchecha", year: 1998 },
   { title: "Cerol na Mão", artist: "Bonde do Tigrão", year: 2001, youtubeId: "rdfrVyCYiGM" },
   { title: "Glamurosa", artist: "MC Marcinho", year: 2003, youtubeId: "am3U2a_wpV4" },
-  { title: "Eguinha Pocotó", artist: "MC Serginho", year: 2003 },
+  { title: "Eguinha Pocotó", artist: "MC Serginho", year: 2003, youtubeId: "tRJ_dCYKv0A" },
 
   // --- Sertanejo — raiz a universitário (adições) ---
   { title: "É o Amor", artist: "Zezé Di Camargo e Luciano", year: 1991 },
@@ -444,9 +444,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "Amor Falso", artist: "Wesley Safadão", year: 2018, youtubeId: "fOrPSLkuI54" },
   { title: "Loka", artist: "Simone & Simaria e Anitta", year: 2017, youtubeId: "G9ZQ97ZXfDM" },
   { title: "Paga de Solteiro Feliz", artist: "Simone & Simaria e Alok", year: 2018, youtubeId: "oephH5-3Q_k" },
-  { title: "O Sol", artist: "Vitor Kley", year: 2016 },
-  { title: "Morena", artist: "Vitor Kley", year: 2019 },
-  { title: "Garoto Errado", artist: "Manu Gavassi", year: 2013 },
+  { title: "O Sol", artist: "Vitor Kley", year: 2016, youtubeId: "YVJijQIualA" },
+  { title: "Morena", artist: "Vitor Kley", year: 2019, youtubeId: "S_B9gzqRQlc" },
+  { title: "Garoto Errado", artist: "Manu Gavassi", year: 2013, youtubeId: "MZ5a49apaDM" },
   { title: "Meu Abrigo", artist: "Melim", year: 2017 },
   { title: "Você Tem", artist: "Vitão e Carol Biazin", year: 2020 },
 
@@ -565,4 +565,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "MÚSICA OFICIAL - LULA PRESIDENTE 2026! 🇧🇷", artist: "OLÊ, OLÊ, OLÊ OLÁ", year: 2026, youtubeId: "r4L7BYH1JHA" },
   { title: "Mundo Fashion ft. Matuê", artist: "Tz da Coronel", year: 2026, youtubeId: "QSU6uy7cx98" },
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
+  { title: "EMILLY VICK E VOID", artist: "MILKSHAKE", year: 2026, youtubeId: "XMPVhbO2YaE" },
+  { title: "Eu Me Rendo  #NoSentimento", artist: "Felipe & Rodrigo", year: 2026, youtubeId: "izDBFPw7JHg" },
+  { title: "MC Jvila, Menor MC e G.A", artist: "Geme Baixo", year: 2026, youtubeId: "Y4nJWY4FXd0" },
+  { title: "Fala Pra Sua Saudade  #NoSentimento", artist: "Felipe & Rodrigo", year: 2026, youtubeId: "gTWAJRwfb6M" },
+  { title: "Mon Amour", artist: "Baco Exu do Blues, Marina Sena", year: 2026, youtubeId: "pozGekTOAGs" },
 ];
