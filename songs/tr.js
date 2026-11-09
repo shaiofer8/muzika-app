@@ -100,4 +100,9 @@ window.SONGS_BY_LANG.tr = [
   { title: "masum kedi", artist: "AURA", year: 2026, youtubeId: "EHeeSiDBTgk" },
   { title: "Isırgan", artist: "Eypio", year: 2026, youtubeId: "CFSPd-9fGmQ" },
   { title: "Yok Başka Hayalim", artist: "Tan Taşçı x Baha", year: 2026, youtubeId: "uWJTmA9wvPk" },
+  { title: "GARSON", artist: "Burak Bulut & İrem Derici", year: 2026, youtubeId: "zJY8z8v0xbo" },
+  { title: "Olurmusun?", artist: "MERO x Poizi", year: 2026, youtubeId: "ncDkosGdvRw" },
+  { title: "İki Yüzlü", artist: "KARM6", year: 2026, youtubeId: "7sPi1eSE5gc" },
+  { title: "Intro & Hileli", artist: "manifest", year: 2026, youtubeId: "YGtNsXgYqjo" },
+  { title: "Babyglock", artist: "Ati242", year: 2026, youtubeId: "3HgXoKnoFCU" },
 ];
