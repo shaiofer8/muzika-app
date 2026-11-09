@@ -540,4 +540,9 @@ window.SONGS_BY_LANG.en = [
   { title: "Dear JT", artist: "Yung Miami", year: 2026, youtubeId: "tAg4Fa1JtPo" },
   { title: "Conversation", artist: "FattMack", year: 2026, youtubeId: "Af5QTrnWrI4" },
   { title: "Playing With Fire", artist: "Finesse2Tymes", year: 2026, youtubeId: "3fLYEYo3iOY" },
+  { title: "take me home", artist: "Olivia Rodrigo", year: 2026, youtubeId: "uXymCnWk9LI" },
+  { title: "Mr. Do Something", artist: "Lil Baby", year: 2026, youtubeId: "3EeJub4m1-E" },
+  { title: "POKITO", artist: "Daddy Yankee and Diljit Dosanjh", year: 2026, youtubeId: "XO1h5G6xytU" },
+  { title: "I'm The Prize", artist: "Kash Doll", year: 2026, youtubeId: "_m47swxun0c" },
+  { title: "El Esparza - Cuando Yo Me Muera", artist: "Grupo Firme", year: 2026, youtubeId: "v08NK0Fccj8" },
 ];
