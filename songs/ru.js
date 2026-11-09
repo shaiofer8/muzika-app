@@ -105,4 +105,9 @@ window.SONGS_BY_LANG.ru = [
   { title: "SERY SRTUM / ՍԵՐԸ ՍՐՏՈՒՄ", artist: "Arshavir Martirosyan", year: 2026, youtubeId: "vYZhRxfZqCI" },
   { title: "Dark Paradise", artist: "NovaFeel", year: 2026, youtubeId: "ecLUO_UEX2o" },
   { title: "Live in Mexico City - Deutschland", artist: "Rammstein", year: 2026, youtubeId: "Iy5nOfzOejI" },
+  { title: "Yurakda Sevgi", artist: "Mirjalol Nematov & Dilnoz", year: 2026, youtubeId: "WdJF9NY5YpA" },
+  { title: "101 причина  prod by OSA", artist: "VILLIAN, OG Buda", year: 2026, youtubeId: "FEN4604oFX0" },
+  { title: "Million", artist: "Sevinch Ismoilova & Alisher Bayniyazov", year: 2026, youtubeId: "UTWnTT8xrhE" },
+  { title: "СКИНЬ НОЖКИ", artist: "SQWOZ BAB, Satyr", year: 2026, youtubeId: "viKmyJPNDRM" },
+  { title: "Под Кайфом", artist: "Блатной Удар", year: 2026, youtubeId: "oy80uik5gqM" },
 ];
