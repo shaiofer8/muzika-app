@@ -87,4 +87,5 @@ window.SONGS_BY_LANG.ko = [
   { title: "‘GO HARD’ M/V", artist: "MEOVV", year: 2026, youtubeId: "8aKR2Ho--5k" },
   { title: "'Drip' Official MV", artist: "ATEEZ", year: 2026, youtubeId: "iqQWCYMlMw0" },
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
+  { title: "‘Replay’ MV", artist: "Baby DONT Cry", year: 2026, youtubeId: "ZjLYzzPbdkM" },
 ];
