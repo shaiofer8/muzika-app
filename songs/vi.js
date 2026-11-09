@@ -86,4 +86,9 @@ window.SONGS_BY_LANG.vi = [
   { title: "Đoạn Tái Bút", artist: "Liên Khúc: Xin Làm Người Xa Lạ", year: 2026, youtubeId: "74LBxa_vq2k" },
   { title: "MCK", artist: "NGUYỄN VĂN MƯỜI", year: 2026, youtubeId: "vDgKtOoGljU" },
   { title: "Gia Huy", artist: "Thương Nhau Đến Thế Remix", year: 2026, youtubeId: "dfXaGCkg4ok" },
+  { title: "Chủ Tịch Mai x Giám Đốc Hà", artist: "Như Một Người Rưng", year: 2026, youtubeId: "hGu7BVQy5G0" },
+  { title: "Quân A.P", artist: "3 PHẢI 6 ĐỪNG", year: 2026, youtubeId: "INJuqE_34eQ" },
+  { title: "QUÁ ĐỦ RỒI", artist: "COOLKID", year: 2026, youtubeId: "ceGkpG_HJ6Y" },
+  { title: "Anh Nên Đi Khỏi Đây", artist: "HIEUTHUHAI", year: 2026, youtubeId: "OLaYISTt65E" },
+  { title: "THẾ NÀO LÀ ĐÚNG?", artist: "Bảo Anh", year: 2026, youtubeId: "kMlcXrUET8I" },
 ];
