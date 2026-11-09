@@ -105,4 +105,9 @@ window.SONGS_BY_LANG.ar = [
   { title: "5msat", artist: "Arsenik x Abyusif", year: 2026, youtubeId: "MqISzHqIgwI" },
   { title: "حمو المرشدي 2026", artist: "مخونتش مخوفتش مغدرتش", year: 2026, youtubeId: "Hed_4F_cQiw" },
   { title: "توزيع كيمو الديب Official Video", artist: "انا حذرتك وانت وراحتك  عصام صاصا الكروان", year: 2026, youtubeId: "R5hnHua2erQ" },
+  { title: "أخوك واجهة / Mohamed Ramadan & Essam Sasa - Akhok Wagha", artist: "محمد رمضان و عصام صاصا", year: 2026, youtubeId: "VDSlFP6pZVc" },
+  { title: "Ma Tlaenash  / اليسا - ما تلاقيناش", artist: "Elissa", year: 2026, youtubeId: "ylBsBuAS-XQ" },
+  { title: "Habbatal Aheb  / اليسا - هبطل أحب", artist: "Elissa", year: 2026, youtubeId: "7JwXjbTgzss" },
+  { title: "توزيع كيمو الديب Official Video", artist: "استفدت ايه بكبريائك  عصام صاصا الكروان", year: 2026, youtubeId: "5ZNpn_7oHXA" },
+  { title: "Kashf El Hisab  / اليسا - كشف الحساب", artist: "Elissa", year: 2026, youtubeId: "5KsfUBEk9OQ" },
 ];
