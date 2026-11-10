@@ -155,7 +155,7 @@ window.SONGS_BY_LANG.de = [
   { title: "Hurra, Hurra, Die Schule Brennt", artist: "Extrabreit", year: 1980 },
 
   // --- Deutscher HipHop / R&B ---
-  { title: "Wenn Worte Meine Sprache Wären", artist: "Sarah Connor", year: 2001 },
+  { title: "Wenn Worte Meine Sprache Wären", artist: "Sarah Connor", year: 2001, status: "no_match", reason: "no_artist_title_match" },
   { title: "From Sarah with Love", artist: "Sarah Connor", year: 2001 },
   { title: "Bounce", artist: "Sarah Connor", year: 2005 },
   { title: "Wie Schön Du Bist", artist: "Sarah Connor", year: 2015, youtubeId: "1gDbpWC_9pE" },
@@ -233,9 +233,9 @@ window.SONGS_BY_LANG.de = [
   { title: "Emotions", artist: "Ufo361", year: 2020, youtubeId: "uSXzme--hvM" },
   { title: "Airwaves", artist: "Pashanim", year: 2020, youtubeId: "i5wsXLmWhCM" },
   { title: "Blaues Licht", artist: "RAF Camora feat. Bonez MC", year: 2021, youtubeId: "0NL8H1IAHVc" },
-  { title: "Der letzte Song (Alles wird gut)", artist: "Kummer feat. Fred Rabe", year: 2021 },
-  { title: "Zukunft Pink", artist: "Peter Fox feat. Inéz", year: 2022 },
-  { title: "Bye Bye", artist: "Cro", year: 2015 },
+  { title: "Der letzte Song (Alles wird gut)", artist: "Kummer feat. Fred Rabe", year: 2021, youtubeId: "AX70GcqLfmE" },
+  { title: "Zukunft Pink", artist: "Peter Fox feat. Inéz", year: 2022, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Bye Bye", artist: "Cro", year: 2015, youtubeId: "_ub6zBrbbdw" },
   { title: "Auf & ab", artist: "Montez", year: 2021 },
   { title: "Alles neu", artist: "Peter Fox", year: 2008 },
   { title: "Haus am See", artist: "Peter Fox", year: 2008 },
