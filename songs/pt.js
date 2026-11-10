@@ -401,7 +401,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Timidez", artist: "Biquini Cavadão", year: 1988 },
 
   // --- Sertanejo universitário, gospel e pagode romântico ---
-  { title: "Meteoro da Paixão", artist: "Luan Santana", year: 2009 },
+  { title: "Meteoro da Paixão", artist: "Luan Santana", year: 2009, youtubeId: "bv7TIXPystY" },
   { title: "Te Esperando", artist: "Luan Santana", year: 2013, youtubeId: "Z5pWz_OR5Sg" },
   { title: "Sinais", artist: "Luan Santana", year: 2014, youtubeId: "MxwZ66L9RQI" },
   { title: "Amar Não É Pecado", artist: "Luan Santana", year: 2012, youtubeId: "iyKRz-6U4Xw" },
@@ -447,8 +447,8 @@ window.SONGS_BY_LANG.pt = [
   { title: "O Sol", artist: "Vitor Kley", year: 2016, youtubeId: "YVJijQIualA" },
   { title: "Morena", artist: "Vitor Kley", year: 2019, youtubeId: "S_B9gzqRQlc" },
   { title: "Garoto Errado", artist: "Manu Gavassi", year: 2013, youtubeId: "MZ5a49apaDM" },
-  { title: "Meu Abrigo", artist: "Melim", year: 2017 },
-  { title: "Você Tem", artist: "Vitão e Carol Biazin", year: 2020 },
+  { title: "Meu Abrigo", artist: "Melim", year: 2017, youtubeId: "gUpGTRR4Tt4" },
+  { title: "Você Tem", artist: "Vitão e Carol Biazin", year: 2020, status: "no_match", reason: "no_artist_title_match" },
 
   // --- Portugal — Rui Veloso, pop e Festival da Canção (adições) ---
   { title: "Porto Sentido", artist: "Rui Veloso", year: 1986 },
@@ -456,7 +456,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Cavaleiro Andante", artist: "Rui Veloso", year: 1986 },
   { title: "A Gente Não Lê", artist: "Rui Veloso", year: 1983 },
   { title: "Máquina Zero", artist: "Rui Veloso", year: 1984 },
-  { title: "Antes Dela Dizer Que Sim", artist: "Bárbara Tinoco", year: 2019 },
+  { title: "Antes Dela Dizer Que Sim", artist: "Bárbara Tinoco", year: 2019, youtubeId: "JyjtX7qLlC0" },
   { title: "Sei Lá", artist: "Bárbara Tinoco", year: 2021 },
   { title: "Outras Línguas", artist: "Bárbara Tinoco", year: 2021 },
   { title: "Oração", artist: "António Calvário", year: 1964 },
