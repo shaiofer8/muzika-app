@@ -153,7 +153,7 @@ window.SONGS_BY_LANG.es = [
   { title: "Un Buen Día", artist: "La Vela Puerca", year: 2003, status: "no_match", reason: "no_artist_title_match" },
   { title: "A Redoblar", artist: "La Vela Puerca", year: 2004, status: "no_match", reason: "no_artist_title_match" },
   { title: "Es Por Vos", artist: "Turf", year: 2000, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Que Sea Rock", artist: "Turf", year: 2001 },
+  { title: "Que Sea Rock", artist: "Turf", year: 2001, status: "no_match", reason: "no_artist_title_match" },
   { title: "Ella Es Así", artist: "Attaque 77", year: 1996 },
   { title: "Hacelo por Mí", artist: "Attaque 77", year: 1993 },
 
@@ -226,9 +226,9 @@ window.SONGS_BY_LANG.es = [
   { title: "Vete", artist: "Bad Bunny", year: 2019, youtubeId: "zN1SKErEAQ0" },
   { title: "La Difícil", artist: "Bad Bunny", year: 2020, youtubeId: "fEYUoBgYKzw" },
   { title: "Booker T", artist: "Bad Bunny", year: 2020, youtubeId: "PGJ43zaam_0" },
-  { title: "Un Verano Sin Ti", artist: "Bad Bunny", year: 2022 },
-  { title: "Tití Me Preguntó (single ver.)", artist: "Bad Bunny", year: 2022 },
-  { title: "Ojitos Lindos", artist: "Bad Bunny ft. Bomba Estéreo", year: 2022 },
+  { title: "Un Verano Sin Ti", artist: "Bad Bunny", year: 2022, youtubeId: "REyv4cblksI" },
+  { title: "Tití Me Preguntó (single ver.)", artist: "Bad Bunny", year: 2022, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Ojitos Lindos", artist: "Bad Bunny ft. Bomba Estéreo", year: 2022, youtubeId: "wAjHQXrIj9o" },
   { title: "Moscow Mule", artist: "Bad Bunny", year: 2022 },
 
   // --- Pop latino contemporáneo ---
