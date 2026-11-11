@@ -88,7 +88,7 @@ window.SONGS_BY_LANG.hi = [
   { title: "with HD Video", artist: "🔱Chalrey Chalrey waal", year: 2026, youtubeId: "jQqYtL6G60U" },
   { title: "Lyrical", artist: "Bhaja Govindam", year: 2026, youtubeId: "41QvzxRhQrc" },
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
-  { title: "Bhajan", artist: "Aai Hai Diwali", year: 2026, youtubeId: "D6dFzWL89x8" },
+  { title: "Bhajan", artist: "Aai Hai Diwali", year: 2026, youtubeId: "D6dFzWL89x8", status: "disabled", reason: "removed_or_private" },
   { title: "आई है दिवाली", artist: "Diwali Special Song", year: 2026, youtubeId: "pqBDvACytX8" },
   { title: "Lyrical", artist: "Zaalima", year: 2026, youtubeId: "nqKvhOHGmRE" },
   { title: "Mahiya ft. Avneet Kaur", artist: "Mahiya  Badshah x Shreya Ghoshal", year: 2026, youtubeId: "EgXkduRe9ZU" },
