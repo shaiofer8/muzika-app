@@ -238,10 +238,10 @@ window.SONGS_BY_LANG.fr = [
   { title: "Paname", artist: "Slimane", year: 2016, youtubeId: "Xs90a3K9aIU" },
   { title: "Viens On S'aime", artist: "Slimane", year: 2018, status: "no_match", reason: "no_artist_title_match" },
   { title: "Mon Amour", artist: "Slimane", year: 2019, youtubeId: "-XyLecY2JyE" },
-  { title: "Elle Danse Seule", artist: "Julien Doré", year: 2013 },
+  { title: "Elle Danse Seule", artist: "Julien Doré", year: 2013, status: "no_match", reason: "no_artist_title_match" },
   { title: "Paris-Seychelles", artist: "Julien Doré", year: 2008, youtubeId: "cmE_aahc448" },
-  { title: "La Fille aux Bas Nylon", artist: "Julien Doré", year: 2011 },
-  { title: "Coco Câline", artist: "Julien Doré", year: 2013 },
+  { title: "La Fille aux Bas Nylon", artist: "Julien Doré", year: 2011, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Coco Câline", artist: "Julien Doré", year: 2013, youtubeId: "Zqn41lMIGg8" },
   { title: "Nu", artist: "Julien Doré", year: 2016 },
   { title: "L'Amour en Solitaire", artist: "Jeanne Added", year: 2015 },
   { title: "Carmen", artist: "Stromae", year: 2015 },
@@ -301,7 +301,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Tombé pour la France", artist: "Étienne Daho", year: 1981 },
 
   // --- Pop contemporaine française ---
-  { title: "On S'Attache", artist: "Christophe Maé", year: 2007 },
+  { title: "On S'Attache", artist: "Christophe Maé", year: 2007, status: "no_match", reason: "no_artist_title_match" },
   { title: "Il Est où le Bonheur", artist: "Christophe Maé", year: 2010 },
   { title: "Belle Demoiselle", artist: "Christophe Maé", year: 2013 },
   { title: "Dingue, Dingue, Dingue", artist: "Christophe Maé", year: 2007 },
