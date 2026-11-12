@@ -409,7 +409,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Bloqueado", artist: "Gusttavo Lima", year: 2016, youtubeId: "14C28JSO-sg" },
   { title: "Homem de Família", artist: "Gusttavo Lima", year: 2018, youtubeId: "Vz9EXeF01A8" },
   { title: "Magia e Mistério", artist: "João Bosco e Vinicius", year: 2003, youtubeId: "dBFPpWXVIHc" },
-  { title: "Chora, Me Liga", artist: "João Bosco e Vinicius", year: 2009 },
+  { title: "Chora, Me Liga", artist: "João Bosco e Vinicius", year: 2009, status: "no_match", reason: "no_artist_title_match" },
   { title: "Fogueira", artist: "Jorge & Mateus", year: 2007 },
   { title: "Grandes Coisas", artist: "Fernandinho", year: 2013, youtubeId: "5WxNEs9fxG0" },
   { title: "Galileu", artist: "Fernandinho", year: 2011, youtubeId: "D1GDDvrfnfc" },
@@ -474,9 +474,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "Encontros e Despedidas", artist: "Milton Nascimento", year: 1985 },
   { title: "Nos Bailes da Vida", artist: "Milton Nascimento", year: 1981 },
   { title: "Olha a Explosão", artist: "MC Kevinho", year: 2016, youtubeId: "3yd_eoMOvqk" },
-  { title: "Elas Gostam", artist: "MC Kevinho", year: 2016 },
-  { title: "Terremoto", artist: "MC Kevinho e Anitta", year: 2017 },
-  { title: "Bem Querer", artist: "MC Livinho", year: 2016 },
+  { title: "Elas Gostam", artist: "MC Kevinho", year: 2016, youtubeId: "4HGGyI631O0" },
+  { title: "Terremoto", artist: "MC Kevinho e Anitta", year: 2017, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Bem Querer", artist: "MC Livinho", year: 2016, youtubeId: "jkYYCFdRgCY" },
   { title: "Dentro do Carro", artist: "Kevin O Chris", year: 2018 },
 
   // --- Pagode, agronejo e Djavan (adições) ---
