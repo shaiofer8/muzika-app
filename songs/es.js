@@ -164,7 +164,7 @@ window.SONGS_BY_LANG.es = [
   { title: "El Baile de los Que Sobran", artist: "Los Prisioneros", year: 1986 },
   { title: "Muevete", artist: "Los Prisioneros", year: 1986 },
   { title: "Latinoamérica", artist: "Calle 13", year: 2010, youtubeId: "DkFJE8ZdeG8" },
-  { title: "Atrévete-te-te", artist: "Calle 13", year: 2005 },
+  { title: "Atrévete-te-te", artist: "Calle 13", year: 2005, youtubeId: "yNGUW8uZ1oo" },
   { title: "Pa'l Norte", artist: "Calle 13 ft. Orishas", year: 2007 },
 
   // --- Colombia ---
@@ -229,11 +229,11 @@ window.SONGS_BY_LANG.es = [
   { title: "Un Verano Sin Ti", artist: "Bad Bunny", year: 2022, youtubeId: "REyv4cblksI" },
   { title: "Tití Me Preguntó (single ver.)", artist: "Bad Bunny", year: 2022, status: "no_match", reason: "no_artist_title_match" },
   { title: "Ojitos Lindos", artist: "Bad Bunny ft. Bomba Estéreo", year: 2022, youtubeId: "wAjHQXrIj9o" },
-  { title: "Moscow Mule", artist: "Bad Bunny", year: 2022 },
+  { title: "Moscow Mule", artist: "Bad Bunny", year: 2022, youtubeId: "j1tlxMPB_2Y" },
 
   // --- Pop latino contemporáneo ---
-  { title: "Amigos No Más", artist: "Sebastián Yatra", year: 2018 },
-  { title: "Traicionera", artist: "Sebastián Yatra", year: 2017 },
+  { title: "Amigos No Más", artist: "Sebastián Yatra", year: 2018, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Traicionera", artist: "Sebastián Yatra", year: 2017, youtubeId: "NE3IkFadCHM" },
   { title: "Robarte un Beso", artist: "Carlos Vives & Sebastián Yatra", year: 2017 },
   { title: "No Bailes Sola", artist: "Sebastián Yatra ft. Danny Ocean & Manuel Turizo", year: 2018 },
   { title: "Reggaetón Lento (Bailemos)", artist: "CNCO", year: 2016 },
