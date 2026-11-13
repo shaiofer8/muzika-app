@@ -68,7 +68,7 @@
     "early": 0.2,
     "old": 0.1
   },
-  "trendsPerWeek": 5,
+  "trendsPerWeek": 15,
   "trendDay": 1,
   "searchWeights": {
     "en": 30,
