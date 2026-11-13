@@ -22,3 +22,5 @@ captures/
 
 .vscode/
 tools/song-agent/logs/
+keystore.properties
+assets/raw/
