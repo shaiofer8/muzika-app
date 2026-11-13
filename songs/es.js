@@ -165,7 +165,7 @@ window.SONGS_BY_LANG.es = [
   { title: "Muevete", artist: "Los Prisioneros", year: 1986 },
   { title: "Latinoamérica", artist: "Calle 13", year: 2010, youtubeId: "DkFJE8ZdeG8" },
   { title: "Atrévete-te-te", artist: "Calle 13", year: 2005, youtubeId: "yNGUW8uZ1oo" },
-  { title: "Pa'l Norte", artist: "Calle 13 ft. Orishas", year: 2007 },
+  { title: "Pa'l Norte", artist: "Calle 13 ft. Orishas", year: 2007, status: "no_match", reason: "no_artist_title_match" },
 
   // --- Colombia ---
   { title: "Te Mando Flores", artist: "Fonseca ft. Andrés Cepeda", year: 2013, status: "no_match", reason: "no_artist_title_match" },
@@ -234,9 +234,9 @@ window.SONGS_BY_LANG.es = [
   // --- Pop latino contemporáneo ---
   { title: "Amigos No Más", artist: "Sebastián Yatra", year: 2018, status: "no_match", reason: "no_artist_title_match" },
   { title: "Traicionera", artist: "Sebastián Yatra", year: 2017, youtubeId: "NE3IkFadCHM" },
-  { title: "Robarte un Beso", artist: "Carlos Vives & Sebastián Yatra", year: 2017 },
-  { title: "No Bailes Sola", artist: "Sebastián Yatra ft. Danny Ocean & Manuel Turizo", year: 2018 },
-  { title: "Reggaetón Lento (Bailemos)", artist: "CNCO", year: 2016 },
+  { title: "Robarte un Beso", artist: "Carlos Vives & Sebastián Yatra", year: 2017, youtubeId: "Mtau4v6foHA" },
+  { title: "No Bailes Sola", artist: "Sebastián Yatra ft. Danny Ocean & Manuel Turizo", year: 2018, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Reggaetón Lento (Bailemos)", artist: "CNCO", year: 2016, youtubeId: "7jpqqBX-Myw" },
   { title: "Se Vuelve Loca", artist: "CNCO", year: 2017 },
   { title: "Quisiera", artist: "CNCO", year: 2016 },
   { title: "Yo Te Esperaré", artist: "Morat", year: 2016 },
