@@ -245,9 +245,9 @@ window.SONGS_BY_LANG.fr = [
   { title: "Nu", artist: "Julien Doré", year: 2016, status: "no_match", reason: "no_artist_title_match" },
   { title: "L'Amour en Solitaire", artist: "Jeanne Added", year: 2015, status: "no_match", reason: "no_artist_title_match" },
   { title: "Carmen", artist: "Stromae", year: 2015, youtubeId: "UKftOH54iNU" },
-  { title: "Ta Fête", artist: "Stromae", year: 2013 },
-  { title: "L'Enfer", artist: "Stromae", year: 2022 },
-  { title: "Santé", artist: "Stromae", year: 2022 },
+  { title: "Ta Fête", artist: "Stromae", year: 2013, youtubeId: "ublchJYzhao" },
+  { title: "L'Enfer", artist: "Stromae", year: 2022, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Santé", artist: "Stromae", year: 2022, youtubeId: "P3QS83ubhHE" },
 
   // --- Chanson française classique ---
   { title: "Les Copains d'Abord", artist: "Georges Brassens", year: 1964 },
@@ -317,7 +317,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Avenir", artist: "Louane", year: 2015 },
   { title: "On Était Beau", artist: "Louane", year: 2018 },
   { title: "Emmenez-moi Danser", artist: "Louane", year: 2019 },
-  { title: "Derrière les Fagots", artist: "Grand Corps Malade", year: 2006 },
+  { title: "Derrière les Fagots", artist: "Grand Corps Malade", year: 2006, status: "no_match", reason: "no_artist_title_match" },
   { title: "Roméo Kiffe Juliette", artist: "Grand Corps Malade", year: 2010 },
   { title: "Midi 20", artist: "Grand Corps Malade", year: 2006 },
   { title: "Mesdames", artist: "Grand Corps Malade", year: 2008 },
