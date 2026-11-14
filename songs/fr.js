@@ -302,10 +302,10 @@ window.SONGS_BY_LANG.fr = [
 
   // --- Pop contemporaine française ---
   { title: "On S'Attache", artist: "Christophe Maé", year: 2007, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Il Est où le Bonheur", artist: "Christophe Maé", year: 2010 },
-  { title: "Belle Demoiselle", artist: "Christophe Maé", year: 2013 },
+  { title: "Il Est où le Bonheur", artist: "Christophe Maé", year: 2010, youtubeId: "m5qXr9lLdwA" },
+  { title: "Belle Demoiselle", artist: "Christophe Maé", year: 2013, youtubeId: "Hs6ailybTTE" },
   { title: "Dingue, Dingue, Dingue", artist: "Christophe Maé", year: 2007, youtubeId: "Rwv1djaV6Fc" },
-  { title: "L'Éternité", artist: "Christophe Maé", year: 2018 },
+  { title: "L'Éternité", artist: "Christophe Maé", year: 2018, status: "no_match", reason: "no_artist_title_match" },
   { title: "On Se Ressemble Trop", artist: "Christophe Maé", year: 2010 },
   { title: "Je Te Le Donne", artist: "Vianney", year: 2014 },
   { title: "Pas Là", artist: "Vianney", year: 2015 },
@@ -319,7 +319,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Emmenez-moi Danser", artist: "Louane", year: 2019 },
   { title: "Derrière les Fagots", artist: "Grand Corps Malade", year: 2006, status: "no_match", reason: "no_artist_title_match" },
   { title: "Roméo Kiffe Juliette", artist: "Grand Corps Malade", year: 2010 },
-  { title: "Midi 20", artist: "Grand Corps Malade", year: 2006 },
+  { title: "Midi 20", artist: "Grand Corps Malade", year: 2006, youtubeId: "zEDJcXsynLI" },
   { title: "Mesdames", artist: "Grand Corps Malade", year: 2008 },
   { title: "Enfant de la Ville", artist: "Grand Corps Malade & Camille Lellouche", year: 2020 },
   { title: "As-tu Déjà Aimé", artist: "Soprano", year: 2018 },
