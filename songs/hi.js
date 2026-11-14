@@ -90,7 +90,7 @@ window.SONGS_BY_LANG.hi = [
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
   { title: "Bhajan", artist: "Aai Hai Diwali", year: 2026, youtubeId: "D6dFzWL89x8", status: "disabled", reason: "removed_or_private" },
   { title: "आई है दिवाली", artist: "Diwali Special Song", year: 2026, youtubeId: "pqBDvACytX8" },
-  { title: "Lyrical", artist: "Zaalima", year: 2026, youtubeId: "nqKvhOHGmRE" },
+  { title: "Lyrical", artist: "Zaalima", year: 2026, youtubeId: "nqKvhOHGmRE", status: "disabled", reason: "removed_or_private" },
   { title: "Mahiya ft. Avneet Kaur", artist: "Mahiya  Badshah x Shreya Ghoshal", year: 2026, youtubeId: "EgXkduRe9ZU" },
   { title: "चौदह वर्ष में राम", artist: "Hansraj Raghuwanshi", year: 2026, youtubeId: "WZEsOl2VuDA" },
 ];
