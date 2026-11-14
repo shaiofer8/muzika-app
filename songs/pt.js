@@ -427,7 +427,7 @@ window.SONGS_BY_LANG.pt = [
   { title: "Anjos", artist: "Diogo Piçarra e Carolina Deslandes", year: 2019, status: "no_match", reason: "no_artist_title_match" },
   { title: "Vilarejo", artist: "Marisa Monte", year: 2011, youtubeId: "WibtVWwW-EA" },
   { title: "Arrastão", artist: "Elis Regina", year: 1965 },
-  { title: "Razões e Emoções", artist: "NX Zero", year: 2005 },
+  { title: "Razões e Emoções", artist: "NX Zero", year: 2005, youtubeId: "It8TrGTmUPI" },
   { title: "Cedo ou Tarde", artist: "NX Zero", year: 2007 },
   { title: "Dias Atrás", artist: "CPM 22", year: 2005 },
   { title: "Outro Lugar", artist: "Detonautas", year: 2002 },
@@ -505,9 +505,9 @@ window.SONGS_BY_LANG.pt = [
   { title: "Haja o Que Houver", artist: "Madredeus", year: 1994 },
 
   // --- Sertanejo, axé e Portugal recentes ---
-  { title: "Propaganda", artist: "Jorge & Mateus", year: 2018 },
-  { title: "Lençol Dobrado", artist: "João Gustavo & Murilo", year: 2019 },
-  { title: "Batom de Cereja", artist: "Israel & Rodolffo", year: 2021 },
+  { title: "Propaganda", artist: "Jorge & Mateus", year: 2018, youtubeId: "mQr7XemLs8s" },
+  { title: "Lençol Dobrado", artist: "João Gustavo & Murilo", year: 2019, youtubeId: "lxxuPGzTob4" },
+  { title: "Batom de Cereja", artist: "Israel & Rodolffo", year: 2021, youtubeId: "3vYeQLJ2as4" },
   { title: "Leão", artist: "Marília Mendonça", year: 2023 },
   { title: "Se Acaso Você Chegasse", artist: "Elza Soares", year: 1959 },
   { title: "Telemóveis", artist: "Conan Osiris", year: 2019 },
