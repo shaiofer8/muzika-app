@@ -169,7 +169,7 @@ window.SONGS_BY_LANG.es = [
 
   // --- Colombia ---
   { title: "Te Mando Flores", artist: "Fonseca ft. Andrés Cepeda", year: 2013, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Eres Mi Sueño", artist: "Fonseca", year: 2005 },
+  { title: "Eres Mi Sueño", artist: "Fonseca", year: 2005, youtubeId: "SyenI74fcHk" },
   { title: "Sentir", artist: "Fonseca", year: 2007 },
   { title: "Voy a Extrañarte", artist: "Andrés Cepeda", year: 2005 },
   { title: "Lo Que Somos", artist: "Andrés Cepeda", year: 2007 },
@@ -237,9 +237,9 @@ window.SONGS_BY_LANG.es = [
   { title: "Robarte un Beso", artist: "Carlos Vives & Sebastián Yatra", year: 2017, youtubeId: "Mtau4v6foHA" },
   { title: "No Bailes Sola", artist: "Sebastián Yatra ft. Danny Ocean & Manuel Turizo", year: 2018, status: "no_match", reason: "no_artist_title_match" },
   { title: "Reggaetón Lento (Bailemos)", artist: "CNCO", year: 2016, youtubeId: "7jpqqBX-Myw" },
-  { title: "Se Vuelve Loca", artist: "CNCO", year: 2017 },
-  { title: "Quisiera", artist: "CNCO", year: 2016 },
-  { title: "Yo Te Esperaré", artist: "Morat", year: 2016 },
+  { title: "Se Vuelve Loca", artist: "CNCO", year: 2017, youtubeId: "y3QQvajXWUk" },
+  { title: "Quisiera", artist: "CNCO", year: 2016, youtubeId: "GtOngOaClgU" },
+  { title: "Yo Te Esperaré", artist: "Morat", year: 2016, status: "no_match", reason: "no_artist_title_match" },
   { title: "Cómo Te Atreves", artist: "Morat", year: 2016 },
   { title: "Besos en Guerra", artist: "Morat & Juanes", year: 2018 },
   { title: "600 Noches", artist: "Morat", year: 2018 },
