@@ -93,4 +93,10 @@ window.SONGS_BY_LANG.hi = [
   { title: "Lyrical", artist: "Zaalima", year: 2026, youtubeId: "nqKvhOHGmRE", status: "disabled", reason: "removed_or_private" },
   { title: "Mahiya ft. Avneet Kaur", artist: "Mahiya  Badshah x Shreya Ghoshal", year: 2026, youtubeId: "EgXkduRe9ZU" },
   { title: "चौदह वर्ष में राम", artist: "Hansraj Raghuwanshi", year: 2026, youtubeId: "WZEsOl2VuDA" },
+  { title: "Official Music Video", artist: "Rathinamo", year: 2026, youtubeId: "Wjew3Rc1PYI" },
+  { title: "Never Left", artist: "Shubh", year: 2026, youtubeId: "zdz8swOQUqw" },
+  { title: "डमरू बजावै भोलेनाथ गौरा नाच रही", artist: "शिव भजन", year: 2026, youtubeId: "BVRMPdfH-8E" },
+  { title: "Dada", artist: "Dada Dhamaka Lyrical", year: 2026, youtubeId: "9rH9scMONNI" },
+  { title: "Titliaan  Jaani", artist: "Afsana Khan, Harrdy Sandhu, Sargun Mehta", year: 2026, youtubeId: "Z75yUmfXDpk" },
+  { title: "Bintu Pabra", artist: "Kya Baat Hai", year: 2026, youtubeId: "uPEW0H0J-YQ" },
 ];
