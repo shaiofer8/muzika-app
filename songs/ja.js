@@ -95,4 +95,12 @@ window.SONGS_BY_LANG.ja = [
   { title: "DEPENDS", artist: "XG", year: 2026, youtubeId: "ftDNJhhJ22k" },
   { title: "Lemon     Music Video 10億回記念 🍋  Celebrating 1 Billion Views", artist: "Kenshi Yonezu", year: 2026, youtubeId: "Hn0IiJlBV8Y" },
   { title: "Wanna Live and Die with You! / Tatsuya Kitani", artist: "君と生きて君と死にたい！ / キタニタツヤ", year: 2026, youtubeId: "8aoYUxGMz3E" },
+  { title: "History", artist: "ちゃんみな", year: 2026, youtubeId: "Gq_IGTJ-AMw" },
+  { title: "愛の形", artist: "吉田仁人", year: 2026, youtubeId: "kah_mp9tCtE" },
+  { title: "Period", artist: "IMP.", year: 2026, youtubeId: "sIsWvrJQhMw" },
+  { title: "拝啓、少年よ / THE FIRST TAKE", artist: "Hump Back", year: 2026, youtubeId: "7dIDWELh0T0" },
+  { title: "'UP' Official MV", artist: "ATEEZ", year: 2026, youtubeId: "SGovymtCzvA" },
+  { title: "TRUE", artist: "Hey! Say! JUMP", year: 2026, youtubeId: "NyoABlMFQfI" },
+  { title: "Romeo & Juliet+", artist: "Hey! Say! JUMP", year: 2026, youtubeId: "-3n0Po1zOqU" },
+  { title: "娑婆堕罵 -Shabadaba-", artist: "RADWIMPS", year: 2026, youtubeId: "N5QSESETuKE" },
 ];
