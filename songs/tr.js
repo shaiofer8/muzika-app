@@ -105,4 +105,10 @@ window.SONGS_BY_LANG.tr = [
   { title: "İki Yüzlü", artist: "KARM6", year: 2026, youtubeId: "7sPi1eSE5gc" },
   { title: "Intro & Hileli", artist: "manifest", year: 2026, youtubeId: "YGtNsXgYqjo" },
   { title: "Babyglock", artist: "Ati242", year: 2026, youtubeId: "3HgXoKnoFCU" },
+  { title: "ÖMERHAYYAM", artist: "Wegh", year: 2026, youtubeId: "CSB4gv8f2Mk" },
+  { title: "Sana Tutuluyorum", artist: "Hasan Gözetlik", year: 2026, youtubeId: "6yEy7Ysyy4k" },
+  { title: "Vur", artist: "Afra", year: 2026, youtubeId: "izHUvZHc_DU" },
+  { title: "Wannabe", artist: "manifest", year: 2026, youtubeId: "3llakrvC5fo" },
+  { title: "Kabe'de Döne Döne", artist: "Celal Karatüre", year: 2026, youtubeId: "XxGnGuIDZ3c" },
+  { title: "ALO", artist: "Wegh", year: 2026, youtubeId: "qXPlq9svqn0" },
 ];
