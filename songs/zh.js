@@ -94,4 +94,9 @@ window.SONGS_BY_LANG.zh = [
   { title: "Lemon     Music Video 10億回記念 🍋  Celebrating 1 Billion Views", artist: "Kenshi Yonezu", year: 2026, youtubeId: "Hn0IiJlBV8Y" },
   { title: "FIRESTARTER ft. MIYEON and SOYEON of i-dle, Sophie Powers, Mimi Webb", artist: "K/DA", year: 2026, youtubeId: "Mmw-PpWhKFg" },
   { title: "周興哲｜R&B × Emo改編｜當最愛的藍色變成灰色的雨天，我卻還笑著給你祝福，深夜耳機循環情緒現場", artist: "怎麼了", year: 2026, youtubeId: "KBsLwkKsfGY" },
+  { title: "一見鍾情  HD【三立八點檔『 針線緣』金曲片頭 / 三立『 戲說台灣』片尾曲 】", artist: "【MV首播】翁立友 vs 林琇琪", year: 2026, youtubeId: "drqG1CubjFE" },
+  { title: "Hong Kong", artist: "The Weeknd", year: 2026, youtubeId: "hX9S94XsySk" },
+  { title: "'UP' Official MV", artist: "ATEEZ", year: 2026, youtubeId: "SGovymtCzvA" },
+  { title: "DEPENDS", artist: "XG", year: 2026, youtubeId: "ftDNJhhJ22k" },
+  { title: "‘Bananas’ Official Music Video", artist: "LNGSHOT", year: 2026, youtubeId: "xWNIrOTJ6VA" },
 ];
