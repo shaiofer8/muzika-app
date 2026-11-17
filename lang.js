@@ -10,12 +10,20 @@
   var current = DEFAULT_LANG;
   var loading = {};
 
+  // ברירת מחדל לפי שפת הדפדפן: עברית לישראל ושפה נתמכת אחרת לפי הדפדפן,
+  // ואנגלית לכל השאר (למשל ארה"ב ובריטניה). בחירה שמורה תמיד גוברת.
+  function browserLang() {
+    var code = ((navigator.language || "") + "").toLowerCase().split("-")[0];
+    if (code && window.I18N && window.I18N[code]) return code;
+    return "en";
+  }
+
   function getSavedLang() {
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
       if (saved && window.I18N && window.I18N[saved]) return saved;
     } catch (e) { /* localStorage חסום — פשוט מתחילים מברירת המחדל */ }
-    return DEFAULT_LANG;
+    return browserLang();
   }
 
   function saveLang(code) {
