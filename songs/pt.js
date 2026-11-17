@@ -430,8 +430,8 @@ window.SONGS_BY_LANG.pt = [
   { title: "Razões e Emoções", artist: "NX Zero", year: 2005, youtubeId: "It8TrGTmUPI" },
   { title: "Cedo ou Tarde", artist: "NX Zero", year: 2007, youtubeId: "XdglM81b4g8" },
   { title: "Dias Atrás", artist: "CPM 22", year: 2005, youtubeId: "juM8luwwMoo" },
-  { title: "Outro Lugar", artist: "Detonautas", year: 2002 },
-  { title: "Admirável Chip Novo", artist: "Pitty", year: 2003 },
+  { title: "Outro Lugar", artist: "Detonautas", year: 2002, youtubeId: "8zsZ3Ql8x7o" },
+  { title: "Admirável Chip Novo", artist: "Pitty", year: 2003, youtubeId: "aXJ_Ub1xbhw" },
 
   // --- Forró, axé e pop recente (adições) ---
   { title: "Xote dos Milagres", artist: "Falamansa", year: 2000 },
@@ -539,8 +539,8 @@ window.SONGS_BY_LANG.pt = [
 
   // --- Infantil, sertanejo feminino e clássicos adicionais ---
   { title: "He-Man", artist: "Trem da Alegria", year: 1986 },
-  { title: "50 Reais", artist: "Naiara Azevedo", year: 2016 },
-  { title: "Erro Gostoso", artist: "Simone Mendes", year: 2020 },
+  { title: "50 Reais", artist: "Naiara Azevedo", year: 2016, youtubeId: "yjLz5bPhCoI" },
+  { title: "Erro Gostoso", artist: "Simone Mendes", year: 2020, youtubeId: "mr09lDl_Tfk" },
   { title: "Ilê Pérola Negra", artist: "Daniela Mercury", year: 1996 },
   { title: "Você Abusou", artist: "Os Originais do Samba", year: 1971 },
   { title: "Verdes Anos", artist: "Carlos Paião", year: 1981 },
