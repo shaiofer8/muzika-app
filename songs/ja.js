@@ -86,7 +86,7 @@ window.SONGS_BY_LANG.ja = [
   { title: "雲を抜け風下へ私だけ（OFFICIAL VIDEO）", artist: "ヨルシカ", year: 2026, youtubeId: "J5-NUv2fNtk" },
   { title: "絆 / THE FIRST TAKE", artist: "亀梨和也", year: 2026, youtubeId: "CMdxE0_YVAo" },
   { title: "KEY TERUYA2 ～キテルヤツ～", artist: "KEY TO LIT", year: 2026, youtubeId: "br6ntQkeY7k" },
-  { title: "時空超えてユニバース", artist: "【期間限定公開】M!LK", year: 2026, youtubeId: "6DX3Ev9agF4" },
+  { title: "時空超えてユニバース", artist: "【期間限定公開】M!LK", year: 2026, youtubeId: "6DX3Ev9agF4", status: "disabled", reason: "removed_or_private" },
   { title: "ありふれた世界の果てに", artist: "YAO", year: 2026, youtubeId: "k8SP7SrLTvc" },
   { title: "なんもねえ / THE FIRST TAKE", artist: "忘れらんねえよ", year: 2026, youtubeId: "Q5Om3k90dMs" },
   { title: "Live at BMSG FES'26 -", artist: "HANA / ALL IN", year: 2026, youtubeId: "AKgC03Z7XJE" },
