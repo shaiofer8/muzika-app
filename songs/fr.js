@@ -312,9 +312,9 @@ window.SONGS_BY_LANG.fr = [
   { title: "Idées Blanches", artist: "Vianney", year: 2018, youtubeId: "CYjSCf5TyYw" },
   { title: "Beau Bizarre", artist: "Vianney ft. Gaëtan Roussel", year: 2021, status: "no_match", reason: "no_artist_title_match" },
   { title: "Le Portrait", artist: "Vianney", year: 2014, youtubeId: "UWADV6Jt9S4" },
-  { title: "Riez, Riez", artist: "Louane", year: 2015 },
-  { title: "Jour 1", artist: "Louane", year: 2015 },
-  { title: "Avenir", artist: "Louane", year: 2015 },
+  { title: "Riez, Riez", artist: "Louane", year: 2015, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Jour 1", artist: "Louane", year: 2015, youtubeId: "yleB8fUXudw" },
+  { title: "Avenir", artist: "Louane", year: 2015, youtubeId: "niyGWxVE-e4" },
   { title: "On Était Beau", artist: "Louane", year: 2018 },
   { title: "Emmenez-moi Danser", artist: "Louane", year: 2019 },
   { title: "Derrière les Fagots", artist: "Grand Corps Malade", year: 2006, status: "no_match", reason: "no_artist_title_match" },
@@ -333,7 +333,7 @@ window.SONGS_BY_LANG.fr = [
 
   // --- Électro / dance français ---
   { title: "D.A.N.C.E.", artist: "Justice", year: 2007, youtubeId: "sy1dYFGkPUE" },
-  { title: "Genesis", artist: "Justice", year: 2007 },
+  { title: "Genesis", artist: "Justice", year: 2007, youtubeId: "VKzWLUQizz8" },
   { title: "We Are Your Friends", artist: "Justice vs. Simian", year: 2006 },
   { title: "Love Generation", artist: "Bob Sinclar", year: 2005 },
   { title: "World, Hold On", artist: "Bob Sinclar", year: 2006 },
