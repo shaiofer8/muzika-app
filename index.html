@@ -84,9 +84,21 @@
     <div class="howto-card" role="dialog" aria-modal="true" aria-labelledby="howtoTitle">
       <h2 id="howtoTitle" data-i18n="howtoTitle">איך משחקים</h2>
       <div class="howto-slides">
-        <section class="howto-slide" data-slide="0"><p data-i18n="howto1"><strong>1. מנגנים שיר לכל הקבוצה.</strong> כולם מקשיבים, ומי שמזהה ראשון מכריז.</p></section>
-        <section class="howto-slide" data-slide="1" hidden><p data-i18n="howto2"><strong>2. חושפים.</strong> לוחצים על "חשיפה" כדי לראות את השיר, האמן והשנה.</p></section>
-        <section class="howto-slide" data-slide="2" hidden><p data-i18n="howto3"><strong>3. מנקדים לקבוצות.</strong> בכפתור "ניקוד" למעלה, ואז "הבא" לשיר הבא.</p></section>
+        <section class="howto-slide" data-slide="0">
+          <div class="howto-icon" aria-hidden="true">📱</div>
+          <h3 data-i18n="howto1Title">טלפון אחד, כל החבר'ה</h3>
+          <p data-i18n="howto1">בוחרים מנחה שמחזיק את הטלפון. כל השאר מתחלקים לקבוצות ומנחשים.</p>
+        </section>
+        <section class="howto-slide" data-slide="1" hidden>
+          <div class="howto-icon" aria-hidden="true">🎧</div>
+          <h3 data-i18n="howto2Title">רק המנחה מסתכל במסך</h3>
+          <p data-i18n="howto2">לוחצים "הבא" והשיר מתחיל. שם השיר מופיע מיד על המסך, אז אסור להציץ! מי שמזהה ראשון – צועק.</p>
+        </section>
+        <section class="howto-slide" data-slide="2" hidden>
+          <div class="howto-icon" aria-hidden="true">🏆</div>
+          <h3 data-i18n="howto3Title">נקודה לקבוצה שזיהתה</h3>
+          <p data-i18n="howto3">המנחה מוסיף נקודה ב"ניקוד" ולוחץ "הבא". טיפ: חברו לרמקול כדי שכולם ישמעו טוב.</p>
+        </section>
       </div>
       <div class="howto-dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
       <div class="howto-actions">
@@ -102,7 +114,7 @@
         <span aria-hidden="true">🏆</span> <span data-i18n="scoreBtn">ניקוד</span>
       </button>
     </div>
-    <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="kicker">משחק זיהוי שירים · מסך משותף</span></span>
+    <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="kicker">משחק קבוצתי למסיבות</span></span>
     <h1 data-i18n="title">מי מזהה את השיר?</h1>
     <div class="masthead-settings">
       <label class="decade-filter"><span class="sr-only" data-i18n="decadeLabel">עשור</span><select id="decadeSelect" aria-label="עשור"><option value="all" data-i18n="decadeAll">הכול</option><option value="1980">80s</option><option value="1990">90s</option><option value="2000">00s</option><option value="2010">10s</option><option value="2020">20s</option></select></label>

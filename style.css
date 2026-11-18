@@ -1085,12 +1085,55 @@ footer.meta {
   }
 }
 
-/* Onboarding: larger, clearer steps */
+/* Onboarding: icon, short heading, one-to-three sentence body */
+.howto-slide {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+  min-block-size: 12.5rem;
+  align-content: start;
+  margin-block-end: 16px;
+}
+
+.howto-card h2 {
+  text-align: center;
+}
+
+/* "Choose teams" stays on one line; the skip link gives up the room. */
+.howto-actions .primary-btn {
+  flex: 1 1 auto;
+  white-space: nowrap;
+}
+
+.howto-actions .link-btn {
+  flex: 0 1 auto;
+}
+
+.howto-slide[hidden] {
+  display: none;
+}
+
+.howto-icon {
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.howto-slide h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--accent-b);
+  text-wrap: balance;
+}
+
 .howto-slide p {
-  font-size: 1.15rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.6;
   margin: 0;
   color: var(--text);
+  text-wrap: pretty;
 }
 
 .howto-slide strong {

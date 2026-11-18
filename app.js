@@ -251,7 +251,7 @@
     var next = document.getElementById("howtoNext");
     var skip = document.getElementById("howtoSkip");
     if (!howto || !next || !skip) return;
-    var KEY = "muzika-howto-v1";
+    var KEY = "muzika-howto-v2"; // v2: host-model copy (spec-onboarding-clarity), shown once more to everyone
     var seen = false;
     try { seen = !!localStorage.getItem(KEY); } catch (e) {}
     if (seen) return;

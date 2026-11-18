@@ -5,24 +5,45 @@
 (function () {
   "use strict";
 
-  var STORAGE_KEY = "muzika-lang-v2";
+  // v3 holds only a language the player picked in the menu (spec-onboarding-clarity CAP-6).
+  var STORAGE_KEY = "muzika-lang-v3";
+  // v2 was also written automatically on the first visit, so "he" there is usually the old default.
+  var LEGACY_KEY = "muzika-lang-v2";
   var DEFAULT_LANG = "he";
   var current = DEFAULT_LANG;
   var loading = {};
 
-  // ברירת מחדל לפי שפת הדפדפן: עברית לישראל ושפה נתמכת אחרת לפי הדפדפן,
-  // ואנגלית לכל השאר (למשל ארה"ב ובריטניה). בחירה שמורה תמיד גוברת.
+  function supported(code) {
+    return !!(code && window.I18N && window.I18N[code]);
+  }
+
+  function normalize(tag) {
+    var code = ((tag || "") + "").toLowerCase().split(/[-_]/)[0];
+    return code === "iw" ? "he" : code; // older Android WebViews report Hebrew as "iw"
+  }
+
+  // The device language: the first supported language in the device's list, otherwise English.
   function browserLang() {
-    var code = ((navigator.language || "") + "").toLowerCase().split("-")[0];
-    if (code && window.I18N && window.I18N[code]) return code;
+    var tags = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language];
+    for (var i = 0; i < tags.length; i++) {
+      var code = normalize(tags[i]);
+      if (supported(code)) return code;
+    }
     return "en";
+  }
+
+  function inIsrael() {
+    try { return Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Jerusalem"; } catch (e) { return false; }
   }
 
   function getSavedLang() {
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
-      if (saved && window.I18N && window.I18N[saved]) return saved;
-    } catch (e) { /* localStorage חסום — פשוט מתחילים מברירת המחדל */ }
+      if (supported(saved)) return saved;
+      var legacy = localStorage.getItem(LEGACY_KEY);
+      // A non-Hebrew legacy value was a real choice. Legacy Hebrew is kept only for players in Israel.
+      if (supported(legacy) && (legacy !== "he" || inIsrael())) return legacy;
+    } catch (e) { /* localStorage חסום — פשוט מתחילים משפת המכשיר */ }
     return browserLang();
   }
 
@@ -118,7 +139,7 @@
     if (!langInfo(code)) return;
     var requestId = ++langRequest;
     current = code;
-    saveLang(code);
+    if (!opts.initial) saveLang(code); // only a choice from the menu is remembered
     applyDirLang(code);
     applyTranslations();
     updateLangButton(code);
