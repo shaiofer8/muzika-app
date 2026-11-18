@@ -142,6 +142,31 @@
     });
   }
 
+  // Hide decades the current language pack can't fill (spec-decade-filter-empty).
+  // Fewer than 2 songs would only show the "no songs for this language" error.
+  var DECADE_MIN_SONGS = 2;
+  function updateDecadeOptions() {
+    if (!decadeSelect) return;
+    var counts = {};
+    songs.forEach(function (s) {
+      if (s.enabled === false || typeof s.year !== "number") return;
+      var d = Math.floor(s.year / 10) * 10;
+      counts[d] = (counts[d] || 0) + 1;
+    });
+    for (var i = 0; i < decadeSelect.options.length; i++) {
+      var opt = decadeSelect.options[i];
+      if (opt.value === "all") continue;
+      var empty = (counts[Number(opt.value)] || 0) < DECADE_MIN_SONGS;
+      opt.hidden = empty;
+      opt.disabled = empty;
+    }
+    var sel = decadeSelect.options[decadeSelect.selectedIndex];
+    if (sel && sel.disabled) {
+      decadeSelect.value = "all";
+      decadeStart = null;
+    }
+  }
+
   // Last 30 songs played, kept across visits (per device). Used to avoid repeats.
   var RECENT_KEY = "muzika-recent-v1";
   var RECENT_MAX = 30;
@@ -303,6 +328,7 @@
         typeof s.artist === "string" && s.artist.trim();
     }) : [];
     if (engine) engine.reset(); // מאגר חדש (למשל שפה אחרת) = היסטוריית המנוע לא רלוונטית יותר
+    updateDecadeOptions();
     current = null;
     pendingNext = null;
     if (!gameStarted) {

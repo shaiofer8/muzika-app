@@ -1106,8 +1106,16 @@ footer.meta {
   white-space: nowrap;
 }
 
+/* very narrow phones: the long final button drops to its own line instead of overflowing */
+.howto-actions {
+  flex-wrap: wrap;
+}
+
 .howto-actions .link-btn {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
+  inline-size: auto;
+  padding-inline: 14px;
+  white-space: nowrap; /* German "Überspringen" broke mid-word */
 }
 
 .howto-slide[hidden] {
