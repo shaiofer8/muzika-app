@@ -243,7 +243,7 @@ window.SONGS_BY_LANG.en = [
   // --- Classic Rock deep cuts ---
   { title: "Comfortably Numb", artist: "Pink Floyd", year: 1979, youtubeId: "_FrOQC-zEog" },
   { title: "Wish You Were Here", artist: "Pink Floyd", year: 1975, youtubeId: "K6qj09OHvjw" },
-  { title: "Another Brick in the Wall", artist: "Pink Floyd", year: 1979, youtubeId: "qs35t2xFqdU" },
+  { title: "Another Brick in the Wall", artist: "Pink Floyd", year: 1979, youtubeId: "qs35t2xFqdU", status: "disabled", reason: "blocked_IL" },
   { title: "Money", artist: "Pink Floyd", year: 1973, youtubeId: "2aW7HweAf3o" },
   { title: "Baba O'Riley", artist: "The Who", year: 1971, status: "no_match", reason: "no_artist_title_match" },
   { title: "My Generation", artist: "The Who", year: 1965, youtubeId: "qN5zw04WxCc" },
