@@ -10,7 +10,11 @@ const KEY = fs.readFileSync(KEY_FILE, "utf8").trim();
 const LOG_DIR = path.join(__dirname, "logs");
 const PUSH = process.env.MUZIKA_NO_PUSH !== "1";
 const TODAY = new Date().toISOString().slice(0, 10);
-const IS_TREND_DAY = new Date().getDay() === CONFIG.trendDay;
+// Trend imports are off while trendsPerWeek is 0 (spec-song-library-cleanup): the
+// YouTube chart feed produced unusable titles and off-market songs.
+const IS_TREND_DAY = CONFIG.trendsPerWeek > 0 && new Date().getDay() === CONFIG.trendDay;
+// Disabled by an editor, not by availability: validation must never re-enable these.
+const EDITORIAL_REASONS = new Set(["trend_junk"]);
 const SEARCH_PER_DAY = Number(process.env.MUZIKA_SEARCH_PER_DAY || CONFIG.searchPerDay);
 // Daily search budget per language. Languages listed in config.searchWeights get
 // their fixed share; the rest split what is left. English needs most, since its
@@ -91,7 +95,7 @@ async function checkIds(ids) {
 }
 
 async function validate(entries, log) {
-  const withId = entries.filter((e) => e.youtubeId);
+  const withId = entries.filter((e) => e.youtubeId && !EDITORIAL_REASONS.has(e.reason));
   const results = await checkIds(withId.map((e) => e.youtubeId));
   for (const e of withId) {
     const res = results.get(e.youtubeId);
