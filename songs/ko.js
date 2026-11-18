@@ -84,9 +84,9 @@ window.SONGS_BY_LANG.ko = [
   { title: "좋은 날", artist: "아이유", year: 2010, youtubeId: "V6WWJNpIJN4" },
   { title: "palette", artist: "아이유 ft. G-DRAGON", year: 2017, status: "no_match", reason: "no_artist_title_match" },
   { title: "eight", artist: "아이유 ft. 수기", year: 2020, status: "no_match", reason: "no_artist_title_match" },
-  { title: "‘GO HARD’ M/V", artist: "MEOVV", year: 2026, youtubeId: "8aKR2Ho--5k" },
-  { title: "'Drip' Official MV", artist: "ATEEZ", year: 2026, youtubeId: "iqQWCYMlMw0" },
+  { title: "GO HARD", artist: "MEOVV", year: 2026, youtubeId: "8aKR2Ho--5k" },
+  { title: "Drip", artist: "ATEEZ", year: 2026, youtubeId: "iqQWCYMlMw0" },
   { title: "Tarantino", artist: "LISA", year: 2026, youtubeId: "-5ZXrO_lYSA" },
-  { title: "‘Replay’ MV", artist: "Baby DONT Cry", year: 2026, youtubeId: "ZjLYzzPbdkM" },
-  { title: "삐그덕 Live with 조이", artist: "Crush", year: 2026, youtubeId: "v_71o1VU28o" },
+  { title: "‘Replay’ MV", artist: "Baby DONT Cry", year: 2026, youtubeId: "ZjLYzzPbdkM", status: "disabled", reason: "trend_junk" },
+  { title: "삐그덕 Live with 조이", artist: "Crush", year: 2026, youtubeId: "v_71o1VU28o", status: "disabled", reason: "trend_junk" },
 ];
