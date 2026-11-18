@@ -434,11 +434,11 @@ window.SONGS_BY_LANG.pt = [
   { title: "Admirável Chip Novo", artist: "Pitty", year: 2003, youtubeId: "aXJ_Ub1xbhw" },
 
   // --- Forró, axé e pop recente (adições) ---
-  { title: "Xote dos Milagres", artist: "Falamansa", year: 2000 },
-  { title: "Um Dia Perfeito", artist: "Falamansa", year: 2000 },
-  { title: "Rindo à Toa", artist: "Falamansa", year: 2000 },
+  { title: "Xote dos Milagres", artist: "Falamansa", year: 2000, youtubeId: "chwyjJbcs1Y" },
+  { title: "Um Dia Perfeito", artist: "Falamansa", year: 2000, youtubeId: "D6iqLZgT19E" },
+  { title: "Rindo à Toa", artist: "Falamansa", year: 2000, youtubeId: "yT3ne1uq8iU" },
   { title: "Destrava", artist: "Claudia Leitte", year: 2011, youtubeId: "4ZT0GywoNHQ" },
-  { title: "Festa", artist: "Ivete Sangalo", year: 2007 },
+  { title: "Festa", artist: "Ivete Sangalo", year: 2007, youtubeId: "mlyFfxwzhFI" },
   { title: "Aquele 1%", artist: "Wesley Safadão e Marcos & Belutti", year: 2015, status: "no_match", reason: "no_artist_title_match" },
   { title: "À Vontade", artist: "Wesley Safadão", year: 2017, youtubeId: "0tafa3b6OFI" },
   { title: "Amor Falso", artist: "Wesley Safadão", year: 2018, youtubeId: "fOrPSLkuI54" },
