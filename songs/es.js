@@ -179,7 +179,7 @@ window.SONGS_BY_LANG.es = [
   { title: "Volví a Nacer", artist: "Carlos Vives", year: 2010, youtubeId: "CJ_zRSv3Hr8" },
 
   // --- Reggaeton / Latin pop contemporáneo ---
-  { title: "Rakata", artist: "Wisin y Yandel", year: 2005 },
+  { title: "Rakata", artist: "Wisin y Yandel", year: 2005, youtubeId: "sN5P4QftaXo" },
   { title: "Pam Pam", artist: "Wisin y Yandel ft. Los Vaqueros", year: 2011, status: "no_match", reason: "no_artist_title_match" },
   { title: "Sexy Movimiento", artist: "Wisin y Yandel", year: 2007 },
   { title: "Loba (feat.)", artist: "Wisin y Yandel", year: 2009 },
@@ -261,9 +261,9 @@ window.SONGS_BY_LANG.es = [
   { title: "No Basta", artist: "José José", year: 1985 },
 
   // --- Bachata / Merengue extra ---
-  { title: "El Farsante", artist: "Ozuna & Romeo Santos", year: 2018 },
-  { title: "Yo También", artist: "Romeo Santos ft. Marc Anthony", year: 2011 },
-  { title: "Que Se Muera Sola", artist: "Romeo Santos", year: 2014 },
+  { title: "El Farsante", artist: "Ozuna & Romeo Santos", year: 2018, youtubeId: "6DRkf3kZMXw" },
+  { title: "Yo También", artist: "Romeo Santos ft. Marc Anthony", year: 2011, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Que Se Muera Sola", artist: "Romeo Santos", year: 2014, status: "no_match", reason: "no_artist_title_match" },
   { title: "Inocente", artist: "Romeo Santos", year: 2011 },
   { title: "Eres Mía", artist: "Romeo Santos", year: 2014 },
   { title: "Suerte", artist: "Shakira", year: 2001 },
