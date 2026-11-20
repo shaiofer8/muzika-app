@@ -99,4 +99,10 @@ window.SONGS_BY_LANG.zh = [
   { title: "'UP' Official MV", artist: "ATEEZ", year: 2026, youtubeId: "SGovymtCzvA", status: "disabled", reason: "trend_junk" },
   { title: "DEPENDS", artist: "XG", year: 2026, youtubeId: "ftDNJhhJ22k", status: "disabled", reason: "trend_junk" },
   { title: "‘Bananas’ Official Music Video", artist: "LNGSHOT", year: 2026, youtubeId: "xWNIrOTJ6VA", status: "disabled", reason: "trend_junk" },
+  { title: "泡沫", artist: "邓紫棋", year: 2012, youtubeId: "mGeiABBB5f8" },
+  { title: "最炫民族风", artist: "凤凰传奇", year: 2009, youtubeId: "-HGCkNOjpUw" },
+  { title: "起风了", artist: "买辣椒也用券", year: 2017, youtubeId: "xGZBIpFo-e0" },
+  { title: "少年", artist: "梦然", year: 2019, youtubeId: "7NA8I8-6fyE" },
+  { title: "野狼disco", artist: "宝石Gem", year: 2019, youtubeId: "a_44PrD0xZA" },
+  { title: "平凡之路", artist: "朴树", year: 2014, youtubeId: "6q5Syk54i9U" },
 ];
