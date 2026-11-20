@@ -33,8 +33,8 @@ android {
         applicationId "com.muzikaparty.app"
         minSdkVersion 24
         targetSdkVersion 36
-        versionCode 10
-        versionName "10"
+        versionCode 11
+        versionName "11"
 
         // The name for the application
         resValue "string", "appName", webAppManifest.name
@@ -49,6 +49,13 @@ android {
         // The hostname is used to tell in-site navigation (stays in the
         // WebView) apart from external links (opened in an outside app).
         resValue "string", "hostName", webAppManifest.hostName
+
+        // Meta App Events (install tracking for Meta app ads).
+        // Kept outside the repo: C:/Users/shaio/secrets/meta/muzika-app.json
+        def metaFile = file("C:/Users/shaio/secrets/meta/muzika-app.json")
+        def meta = metaFile.exists() ? new groovy.json.JsonSlurper().parse(metaFile) : [app_id: "", client_token: ""]
+        resValue "string", "facebook_app_id", meta.app_id
+        resValue "string", "facebook_client_token", meta.client_token
     }
     buildTypes {
         release {
@@ -75,4 +82,7 @@ dependencies {
     implementation 'com.google.android.ump:user-messaging-platform:2.2.0'
     // Play services pulls androidx.fragment 1.0.0 (flagged by Play); pin a current version.
     implementation 'androidx.fragment:fragment:1.6.2'
+
+    // Meta SDK: logs app installs/opens so Meta app-install ads can measure results
+    implementation 'com.facebook.android:facebook-core:18.2.3'
 }

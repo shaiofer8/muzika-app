@@ -15,6 +15,7 @@
  */
 package com.muzikaparty.app;
 
+import com.facebook.appevents.AppEventsLogger;
 import com.google.android.gms.ads.MobileAds;
 
 public class Application extends android.app.Application {
@@ -24,5 +25,7 @@ public class Application extends android.app.Application {
       super.onCreate();
       // Initialize Google Mobile Ads SDK
       MobileAds.initialize(this);
+      // Meta App Events: reports installs and app opens for Meta ads measurement
+      AppEventsLogger.activateApp(this);
   }
 }
