@@ -14,7 +14,8 @@ const TODAY = new Date().toISOString().slice(0, 10);
 // YouTube chart feed produced unusable titles and off-market songs.
 const IS_TREND_DAY = CONFIG.trendsPerWeek > 0 && new Date().getDay() === CONFIG.trendDay;
 // Disabled by an editor, not by availability: validation must never re-enable these.
-const EDITORIAL_REASONS = new Set(["trend_junk"]);
+const EDITORIAL_REASONS = new Set(["trend_junk", "title_mismatch", "duplicate"]);
+const { classify, NONLATIN } = require("./match");
 const SEARCH_PER_DAY = Number(process.env.MUZIKA_SEARCH_PER_DAY || CONFIG.searchPerDay);
 // Daily search budget per language. Languages listed in config.searchWeights get
 // their fixed share; the rest split what is left. English needs most, since its
@@ -78,7 +79,7 @@ async function checkIds(ids) {
   const out = new Map();
   for (let i = 0; i < ids.length; i += 50) {
     const chunk = ids.slice(i, i + 50);
-    const r = await get(`https://www.googleapis.com/youtube/v3/videos?part=status,contentDetails&id=${chunk.join(",")}&key=${KEY}`);
+    const r = await get(`https://www.googleapis.com/youtube/v3/videos?part=snippet,status,contentDetails&id=${chunk.join(",")}&key=${KEY}`);
     if (r.status !== 200) throw new Error(`videos API ${r.status}: ${r.body.slice(0, 200)}`);
     const items = JSON.parse(r.body).items || [];
     const seen = new Set(items.map((v) => v.id));
@@ -89,9 +90,20 @@ async function checkIds(ids) {
       if (v.status.embeddable !== true) reasons.push("not_embeddable");
       if (((v.contentDetails.regionRestriction || {}).blocked || []).includes("IL")) reasons.push("blocked_IL");
       out.set(v.id, reasons.length ? reasons.join("+") : "ok");
+      out.set("meta:" + v.id, { vt: v.snippet.title, ch: v.snippet.channelTitle });
     });
   }
   return out;
+}
+
+// spec-song-quality-audit CAP-1: a video whose title names a different song is an editorial disable.
+// A title only in Latin letters (transliteration) or a longer title that contains the song name
+// ("partial") is logged for review instead, since those are often still the right song.
+function mismatch(e, meta) {
+  const cat = classify(e, meta);
+  if (cat === "bad" || cat === "both?") return cat;
+  if (cat === "title?" && (NONLATIN.test(meta.vt) || !NONLATIN.test(e.title))) return cat;
+  return cat === "partial" || cat === "title?" ? "review" : null;
 }
 
 async function validate(entries, log) {
@@ -100,6 +112,16 @@ async function validate(entries, log) {
   for (const e of withId) {
     const res = results.get(e.youtubeId);
     log.validated++;
+    const meta = results.get("meta:" + e.youtubeId);
+    if (res === "ok" && meta && e.status !== "no_match") {
+      const mm = mismatch(e, meta);
+      if (mm === "review") log.review.push({ title: e.title, artist: e.artist, video: meta.vt });
+      else if (mm) {
+        e.status = "disabled"; e.reason = "title_mismatch"; e.changed = true;
+        log.disabled.push({ title: e.title, reason: "title_mismatch", video: meta.vt });
+        continue;
+      }
+    }
     if (res === "ok") {
       if (e.status === "disabled") { e.status = null; e.reason = null; e.changed = true; log.reenabled.push(e.title); }
     } else if (e.status !== "disabled") {
@@ -134,10 +156,11 @@ async function discover(entries, log, budget) {
   for (const e of batch) {
     const r = await search(e);
     if (r.code === 429 || r.code === 403) { log.stoppedBy = "quota"; break; }
-    const artistKey = norm(firstArtist(e.artist));
-    const hit = r.items.find((it) =>
-      norm(it.snippet.title).includes(norm(e.title)) &&
-      (norm(it.snippet.title).includes(artistKey) || norm(it.snippet.channelTitle).includes(artistKey)));
+    // Exact match only (spec-song-quality-audit): the video title must name this song by this
+    // artist, not a longer title that contains it, a medley, karaoke or a full album.
+    const usedIds = new Set(entries.map((x) => x.youtubeId).filter(Boolean));
+    const hit = r.items.find((it) => !usedIds.has(it.id.videoId) &&
+      classify(e, { vt: it.snippet.title, ch: it.snippet.channelTitle }) === "ok");
     if (hit) {
       const check = (await checkIds([hit.id.videoId])).get(hit.id.videoId);
       if (check === "ok") {
@@ -198,7 +221,7 @@ function commit(file, message) {
     const file = path.join(ROOT, cfg.file);
     const original = fs.readFileSync(file, "utf8");
     const entries = parseFile(original);
-    const log = { parsed: entries.length, validated: 0, disabled: [], reenabled: [], discovered: [], noMatch: 0, trendsAdded: [], stoppedBy: null };
+    const log = { parsed: entries.length, validated: 0, disabled: [], reenabled: [], discovered: [], noMatch: 0, trendsAdded: [], review: [], stoppedBy: null };
 
     await validate(entries, log);
     await discover(entries, log, searchBudgetFor(lang));
