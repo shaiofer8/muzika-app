@@ -1,22 +1,25 @@
 // Title/artist matcher shared by the song agent and the quality audit (spec-song-quality-audit).
 const norm = (s) => s.normalize("NFKC").replace(/[\s"'׳״`’.,!?\-–—:;()&|\[\]{}#/\\_~*+]/g, "").toLowerCase();
 const artists = (a) => a.split(/\s*(?:,|&|\+|\bfeat\.?|\bft\.?|\bx\b| ו-| ו(?=[א-ת]))\s*/i).map((s) => s.trim()).filter((s) => s.length > 1);
-const STOP = /^(official|video|audio|lyrics?|clip|music|hd|hq|4k|mv|m\/v|live|קליפ|הקליפ|הרשמי|רשמי|אודיו|גרסת|מתוך|האלבום|קאבר|cover|remix|feat|ft|prod|by|מארח|מארחת|ו|x)$/i;
 const NONLATIN = /[֐-׿؀-ۿЀ-ӿ぀-ヿ一-鿿가-힯ऀ-ॿ]/;
-const BAD = /karaoke|קריוקי|פלייבק|playlist|full album|אלבום מלא|מחרוזת|medley|\+.*\+|reaction|tutorial|lesson|instrumental|8d audio|sped up|slowed/i;
+// Videos that are not the original recording: covers, karaoke, medleys, full albums, edits.
+const BAD = /\bcover\b|\bparody\b|minions|nightcore|bass boosted|fan edit|edit audio|karaoke|קריוקי|פלייבק|playlist|full album|אלבום מלא|מחרוזת|medley|\+.*\+|reaction|tutorial|lesson|instrumental|8d audio|sped up|slowed/i;
 
-// Returns "ok" | "partial" | "title?" | "artist?" | "both?" | "bad" for song r against video m {vt, ch}.
 // Hebrew spelling is loose (niqqud, "הכול"/"הכל", "מיליארד"/"מליארד"), so the comparison key drops
 // niqqud and the vowel letters ו/י. Broken characters (U+FFFD) in a video title are dropped too.
 const key = (s) => norm(s.replace(/[֑-ׇ�]/g, "")).replace(/[וי]/g, "");
-const STOPN = ["officialmusicvideo", "officialvideo", "officialaudio", "musicvideo", "lyricvideo", "official", "video", "audio", "lyrics", "lyric", "clip", "music", "hd", "hq", "4k", "mv", "live", "remastered", "version", "קליפרשמ", "הקלפהרשמ", "קלפ", "הרשמ", "רשמ", "אודו", "מתוך", "האלבום", "קאבר", "cover", "remix", "prod", "by"];
+// Words that may sit next to the song name in a video title without making it a different song.
+const STOPN = ["official music video", "official video", "official audio", "music video", "lyric video", "official", "video", "audio",
+  "lyrics", "lyric", "clip", "music", "hd", "hq", "4k", "mv", "live", "remastered", "version", "remix", "prod", "by",
+  "קליפ רשמי", "הקליפ הרשמי", "קליפ", "הרשמי", "רשמי", "אודיו", "מתוך", "האלבום", "קאבר"].map(key);
+
 function bigramSim(a, b) {
   const bg = (s) => { const m = new Map(); for (let i = 0; i < s.length - 1; i++) { const g = s.slice(i, i + 2); m.set(g, (m.get(g) || 0) + 1); } return m; };
   const A = bg(a), B = bg(b); let inter = 0, n = 0;
   A.forEach((c, g) => { inter += Math.min(c, B.get(g) || 0); n += c; }); B.forEach((c) => (n += c));
   return n ? (2 * inter) / n : 0;
 }
-// Best similarity of the song title against any same-length window of the video title.
+// True when the title appears in the text, allowing a small spelling difference for titles of 5+ letters.
 function fuzzyHas(hay, t) {
   if (hay.includes(t)) return true;
   if (t.length < 5) return false;
@@ -24,6 +27,8 @@ function fuzzyHas(hay, t) {
   return false;
 }
 
+// Returns "ok" | "partial" | "title?" | "artist?" | "both?" | "bad" | "missing" for song r against video m {vt, ch}.
+// "partial": the video names a longer title that contains this one ("אולי" vs "אולי הפעם").
 function classify(r, m) {
   if (!m || !m.vt) return "missing";
   const hay = key(m.vt + " " + m.ch);
