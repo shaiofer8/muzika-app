@@ -56,7 +56,7 @@ window.SONGS_BY_LANG.tr = [
   { title: "Herkes Kendi Evinde", artist: "MFÖ", year: 1988, status: "no_match", reason: "no_artist_title_match" },
   { title: "Deme Bana", artist: "Levent Yüksel", year: 1993, status: "no_match", reason: "no_artist_title_match" },
   { title: "Kokain", artist: "Levent Yüksel", year: 1993, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Gündüz Gece", artist: "Nilüfer", year: 1987, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Gündüz Gece", artist: "Nilüfer", year: 1987, youtubeId: "C8JKO50KpsQ" },
   { title: "Bebeğim", artist: "Nilüfer", year: 1979, status: "no_match", reason: "no_artist_title_match" },
   { title: "Sen Benim Şarkılarımsın", artist: "Nilüfer", year: 1990, status: "no_match", reason: "no_artist_title_match" },
   { title: "Popstar", artist: "Nilüfer", year: 1998, youtubeId: "7gkF1gHS2Q8" },
