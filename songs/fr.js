@@ -527,4 +527,10 @@ window.SONGS_BY_LANG.fr = [
   { title: "Quotidien du bendo", artist: "Leto", year: 2026, youtubeId: "c_u_HhCa9lM", status: "disabled", reason: "trend_junk" },
   { title: "Bara", artist: "Guy2Bezbar", year: 2026, youtubeId: "psaj6PtI9cI", status: "disabled", reason: "trend_junk" },
   { title: "LOCKED IN FEAT. NONO LA GRINTA", artist: "NEMZZZ", year: 2026, youtubeId: "SYRg7X0DeEM", status: "disabled", reason: "trend_junk" },
+  { title: "Bruxelles je t'aime", artist: "Angèle", year: 2021, youtubeId: "a79iLjV-HKw" },
+  { title: "Ego", artist: "Willy William", year: 2015, youtubeId: "iOxzG3jjFkY" },
+  { title: "Ensemble", artist: "Aliocha Schneider", year: 2023, youtubeId: "x-M1ts_AoJA" },
+  { title: "Je te promets", artist: "Johnny Hallyday", year: 1986, youtubeId: "-TkrMyXYbik" },
+  { title: "Femme like U", artist: "K-Maro", year: 2004, youtubeId: "8qfM7offtiA" },
+  { title: "Lambé an dro", artist: "Matmatah", year: 1998, youtubeId: "vKb9G3XX4lw" },
 ];
