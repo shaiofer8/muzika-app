@@ -2,7 +2,7 @@
 window.SONGS_BY_LANG = window.SONGS_BY_LANG || {};
 window.SONGS_BY_LANG.zh = [
   { title: "月亮代表我的心", artist: "邓丽君", year: 1977, youtubeId: "znX5F09ysr0" },
-  { title: "甜蜜蜜", artist: "邓丽君", year: 1979, youtubeId: "jp9V0PJn2N0" },
+  { title: "甜蜜蜜", artist: "邓丽君", year: 1979, youtubeId: "tHpW1GHlDck" },
   { title: "小城故事", artist: "邓丽君", year: 1979, status: "no_match", reason: "no_artist_title_match" },
   { title: "我只在乎你", artist: "邓丽君", year: 1987, status: "no_match", reason: "no_artist_title_match" },
   { title: "但愿人长久", artist: "邓丽君", year: 1983, status: "no_match", reason: "no_artist_title_match" },
@@ -24,7 +24,7 @@ window.SONGS_BY_LANG.zh = [
   { title: "海阔天空", artist: "Beyond", year: 1993, status: "no_match", reason: "no_artist_title_match" },
   { title: "真的爱你", artist: "Beyond", year: 1989, youtubeId: "CtRQVrhg1HY" },
   { title: "喜欢你", artist: "Beyond", year: 1988, youtubeId: "9wHTbK7mkZQ" },
-  { title: "friend", artist: "Beyond", year: 1993, youtubeId: "WAYCniSTUjs" },
+  { title: "friend", artist: "Beyond", year: 1993, youtubeId: "WAYCniSTUjs", status: "disabled", reason: "title_mismatch" },
   { title: "李香兰", artist: "张学友", year: 1990, youtubeId: "P4klNtVDBHI" },
   { title: "吻别", artist: "张学友", year: 1993, youtubeId: "bJRkEmrkIO4" },
   { title: "一千个伤心的理由", artist: "张学友", year: 1993, youtubeId: "oceW_MHAzyQ" },
