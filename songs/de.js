@@ -569,4 +569,9 @@ window.SONGS_BY_LANG.de = [
   { title: "Mi-am pus inima pe masa  video oficial", artist: "Tzanca Uraganu", year: 2026, youtubeId: "hYgM1BLkIhs", status: "disabled", reason: "trend_junk" },
   { title: "Hong Kong", artist: "The Weeknd", year: 2026, youtubeId: "hX9S94XsySk", status: "disabled", reason: "trend_junk" },
   { title: "'UP' Official MV", artist: "ATEEZ", year: 2026, youtubeId: "SGovymtCzvA", status: "disabled", reason: "trend_junk" },
+  { title: "Bläulich", artist: "Apache 207", year: 2020, youtubeId: "dEraG4YhtFc" },
+  { title: "Ist da jemand", artist: "Adel Tawil", year: 2017, youtubeId: "EkWjaoH7k6w" },
+  { title: "80 Millionen", artist: "Max Giesinger", year: 2016, youtubeId: "uC08L4xxjNM" },
+  { title: "Mädchen", artist: "Lucilectric", year: 1994, youtubeId: "3seOou4qFyU" },
+  { title: "Danke", artist: "Xavier Naidoo", year: 2005, youtubeId: "hu0xwjokDQU" },
 ];
