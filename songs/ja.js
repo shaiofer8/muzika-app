@@ -26,7 +26,7 @@ window.SONGS_BY_LANG.ja = [
   { title: "勝手にしやがれ", artist: "沢田研二", year: 1977, youtubeId: "aFAdojrMoao" },
   { title: "TOKIO", artist: "沢田研二", year: 1980, youtubeId: "hUfTDQru5yI" },
   { title: "時の流れに身をまかせ", artist: "テレサ・テン", year: 1986, youtubeId: "dK2_FkT_qIs" },
-  { title: "つぐない", artist: "テレサ・テン", year: 1984, status: "no_match", reason: "no_artist_title_match" },
+  { title: "つぐない", artist: "テレサ・テン", year: 1984, youtubeId: "PhAjY67NR9k" },
   { title: "見上げてごらん夜の星を", artist: "坂本九", year: 1963, youtubeId: "3hNQsRmAAC0" },
   { title: "First Love", artist: "宇多田ヒカル", year: 1999, youtubeId: "o1sUaVJUeB0" },
   { title: "Automatic", artist: "宇多田ヒカル", year: 1998, youtubeId: "-9DxpPiE458" },
