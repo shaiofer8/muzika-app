@@ -20,6 +20,9 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.graphics.Color;
+import android.view.Gravity;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -33,6 +36,7 @@ public class MainActivity extends Activity {
 
     private WebView webView;
     private AdView mAdView;
+    private FrameLayout adHolder;
     private ConsentInformation consentInfo;
 
     @SuppressLint("SetJavaScriptEnabled")
@@ -55,8 +59,21 @@ public class MainActivity extends Activity {
         mAdView = new AdView(this);
         mAdView.setAdUnitId("ca-app-pub-4066391446449273/6201064269");
         mAdView.setAdSize(AdSize.BANNER);
-        mAdView.setVisibility(View.GONE);
-        container.addView(mAdView, new LinearLayout.LayoutParams(
+
+        // targetSdk 35+ draws edge-to-edge, so the bottom of the window sits under
+        // the navigation bar. The ad lives in a holder padded by that inset, so the
+        // banner is fully visible with both gesture and 3-button navigation.
+        adHolder = new FrameLayout(this);
+        adHolder.setBackgroundColor(Color.BLACK);
+        adHolder.setVisibility(View.GONE);
+        adHolder.addView(mAdView, new FrameLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT,
+                Gravity.CENTER_HORIZONTAL));
+        adHolder.setOnApplyWindowInsetsListener((v, insets) -> {
+            v.setPadding(0, 0, 0, insets.getSystemWindowInsetBottom());
+            return insets;
+        });
+        container.addView(adHolder, new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         setContentView(container);
@@ -167,8 +184,9 @@ public class MainActivity extends Activity {
                 @Override
                 public void run() {
                     if (consentInfo == null || !consentInfo.canRequestAds()) return;
-                    if (mAdView.getVisibility() == View.VISIBLE) return;
-                    mAdView.setVisibility(View.VISIBLE);
+                    if (adHolder.getVisibility() == View.VISIBLE) return;
+                    adHolder.setVisibility(View.VISIBLE);
+                    adHolder.requestApplyInsets();
                     mAdView.loadAd(new AdRequest.Builder().build());
                 }
             });
@@ -179,7 +197,7 @@ public class MainActivity extends Activity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    mAdView.setVisibility(View.GONE);
+                    adHolder.setVisibility(View.GONE);
                 }
             });
         }
