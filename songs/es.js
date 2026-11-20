@@ -182,7 +182,7 @@ window.SONGS_BY_LANG.es = [
   { title: "Rakata", artist: "Wisin y Yandel", year: 2005, youtubeId: "sN5P4QftaXo" },
   { title: "Pam Pam", artist: "Wisin y Yandel ft. Los Vaqueros", year: 2011, status: "no_match", reason: "no_artist_title_match" },
   { title: "Sexy Movimiento", artist: "Wisin y Yandel", year: 2007, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Loba (feat.)", artist: "Wisin y Yandel", year: 2009 },
+  { title: "Loba (feat.)", artist: "Wisin y Yandel", year: 2009, status: "no_match", reason: "no_artist_title_match" },
   { title: "Loco", artist: "Tego Calderón", year: 2003 },
   { title: "Pa' Que Retozen", artist: "Tego Calderón", year: 2002 },
   { title: "Guaya Guaya", artist: "Don Omar", year: 2003 },
@@ -275,9 +275,9 @@ window.SONGS_BY_LANG.es = [
   { title: "Te Aviso, Te Anuncio (Tango)", artist: "Shakira", year: 1998 },
   { title: "Inevitable", artist: "Shakira", year: 1998 },
   { title: "No Creo", artist: "Shakira ft. Ozuna", year: 2019, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Me Enamoré", artist: "Shakira", year: 2017 },
-  { title: "Perro Fiel", artist: "Shakira ft. Nicky Jam", year: 2017 },
-  { title: "Girl Like Me", artist: "Shakira & Black Eyed Peas", year: 2020 },
+  { title: "Me Enamoré", artist: "Shakira", year: 2017, youtubeId: "T0ivG4Ew-Lk" },
+  { title: "Perro Fiel", artist: "Shakira ft. Nicky Jam", year: 2017, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Girl Like Me", artist: "Shakira & Black Eyed Peas", year: 2020, youtubeId: "vMLk_T0PPbk" },
 
   // --- Salsa clásica extra ---
   { title: "Anacaona", artist: "Cheo Feliciano", year: 1971 },
