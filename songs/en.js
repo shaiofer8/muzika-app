@@ -573,7 +573,6 @@ window.SONGS_BY_LANG.en = [
   { title: "HOT TO GO!", artist: "Chappell Roan", year: 2023, youtubeId: "xaPNR-_Cfn0" },
   { title: "Kill Bill", artist: "SZA", year: 2022, youtubeId: "MSRcC626prw" },
   { title: "Snooze", artist: "SZA", year: 2023, youtubeId: "LDY_XyxBu8A" },
-  { title: "Lose Control", artist: "Teddy Swims", year: 2023, youtubeId: "9gWIIIr2Asw" },
   { title: "Beautiful Things", artist: "Benson Boone", year: 2024, youtubeId: "Oa_RSwwpPaA" },
   { title: "Too Sweet", artist: "Hozier", year: 2024, youtubeId: "NTpbbQUBbuo" },
   { title: "A Bar Song (Tipsy)", artist: "Shaboozey", year: 2024, youtubeId: "t7bQwwqW-Hc" },

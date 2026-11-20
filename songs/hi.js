@@ -101,7 +101,6 @@ window.SONGS_BY_LANG.hi = [
   { title: "Bintu Pabra", artist: "Kya Baat Hai", year: 2026, youtubeId: "uPEW0H0J-YQ", status: "disabled", reason: "trend_junk" },
   { title: "Apna Bana Le", artist: "Arijit Singh", year: 2022, youtubeId: "ElZfdU54Cp8" },
   { title: "Raataan Lambiyan", artist: "Jubin Nautiyal & Asees Kaur", year: 2021, youtubeId: "gvyUuxdRdR4" },
-  { title: "Lut Gaye", artist: "Jubin Nautiyal", year: 2021, youtubeId: "ZWu8hB5QQCA" },
   { title: "Genda Phool", artist: "Badshah", year: 2020, youtubeId: "SD4Z8dlZPd8" },
   { title: "Lungi Dance", artist: "Yo Yo Honey Singh", year: 2013, youtubeId: "HVFb5-MrP4A" },
   { title: "Brown Rang", artist: "Yo Yo Honey Singh", year: 2011, youtubeId: "MfY9YO3u7GM" },

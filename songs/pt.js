@@ -587,8 +587,6 @@ window.SONGS_BY_LANG.pt = [
   { title: "Qualquer Sexta-Feira", artist: "VEIGH", year: 2026, youtubeId: "-1q75BEyhvs", status: "disabled", reason: "trend_junk" },
   { title: "Aquarela", artist: "Toquinho", year: 1983, youtubeId: "xT8HIiFQ8Y0" },
   { title: "Investe em Mim", artist: "Jonas Esticado", year: 2018, youtubeId: "Tupv5w2BPJw" },
-  { title: "Liberdade Provisória", artist: "Henrique & Juliano", year: 2019, youtubeId: "ieeM_5rZpds" },
-  { title: "Arranhão", artist: "Henrique & Juliano", year: 2021, youtubeId: "2_xBCeBmaS8" },
   { title: "Atrasadinha", artist: "Felipe Araújo & Ferrugem", year: 2018, youtubeId: "M76qUQTt_Sw" },
   { title: "Ai Preto", artist: "L7nnon", year: 2022, youtubeId: "NbB6qMA2lts" },
   { title: "Tá OK", artist: "Dennis & Kevin O Chris", year: 2023, youtubeId: "aHBW_Nd_z8k" },

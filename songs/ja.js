@@ -117,12 +117,10 @@ window.SONGS_BY_LANG.ja = [
   { title: "唱", artist: "Ado", year: 2023, youtubeId: "pgXpM4l_MwI" },
   { title: "逆夢", artist: "King Gnu", year: 2021, youtubeId: "M6gcoDN9jBc" },
   { title: "マリーゴールド", artist: "あいみょん", year: 2018, youtubeId: "0xSiBpUdW4E" },
-  { title: "裸の心", artist: "あいみょん", year: 2020, youtubeId: "CGwkO_hRo7Q" },
   { title: "ドライフラワー", artist: "優里", year: 2020, youtubeId: "kzZ6KXDM1RI" },
   { title: "ベテルギウス", artist: "優里", year: 2021, youtubeId: "cbqvxDTLMps" },
   { title: "Bling-Bang-Bang-Born", artist: "Creepy Nuts", year: 2024, youtubeId: "mLW35YMzELE" },
   { title: "Overdose", artist: "なとり", year: 2022, youtubeId: "H08YWE4CIFQ" },
   { title: "シャルル", artist: "バルーン", year: 2016, youtubeId: "Ut64ptd0bYk" },
-  { title: "残酷な天使のテーゼ", artist: "高橋洋子", year: 1995, youtubeId: "Ca0-ZccWruA" },
   { title: "天体観測", artist: "BUMP OF CHICKEN", year: 2001, youtubeId: "-htsLEAtaKs" },
 ];
