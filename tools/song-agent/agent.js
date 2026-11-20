@@ -101,6 +101,9 @@ async function checkIds(ids) {
 // ("partial") is logged for review instead, since those are often still the right song.
 function mismatch(e, meta) {
   const cat = classify(e, meta);
+  if (cat === "ok" || cat === "artist?") return null;
+  // A title with broken characters can't be compared reliably: a person reviews it.
+  if (/�/.test(meta.vt) && cat !== "bad") return "review";
   if (cat === "bad" || cat === "both?") return cat;
   if (cat === "title?" && (NONLATIN.test(meta.vt) || !NONLATIN.test(e.title))) return cat;
   return cat === "partial" || cat === "title?" ? "review" : null;
