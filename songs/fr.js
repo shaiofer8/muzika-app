@@ -327,9 +327,9 @@ window.SONGS_BY_LANG.fr = [
   { title: "Cosmo", artist: "Soprano", year: 2013, youtubeId: "3-IUHJdiE5Q" },
   { title: "Roule", artist: "Soprano", year: 2017, youtubeId: "ne9Qa1x8_rE" },
   { title: "Célestine", artist: "Soprano", year: 2018, youtubeId: "Zr9v2zgpYU4", status: "disabled", reason: "title_mismatch" },
-  { title: "Victoire", artist: "Soprano", year: 2016 },
-  { title: "Millionnaire", artist: "Soprano ft. Leto", year: 2018 },
-  { title: "Africa Sarab", artist: "Soprano", year: 2010 },
+  { title: "Victoire", artist: "Soprano", year: 2016, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Millionnaire", artist: "Soprano ft. Leto", year: 2018, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Africa Sarab", artist: "Soprano", year: 2010, status: "no_match", reason: "no_artist_title_match" },
 
   // --- Électro / dance français ---
   { title: "D.A.N.C.E.", artist: "Justice", year: 2007, youtubeId: "sy1dYFGkPUE" },
@@ -340,7 +340,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Rock This Party", artist: "Bob Sinclar", year: 2006, youtubeId: "Ft3Xs292e_M" },
   { title: "Flowers", artist: "Bob Sinclar", year: 2004, youtubeId: "Po27kJ1D4Zc" },
   { title: "Sound of Freedom", artist: "Bob Sinclar", year: 2009, youtubeId: "CmWLqmW9hY4" },
-  { title: "Alive", artist: "David Guetta ft. Kelly Rowland", year: 2007 },
+  { title: "Alive", artist: "David Guetta ft. Kelly Rowland", year: 2007, status: "no_match", reason: "no_artist_title_match" },
   { title: "Love Is Gone", artist: "David Guetta & Chris Willis", year: 2007, youtubeId: "beGjncfEPt8" },
   { title: "When Love Takes Over", artist: "David Guetta ft. Kelly Rowland", year: 2009, youtubeId: "zudbz4hOcbc" },
   { title: "Sexy Bitch", artist: "David Guetta ft. Akon", year: 2009 },
