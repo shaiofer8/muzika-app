@@ -149,5 +149,4 @@ window.SONGS_BY_LANG.ja = [
   { title: "innocent world", artist: "Mr.Children", year: 1994, youtubeId: "rfVhsgCqG0I" },
   { title: "LOVEマシーン", artist: "モーニング娘。", year: 1999, youtubeId: "6A7j6eryPV4" },
   { title: "SEASONS", artist: "浜崎あゆみ", year: 2000, youtubeId: "AuZSyBa6phU" },
-  { title: "M", artist: "浜崎あゆみ", year: 2000, youtubeId: "83woHJ3Hytc" },
 ];

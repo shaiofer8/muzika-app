@@ -579,7 +579,6 @@ window.SONGS_BY_LANG.es = [
   { title: "Ella Me Levantó", artist: "Daddy Yankee", year: 2007, youtubeId: "CGIAziEuZVs" },
   { title: "Dura", artist: "Daddy Yankee", year: 2018, youtubeId: "sGIm0-dQd8M" },
   { title: "Shower", artist: "Becky G", year: 2014, youtubeId: "50-_oTkmF5I" },
-  { title: "Vida de Rico", artist: "Camilo", year: 2020, youtubeId: "Pc_PKchEy_k" },
   { title: "Tutu", artist: "Camilo & Pedro Capó", year: 2019, youtubeId: "5AkDqm-cEgg" },
   { title: "Calma", artist: "Pedro Capó & Farruko", year: 2018, youtubeId: "8EFalFXALEA" },
   { title: "Tacones Rojos", artist: "Sebastián Yatra", year: 2021, youtubeId: "Qz9gmiLBVFA" },

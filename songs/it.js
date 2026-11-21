@@ -171,7 +171,6 @@ window.SONGS_BY_LANG.it = [
   { title: "Ragazzo fortunato", artist: "Jovanotti", year: 1992, youtubeId: "466erjjMhkE" },
   { title: "Bella", artist: "Jovanotti", year: 1997, youtubeId: "O2RccC7UCnY" },
   { title: "Andiamo a comandare", artist: "Fabio Rovazzi", year: 2016, youtubeId: "Kifn_WVGReM" },
-  { title: "Sei bellissima", artist: "Loredana Bertè", year: 1975, youtubeId: "JR9Qnx_ybNY" },
   { title: "Non sono una signora", artist: "Loredana Bertè", year: 1982, youtubeId: "oXh2eveEhFI" },
   { title: "Una donna per amico", artist: "Lucio Battisti", year: 1978, youtubeId: "jHjS1vRYjtY" },
   { title: "Nessun dolore", artist: "Lucio Battisti", year: 1979, youtubeId: "gHKPEGk2kAI" },

@@ -580,7 +580,6 @@ window.SONGS_BY_LANG.de = [
   { title: "Mensch", artist: "Herbert Grönemeyer", year: 2002, youtubeId: "1SG5A3PYaUs" },
   { title: "Nur ein Wort", artist: "Wir sind Helden", year: 2005, youtubeId: "X5kmM98iklo" },
   { title: "Von hier an blind", artist: "Wir sind Helden", year: 2005, youtubeId: "xyNWUY-wH5g" },
-  { title: "Ich wollte nie erwachsen sein", artist: "Peter Maffay", year: 1983, youtubeId: "r0EH6daa2Wk" },
   { title: "Hey Baby", artist: "DJ Ötzi", year: 2000, youtubeId: "CmhNw9ohGq8" },
   { title: "Ich will", artist: "Rammstein", year: 2001, youtubeId: "EOnSh3QlpbQ" },
   { title: "Deutschland", artist: "Rammstein", year: 2019, youtubeId: "NeQM1c-XCDc" },
