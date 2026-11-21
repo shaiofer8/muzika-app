@@ -39,7 +39,7 @@ window.SONGS_BY_LANG.ar = [
   { title: "حكم عليا قلبي", artist: "وائل كفوري", year: 2001, status: "no_match", reason: "no_artist_title_match" },
   { title: "أنا وليلي", artist: "عمرو دياب", year: 1996, status: "no_match", reason: "no_artist_title_match" },
   { title: "نور العين", artist: "عمرو دياب", year: 1996, youtubeId: "KLJA-srM_yM" },
-  { title: "تملي معاك", artist: "عمرو دياب", year: 2012, youtubeId: "EgmXTmj62ic" },
+  { title: "تملي معاك", artist: "عمرو دياب", year: 2000, youtubeId: "EgmXTmj62ic" },
   { title: "قمرين", artist: "عمرو دياب", year: 1996, youtubeId: "z6RC2T3Q7rs" },
   { title: "الليلة", artist: "عمرو دياب", year: 2004, youtubeId: "tTGurm3LxZs" },
   { title: "معدي الأيام", artist: "عمرو دياب", year: 1992, status: "no_match", reason: "no_artist_title_match" },
@@ -143,7 +143,7 @@ window.SONGS_BY_LANG.ar = [
   { title: "ناسيني ليه", artist: "تامر حسني", year: 2018, youtubeId: "u0PlTxTVQ3I" },
   { title: "البخت", artist: "ويجز", year: 2022, youtubeId: "_RHIECWv728" },
   { title: "المسافر", artist: "راشد الماجد", year: 2000, youtubeId: "Zu8A0YikPGo" },
-  { title: "شجر الليمون", artist: "محمد منير", year: 1995, youtubeId: "8joKek5WbSw" },
+  { title: "شجر الليمون", artist: "محمد منير", year: 1981, youtubeId: "8joKek5WbSw" },
   { title: "من قلبي بغني", artist: "محمد حماقي", year: 2012, youtubeId: "48oxO1Y__l4" },
   { title: "ما في نوم", artist: "نجوى كرم", year: 2012, youtubeId: "6Zz9lBpUL_s" },
 ];
