@@ -22,8 +22,10 @@ const esc = (s) => s.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
   const exists = (t, a) => { const tn = norm(t), an = artists(a).map(norm); return have.some((h) => h.t === tn && h.a.some((x) => an.includes(x))); };
   const cands = fs.readFileSync(SRC, "utf8").split(/\r?\n/).map((l) => l.trim()).filter((l) => l && !l.startsWith("#"))
     // "artist~Other Spelling" adds spellings used only for matching (e.g. the Latin name of a Hebrew artist).
-    .map((l) => { const [title, names = "", year] = l.split("|").map((s) => s.trim()); const n = names.split("~").map((x) => x.trim()).filter(Boolean);
-      return { title, artist: n[0], match: { title, artist: n.join(", ") }, year: +year }; })
+    // "title~Other Script" likewise adds a title spelling used only for matching (e.g. traditional Chinese).
+    .map((l) => { const [titles, names = "", year] = l.split("|").map((s) => s.trim()); const n = names.split("~").map((x) => x.trim()).filter(Boolean);
+      const [title, ...alts] = titles.split("~").map((x) => x.trim());
+      return { title, artist: n[0], match: { title, artist: n.join(", ") }, alts: alts.map((t) => ({ title: t, artist: n.join(", ") })), year: +year }; })
     .filter((r) => r.title && r.artist && r.year);
   const added = [];
   let skipped = 0;
@@ -33,7 +35,7 @@ const esc = (s) => s.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
     const all = (s.stdout || "").split("\n").filter(Boolean).map((l) => { try { const j = JSON.parse(l); return { id: j.id, vt: j.title || "", ch: j.channel || j.uploader || "" }; } catch { return null; } })
       ;
     if (process.env.DEBUG) all.filter(Boolean).slice(0, 3).forEach((c) => console.log('  ?', r.title, '|', c.vt.slice(0, 70), '|', c.ch, '|', classify(r.match, c), strictOk(r.match, c), used.has(c.id)));
-    const found = all.filter((c) => c && c.id && !used.has(c.id) && classify(r.match, c) === "ok" && strictOk(r.match, c));
+    const found = all.filter((c) => c && c.id && !used.has(c.id) && [r.match, ...r.alts].some((m) => classify(m, c) === "ok" && strictOk(m, c)));
     const main = r.artist.split(/[,&]| ft| feat| ו/i)[0].trim().toLowerCase();
     found.sort((a, b) => (OFFICIAL.test(b.ch) || b.ch.toLowerCase().includes(main)) - (OFFICIAL.test(a.ch) || a.ch.toLowerCase().includes(main)));
     if (found.length) {
