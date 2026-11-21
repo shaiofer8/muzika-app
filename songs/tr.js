@@ -142,8 +142,6 @@ window.SONGS_BY_LANG.tr = [
   { title: "Kara Sevda", artist: "Barış Manço", year: 1983, youtubeId: "wSkhevPcEYI" },
   { title: "Rengarenk", artist: "Sertab Erener", year: 1999, youtubeId: "yHbDS7334SY" },
   { title: "Bodrum", artist: "Hande Yener", year: 2000, youtubeId: "7gsiEf8USp8" },
-  { title: "Gel", artist: "Mabel Matiz", year: 2018, youtubeId: "jJTbD3IT77o" },
-  { title: "Benim Ol", artist: "Edis", year: 2018, youtubeId: "-z3O0hTK43k" },
   { title: "Aşkı Bulamam Ben", artist: "Murat Boz", year: 2006, youtubeId: "wp-D1RWxcIE" },
   { title: "Cevapsız Çınlama", artist: "Aleyna Tilki", year: 2016, youtubeId: "2sAnHxdm7Ac" },
   { title: "We Could Be The Same", artist: "maNga", year: 2010, youtubeId: "Pdw27j_usP0" },

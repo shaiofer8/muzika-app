@@ -138,7 +138,6 @@ window.SONGS_BY_LANG.ar = [
   { title: "يوم تلات", artist: "عمرو دياب", year: 2019, youtubeId: "TZFrzEkYAk8" },
   { title: "يا طبطب", artist: "نانسي عجرم", year: 2004, youtubeId: "6fCBSQjpH8U" },
   { title: "شخبط شخابيط", artist: "نانسي عجرم", year: 2007, youtubeId: "dX_sHzGxB-U" },
-  { title: "بكتب اسمك يا حبيبي", artist: "فيروز", year: 1970, youtubeId: "WzBgwfeDvAU" },
   { title: "علي الكوفية", artist: "محمد عساف", year: 2013, youtubeId: "4cPPp7fSx2A" },
   { title: "C'est la vie", artist: "خالد", year: 2012, youtubeId: "H7rhMqTQ4WI" },
   { title: "ناسيني ليه", artist: "تامر حسني", year: 2018, youtubeId: "u0PlTxTVQ3I" },
