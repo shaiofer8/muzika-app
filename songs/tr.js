@@ -36,7 +36,7 @@ window.SONGS_BY_LANG.tr = [
   { title: "Aşk Sakızı", artist: "Sertab Erener", year: 1997, status: "no_match", reason: "no_artist_title_match" },
   { title: "Hayat Bayram Olsa", artist: "Sertab Erener", year: 1995, status: "no_match", reason: "no_artist_title_match" },
   { title: "Alkole Ver Beni", artist: "Ajda Pekkan", year: 1991, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Süperstar", artist: "Ajda Pekkan", year: 1980, youtubeId: "sXtxyNsjwRs" },
+  { title: "Süperstar", artist: "Ajda Pekkan", year: 1980, youtubeId: "sXtxyNsjwRs", status: "disabled", reason: "not_original" },
   { title: "Yanlış Anlama", artist: "Ajda Pekkan", year: 1985, status: "no_match", reason: "no_artist_title_match" },
   { title: "Bambaşka Biri", artist: "Ajda Pekkan", year: 1996, youtubeId: "FrjWcu1c0-4" },
   { title: "Sarı Sarı", artist: "İbrahim Tatlıses", year: 1985, status: "no_match", reason: "no_artist_title_match" },

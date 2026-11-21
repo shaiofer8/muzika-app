@@ -32,7 +32,7 @@ window.SONGS_BY_LANG.hi = [
   { title: "Abhi Mujh Mein Kahin", artist: "Sonu Nigam", year: 2010, youtubeId: "oWKgpB2zpgw" },
   { title: "Sandese Aate Hain", artist: "Sonu Nigam & Roop Kumar Rathod", year: 1999, youtubeId: "xpXjaHt80qY" },
   { title: "Suraj Hua Maddham", artist: "Sonu Nigam & Alka Yagnik", year: 2001, youtubeId: "iqNS2Qe4pp0" },
-  { title: "Kabhi Khushi Kabhie Gham", artist: "Sonu Nigam & Alka Yagnik", year: 2001, youtubeId: "ahLVDGG_eS4" },
+  { title: "Kabhi Khushi Kabhie Gham", artist: "Sonu Nigam & Alka Yagnik", year: 2001, youtubeId: "ahLVDGG_eS4", status: "disabled", reason: "not_original" },
   { title: "Tujhe Yaad Na Meri Aayi", artist: "Udit Narayan", year: 1998, youtubeId: "XVPx_fj3AJs" },
   { title: "Pardesi Pardesi", artist: "Udit Narayan & Alka Yagnik", year: 1997, youtubeId: "Swlik5Hfu-A" },
   { title: "Mera Dil Bhi Kitna Pagal Hai", artist: "Udit Narayan & Alka Yagnik", year: 1995, youtubeId: "MayiMDBdtI0" },

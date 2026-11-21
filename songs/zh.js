@@ -28,7 +28,7 @@ window.SONGS_BY_LANG.zh = [
   { title: "李香兰", artist: "张学友", year: 1990, youtubeId: "P4klNtVDBHI" },
   { title: "吻别", artist: "张学友", year: 1993, youtubeId: "bJRkEmrkIO4" },
   { title: "一千个伤心的理由", artist: "张学友", year: 1993, youtubeId: "oceW_MHAzyQ" },
-  { title: "情非得已", artist: "庾澄庆", year: 2001, youtubeId: "tcXIfXBPxQ4" },
+  { title: "情非得已", artist: "庾澄庆", year: 2001, youtubeId: "msSuPFFRUME" },
   { title: "祝福", artist: "张学友", year: 1994, status: "no_match", reason: "no_artist_title_match" },
   { title: "饿狼传说", artist: "张学友", year: 1991, youtubeId: "1XXvNigPxoo" },
   { title: "月半小夜曲", artist: "张学友", year: 1991, status: "no_match", reason: "no_artist_title_match" },

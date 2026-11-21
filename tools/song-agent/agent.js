@@ -14,7 +14,7 @@ const TODAY = new Date().toISOString().slice(0, 10);
 // YouTube chart feed produced unusable titles and off-market songs.
 const IS_TREND_DAY = CONFIG.trendsPerWeek > 0 && new Date().getDay() === CONFIG.trendDay;
 // Disabled by an editor, not by availability: validation must never re-enable these.
-const EDITORIAL_REASONS = new Set(["trend_junk", "title_mismatch", "duplicate"]);
+const EDITORIAL_REASONS = new Set(["trend_junk", "title_mismatch", "duplicate", "not_original"]);
 const { classify, NONLATIN } = require("./match");
 const SEARCH_PER_DAY = Number(process.env.MUZIKA_SEARCH_PER_DAY || CONFIG.searchPerDay);
 // Daily search budget per language. Languages listed in config.searchWeights get

@@ -47,7 +47,7 @@ window.SONGS_BY_LANG.ko = [
   { title: "사랑하기 때문에", artist: "유재하", year: 1987, youtubeId: "BegG8WySo4k" },
   { title: "가을 우체국 앞에서", artist: "윤도현", year: 2000, youtubeId: "q_gwN9xgw-0" },
   { title: "나는 나비", artist: "윤도현밴드", year: 2003, youtubeId: "03tKh-FhkfY" },
-  { title: "사랑Two", artist: "윤도현밴드", year: 2002, youtubeId: "ptSHJF1Jluo" },
+  { title: "사랑Two", artist: "윤도현밴드", year: 2002, youtubeId: "ptSHJF1Jluo", status: "disabled", reason: "not_original" },
   { title: "거짓말", artist: "빅뱅", year: 2007, youtubeId: "ZwKA-9t3T8E" },
   { title: "마지막 인사", artist: "빅뱅", year: 2007, youtubeId: "XmMHdI2w_v8" },
   { title: "haru haru", artist: "빅뱅", year: 2008, youtubeId: "-jsYZ4V60XI" },
