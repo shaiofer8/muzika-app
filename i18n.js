@@ -24,7 +24,7 @@
 
   window.I18N = {
     he: {
-      hideSong: "לא להציג שוב", howtoNext: "הבא", howtoSkip: "דלג", decadeLabel: "עשור", decadeAll: "הכול",
+      hideSong: "🚫 להוציא את השיר", howtoNext: "הבא", howtoSkip: "דלג", decadeLabel: "עשור", decadeAll: "הכול",
       howtoTitle: "איך משחקים", howto1Title: "טלפון אחד, כל החבר'ה", howto2Title: "רק המנחה מסתכל במסך", howto3Title: "נקודה לקבוצה שזיהתה", howto1: "בוחרים מנחה שמחזיק את הטלפון. כל השאר מתחלקים לקבוצות ומנחשים.", howto2: "לוחצים \"הבא\" והשיר מתחיל. שם השיר מופיע מיד על המסך, אז אסור להציץ! מי שמזהה ראשון – צועק.", howto3: "המנחה מוסיף נקודה ב\"ניקוד\" ולוחץ \"הבא\". טיפ: חברו לרמקול כדי שכולם ישמעו טוב.", howtoOk: "יאללה, משחקים!",
       title: "מי מזהה את השיר?", docTitle: "זיהוי שירים אקראי",
       kicker: "משחק קבוצתי למסיבות",
@@ -48,7 +48,7 @@
       noscript: "הדף הזה זקוק ל-JavaScript כדי לבחור ולנגן שירים. אנא הפעילו JavaScript בדפדפן.",
     },
     en: {
-      hideSong: "Don't show again", howtoNext: "Next", howtoSkip: "Skip", decadeLabel: "Decade", decadeAll: "All",
+      hideSong: "🚫 Remove this song", howtoNext: "Next", howtoSkip: "Skip", decadeLabel: "Decade", decadeAll: "All",
       howtoTitle: "How to play", howto1Title: "One phone, the whole group", howto2Title: "Only the host looks at the screen", howto3Title: "A point for the team that got it", howto1: "One of you is the host and holds the phone. Everyone else splits into teams and guesses.", howto2: "Tap \"Next\" and a song starts. Its title pops up right away, so no peeking! Whoever knows it first shouts it out.", howto3: "The host gives the point in \"Score\", then taps \"Next\". Tip: connect a speaker so everyone can hear.", howtoOk: "Let's play!",
       title: "Who Knows That Song?", docTitle: "Random Song Guesser",
       kicker: "Party game for groups",
@@ -72,7 +72,7 @@
       noscript: "This page needs JavaScript to pick and play songs. Please enable JavaScript in your browser.",
     },
     es: {
-      hideSong: "No volver a mostrar", howtoNext: "Siguiente", howtoSkip: "Saltar", decadeLabel: "Década", decadeAll: "Todas", howtoTitle: "Cómo jugar", howto1Title: "Un móvil para todo el grupo", howto2Title: "Solo el presentador ve la pantalla", howto3Title: "Un punto para el equipo que acierte", howto1: "Una persona hace de presentador y tiene el móvil. Los demás se dividen en equipos y adivinan.", howto2: "Toca «Siguiente» y empieza una canción. El título aparece al instante: ¡prohibido mirar! Quien la reconozca primero, que lo grite.", howto3: "El presentador suma el punto en «Puntuación» y toca «Siguiente». Consejo: conecta un altavoz para que todos oigan bien.", howtoOk: "¡A jugar!",
+      hideSong: "🚫 Quitar esta canción", howtoNext: "Siguiente", howtoSkip: "Saltar", decadeLabel: "Década", decadeAll: "Todas", howtoTitle: "Cómo jugar", howto1Title: "Un móvil para todo el grupo", howto2Title: "Solo el presentador ve la pantalla", howto3Title: "Un punto para el equipo que acierte", howto1: "Una persona hace de presentador y tiene el móvil. Los demás se dividen en equipos y adivinan.", howto2: "Toca «Siguiente» y empieza una canción. El título aparece al instante: ¡prohibido mirar! Quien la reconozca primero, que lo grite.", howto3: "El presentador suma el punto en «Puntuación» y toca «Siguiente». Consejo: conecta un altavoz para que todos oigan bien.", howtoOk: "¡A jugar!",
       challengeBanner: "Un reto de un amigo: ¿puedes ganarnos?", resetConfirm: "¿Reiniciar todas las puntuaciones?",
       title: "¿Quién Adivina la Canción?", docTitle: "Adivina la Canción",
       kicker: "Juego en grupo para fiestas",
@@ -94,7 +94,7 @@
       noscript: "Esta página necesita JavaScript para elegir y reproducir canciones. Por favor, activa JavaScript en tu navegador.",
     },
     ar: {
-      hideSong: "لا تعرضها مجددًا", howtoNext: "التالي", howtoSkip: "تخطي", decadeLabel: "العقد", decadeAll: "الكل", howtoTitle: "طريقة اللعب", howto1Title: "هاتف واحد للمجموعة كلها", howto2Title: "المقدّم وحده ينظر إلى الشاشة", howto3Title: "نقطة للفريق الذي أصاب", howto1: "أحدكم يكون المقدّم ويمسك الهاتف، والباقون ينقسمون إلى فرق ويخمّنون.", howto2: "يضغط المقدّم «التالي» فتبدأ أغنية ويظهر اسمها فورًا، فلا تختلسوا النظر! أول من يعرفها يصيح باسمها.", howto3: "يضيف المقدّم النقطة في «النقاط» ثم يضغط «التالي». نصيحة: وصّلوا الهاتف بسمّاعة ليسمع الجميع جيدًا.", howtoOk: "يلا نلعب!",
+      hideSong: "🚫 إزالة هذه الأغنية", howtoNext: "التالي", howtoSkip: "تخطي", decadeLabel: "العقد", decadeAll: "الكل", howtoTitle: "طريقة اللعب", howto1Title: "هاتف واحد للمجموعة كلها", howto2Title: "المقدّم وحده ينظر إلى الشاشة", howto3Title: "نقطة للفريق الذي أصاب", howto1: "أحدكم يكون المقدّم ويمسك الهاتف، والباقون ينقسمون إلى فرق ويخمّنون.", howto2: "يضغط المقدّم «التالي» فتبدأ أغنية ويظهر اسمها فورًا، فلا تختلسوا النظر! أول من يعرفها يصيح باسمها.", howto3: "يضيف المقدّم النقطة في «النقاط» ثم يضغط «التالي». نصيحة: وصّلوا الهاتف بسمّاعة ليسمع الجميع جيدًا.", howtoOk: "يلا نلعب!",
       challengeBanner: "تحدٍّ من صديق — هل يمكنك التغلب علينا؟", resetConfirm: "هل تريد تصفير جميع النقاط؟",
       title: "من يعرف الأغنية؟", docTitle: "تخمين الأغنية العشوائية",
       kicker: "لعبة جماعية للحفلات",
@@ -116,7 +116,7 @@
       noscript: "تحتاج هذه الصفحة إلى JavaScript لاختيار الأغاني وتشغيلها. يرجى تفعيل JavaScript في متصفحك.",
     },
     ru: {
-      hideSong: "Больше не показывать", howtoNext: "Далее", howtoSkip: "Пропустить", decadeLabel: "Десятилетие", decadeAll: "Все", howtoTitle: "Как играть", howto1Title: "Один телефон на всю компанию", howto2Title: "На экран смотрит только ведущий", howto3Title: "Очко команде, которая угадала", howto1: "Один из вас — ведущий, телефон у него. Остальные делятся на команды и угадывают.", howto2: "Нажмите «Далее» — и зазвучит песня. Название появится сразу, так что не подглядывайте! Кто первым узнает песню, тот выкрикивает название.", howto3: "Ведущий добавляет очко в разделе «Счёт» и нажимает «Далее». Совет: подключите колонку, чтобы всем было хорошо слышно.", howtoOk: "Играем!",
+      hideSong: "🚫 Убрать эту песню", howtoNext: "Далее", howtoSkip: "Пропустить", decadeLabel: "Десятилетие", decadeAll: "Все", howtoTitle: "Как играть", howto1Title: "Один телефон на всю компанию", howto2Title: "На экран смотрит только ведущий", howto3Title: "Очко команде, которая угадала", howto1: "Один из вас — ведущий, телефон у него. Остальные делятся на команды и угадывают.", howto2: "Нажмите «Далее» — и зазвучит песня. Название появится сразу, так что не подглядывайте! Кто первым узнает песню, тот выкрикивает название.", howto3: "Ведущий добавляет очко в разделе «Счёт» и нажимает «Далее». Совет: подключите колонку, чтобы всем было хорошо слышно.", howtoOk: "Играем!",
       challengeBanner: "Вызов от друга — сможешь нас обыграть?", resetConfirm: "Сбросить все очки?",
       title: "Кто угадает песню?", docTitle: "Угадай песню",
       kicker: "Игра для вечеринок и компаний",
@@ -138,7 +138,7 @@
       noscript: "Для выбора и воспроизведения песен этой странице нужен JavaScript. Пожалуйста, включите JavaScript в браузере.",
     },
     fr: {
-      hideSong: "Ne plus afficher", howtoNext: "Suivant", howtoSkip: "Passer", decadeLabel: "Décennie", decadeAll: "Toutes", howtoTitle: "Comment jouer", howto1Title: "Un téléphone pour tout le groupe", howto2Title: "Seul l’animateur regarde l’écran", howto3Title: "Un point pour l’équipe qui trouve", howto1: "L’un de vous est l’animateur et tient le téléphone. Les autres forment des équipes et devinent.", howto2: "Appuyez sur « Suivant » et une chanson démarre. Le titre s’affiche tout de suite : interdit de regarder ! Le premier qui la reconnaît crie le titre.", howto3: "L’animateur ajoute le point dans « Score », puis appuie sur « Suivant ». Astuce : branchez une enceinte pour que tout le monde entende bien.", howtoOk: "On joue !",
+      hideSong: "🚫 Retirer cette chanson", howtoNext: "Suivant", howtoSkip: "Passer", decadeLabel: "Décennie", decadeAll: "Toutes", howtoTitle: "Comment jouer", howto1Title: "Un téléphone pour tout le groupe", howto2Title: "Seul l’animateur regarde l’écran", howto3Title: "Un point pour l’équipe qui trouve", howto1: "L’un de vous est l’animateur et tient le téléphone. Les autres forment des équipes et devinent.", howto2: "Appuyez sur « Suivant » et une chanson démarre. Le titre s’affiche tout de suite : interdit de regarder ! Le premier qui la reconnaît crie le titre.", howto3: "L’animateur ajoute le point dans « Score », puis appuie sur « Suivant ». Astuce : branchez une enceinte pour que tout le monde entende bien.", howtoOk: "On joue !",
       challengeBanner: "Un défi lancé par un ami — peux-tu nous battre ?", resetConfirm: "Réinitialiser tous les scores ?",
       title: "Qui reconnaît la chanson ?", docTitle: "Deviner la chanson",
       kicker: "Jeu de soirée en équipes",
@@ -160,7 +160,7 @@
       noscript: "Cette page a besoin de JavaScript pour choisir et lire les chansons. Veuillez activer JavaScript dans votre navigateur.",
     },
     pt: {
-      hideSong: "Não mostrar novamente", howtoNext: "Próximo", howtoSkip: "Pular", decadeLabel: "Década", decadeAll: "Todas", howtoTitle: "Como jogar", howto1Title: "Um celular para o grupo todo", howto2Title: "Só o apresentador olha a tela", howto3Title: "Um ponto para a equipe que acertar", howto1: "Uma pessoa é o apresentador e fica com o celular. O resto se divide em equipes e tenta adivinhar.", howto2: "Toque em 'Próxima' e a música começa. O nome aparece na hora, então nada de espiar! Quem reconhecer primeiro, grita.", howto3: "O apresentador marca o ponto em 'Pontuação' e toca em 'Próxima'. Dica: conecte uma caixa de som para todo mundo ouvir bem.", howtoOk: "Bora jogar!",
+      hideSong: "🚫 Remover esta música", howtoNext: "Próximo", howtoSkip: "Pular", decadeLabel: "Década", decadeAll: "Todas", howtoTitle: "Como jogar", howto1Title: "Um celular para o grupo todo", howto2Title: "Só o apresentador olha a tela", howto3Title: "Um ponto para a equipe que acertar", howto1: "Uma pessoa é o apresentador e fica com o celular. O resto se divide em equipes e tenta adivinhar.", howto2: "Toque em 'Próxima' e a música começa. O nome aparece na hora, então nada de espiar! Quem reconhecer primeiro, grita.", howto3: "O apresentador marca o ponto em 'Pontuação' e toca em 'Próxima'. Dica: conecte uma caixa de som para todo mundo ouvir bem.", howtoOk: "Bora jogar!",
       challengeBanner: "Um desafio de um amigo — consegue nos vencer?", resetConfirm: "Zerar todas as pontuações?",
       title: "Quem Reconhece a Música?", docTitle: "Adivinhar a Música",
       kicker: "Jogo de festa em grupo",
@@ -182,7 +182,7 @@
       noscript: "Esta página precisa de JavaScript para escolher e tocar músicas. Ative o JavaScript no seu navegador.",
     },
     de: {
-      hideSong: "Nicht mehr anzeigen", howtoNext: "Weiter", howtoSkip: "Überspringen", decadeLabel: "Jahrzehnt", decadeAll: "Alle", howtoTitle: "So wird gespielt", howto1Title: "Ein Handy für die ganze Runde", howto2Title: "Nur wer das Handy hält, schaut hin", howto3Title: "Ein Punkt fürs richtige Team", howto1: "Eine Person leitet das Spiel und hält das Handy. Alle anderen bilden Teams und raten.", howto2: "Tippe auf „Weiter“ und ein Song startet. Der Titel erscheint sofort – also nicht spicken! Wer den Song zuerst erkennt, ruft laut den Titel.", howto3: "Vergib unter „Punkte“ den Punkt und tippe dann auf „Weiter“. Tipp: Mit einer Box hören alle besser.", howtoOk: "Los geht’s!",
+      hideSong: "🚫 Diesen Song entfernen", howtoNext: "Weiter", howtoSkip: "Überspringen", decadeLabel: "Jahrzehnt", decadeAll: "Alle", howtoTitle: "So wird gespielt", howto1Title: "Ein Handy für die ganze Runde", howto2Title: "Nur wer das Handy hält, schaut hin", howto3Title: "Ein Punkt fürs richtige Team", howto1: "Eine Person leitet das Spiel und hält das Handy. Alle anderen bilden Teams und raten.", howto2: "Tippe auf „Weiter“ und ein Song startet. Der Titel erscheint sofort – also nicht spicken! Wer den Song zuerst erkennt, ruft laut den Titel.", howto3: "Vergib unter „Punkte“ den Punkt und tippe dann auf „Weiter“. Tipp: Mit einer Box hören alle besser.", howtoOk: "Los geht’s!",
       challengeBanner: "Eine Herausforderung von einem Freund — kannst du uns schlagen?", resetConfirm: "Alle Punktestände zurücksetzen?",
       title: "Wer kennt den Song?", docTitle: "Song erraten",
       kicker: "Partyspiel für Gruppen",
@@ -204,7 +204,7 @@
       noscript: "Diese Seite benötigt JavaScript, um Songs auszuwählen und abzuspielen. Bitte aktiviere JavaScript in deinem Browser.",
     },
     it: {
-      hideSong: "Non mostrare più", howtoNext: "Avanti", howtoSkip: "Salta", decadeLabel: "Decennio", decadeAll: "Tutti", howtoTitle: "Come si gioca", howto1Title: "Un telefono per tutto il gruppo", howto2Title: "Solo il conduttore guarda lo schermo", howto3Title: "Un punto alla squadra che indovina", howto1: "Uno di voi fa il conduttore e tiene il telefono. Gli altri si dividono in squadre e indovinano.", howto2: "Tocca «Avanti» e parte una canzone. Il titolo compare subito, quindi niente sbirciate! Chi la riconosce per primo grida il titolo.", howto3: "Il conduttore aggiunge il punto in «Punteggio» e tocca «Avanti». Consiglio: collega il telefono a una cassa, così tutti sentono bene.", howtoOk: "Si gioca!",
+      hideSong: "🚫 Togli questa canzone", howtoNext: "Avanti", howtoSkip: "Salta", decadeLabel: "Decennio", decadeAll: "Tutti", howtoTitle: "Come si gioca", howto1Title: "Un telefono per tutto il gruppo", howto2Title: "Solo il conduttore guarda lo schermo", howto3Title: "Un punto alla squadra che indovina", howto1: "Uno di voi fa il conduttore e tiene il telefono. Gli altri si dividono in squadre e indovinano.", howto2: "Tocca «Avanti» e parte una canzone. Il titolo compare subito, quindi niente sbirciate! Chi la riconosce per primo grida il titolo.", howto3: "Il conduttore aggiunge il punto in «Punteggio» e tocca «Avanti». Consiglio: collega il telefono a una cassa, così tutti sentono bene.", howtoOk: "Si gioca!",
       challengeBanner: "Una sfida da un amico — riesci a batterci?", resetConfirm: "Azzerare tutti i punteggi?",
       title: "Chi Riconosce la Canzone?", docTitle: "Indovina la Canzone",
       kicker: "Gioco di gruppo per le feste",
@@ -226,7 +226,7 @@
       noscript: "Questa pagina richiede JavaScript per scegliere e riprodurre le canzoni. Attiva JavaScript nel tuo browser.",
     },
     tr: {
-      hideSong: "Bir daha gösterme", howtoNext: "Sonraki", howtoSkip: "Atla", decadeLabel: "On yıl", decadeAll: "Tümü", howtoTitle: "Nasıl oynanır?", howto1Title: "Tüm grup için tek telefon", howto2Title: "Ekrana sadece sunucu bakar", howto3Title: "Bilen takıma bir puan", howto1: "Biriniz sunucu olur ve telefonu tutar. Diğerleri takımlara ayrılıp tahmin eder.", howto2: "'Sonraki'ye dokun, şarkı başlasın. Şarkının adı hemen çıkar, kimse gizlice bakmasın! İlk bilen adını bağırsın.", howto3: "Sunucu puanı 'Skor'dan ekler ve 'Sonraki'ye dokunur. İpucu: Herkes iyi duysun diye telefonu bir hoparlöre bağla.", howtoOk: "Hadi oynayalım!",
+      hideSong: "🚫 Bu şarkıyı çıkar", howtoNext: "Sonraki", howtoSkip: "Atla", decadeLabel: "On yıl", decadeAll: "Tümü", howtoTitle: "Nasıl oynanır?", howto1Title: "Tüm grup için tek telefon", howto2Title: "Ekrana sadece sunucu bakar", howto3Title: "Bilen takıma bir puan", howto1: "Biriniz sunucu olur ve telefonu tutar. Diğerleri takımlara ayrılıp tahmin eder.", howto2: "'Sonraki'ye dokun, şarkı başlasın. Şarkının adı hemen çıkar, kimse gizlice bakmasın! İlk bilen adını bağırsın.", howto3: "Sunucu puanı 'Skor'dan ekler ve 'Sonraki'ye dokunur. İpucu: Herkes iyi duysun diye telefonu bir hoparlöre bağla.", howtoOk: "Hadi oynayalım!",
       challengeBanner: "Bir arkadaşından meydan okuma — bizi yenebilir misin?", resetConfirm: "Tüm puanlar sıfırlansın mı?",
       title: "Şarkıyı Kim Bilecek?", docTitle: "Rastgele Şarkı Tahmini",
       kicker: "Gruplar için parti oyunu",
@@ -248,7 +248,7 @@
       noscript: "Bu sayfanın şarkı seçip çalabilmesi için JavaScript gerekir. Lütfen tarayıcınızda JavaScript'i etkinleştirin.",
     },
     zh: {
-      hideSong: "不再显示", howtoNext: "下一步", howtoSkip: "跳过", decadeLabel: "年代", decadeAll: "全部", howtoTitle: "游戏玩法", howto1Title: "一部手机，大家一起玩", howto2Title: "只有主持人能看屏幕", howto3Title: "猜对的小组得一分", howto1: "选一个人当主持人，负责拿手机。其他人分成几个小组来猜歌。", howto2: "点“下一首”，歌曲开始播放。歌名会马上出现在屏幕上，其他人可不许偷看哦！谁先听出来，谁就大声喊出来。", howto3: "主持人在“计分”里给猜对的小组加一分，再点“下一首”。小提示：连上音箱，大家听得更清楚。", howtoOk: "开始游戏",
+      hideSong: "🚫 移除这首歌", howtoNext: "下一步", howtoSkip: "跳过", decadeLabel: "年代", decadeAll: "全部", howtoTitle: "游戏玩法", howto1Title: "一部手机，大家一起玩", howto2Title: "只有主持人能看屏幕", howto3Title: "猜对的小组得一分", howto1: "选一个人当主持人，负责拿手机。其他人分成几个小组来猜歌。", howto2: "点“下一首”，歌曲开始播放。歌名会马上出现在屏幕上，其他人可不许偷看哦！谁先听出来，谁就大声喊出来。", howto3: "主持人在“计分”里给猜对的小组加一分，再点“下一首”。小提示：连上音箱，大家听得更清楚。", howtoOk: "开始游戏",
       challengeBanner: "来自朋友的挑战——你能赢过我们吗？", resetConfirm: "重置所有得分？",
       title: "谁知道这首歌？", docTitle: "随机猜歌",
       kicker: "多人聚会游戏",
@@ -270,7 +270,7 @@
       noscript: "此页面需要JavaScript才能选择和播放歌曲。请在浏览器中启用JavaScript。",
     },
     hi: {
-      hideSong: "दोबारा न दिखाएँ", howtoNext: "अगला", howtoSkip: "छोड़ें", decadeLabel: "दशक", decadeAll: "सभी", howtoTitle: "कैसे खेलें", howto1Title: "पूरे ग्रुप के लिए एक फ़ोन", howto2Title: "स्क्रीन सिर्फ़ होस्ट देखेगा", howto3Title: "सही टीम को एक पॉइंट", howto1: "आप में से एक होस्ट बनेगा और फ़ोन अपने पास रखेगा। बाकी सब टीमों में बँटकर गाना पहचानेंगे।", howto2: "होस्ट 'अगला' पर टैप करेगा और गाना बजेगा। गाने का नाम तुरंत स्क्रीन पर आ जाता है, इसलिए बाकी सब – झाँकना मना है! जो पहले पहचानेगा, वह ज़ोर से बोल देगा।", howto3: "होस्ट 'स्कोर' में सही टीम को पॉइंट देगा और फिर 'अगला' पर टैप करेगा। टिप: स्पीकर जोड़ लें, ताकि सबको अच्छे से सुनाई दे।", howtoOk: "चलो खेलें!",
+      hideSong: "🚫 यह गाना हटाएँ", howtoNext: "अगला", howtoSkip: "छोड़ें", decadeLabel: "दशक", decadeAll: "सभी", howtoTitle: "कैसे खेलें", howto1Title: "पूरे ग्रुप के लिए एक फ़ोन", howto2Title: "स्क्रीन सिर्फ़ होस्ट देखेगा", howto3Title: "सही टीम को एक पॉइंट", howto1: "आप में से एक होस्ट बनेगा और फ़ोन अपने पास रखेगा। बाकी सब टीमों में बँटकर गाना पहचानेंगे।", howto2: "होस्ट 'अगला' पर टैप करेगा और गाना बजेगा। गाने का नाम तुरंत स्क्रीन पर आ जाता है, इसलिए बाकी सब – झाँकना मना है! जो पहले पहचानेगा, वह ज़ोर से बोल देगा।", howto3: "होस्ट 'स्कोर' में सही टीम को पॉइंट देगा और फिर 'अगला' पर टैप करेगा। टिप: स्पीकर जोड़ लें, ताकि सबको अच्छे से सुनाई दे।", howtoOk: "चलो खेलें!",
       challengeBanner: "एक दोस्त की चुनौती — क्या तुम हमें हरा सकते हो?", resetConfirm: "सभी स्कोर रीसेट करें?",
       title: "गाना कौन पहचानेगा?", docTitle: "गाना पहचानो",
       kicker: "ग्रुप के लिए पार्टी गेम",
@@ -292,7 +292,7 @@
       noscript: "गाने चुनने और चलाने के लिए इस पेज को JavaScript चाहिए। कृपया अपने ब्राउज़र में JavaScript सक्षम करें।",
     },
     ja: {
-      hideSong: "今後表示しない", howtoNext: "次へ", howtoSkip: "スキップ", decadeLabel: "年代", decadeAll: "すべて", howtoTitle: "遊び方", howto1Title: "スマホ1台でみんなで遊ぼう", howto2Title: "画面を見るのは司会だけ", howto3Title: "当てたチームに1ポイント", howto1: "1人が司会になって、スマホを持ちます。ほかの人はチームに分かれて曲を当てます。", howto2: "「次へ」をタップすると曲が流れます。曲名がすぐ画面に出るので、ほかの人はのぞき見禁止です！最初にわかった人が声に出して答えます。", howto3: "司会が「スコア」で当てたチームに1ポイント入れて、「次へ」をタップします。おすすめ：スピーカーにつなぐと、みんなによく聞こえます。", howtoOk: "さっそく遊ぶ",
+      hideSong: "🚫 この曲を外す", howtoNext: "次へ", howtoSkip: "スキップ", decadeLabel: "年代", decadeAll: "すべて", howtoTitle: "遊び方", howto1Title: "スマホ1台でみんなで遊ぼう", howto2Title: "画面を見るのは司会だけ", howto3Title: "当てたチームに1ポイント", howto1: "1人が司会になって、スマホを持ちます。ほかの人はチームに分かれて曲を当てます。", howto2: "「次へ」をタップすると曲が流れます。曲名がすぐ画面に出るので、ほかの人はのぞき見禁止です！最初にわかった人が声に出して答えます。", howto3: "司会が「スコア」で当てたチームに1ポイント入れて、「次へ」をタップします。おすすめ：スピーカーにつなぐと、みんなによく聞こえます。", howtoOk: "さっそく遊ぶ",
       challengeBanner: "友達からの挑戦状！私たちに勝てるかな？", resetConfirm: "すべてのスコアをリセットしますか？",
       title: "この曲、誰がわかる？", docTitle: "ランダム曲当てクイズ",
       kicker: "みんなで遊ぶパーティーゲーム",
@@ -314,7 +314,7 @@
       noscript: "このページで曲を選んで再生するにはJavaScriptが必要です。ブラウザでJavaScriptを有効にしてください。",
     },
     ko: {
-      hideSong: "다시 보지 않기", howtoNext: "다음", howtoSkip: "건너뛰기", decadeLabel: "연대", decadeAll: "전체", howtoTitle: "게임 방법", howto1Title: "휴대폰 한 대로 다 같이", howto2Title: "화면은 진행자만 봐요", howto3Title: "맞힌 팀에 1점", howto1: "한 명이 진행자가 되어 휴대폰을 들어요. 나머지는 팀을 나눠 노래를 맞혀요.", howto2: "'다음'을 누르면 노래가 나와요. 제목이 바로 화면에 뜨니까 다른 사람은 훔쳐보기 금지예요! 가장 먼저 알아챈 사람이 외쳐요.", howto3: "진행자가 '점수'에서 맞힌 팀에 1점을 주고 '다음'을 눌러요. 팁: 스피커에 연결하면 모두 더 잘 들려요.", howtoOk: "게임 시작!",
+      hideSong: "🚫 이 노래 빼기", howtoNext: "다음", howtoSkip: "건너뛰기", decadeLabel: "연대", decadeAll: "전체", howtoTitle: "게임 방법", howto1Title: "휴대폰 한 대로 다 같이", howto2Title: "화면은 진행자만 봐요", howto3Title: "맞힌 팀에 1점", howto1: "한 명이 진행자가 되어 휴대폰을 들어요. 나머지는 팀을 나눠 노래를 맞혀요.", howto2: "'다음'을 누르면 노래가 나와요. 제목이 바로 화면에 뜨니까 다른 사람은 훔쳐보기 금지예요! 가장 먼저 알아챈 사람이 외쳐요.", howto3: "진행자가 '점수'에서 맞힌 팀에 1점을 주고 '다음'을 눌러요. 팁: 스피커에 연결하면 모두 더 잘 들려요.", howtoOk: "게임 시작!",
       challengeBanner: "친구가 보낸 도전장 — 우리를 이길 수 있겠어?", resetConfirm: "모든 점수를 초기화할까요?",
       title: "이 노래 누가 맞출까?", docTitle: "랜덤 노래 맞히기",
       kicker: "여럿이 즐기는 파티 게임",
@@ -336,7 +336,7 @@
       noscript: "이 페이지에서 노래를 선택하고 재생하려면 JavaScript가 필요합니다. 브라우저에서 JavaScript를 활성화해주세요.",
     },
     vi: {
-      hideSong: "Không hiện lại", howtoNext: "Tiếp", howtoSkip: "Bỏ qua", decadeLabel: "Thập niên", decadeAll: "Tất cả", howtoTitle: "Cách chơi", howto1Title: "Một điện thoại cho cả nhóm", howto2Title: "Chỉ quản trò được xem màn hình", howto3Title: "Đội đoán đúng được 1 điểm", howto1: "Một người làm quản trò và cầm điện thoại. Những người còn lại chia đội và đoán bài hát.", howto2: "Nhấn 'Tiếp theo' để phát bài hát. Tên bài hiện ngay trên màn hình, nên những người khác không được nhìn trộm đâu nhé! Ai nhận ra trước thì hô to lên.", howto3: "Quản trò cộng điểm cho đội đoán đúng trong 'Điểm số' rồi nhấn 'Tiếp theo'. Mẹo: kết nối loa để mọi người nghe rõ hơn.", howtoOk: "Chơi ngay!",
+      hideSong: "🚫 Bỏ bài này", howtoNext: "Tiếp", howtoSkip: "Bỏ qua", decadeLabel: "Thập niên", decadeAll: "Tất cả", howtoTitle: "Cách chơi", howto1Title: "Một điện thoại cho cả nhóm", howto2Title: "Chỉ quản trò được xem màn hình", howto3Title: "Đội đoán đúng được 1 điểm", howto1: "Một người làm quản trò và cầm điện thoại. Những người còn lại chia đội và đoán bài hát.", howto2: "Nhấn 'Tiếp theo' để phát bài hát. Tên bài hiện ngay trên màn hình, nên những người khác không được nhìn trộm đâu nhé! Ai nhận ra trước thì hô to lên.", howto3: "Quản trò cộng điểm cho đội đoán đúng trong 'Điểm số' rồi nhấn 'Tiếp theo'. Mẹo: kết nối loa để mọi người nghe rõ hơn.", howtoOk: "Chơi ngay!",
       challengeBanner: "Thử thách từ một người bạn — bạn có thể thắng chúng tôi không?", resetConfirm: "Đặt lại tất cả điểm số?",
       title: "Ai Đoán Được Bài Hát?", docTitle: "Đoán Bài Hát Ngẫu Nhiên",
       kicker: "Trò chơi tập thể cho buổi tiệc",
