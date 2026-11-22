@@ -409,7 +409,7 @@ window.SONGS_BY_LANG.en = [
   { title: "Why Does It Always Rain on Me?", artist: "Travis", year: 1999, youtubeId: "PXatLOWjr-k" },
   { title: "A-Punk", artist: "Vampire Weekend", year: 2008, youtubeId: "_XC2mqcMMGQ" },
   { title: "The Man Who Sold the World", artist: "David Bowie", year: 1970, youtubeId: "u3MX-rUtS6M" },
-  { title: "Life on Mars?", artist: "David Bowie", year: 1971, youtubeId: "sJB24LVx6fw" },
+  { title: "Life on Mars?", artist: "David Bowie", year: 1971, youtubeId: "AZKcl4-tcuo" },
   { title: "Ashes to Ashes", artist: "David Bowie", year: 1980, youtubeId: "HyMm4rJemtI" },
   { title: "Chocolate", artist: "The 1975", year: 2013, youtubeId: "CHk5SWVO4p8" },
   { title: "Somebody Else", artist: "The 1975", year: 2016, youtubeId: "VNsd8Yo5zvc" },

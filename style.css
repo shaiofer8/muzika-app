@@ -1212,3 +1212,299 @@ footer.meta {
     min-block-size: 36px;
   }
 }
+
+/* ===== spec-main-screen-fit: the game and the score popup always fit the screen ===== */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  block-size: 100vh;
+  block-size: 100dvh;
+  min-block-size: 0;
+  padding-block-start: max(10px, env(safe-area-inset-top));
+  padding-block-end: max(10px, env(safe-area-inset-bottom));
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1.4vh, 14px);
+  flex: 1 1 auto;
+  min-block-size: 0;
+  inline-size: 100%;
+}
+
+.masthead,
+.screen-short .masthead,
+.screen-regular .masthead {
+  flex: 0 0 auto;
+  gap: clamp(4px, 1vh, 10px);
+}
+
+.score-fab {
+  min-block-size: 44px;
+  padding: 8px 20px;
+}
+
+.masthead h1,
+.screen-short .masthead h1,
+.screen-regular .masthead h1 {
+  font-size: clamp(1.35rem, 4vh, 2.2rem);
+  line-height: 1.15;
+}
+
+.masthead-settings .lang-btn,
+.masthead-settings .new-btn,
+.decade-filter select {
+  min-block-size: 34px;
+}
+
+.sleeve,
+.screen-short .sleeve,
+.screen-regular .sleeve,
+.screen-tall .sleeve {
+  flex: 1 1 auto;
+  min-block-size: 0;
+  gap: clamp(6px, 1.3vh, 14px);
+  padding: clamp(10px, 1.6vh, 20px) 14px;
+}
+
+.now-row,
+.screen-short .now-row,
+.screen-regular .now-row {
+  flex: 0 0 auto;
+  gap: clamp(4px, 1vh, 12px);
+}
+
+.track-info,
+.reveal-state {
+  gap: 4px;
+}
+
+.track-info .title {
+  font-size: clamp(1.3rem, 3.6vh, 2.3rem);
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.track-info .artist {
+  font-size: clamp(0.95rem, 2.1vh, 1.125rem);
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-info .year {
+  padding: 1px 10px;
+}
+
+/* The video takes whatever height is left (CAP-1). */
+.video-frame,
+.sleeve .video-frame,
+.screen-short .sleeve .video-frame,
+.screen-regular .sleeve .video-frame {
+  flex: 0 1 auto;
+  aspect-ratio: 16 / 9;
+  min-block-size: 100px;
+  max-block-size: none;
+}
+
+.sleeve iframe,
+.screen-short .sleeve iframe,
+.screen-regular .sleeve iframe {
+  max-block-size: none;
+}
+
+.hint {
+  flex: 0 0 auto;
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+
+.controls,
+.screen-short .controls,
+.screen-regular .controls,
+.screen-tall .controls {
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+.shuffle-btn {
+  min-block-size: 52px;
+}
+
+.secondary-actions {
+  gap: 6px;
+}
+
+.share-btn,
+.yt-link {
+  min-block-size: 40px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+}
+
+@media (max-height: 760px) {
+  .visualizer {
+    display: none;
+  }
+}
+
+@media (max-height: 700px) {
+  .hint {
+    display: none;
+  }
+}
+
+/* Score popup: one line per team, actions in one row (CAP-4). */
+.score-row,
+.score-row:nth-child(n) {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 14px;
+}
+
+.score-row .team-name-input {
+  min-block-size: 38px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+}
+
+.score-controls {
+  gap: 6px;
+}
+
+.score-controls .score-btn {
+  inline-size: 38px;
+  block-size: 38px;
+  font-size: 1.2rem;
+}
+
+.score-value {
+  font-size: 1.35rem;
+  min-inline-size: 2.2ch;
+}
+
+.score-rows,
+.scoreboard {
+  gap: 8px;
+}
+
+.modal-header {
+  margin-block-end: 10px;
+}
+
+.modal-header h2 {
+  font-size: 1.3rem;
+}
+
+.scoreboard-actions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.scoreboard-actions .link-btn,
+.scoreboard-actions .danger-btn {
+  min-block-size: 40px;
+  padding: 4px 6px;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+/* Many teams: tighter rows so 12 still fit a 640 px screen. */
+.score-rows:has(> :nth-child(7)) {
+  gap: 4px;
+}
+
+.score-rows:has(> :nth-child(7)) .score-row {
+  padding: 3px 6px;
+}
+
+.score-rows:has(> :nth-child(7)) .team-name-input,
+.score-rows:has(> :nth-child(7)) .score-btn {
+  min-block-size: 34px;
+  block-size: 34px;
+}
+
+.score-rows:has(> :nth-child(7)) .score-btn {
+  inline-size: 34px;
+}
+
+/* 9+ teams: smallest rows (still ≥ 32 px touch targets). */
+.score-rows:has(> :nth-child(9)) {
+  gap: 3px;
+}
+
+.score-rows:has(> :nth-child(9)) .score-row {
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.score-rows:has(> :nth-child(9)) .team-name-input,
+.score-rows:has(> :nth-child(9)) .score-btn {
+  min-block-size: 32px;
+  block-size: 32px;
+}
+
+.score-rows:has(> :nth-child(9)) .score-btn {
+  inline-size: 32px;
+}
+
+.score-rows:has(> :nth-child(9)) .score-value {
+  font-size: 1.15rem;
+}
+
+.modal:has(.score-rows > :nth-child(9)) {
+  padding: 10px;
+}
+
+.modal:has(.score-rows > :nth-child(9)) .modal-header {
+  margin-block-end: 6px;
+}
+
+.modal:has(.score-rows > :nth-child(9)) .modal-close {
+  inline-size: 38px;
+  block-size: 38px;
+}
+
+.modal:has(.score-rows > :nth-child(9)) .scoreboard-actions .link-btn,
+.modal:has(.score-rows > :nth-child(9)) .scoreboard-actions .danger-btn {
+  min-block-size: 36px;
+  font-size: 0.8125rem;
+}
+
+/* Long words in the three score actions (German "zurücksetzen") must not break mid-word. */
+.scoreboard-actions .link-btn,
+.scoreboard-actions .danger-btn {
+  padding-inline: 3px;
+  font-size: 0.78rem;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Score popup title stays on one line (Spanish "Puntuación por equipos" wrapped with 12 teams). */
+#scoreModalTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal:has(.score-rows > :nth-child(9)) #scoreModalTitle {
+  font-size: 1.15rem;
+}
+
+/* Tall phones: the card ends after its content instead of stretching with an empty bottom. */
+.sleeve,
+.screen-short .sleeve,
+.screen-regular .sleeve,
+.screen-tall .sleeve {
+  flex: 0 1 auto;
+}
