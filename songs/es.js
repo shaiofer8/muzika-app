@@ -320,7 +320,7 @@ window.SONGS_BY_LANG.es = [
   { title: "La Puerta de Alcalá", artist: "Ana Belén, Víctor Manuel, Miguel Ríos", year: 1986, youtubeId: "jKbGg0BqOZg" },
   { title: "Bienvenidos", artist: "Miguel Ríos", year: 1982, youtubeId: "Rm-yZGvcf2U" },
   { title: "El Rock de la Cárcel", artist: "Miguel Ríos", year: 1966, youtubeId: "N2TUxOoSb90" },
-  { title: "Escríbeme", artist: "David Bisbal", year: 2002 },
+  { title: "Escríbeme", artist: "David Bisbal", year: 2002, status: "no_match", reason: "no_artist_title_match" },
   { title: "Bulería", artist: "David Bisbal", year: 2002, youtubeId: "jUYyiuB0tXg" },
   { title: "Ave María", artist: "David Bisbal", year: 2002, youtubeId: "gra-sIV1n4U" },
   { title: "Digale", artist: "David Bisbal", year: 2004 },
@@ -358,10 +358,10 @@ window.SONGS_BY_LANG.es = [
   { title: "Islas", artist: "Vetusta Morla", year: 2011, status: "no_match", reason: "no_artist_title_match" },
   { title: "La Deriva", artist: "Vetusta Morla", year: 2008, youtubeId: "bpL_gVtL3YQ" },
   { title: "Copenhague", artist: "Vetusta Morla", year: 2008, youtubeId: "F0X5IOQDni4" },
-  { title: "Golden Girl", artist: "Vetusta Morla", year: 2014 },
-  { title: "Antes de Ayer", artist: "Zahara", year: 2018 },
+  { title: "Golden Girl", artist: "Vetusta Morla", year: 2014, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Antes de Ayer", artist: "Zahara", year: 2018, status: "no_match", reason: "no_artist_title_match" },
   { title: "Merichane", artist: "Zahara", year: 2007, youtubeId: "Oxt13sJJ6fY" },
-  { title: "El Sur", artist: "Vetusta Morla", year: 2017 },
+  { title: "El Sur", artist: "Vetusta Morla", year: 2017, status: "no_match", reason: "no_artist_title_match" },
 
   // --- México pop/rock ---
   { title: "La Chica Sexy", artist: "Café Tacvba", year: 1994 },
