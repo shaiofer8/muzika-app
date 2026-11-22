@@ -70,7 +70,7 @@ window.SONGS_BY_LANG.ru = [
   { title: "Кольщик", artist: "Михаил Круг", year: 1995, youtubeId: "JINmBpfvS0c" },
   { title: "Магадан", artist: "Михаил Круг", year: 1997, youtubeId: "02f0Rm7XcQQ" },
   { title: "Погода в Доме", artist: "Игорь Николаев & Наташа Королёва", year: 1993, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Желтые Тюльпаны", artist: "Наташа Королёва", year: 1991, youtubeId: "uNvUQvDDGRA" },
+  { title: "Желтые Тюльпаны", artist: "Наташа Королёва", year: 1991, youtubeId: "W9kYj_fCjAo" },
   { title: "Маленькая Страна", artist: "Наташа Королёва", year: 1995, youtubeId: "7G-4stvjEwQ" },
   { title: "Синеглазый Мальчик", artist: "Наташа Королёва", year: 1992, status: "no_match", reason: "no_artist_title_match" },
   { title: "Незабудка", artist: "Юрий Шатунов", year: 1990, youtubeId: "HiOihditJPk", status: "disabled", reason: "title_mismatch" },

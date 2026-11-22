@@ -5,6 +5,19 @@ const NONLATIN = /[֐-׿؀-ۿЀ-ӿ぀-ヿ一-鿿가-힯ऀ-ॿ]/;
 // Videos that are not the original recording: covers, karaoke, medleys, full albums, edits.
 const BAD = /\bcover\b|\bparody\b|minions|nightcore|bass boosted|fan edit|edit audio|karaoke|קריוקי|פלייבק|playlist|full album|אלבום מלא|מחרוזת|medley|\+.*\+|reaction|tutorial|lesson|instrumental|8d audio|sped up|slowed/i;
 
+// Live shows, concerts, TV stages and festival sets (spec-song-quality-audit CAP-6). Tested on the video
+// title with the song name and artist removed, so songs like "Live and Let Die" are not flagged.
+// "live" as a verb ("I Want To Live", "Wanna Live and Die") is not a live show.
+const LIVE_VIDEO = /(?<!\b(?:to|wanna|gonna|i|we|you|they|can|will|must|let|just) )\blive\b(?! (?:forever|your|my|it|again|without|while|like|life|and die|and let)\b)|liveshow|en vivo|ao vivo|en directo|dal vivo|en concierto|en concert|in concert|\bconcerts?\b|concierto|konzert|concerto|konser|canlı|концерт|живой звук|unplugged|\bdirecto\b|actuaci[oó]n|הופעה|הופעות|הופעת|לייב|ライブ|라이브|现场|現場|演唱会|演唱會|trực tiếp|حفل|grand final|semi-?final|glastonbury|rock in rio|\btour\b|-tour\b|stadion|tiny desk|\bdvd\b|kcon|music bank|inkigayo|m ?countdown|show champion|music core|紅白|音楽の日|mtv video music awards|\bvmas?\b|\bawards\b|\bbrit awards\b|grammy/i;
+function isLive(r, m) {
+  if (!m || !m.vt) return false;
+  const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  let t = m.vt;
+  [r.title, ...artists(r.artist)].filter((s) => s && s.length > 1).forEach((s) => { t = t.replace(new RegExp(esc(s), "gi"), " "); });
+  // A festival name next to "Official Video" is the song's own clip (Sanremo entries, "#Festival").
+  return LIVE_VIDEO.test(t) || (/festival|festivali/i.test(t) && !/official|oficial|officiel|ufficiale|resmi/i.test(t));
+}
+
 // Hebrew spelling is loose (niqqud, "הכול"/"הכל", "מיליארד"/"מליארד"), so the comparison key drops
 // niqqud and the vowel letters ו/י. Broken characters (U+FFFD) in a video title are dropped too.
 const key = (s) => norm(s.replace(/[֑-ׇ�]/g, "")).replace(/[וי]/g, "");
@@ -51,7 +64,8 @@ function classify(r, m) {
       if (left.length >= 2) cat = "partial";
     }
   }
+  if (isLive(r, m)) cat = "live";
   if (BAD.test(m.vt)) cat = "bad";
   return cat;
 }
-module.exports = { norm, artists, classify, NONLATIN };
+module.exports = { norm, artists, classify, isLive, LIVE_VIDEO, NONLATIN };

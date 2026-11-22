@@ -18,6 +18,8 @@ const get = (u) => new Promise((res, rej) => https.get(u, (r) => { let d = ""; r
     const re = new RegExp(`\\{ title: "${title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}", artist: "((?:[^"\\\\]|\\\\.)*)", year: (\\d+), youtubeId: "([A-Za-z0-9_-]+)" \\}`);
     const m = text.match(re);
     if (!m) { console.log("NOT FOUND", title); continue; }
+    // Two songs with the same name (e.g. "Tempo Perdido" by Legião Urbana and by Zé Vaqueiro): a person picks.
+    if ((text.match(new RegExp(re.source, "g")) || []).length > 1) { console.log("AMBIGUOUS", title, "- fix by hand"); continue; }
     const [raw, artist, year, oldId] = m;
     const r = { title, artist: alias ? `${artist}, ${alias}` : artist };
     const s = cp.spawnSync("yt-dlp", ["--flat-playlist", "-j", "--no-warnings", `ytsearch10:${title} ${alias || artist}`.replace(/"/g, "")], { encoding: "utf8", timeout: 60000 });
@@ -33,7 +35,7 @@ const get = (u) => new Promise((res, rej) => https.get(u, (r) => { let d = ""; r
     }
     const line = pick
       ? `{ title: "${title}", artist: "${artist}", year: ${Math.min(+year, up)}, youtubeId: "${pick.id}" }`
-      : `{ title: "${title}", artist: "${artist}", year: ${year}, youtubeId: "${oldId}", status: "disabled", reason: "not_original" }`;
+      : `{ title: "${title}", artist: "${artist}", year: ${year}, youtubeId: "${oldId}", status: "disabled", reason: "${process.env.REASON || "not_original"}" }`;
     text = text.replace(raw, line);
     if (pick) used.add(pick.id);
     console.log(pick ? `REPLACED ${title} -> ${pick.vt} | ${pick.ch}` : `DISABLED ${title} (no original video found)`);

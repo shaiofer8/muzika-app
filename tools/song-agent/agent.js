@@ -14,8 +14,8 @@ const TODAY = new Date().toISOString().slice(0, 10);
 // YouTube chart feed produced unusable titles and off-market songs.
 const IS_TREND_DAY = CONFIG.trendsPerWeek > 0 && new Date().getDay() === CONFIG.trendDay;
 // Disabled by an editor, not by availability: validation must never re-enable these.
-const EDITORIAL_REASONS = new Set(["trend_junk", "title_mismatch", "duplicate", "not_original"]);
-const { classify, NONLATIN } = require("./match");
+const EDITORIAL_REASONS = new Set(["trend_junk", "title_mismatch", "duplicate", "not_original", "live"]);
+const { classify, isLive, NONLATIN } = require("./match");
 const SEARCH_PER_DAY = Number(process.env.MUZIKA_SEARCH_PER_DAY || CONFIG.searchPerDay);
 // Daily search budget per language. Languages listed in config.searchWeights get
 // their fixed share; the rest split what is left. English needs most, since its
@@ -101,6 +101,7 @@ async function checkIds(ids) {
 // ("partial") is logged for review instead, since those are often still the right song.
 function mismatch(e, meta) {
   const cat = classify(e, meta);
+  if (cat === "live") return "live";
   if (cat === "ok" || cat === "artist?") return null;
   // A title with broken characters can't be compared reliably: a person reviews it.
   if (/�/.test(meta.vt) && cat !== "bad") return "review";
@@ -120,8 +121,9 @@ async function validate(entries, log) {
       const mm = mismatch(e, meta);
       if (mm === "review") log.review.push({ title: e.title, artist: e.artist, video: meta.vt });
       else if (mm) {
-        e.status = "disabled"; e.reason = "title_mismatch"; e.changed = true;
-        log.disabled.push({ title: e.title, reason: "title_mismatch", video: meta.vt });
+        const why = mm === "live" ? "live" : "title_mismatch";
+        e.status = "disabled"; e.reason = why; e.changed = true;
+        log.disabled.push({ title: e.title, reason: why, video: meta.vt });
         continue;
       }
     }
@@ -196,6 +198,7 @@ async function trends(entries, region, log) {
     if (v.status.embeddable !== true || v.status.privacyStatus !== "public") continue;
     const p = parseChartTitle(v.snippet.title);
     if (!p || !p.title || !p.artist) continue;
+    if (isLive(p, { vt: v.snippet.title })) continue;
     if (existing.has(norm(p.title) + "|" + norm(p.artist))) continue;
     added.push({ title: p.title, artist: p.artist, year: new Date(v.snippet.publishedAt).getFullYear(), youtubeId: v.id, changed: true, status: null, reason: null, raw: "" });
     existing.add(norm(p.title) + "|" + norm(p.artist));
