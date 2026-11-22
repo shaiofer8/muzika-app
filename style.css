@@ -1085,7 +1085,30 @@ footer.meta {
   }
 }
 
-/* Onboarding: icon, short heading, one-to-three sentence body */
+/* Onboarding (spec-onboarding-fast-start): one card, three short lines, one Play button */
+.howto-list {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.howto-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.howto-list .howto-icon {
+  font-size: 1.9rem;
+  flex: 0 0 auto;
+}
+
 .howto-slide {
   display: grid;
   justify-items: center;

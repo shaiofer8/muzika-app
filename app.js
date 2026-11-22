@@ -270,36 +270,26 @@
   window.setTimeout(fitToScreen, 400);
   window.MuzikaFit = fitToScreen;
 
-  // "איך משחקים": שלושה מסכים, מוצג פעם אחת בכל מכשיר (try/catch, כי localStorage עלול להיות חסום).
+  // "איך משחקים": כרטיס אחד וכפתור "משחקים" שמנגן שיר מיד (spec-onboarding-fast-start).
+  // מוצג פעם אחת בכל מכשיר (try/catch, כי localStorage עלול להיות חסום). קבוצות רק דרך "ניקוד".
   (function () {
     var howto = document.getElementById("howto");
-    var next = document.getElementById("howtoNext");
-    var skip = document.getElementById("howtoSkip");
-    if (!howto || !next || !skip) return;
-    var KEY = "muzika-howto-v2"; // v2: host-model copy (spec-onboarding-clarity), shown once more to everyone
+    var play = document.getElementById("howtoPlay");
+    if (!howto || !play) return;
+    var KEY = "muzika-howto-v2"; // unchanged: players who saw the old how-to are not shown it again
     var seen = false;
     try { seen = !!localStorage.getItem(KEY); } catch (e) {}
     if (seen) return;
-    var slides = howto.querySelectorAll(".howto-slide");
-    var dots = howto.querySelectorAll(".howto-dots span");
-    var idx = 0;
-    function t(key, fallback) { return window.MuzikaLang ? window.MuzikaLang.t(key) : fallback; }
-    function show(i) {
-      idx = i;
-      for (var k = 0; k < slides.length; k++) { slides[k].hidden = k !== i; }
-      for (var d = 0; d < dots.length; d++) { dots[d].className = d === i ? "on" : ""; }
-      next.textContent = i === slides.length - 1 ? t("howtoOk", "הבנתי") : t("howtoNext", "הבא");
-    }
-    function close() {
+    howto.hidden = false;
+    track("onboarding_shown");
+    play.addEventListener("click", function () {
       howto.hidden = true;
       try { localStorage.setItem(KEY, "1"); } catch (e) {}
-      // Start on team setup: open the score popup right away, so the first thing is choosing teams.
-      if (window.MuzikaScore) window.MuzikaScore.open();
-    }
-    howto.hidden = false;
-    show(0);
-    next.addEventListener("click", function () { if (idx < slides.length - 1) show(idx + 1); else close(); });
-    skip.addEventListener("click", close);
+      track("onboarding_play");
+      // Inside the tap, so the browser lets the video start with sound.
+      pendingNext = null;
+      pickAndPlay();
+    });
   })();
 
   if (els.newBtn) {
