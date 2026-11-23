@@ -158,4 +158,11 @@ window.SONGS_BY_LANG.ko = [
   { title: "WANNABE", artist: "있지", year: 2020, youtubeId: "fE2h3lGlOsk" },
   { title: "Russian Roulette", artist: "레드벨벳", year: 2016, youtubeId: "QslJYDX3o8s" },
   { title: "Feel My Rhythm", artist: "레드벨벳", year: 2022, youtubeId: "R9At2ICm4LQ" },
+  { title: "tt", artist: "TWICE", year: 2016, youtubeId: "9uypQGzzhns" },
+  { title: "psycho", artist: "Red Velvet", year: 2019, youtubeId: "uR8Mrt1IpXg" },
+  { title: "growl", artist: "EXO", year: 2013, youtubeId: "tiV4yyZF4mc" },
+  { title: "hype boy", artist: "NewJeans", year: 2022, youtubeId: "9wUKhEgnllc" },
+  { title: "ditto", artist: "NewJeans", year: 2022, youtubeId: "V37TaRdVUQY" },
+  { title: "love dive", artist: "IVE", year: 2022, youtubeId: "l-jZOXa7gQY" },
+  { title: "gee", artist: "Girls' Generation", year: 2009, youtubeId: "ICqWk9cl9Is" },
 ];

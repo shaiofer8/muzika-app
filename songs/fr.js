@@ -550,4 +550,5 @@ window.SONGS_BY_LANG.fr = [
   { title: "Les yeux de la mama", artist: "Kendji Girac", year: 2015, youtubeId: "YgP2whwA2Wg" },
   { title: "Reste", artist: "Gims & Sting", year: 2019, youtubeId: "0Ev-6PYtI34" },
   { title: "Comme des enfants", artist: "Cœur de pirate", year: 2008, youtubeId: "U-fU_V7Boic" },
+  { title: "Je m'en vais", artist: "Vianney", year: 2016, youtubeId: "eLYyCFuPCX8" },
 ];

@@ -1114,4 +1114,5 @@ window.SONGS_BY_LANG.he = [
   { title: "Unicorn", artist: "נועה קירל", year: 2023, youtubeId: "r4wbdKmM3bQ" },
   { title: "עוד יום", artist: "נתן גושן", year: 2014, youtubeId: "6TElcNHh2cg" },
   { title: "Golden Boy", artist: "נדב גואטה", year: 2015, youtubeId: "NdxOCTezeTg" },
+  { title: "מדברים", artist: "נועה קירל", year: 2015, youtubeId: "RMwhKx8_X8A" },
 ];

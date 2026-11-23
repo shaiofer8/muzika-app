@@ -589,4 +589,8 @@ window.SONGS_BY_LANG.es = [
   { title: "La Flaca", artist: "Jarabe de Palo", year: 1996, youtubeId: "r2g0pM3PMNQ" },
   { title: "Mariposa Traicionera", artist: "Maná", year: 2002, youtubeId: "av3wkasS-WQ" },
   { title: "Me Enamora", artist: "Juanes", year: 2007, youtubeId: "voxgN3Dhjuo" },
+  { title: "Vida de Rico", artist: "Camilo", year: 2020, youtubeId: "qKp1f7Vn9dM" },
+  { title: "Solamente Tú", artist: "Pablo Alborán", year: 2010, youtubeId: "F0rwOsAteXM" },
+  { title: "Me Voy", artist: "Julieta Venegas", year: 2006, youtubeId: "y8rBC6GCUjg" },
+  { title: "Yo Quisiera", artist: "Reik", year: 2005, youtubeId: "QZKrLIoMyxY" },
 ];

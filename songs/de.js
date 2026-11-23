@@ -593,4 +593,10 @@ window.SONGS_BY_LANG.de = [
   { title: "Stadt", artist: "Cassandra Steen & Adel Tawil", year: 2009, youtubeId: "ltQNeihjqB0" },
   { title: "Lieder", artist: "Adel Tawil", year: 2013, youtubeId: "kiMG_JV2gbo" },
   { title: "Geiles Leben", artist: "Glasperlenspiel", year: 2015, youtubeId: "NQJFPQHX8kA" },
+  { title: "Halt dich an mir fest", artist: "Revolverheld", year: 2010, youtubeId: "wCcJuN47UcY" },
+  { title: "Ding", artist: "Seeed", year: 2006, youtubeId: "_yWU0lFghxU" },
+  { title: "Gewinner", artist: "Clueso", year: 2008, youtubeId: "UJpyFMXtZb4" },
+  { title: "Leiser", artist: "LEA", year: 2017, youtubeId: "rnzIN9H_G10" },
+  { title: "Das Model", artist: "Kraftwerk", year: 1978, youtubeId: "qCFIRjycV5Q" },
+  { title: "Geboren um zu leben", artist: "Unheilig", year: 2010, youtubeId: "1YOovPkiMrk" },
 ];
