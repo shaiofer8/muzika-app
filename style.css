@@ -1508,3 +1508,151 @@ body {
 .screen-tall .sleeve {
   flex: 0 1 auto;
 }
+
+/* ===== spec-two-team-clarity: team bar on the main screen + "two teams" onboarding ===== */
+.team-bar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  inline-size: 100%;
+  min-inline-size: 0;
+}
+
+.team-chip {
+  flex: 1 1 0;
+  min-inline-size: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  border: 1.5px solid var(--team-color, var(--border));
+  border-radius: var(--radius-small);
+  background: var(--surface-raised);
+  overflow: hidden;
+}
+
+.team-chip--0 { --team-color: var(--accent-b); }
+.team-chip--1 { --team-color: var(--accent-c); }
+.team-chip--2 { --team-color: var(--accent-a); }
+.team-bar--2 .team-chip--1 { flex-direction: row-reverse; }
+
+.team-chip-info {
+  flex: 1 1 auto;
+  min-inline-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.team-bar--2 .team-chip--1 .team-chip-info { flex-direction: row-reverse; }
+
+.team-chip-name {
+  min-inline-size: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.team-chip-score {
+  flex: 0 0 auto;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--team-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.team-chip-score.bump { animation: team-bump 360ms var(--ease); }
+@keyframes team-bump { 40% { transform: scale(1.45); } }
+
+.team-chip-plus {
+  flex: 0 0 auto;
+  min-inline-size: 46px;
+  min-block-size: 44px;
+  border: 0;
+  background: var(--team-color);
+  color: var(--on-accent);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.team-chip-plus:active { filter: brightness(0.9); }
+
+.team-vs {
+  flex: 0 0 auto;
+  align-self: center;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.team-bar--3 .team-chip-plus { min-inline-size: 38px; }
+.team-bar--3 .team-chip-info { padding-inline: 6px; }
+
+.team-bar-more {
+  flex: 1 1 auto;
+  min-block-size: 44px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-small);
+  background: var(--surface-raised);
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.howto-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.howto-team {
+  display: grid;
+  place-items: center;
+  inline-size: 58px;
+  block-size: 58px;
+  border-radius: 50%;
+  border: 2px solid var(--team-color);
+  background: var(--surface-raised);
+}
+
+.howto-team--0 { --team-color: var(--accent-b); }
+.howto-team--1 { --team-color: var(--accent-c); }
+
+.howto-vs {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* The team bar takes ~50px: the playback hint drops out a bit earlier (spec-two-team-clarity). */
+@media (max-height: 820px) {
+  .hint { display: none; }
+}
+
+@media (max-height: 680px) {
+  .team-chip-plus { min-block-size: 38px; min-inline-size: 42px; }
+  .team-chip-score { font-size: 1.15rem; }
+  .team-bar-more { min-block-size: 38px; }
+  .video-frame,
+  .sleeve .video-frame,
+  .screen-short .sleeve .video-frame,
+  .screen-regular .sleeve .video-frame { min-block-size: 80px; }
+}
