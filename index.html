@@ -82,11 +82,12 @@
 
   <div class="howto" id="howto" hidden>
     <div class="howto-card" role="dialog" aria-modal="true" aria-labelledby="howtoTitle">
-      <h2 id="howtoTitle" data-i18n="howtoTitle">איך משחקים</h2>
+      <h2 id="howtoTitle" data-i18n="howtoTitle">משחק מסיבה לשתי קבוצות</h2>
+      <div class="howto-teams" aria-hidden="true"><span class="howto-team howto-team--0">👥</span><span class="howto-vs">VS</span><span class="howto-team howto-team--1">👥</span></div>
       <ul class="howto-list">
-        <li><span class="howto-icon" aria-hidden="true">📱</span><span data-i18n="howto1Title">טלפון אחד, כל החבר'ה</span></li>
-        <li><span class="howto-icon" aria-hidden="true">🎧</span><span data-i18n="howto2Title">רק המנחה מסתכל במסך</span></li>
-        <li><span class="howto-icon" aria-hidden="true">🏆</span><span data-i18n="howto3Title">נקודה לקבוצה שזיהתה</span></li>
+        <li><span class="howto-icon" aria-hidden="true">✌️</span><span data-i18n="howto1Title">מתחלקים לשתי קבוצות</span></li>
+        <li><span class="howto-icon" aria-hidden="true">🎧</span><span data-i18n="howto2Title">המנחה מנגן שיר, ורק המנחה רואה את המסך</span></li>
+        <li><span class="howto-icon" aria-hidden="true">🏆</span><span data-i18n="howto3Title">הקבוצה שמזהה ראשונה מקבלת נקודה</span></li>
       </ul>
       <div class="howto-actions">
         <button type="button" class="primary-btn" id="howtoPlay" data-i18n="howtoOk">יאללה, משחקים!</button>
@@ -100,7 +101,7 @@
         <span aria-hidden="true">🏆</span> <span data-i18n="scoreBtn">ניקוד</span>
       </button>
     </div>
-    <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="kicker">משחק קבוצתי למסיבות</span></span>
+    <span class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="kicker">משחק חברתי לשתי קבוצות</span></span>
     <h1 data-i18n="title">מי מזהה את השיר?</h1>
     <div class="masthead-settings">
       <label class="decade-filter"><span class="sr-only" data-i18n="decadeLabel">עשור</span><select id="decadeSelect" aria-label="עשור"><option value="all" data-i18n="decadeAll">הכול</option><option value="1980">80s</option><option value="1990">90s</option><option value="2000">00s</option><option value="2010">10s</option><option value="2020">20s</option></select></label>
@@ -134,6 +135,8 @@
 
     <div class="video-frame" id="videoFrame"></div>
     <p class="hint" data-i18n="hint">אם הניגון לא מתחיל לבד — לחצו על כפתור ההפעלה בתוך הנגן.</p>
+
+    <div class="team-bar team-bar--2" id="teamBar"></div>
 
     <div class="controls">
       <button class="shuffle-btn" id="primaryBtn" type="button">

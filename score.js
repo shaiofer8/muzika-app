@@ -140,13 +140,81 @@
     return row;
   }
 
-  function changeScore(idx, delta) {
+  function changeScore(idx, delta, source) {
     var next = (state.scores[idx] || 0) + delta;
     if (next < 0) next = 0;
     state.scores[idx] = next;
     saveState();
     var valueEls = els.rows.querySelectorAll(".score-value");
     if (valueEls[idx]) valueEls[idx].textContent = next;
+    renderBar();
+    if (delta > 0 && window.MuzikaAnalytics) window.MuzikaAnalytics.track("team_point", { source: source || "popup", teams: state.teamCount });
+  }
+
+  // spec-two-team-clarity CAP-1: the team bar on the main screen. 2-3 teams get a chip each with "+1";
+  // 4 or more get one button that opens the score popup.
+  var bar = document.getElementById("teamBar");
+  function renderBar() {
+    if (!bar) return;
+    normalizeNames();
+    bar.textContent = "";
+    var n = state.teamCount;
+    if (n > 3) {
+      bar.className = "team-bar team-bar--many";
+      var more = document.createElement("button");
+      more.type = "button";
+      more.className = "team-bar-more";
+      more.textContent = "🏆 " + t("teamsMore").replace("{n}", n);
+      more.addEventListener("click", openModal);
+      bar.appendChild(more);
+      return;
+    }
+    bar.className = "team-bar team-bar--" + n;
+    for (var i = 0; i < n; i++) {
+      if (i > 0 && n === 2) {
+        var vs = document.createElement("span");
+        vs.className = "team-vs";
+        vs.setAttribute("aria-hidden", "true");
+        vs.textContent = "VS";
+        bar.appendChild(vs);
+      }
+      bar.appendChild(buildChip(i));
+    }
+  }
+
+  function buildChip(idx) {
+    var chip = document.createElement("div");
+    chip.className = "team-chip team-chip--" + idx;
+    var info = document.createElement("button");
+    info.type = "button";
+    info.className = "team-chip-info";
+    var name = document.createElement("span");
+    name.className = "team-chip-name";
+    name.textContent = state.names[idx];
+    var score = document.createElement("span");
+    score.className = "team-chip-score";
+    score.textContent = state.scores[idx] || 0;
+    info.appendChild(name);
+    info.appendChild(score);
+    info.addEventListener("click", openModal);
+    var plus = document.createElement("button");
+    plus.type = "button";
+    plus.className = "team-chip-plus";
+    plus.textContent = "+1";
+    plus.dir = "ltr";
+    plus.setAttribute("aria-label", t("teamPlusAriaPrefix") + " " + state.names[idx]);
+    plus.addEventListener("click", function () {
+      if (!state.configured) {
+        state.configured = true;
+        state.scores = state.scores.slice(0, state.teamCount);
+      }
+      changeScore(idx, 1, "bar");
+      var s = bar.querySelectorAll(".team-chip-score")[idx];
+      if (s) { s.classList.remove("bump"); void s.offsetWidth; s.classList.add("bump"); }
+    });
+    chip.appendChild(info);
+    chip.appendChild(plus);
+    return chip;
   }
 
   // Draws a 1080x1350 result card: teams, scores, and the challenge link. Returns a PNG Blob.
@@ -230,6 +298,7 @@
   }
 
   function closeModal() {
+    renderBar();
     els.overlay.hidden = true;
     document.body.classList.remove("modal-open");
     if (window.MuzikaAds) window.MuzikaAds.hide();
@@ -276,9 +345,11 @@
     for (var i = 0; i < state.scores.length; i++) state.scores[i] = 0;
     saveState();
     renderScoreboard();
+    renderBar();
   });
 
   renderStepper();
+  renderBar();
 
   // ---------------------------------------------------------------------
   // API ל-lang.js: מרענן תוויות (שמות ברירת-מחדל/aria) בהחלפת שפה, בלי
@@ -291,6 +362,7 @@
         if (!state.customNames[i]) state.names[i] = defaultName(i);
       }
       saveState();
+      renderBar();
       if (!els.overlay.hidden) {
         if (state.configured) renderScoreboard(); else renderStepper();
       }
