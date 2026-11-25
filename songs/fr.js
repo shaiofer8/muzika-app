@@ -373,11 +373,11 @@ window.SONGS_BY_LANG.fr = [
   { title: "L'Oiseau et l'Enfant", artist: "Marie Myriam", year: 1977, youtubeId: "fhwL4bVhSoc" },
   { title: "Un Premier Amour", artist: "Sandrine François", year: 2002, status: "no_match", reason: "no_artist_title_match" },
   { title: "À Chaque Pas", artist: "Sébastien Tellier", year: 2008, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Divine Idylle", artist: "Sébastien Tellier", year: 2004 },
+  { title: "Divine Idylle", artist: "Sébastien Tellier", year: 2004, status: "no_match", reason: "no_artist_title_match" },
   { title: "N'oubliez Jamais", artist: "Amaury Vassili", year: 2011, status: "no_match", reason: "no_artist_title_match" },
-  { title: "Mon Alliée", artist: "Alma", year: 2017 },
+  { title: "Mon Alliée", artist: "Alma", year: 2017, status: "no_match", reason: "no_artist_title_match" },
   { title: "Requiem", artist: "Alma", year: 2017, youtubeId: "JtgM7laoukA" },
-  { title: "Fresh", artist: "Barbara Pravi", year: 2022 },
+  { title: "Fresh", artist: "Barbara Pravi", year: 2022, status: "no_match", reason: "no_artist_title_match" },
 
   // --- Enfance / fêtes ---
   { title: "Petit Papa Noël", artist: "Tino Rossi", year: 1946, youtubeId: "WQushjP2Wqk" },
@@ -467,7 +467,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Pour Me Comprendre", artist: "Johnny Hallyday", year: 1971 },
 
   // --- Rap / R&B additionnel ---
-  { title: "Petite Sœur, Grand Frère", artist: "Youssoupha", year: 2015 },
+  { title: "Petite Sœur, Grand Frère", artist: "Youssoupha", year: 2015, status: "no_match", reason: "no_artist_title_match" },
   { title: "On the Corner", artist: "Youssoupha", year: 2015 },
   { title: "Négritude", artist: "Youssoupha ft. Ayna Shox", year: 2015 },
   { title: "La Puissance (Vald)", artist: "Vald", year: 2015 },
