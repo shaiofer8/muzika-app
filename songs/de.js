@@ -114,10 +114,10 @@ window.SONGS_BY_LANG.de = [
   { title: "Pack die Badehose ein", artist: "Conny Froboess", year: 1951, youtubeId: "Jq755GRl4E0" },
   { title: "So ein Tag, so wunderschön wie heute", artist: "Vico Torriani", year: 1961, status: "no_match", reason: "no_artist_title_match" },
   { title: "Kufsteiner Lied", artist: "Hansi Hinterseer", year: 1994, youtubeId: "OlrDu76Lfrk" },
-  { title: "Rot Sind Die Rosen", artist: "Hansi Hinterseer", year: 1997 },
-  { title: "Diese Woche", artist: "Reinhard Mey", year: 1968 },
-  { title: "Es Gibt Keine Insel der Seligen", artist: "Reinhard Mey", year: 1969 },
-  { title: "Alle Jahre Wieder Schneit Es (satire)", artist: "Reinhard Mey", year: 1980 },
+  { title: "Rot Sind Die Rosen", artist: "Hansi Hinterseer", year: 1997, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Diese Woche", artist: "Reinhard Mey", year: 1968, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Es Gibt Keine Insel der Seligen", artist: "Reinhard Mey", year: 1969, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Alle Jahre Wieder Schneit Es (satire)", artist: "Reinhard Mey", year: 1980, status: "no_match", reason: "no_artist_title_match" },
 
   // --- Deutscher Rock/Pop 80er-90er ---
   { title: "Fred vom Jupiter", artist: "Hans Söllner", year: 1985 },
