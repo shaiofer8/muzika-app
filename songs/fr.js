@@ -394,7 +394,7 @@ window.SONGS_BY_LANG.fr = [
   { title: "Tout le Monde", artist: "Zazie", year: 1998, youtubeId: "LHrgTTnoAak" },
   { title: "Rue de la Paix", artist: "Zazie", year: 2001, youtubeId: "xICWYCoZ7BQ" },
   { title: "Chanteur", artist: "Marc Lavoine ft. Zazie", year: 1998 },
-  { title: "Fous à Lier", artist: "Renaud & Axelle Red", year: 2002 },
+  { title: "Fous à Lier", artist: "Renaud & Axelle Red", year: 2002, status: "no_match", reason: "no_artist_title_match" },
   { title: "Marche à l'Ombre", artist: "Renaud", year: 1980, youtubeId: "EHU6A3aG7iQ" },
   { title: "Hexagone", artist: "Renaud", year: 1975, youtubeId: "v9j7oWUuH18" },
   { title: "Laisse Béton", artist: "Renaud", year: 1977, youtubeId: "6uvdSHkKj00" },
@@ -468,9 +468,9 @@ window.SONGS_BY_LANG.fr = [
 
   // --- Rap / R&B additionnel ---
   { title: "Petite Sœur, Grand Frère", artist: "Youssoupha", year: 2015, status: "no_match", reason: "no_artist_title_match" },
-  { title: "On the Corner", artist: "Youssoupha", year: 2015 },
-  { title: "Négritude", artist: "Youssoupha ft. Ayna Shox", year: 2015 },
-  { title: "La Puissance (Vald)", artist: "Vald", year: 2015 },
+  { title: "On the Corner", artist: "Youssoupha", year: 2015, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Négritude", artist: "Youssoupha ft. Ayna Shox", year: 2015, status: "no_match", reason: "no_artist_title_match" },
+  { title: "La Puissance (Vald)", artist: "Vald", year: 2015, status: "no_match", reason: "no_artist_title_match" },
   { title: "Xanax", artist: "Vald", year: 2018 },
   { title: "Coma Idyllique", artist: "Vald", year: 2019 },
   { title: "Deux Frères", artist: "PNL", year: 2019, youtubeId: "vNpl-M3_9_o" },
