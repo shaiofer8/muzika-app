@@ -346,7 +346,7 @@ window.SONGS_BY_LANG.es = [
   { title: "Como Camarón", artist: "Estopa", year: 1999, youtubeId: "JmP89cIGJZM" },
   { title: "Cuando Amanece", artist: "Estopa", year: 2001, youtubeId: "k6K5eraQlDM" },
   { title: "El Del Medio", artist: "Estopa", year: 2003, status: "no_match", reason: "no_artist_title_match" },
-  { title: "La Madre Que Te Parió", artist: "El Canto del Loco", year: 2002 },
+  { title: "La Madre Que Te Parió", artist: "El Canto del Loco", year: 2002, status: "no_match", reason: "no_artist_title_match" },
   { title: "Zapatillas", artist: "El Canto del Loco", year: 2000, youtubeId: "nHxam-MQg-o" },
   { title: "Round Round", artist: "Sonic Youth", year: 1990 },
   { title: "Devuélveme a Mi Chica", artist: "Hombres G", year: 1985, youtubeId: "sHQ9BdvZPco" },
@@ -404,8 +404,8 @@ window.SONGS_BY_LANG.es = [
   { title: "Todos Me Miran", artist: "Gloria Trevi", year: 2004, youtubeId: "MsAAbvwsvK4" },
   { title: "Pelo Suelto", artist: "Gloria Trevi", year: 1989, youtubeId: "FCpPCMHKvSE" },
   { title: "Dr. Psiquiatra", artist: "Gloria Trevi", year: 1989, youtubeId: "qgtVx5Zfxiw" },
-  { title: "Dos Gardenias", artist: "Gloria Trevi", year: 2001 },
-  { title: "Amiga Mía (Gloria)", artist: "Gloria Trevi", year: 2004 },
+  { title: "Dos Gardenias", artist: "Gloria Trevi", year: 2001, status: "no_match", reason: "no_artist_title_match" },
+  { title: "Amiga Mía (Gloria)", artist: "Gloria Trevi", year: 2004, status: "no_match", reason: "no_artist_title_match" },
 
   // --- Regional Mexicano / Norteño / Banda ---
   { title: "La Puerta Negra", artist: "Los Tigres del Norte & Marco Antonio Solís", year: 1986, youtubeId: "rryDND06LHU" },
@@ -493,7 +493,7 @@ window.SONGS_BY_LANG.es = [
   { title: "¡Corre!", artist: "Jesse & Joy", year: 2011, youtubeId: "7m2zyp0vFQc" },
   { title: "La Verdad", artist: "Jesse & Joy", year: 2013, status: "no_match", reason: "no_artist_title_match" },
   { title: "Somos", artist: "Jesse & Joy", year: 2013, youtubeId: "EuBUFPyUUzI" },
-  { title: "Enamorate", artist: "Miguel Bosé", year: 2007 },
+  { title: "Enamorate", artist: "Miguel Bosé", year: 2007, status: "no_match", reason: "no_artist_title_match" },
   { title: "Nena", artist: "Miguel Bosé", year: 2007, youtubeId: "nsMqxJTc6So" },
   { title: "Amiga", artist: "Miguel Bosé", year: 1977, youtubeId: "dYFRAqjqZw0" },
   { title: "Como un Lobo", artist: "Miguel Bosé", year: 1985, youtubeId: "6bowAYq0OLU" },
