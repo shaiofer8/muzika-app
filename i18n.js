@@ -262,7 +262,7 @@
       noSongs: "未找到该语言的歌曲", tryRefresh: "请尝试其他语言或刷新页面",
       unknownYear: "年份未知",
       newNoSongs: "该语言的近期歌曲不够", newNoSongsHint: "关闭最新模式即可查看完整曲库",
-      teamNamePrefix: "小组", teamsMore: "{n} 队 · 计分", teamNameAriaPrefix: "小组名称",
+      teamNamePrefix: "小組", teamsMore: "{n} 队 · 计分", teamNameAriaPrefix: "小组名称",
       teamMinusAriaPrefix: "减少一分给小组", teamPlusAriaPrefix: "增加一分给小组",
       shareText: "🎵 一起来玩「谁知道这首歌？」——一个适合多人的猜歌游戏！",
       shareResult: "分享结果",

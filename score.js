@@ -180,7 +180,26 @@
       }
       bar.appendChild(buildChip(i));
     }
+    fitNames();
   }
+
+  // Narrow screens: shrink each team name gradually (14px down to 10px); only then does the CSS ellipsis apply.
+  function fitNames() {
+    if (!bar) return;
+    var names = bar.querySelectorAll(".team-chip-name");
+    for (var i = 0; i < names.length; i++) {
+      var el = names[i];
+      var size = 14;
+      el.style.fontSize = size + "px";
+      while (size > 10 && el.scrollWidth > el.clientWidth) {
+        size -= 0.5;
+        el.style.fontSize = size + "px";
+      }
+    }
+  }
+  window.addEventListener("resize", fitNames);
+  window.addEventListener("load", fitNames);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNames);
 
   function buildChip(idx) {
     var chip = document.createElement("div");
