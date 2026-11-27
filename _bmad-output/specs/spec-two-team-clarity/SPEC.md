@@ -24,6 +24,7 @@ Play shows installs ≈ uninstalls every day (12 / 12 over 12–18.11). The onbo
   The button stays "Let's play!" and starts a song (spec-onboarding-fast-start).
 - **CAP-3 Header kicker.** The small line above the title says "Party game for two teams", in all 15 languages. It shows only on tall screens (over 900 px, spec-main-screen-fit); on phones the team bar carries the message.
 - **CAP-4 Google Play.** In all 16 listings, the short description and the first line of the full description open with "social game for two teams". The title keeps its main keyword and adds "teams" where it fits in 30 characters. The rest of the full description does not change. Publishing to Play happens only after Shai approves the texts.
+- **CAP-6 Store screenshots (added 2026-11-27, Shai chose it after weak install numbers).** 4 new phone screenshots for all 16 Play listings, all taken from the live app: (1) main screen with the team bar mid-game, caption = the kicker "Party game for two teams"; (2) the onboarding card, caption = "The host plays a song, only they see the screen"; (3) main screen with another song and a higher score, caption = "The first team to name it gets a point"; (4) the score popup, caption = "No sign-up, start now". Captions reuse the app strings (i18n) so store and app say the same thing. Upload only after Shai approves the Hebrew set.
 - **CAP-5 Analytics.** GA event `team_point` with `{source: "bar" | "popup", teams: n}`, so we can see whether people score from the bar.
 
 ## Constraints
