@@ -1,0 +1,146 @@
+{
+ "iw-IL": {
+  "app": "he",
+  "caps": [
+   "משחק חברתי לשתי קבוצות",
+   "המנחה מנגן שיר, ורק המנחה רואה את המסך",
+   "הקבוצה שמזהה ראשונה מקבלת נקודה",
+   "בלי הרשמה, מתחילים מיד"
+  ]
+ },
+ "en-US": {
+  "app": "en",
+  "caps": [
+   "Social game for two teams",
+   "The host plays a song and is the only one looking at the screen",
+   "The first team to name it gets a point",
+   "No sign-up, start now"
+  ]
+ },
+ "ar": {
+  "app": "ar",
+  "caps": [
+   "لعبة جماعية لفريقين",
+   "المقدّم يشغّل أغنية وهو وحده ينظر إلى الشاشة",
+   "أول فريق يعرف الأغنية يحصل على نقطة",
+   "بدون تسجيل، ابدأ الآن"
+  ]
+ },
+ "de-DE": {
+  "app": "de",
+  "caps": [
+   "Partyspiel für zwei Teams",
+   "Einer spielt den Song ab und nur er schaut aufs Handy",
+   "Das Team, das den Song zuerst erkennt, bekommt einen Punkt",
+   "Ohne Anmeldung sofort starten"
+  ]
+ },
+ "es-ES": {
+  "app": "es",
+  "caps": [
+   "Juego social para dos equipos",
+   "El presentador pone una canción y solo él mira la pantalla",
+   "El primer equipo que la adivine gana un punto",
+   "Sin registro, empieza ya"
+  ]
+ },
+ "fr-FR": {
+  "app": "fr",
+  "caps": [
+   "Jeu de soirée en deux équipes",
+   "L’animateur lance une chanson et lui seul regarde l’écran",
+   "La première équipe qui trouve gagne un point",
+   "Sans inscription, joue tout de suite"
+  ]
+ },
+ "hi-IN": {
+  "app": "hi",
+  "caps": [
+   "दो टीमों का पार्टी गेम",
+   "होस्ट गाना चलाता है और सिर्फ़ वही स्क्रीन देखता है",
+   "जो टीम पहले पहचाने, उसे एक पॉइंट",
+   "बिना साइन-अप, अभी शुरू करो"
+  ]
+ },
+ "it-IT": {
+  "app": "it",
+  "caps": [
+   "Gioco di gruppo a due squadre",
+   "Il conduttore fa partire una canzone e solo lui guarda lo schermo",
+   "La prima squadra che la indovina prende un punto",
+   "Senza registrazione, gioca ora"
+  ]
+ },
+ "ja-JP": {
+  "app": "ja",
+  "caps": [
+   "2チーム対抗のパーティーゲーム",
+   "司会が曲を流し、画面を見るのは司会だけ",
+   "先に曲名を当てたチームに1ポイント",
+   "登録不要ですぐ開始"
+  ]
+ },
+ "ko-KR": {
+  "app": "ko",
+  "caps": [
+   "두 팀이 겨루는 파티 게임",
+   "진행자가 노래를 틀고, 화면은 진행자만 봐요",
+   "먼저 맞힌 팀이 1점",
+   "회원가입 없이 바로 시작"
+  ]
+ },
+ "pt-BR": {
+  "app": "pt",
+  "caps": [
+   "Jogo de festa para duas equipes",
+   "O apresentador toca uma música e só ele olha a tela",
+   "A primeira equipe que acertar ganha um ponto",
+   "Sem cadastro, comece já"
+  ]
+ },
+ "ru-RU": {
+  "app": "ru",
+  "caps": [
+   "Игра для компании на две команды",
+   "Ведущий включает песню, и только он смотрит на экран",
+   "Первая команда, угадавшая песню, получает очко",
+   "Без регистрации, начните сейчас"
+  ]
+ },
+ "tr-TR": {
+  "app": "tr",
+  "caps": [
+   "İki takımlı parti oyunu",
+   "Sunucu şarkıyı çalar, ekrana sadece o bakar",
+   "Şarkıyı ilk bilen takım puanı alır",
+   "Kayıt yok, hemen başla"
+  ]
+ },
+ "vi": {
+  "app": "vi",
+  "caps": [
+   "Trò chơi tiệc cho hai đội",
+   "Quản trò bật bài hát, chỉ quản trò nhìn màn hình",
+   "Đội đoán ra trước được một điểm",
+   "Không cần đăng ký, chơi ngay"
+  ]
+ },
+ "zh-CN": {
+  "app": "zh",
+  "caps": [
+   "两队对战的派对游戏",
+   "主持人放歌，只有主持人看屏幕",
+   "最先猜出歌名的队伍得一分",
+   "无需注册，马上开始"
+  ]
+ },
+ "zh-TW": {
+  "app": "zh",
+  "caps": [
+   "兩隊對戰的派對遊戲",
+   "主持人放歌，只有主持人看螢幕",
+   "最先猜出歌名的隊伍得一分",
+   "免註冊，立即開始"
+  ]
+ }
+}
