@@ -1542,8 +1542,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 6px;
-  padding: 4px 8px;
+  gap: 4px;
+  padding: 4px 6px;
   border: 0;
   background: none;
   color: var(--text);
@@ -1558,7 +1558,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -1576,8 +1576,9 @@ body {
 
 .team-chip-plus {
   flex: 0 0 auto;
-  min-inline-size: 46px;
+  min-inline-size: 36px;
   min-block-size: 44px;
+  padding: 0 4px;
   border: 0;
   background: var(--team-color);
   color: var(--on-accent);
@@ -1598,6 +1599,10 @@ body {
   color: var(--text-muted);
 }
 
+.team-bar--2 { gap: 3px; }
+.team-bar--2 .team-chip-info { padding-inline: 4px; gap: 3px; }
+.team-bar--2 .team-chip-score { font-size: 1.2rem; }
+.team-bar--2 .team-vs { font-size: 0.625rem; letter-spacing: 0; }
 .team-bar--3 .team-chip-plus { min-inline-size: 38px; }
 .team-bar--3 .team-chip-info { padding-inline: 6px; }
 
